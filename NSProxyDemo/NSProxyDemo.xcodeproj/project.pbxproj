@@ -16,6 +16,7 @@
 		F50AA5521CED8DFE003C7622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50AA5501CED8DFE003C7622 /* LaunchScreen.storyboard */; };
 		F50AA55D1CED8DFE003C7622 /* NSProxyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F50AA55C1CED8DFE003C7622 /* NSProxyDemoTests.m */; };
 		F50AA5681CED8DFE003C7622 /* NSProxyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F50AA5671CED8DFE003C7622 /* NSProxyDemoUITests.m */; };
+		F50AA5771CED8EB0003C7622 /* DDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F50AA5761CED8EB0003C7622 /* DDWeakProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		F50AA5631CED8DFE003C7622 /* NSProxyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSProxyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50AA5671CED8DFE003C7622 /* NSProxyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSProxyDemoUITests.m; sourceTree = "<group>"; };
 		F50AA5691CED8DFE003C7622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50AA5751CED8EB0003C7622 /* DDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDWeakProxy.h; sourceTree = "<group>"; };
+		F50AA5761CED8EB0003C7622 /* DDWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDWeakProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				F50AA5431CED8DFE003C7622 /* AppDelegate.m */,
 				F50AA5451CED8DFE003C7622 /* ViewController.h */,
 				F50AA5461CED8DFE003C7622 /* ViewController.m */,
+				F50AA5751CED8EB0003C7622 /* DDWeakProxy.h */,
+				F50AA5761CED8EB0003C7622 /* DDWeakProxy.m */,
 				F50AA5481CED8DFE003C7622 /* Main.storyboard */,
 				F50AA54E1CED8DFE003C7622 /* Assets.xcassets */,
 				F50AA5501CED8DFE003C7622 /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 				F50AA54D1CED8DFE003C7622 /* NSProxyDemo.xcdatamodeld in Sources */,
 				F50AA5471CED8DFE003C7622 /* ViewController.m in Sources */,
 				F50AA5441CED8DFE003C7622 /* AppDelegate.m in Sources */,
+				F50AA5771CED8EB0003C7622 /* DDWeakProxy.m in Sources */,
 				F50AA5411CED8DFE003C7622 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
