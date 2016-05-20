@@ -17,6 +17,7 @@
 		F50AA55D1CED8DFE003C7622 /* NSProxyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F50AA55C1CED8DFE003C7622 /* NSProxyDemoTests.m */; };
 		F50AA5681CED8DFE003C7622 /* NSProxyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F50AA5671CED8DFE003C7622 /* NSProxyDemoUITests.m */; };
 		F50AA5771CED8EB0003C7622 /* DDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F50AA5761CED8EB0003C7622 /* DDWeakProxy.m */; };
+		F50AA57A1CEF0A64003C7622 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = F50AA5791CEF0A64003C7622 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,9 @@
 		F50AA5691CED8DFE003C7622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F50AA5751CED8EB0003C7622 /* DDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDWeakProxy.h; sourceTree = "<group>"; };
 		F50AA5761CED8EB0003C7622 /* DDWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDWeakProxy.m; sourceTree = "<group>"; };
+		F50AA5781CEF0A63003C7622 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		F50AA5791CEF0A64003C7622 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		F50AA57B1CEF0A8C003C7622 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,9 @@
 				F50AA5431CED8DFE003C7622 /* AppDelegate.m */,
 				F50AA5451CED8DFE003C7622 /* ViewController.h */,
 				F50AA5461CED8DFE003C7622 /* ViewController.m */,
+				F50AA57B1CEF0A8C003C7622 /* Animal.h */,
+				F50AA5781CEF0A63003C7622 /* Dog.h */,
+				F50AA5791CEF0A64003C7622 /* Dog.m */,
 				F50AA5751CED8EB0003C7622 /* DDWeakProxy.h */,
 				F50AA5761CED8EB0003C7622 /* DDWeakProxy.m */,
 				F50AA5481CED8DFE003C7622 /* Main.storyboard */,
@@ -278,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50AA57A1CEF0A64003C7622 /* Dog.m in Sources */,
 				F50AA54D1CED8DFE003C7622 /* NSProxyDemo.xcdatamodeld in Sources */,
 				F50AA5471CED8DFE003C7622 /* ViewController.m in Sources */,
 				F50AA5441CED8DFE003C7622 /* AppDelegate.m in Sources */,
