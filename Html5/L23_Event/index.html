@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+       <div id="div">
+           <button id="btn1" onclick="demo()">按钮</button>
+           <a href="http://www.jikexueyuan.com" id="aid">极客学院</a>
+       </div>
+
+<!--<script>-->
+    <!--function demo() {-->
+        <!--alert("Hello html事件处理");-->
+    <!--}-->
+<!--</script>-->
+ <script>
+//     var btn1 = document.getElementById("btn1");
+//     btn1.onclick = function () {
+//         alert("Hello DOM0级事件处理程序1");
+//     }
+//     btn1.onclick = function () {
+//         alert("Hello DOM0级事件处理程序2");
+//     }
+//     btn1.onclick = function () {
+//         alert("Hello DOM0级事件处理程序3");
+//     }
+//     btn1.onclick = null;
+
+//var btn1 =document.getElementById("btn1");
+//btn1.addEventListener("click",demo1);
+//btn1.addEventListener("click",demo2);
+//btn1.addEventListener("click",demo3);
+//function demo1() {
+//    alert("DOM2级事件处理程序1");
+//}
+//     function demo2() {
+//         alert("DOM2级事件处理程序2");
+//     }
+//function demo3() {
+//    alert("DOM2级事件处理程序3");
+//}
+//
+//     btn1.removeEventListener("click",demo2);
+
+//   var btn1 = document.getElementById("btn1");
+//     if (btn1.addEventListener) {
+//         btn1.addEventListener("click",demo);
+//     } else if(btn1.attachEvent) {
+//         btn1.attachEvent("onclick",demo)
+//     } else  {
+//         btn1.onclick = demo();
+//     }
+//function demo() {
+//    alert("H")
+//}
+
+
+     document.getElementById("btn1").addEventListener("click",showType);
+     function showType(event) {
+//         alert(event.type)
+         alert(event.target);
+         event.stopPropagation()
+     }
+
+     document.getElementById("div").addEventListener("click",showDiv);
+document.getElementById("aid").addEventListener("click",showA);
+function showA(event) {
+//    event.stopPropagation();
+//    event.preventDefault();
+}
+function showDiv() {
+    alert("div")
+}
+
+
+
+ </script>
+</body>
+</html>

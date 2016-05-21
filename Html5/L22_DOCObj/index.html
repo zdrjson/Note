@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<p id="pid">Hello</p>-->
+<!--<p id=""></p>-->
+<!--<a id="aid" href="https://www.baidu.com">Hello</a>-->
+<!--<img id="imgid" src="RSA.png">-->
+<!--<button onclick="demo()">按钮</button>-->
+   <!--<script>-->
+      <!--function demo() {-->
+<!--//           document.getElementById("pid").innerHTML = "www";-->
+<!--//          document.getElementsByTagName("p");//相同元素中的第一个-->
+          <!--document.getElementById("imgid").src = "b.png";-->
+      <!--}-->
+   <!--</script>-->
+
+
+
+<button id="btn">B</button>
+<script>
+   var x= document.getElementById("btn");
+    x.addEventListener("click",hello);  //句柄
+    x.addEventListener("click",word);
+   x.removeEventListener("click",hello);
+   x.removeEventListener("click",word);
+    function hello() {
+        alert("he");
+    }
+    function word() {
+        alert("wor");
+    }
+</script>
+</body>
+</html>

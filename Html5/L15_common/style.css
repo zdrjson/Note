@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+}
+.div{
+    width: 70%;
+    height: 1000px;
+    background-color: red;
+    /*position: absolute;*/
+    /*left: 0px;*/
+    /*float: left;*/
+    margin: 100px auto;
+}
+
+/*.p1{*/
+    /*line-height: normal;*/
+    /*min-width: 250px;*/
+/*}*/
+
+/*.p2{*/
+    /*width: 400px;*/
+    /*line-height: 200%;*/
+/*}*/
+
+/*.p3{*/
+    /*width: 400px;*/
+    /*line-height: 50%;*/
+/*}*/
+
+/*p{*/
+    /*cursor: cell;*/
+/*}*/
+
+
+/*li{*/
+    /*display: inline;*/
+    /*visibility: visible;*/
+/*}*/
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+

@@ -1,0 +1,128 @@
+/*body{*/
+    /*background-color: darkgrey;*/
+/*}*/
+/*p{*/
+    /*width: 150px;*/
+    /*padding: 10px;*/
+    /*background-color: aqua;*/
+/*}*/
+
+/*body{*/
+    /*background-image: url("RSA.png");*/
+/*}*/
+
+
+/*body{*/
+    /*background-repeat: no-repeat;*/
+    /*background-image: url("a.png");*/
+    /*background-size: 100px 100px;*/
+    /*!*background-attachment: fixed;*!*/
+    /*!*background-position: 100px 100px;*!*/
+    /*!*right和center *!*/
+/*}*/
+
+
+/*ul li{*/
+    /*!*list-style-type: decimal;*!*/
+    /*list-style-image: url("a.png");*/
+    /**/
+/*}*/
+
+/*ul.ul1{*/
+    /*list-style-position: inside;*/
+/*}*/
+/*ul.ul2{*/
+    /*list-style-position: outside;*/
+/*}*/
+
+/*p{*/
+    /*color: red;*/
+    /*text-align: center;*/
+/*}*/
+
+
+/*h1{*/
+    /*text-indent: -2em;*/
+    /*padding-left: 2em;*/
+/*}*/
+/*#p1{*/
+    /*text-transform: capitalize;*/
+/*}*/
+
+/*#p2{*/
+    /*text-transform: lowercase;*/
+/*}*/
+/*#p3{*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+
+/*p{*/
+    /*!*text-shadow: 100px 100px 2px #FFCC00;*!*/
+    /*!*width: 100px;*!*/
+    /*!*text-wrap: normal;*!*/
+    /*font-size: 40px;*/
+    /*font-family: fantasy;*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: myfont;*/
+    /*src:url()*/
+/*}*/
+
+/*div{*/
+    /*font-family:myfont;*/
+/*}*/
+
+/*a:link{*/
+    /*color: red;*/
+    /*text-decoration: none;*/
+    /*background-color: aquamarine;*/
+/*}*/
+/*a:visited{*/
+    /*color: green;*/
+/*}*/
+/*a:hover{*/
+    /*color: blue;*/
+/*}*/
+/*a.active{*/
+    /*color: greenyellow;*/
+/*}*/
+
+/*#tb,tr,th,td{*/
+    /*border:1px solid blue;*/
+    /*text-align: center;*/
+    /*background-color: aqua;*/
+/*}*/
+/*#tb{*/
+    /*width:400px;*/
+    /*height: 400px;*/
+    /*border-collapse: collapse;//合并边框*/
+/*}*/
+
+/*#tb{*/
+    /*border-collapse: collapse;*/
+    /*width:500px;*/
+/*}*/
+/*#tb td,#tb th{*/
+    /*border: 1px solid bisque;*/
+    /*padding: 5px;*/
+/*}*/
+
+/*#tb th{*/
+    /*text-align: right;*/
+    /*background-color: aqua;*/
+    /*color:#FFFFFF;*/
+/*}*/
+
+/*#tb tr.alt td{*/
+    /*color: black;*/
+    /*background-color: aquamarine;*/
+/*}*/
+
+
+p{
+    outline-style: dotted;
+    outline-color: aqua;
+    outline-width: 1px;
+}
