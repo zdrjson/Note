@@ -1,0 +1,28 @@
+/*p{*/
+    /*color: blue;*/
+    /*margin: 10px;*/
+/*}*/
+/**{*/
+    /*color: red;*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+/*}*/
+/*h1,h2{*/
+    /*font-size: 45px;*/
+/*}*/
+
+a.div{
+    color: blue;
+}
+
+.p1{
+    color: blue;
+}
+
+.p2{
+    font-size: 30px;
+}
+
+.p1.p2{
+    font-style: italic;
+}
