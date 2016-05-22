@@ -11,18 +11,37 @@
     /*font-size: 45px;*/
 /*}*/
 
-a.div{
-    color: blue;
+/*a.div{*/
+    /*color: blue;*/
+/*}*/
+
+/*.p1{*/
+    /*color: blue;*/
+/*}*/
+
+/*.p2{*/
+    /*font-size: 30px;*/
+/*}*/
+
+/*.p1.p2{*/
+    /*font-style: italic;*/
+/*}*/
+
+#mydiv{
+    color: cyan;
 }
 
-.p1{
-    color: blue;
+p i{
+    color:  fuchsia;
 }
 
-.p2{
-    font-size: 30px;
-}
+/*p>strong>i{*/
+    /*color: fuchsia;*/
+    /*font-size: 30px;*/
+/*}*/
 
-.p1.p2{
-    font-style: italic;
+
+li+li{
+    font-size:50px;
+    color: aquamarine;
 }
