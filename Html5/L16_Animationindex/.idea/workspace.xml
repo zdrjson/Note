@@ -71,6 +71,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="animstyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/animstyle.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,6 +97,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+      <file leaf-file-name="animstyle.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/animstyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+>>>>>>> 43f200de6268eab99888a5878f951a9c014196b7
               <folding />
             </state>
           </provider>
@@ -119,8 +127,11 @@
         <option value="$PROJECT_DIR$/transitionstyle.css" />
         <option value="$PROJECT_DIR$/animindex.html" />
         <option value="$PROJECT_DIR$/animstyle.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/coumtindex.html" />
         <option value="$PROJECT_DIR$/coumtstyle.css" />
+=======
+>>>>>>> 43f200de6268eab99888a5878f951a9c014196b7
       </list>
     </option>
   </component>
@@ -130,8 +141,13 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="23" />
+=======
+    <option name="x" value="-19" />
+    <option name="y" value="56" />
+>>>>>>> 43f200de6268eab99888a5878f951a9c014196b7
     <option name="width" value="1280" />
     <option name="height" value="740" />
   </component>
@@ -199,15 +215,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1463887479538</updated>
+<<<<<<< HEAD
       <workItem from="1463887480874" duration="4816000" />
+=======
+      <workItem from="1463887480874" duration="3165000" />
+>>>>>>> 43f200de6268eab99888a5878f951a9c014196b7
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="4816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="23" width="1280" height="740" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="3165000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-19" y="56" width="1280" height="740" extended-state="0" />
+>>>>>>> 43f200de6268eab99888a5878f951a9c014196b7
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -268,6 +295,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/animstyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -276,6 +304,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 43f200de6268eab99888a5878f951a9c014196b7
     <entry file="file://$PROJECT_DIR$/animindex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -284,6 +314,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/coumtindex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -296,6 +327,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/animstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+>>>>>>> 43f200de6268eab99888a5878f951a9c014196b7
           <folding />
         </state>
       </provider>
