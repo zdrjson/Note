@@ -25,6 +25,7 @@
 * [liveVideoIntroductionBiaoGeBlog](http://www.henishuo.com/ios-live-confused/)
 * [book](http://item.jd.com/11742630.html)
 * [Bilibili / ijkplayer baseed on FFmpeg with MediaCodec,Video Toolbox support](https://github.com/Bilibili/ijkplayer)
+* [AVFoundation 视频流处理](https://github.com/100mango/zen/blob/master/iOS学习：AVFoundation%20视频流处理/iOS学习：AVFoundation%20视频流处理%20.md)
 
 ### muke
  * [segmentfault iOS share](http://www.imooc.com/learn/599)
