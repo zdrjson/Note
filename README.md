@@ -51,6 +51,7 @@
 ## Cache
 * [FMDB](https://github.com/ccgus/fmdb)
 * [realm](https://github.com/realm/realm-cocoa)
+* [MagicalRecord](https://github.com/magicalpanda/MagicalRecord)
 
 ## Text
 * [CoreText_xiongzenghu](http://xiongzenghuidegithub.github.io/blog/2016/04/26/coretext-part-3/)
