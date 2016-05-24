@@ -94,6 +94,7 @@
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
+* [如何解决GitHub commit次数过多.git文件过大的问题?](https://www.zhihu.com/question/29769130)
   
 ## Crash
 * [objc_retain] (http://www.bkjia.com/IOSjc/898404.html)
