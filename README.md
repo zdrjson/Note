@@ -37,7 +37,8 @@
 * [ZFPlayer](https://github.com/renzifeng/ZFPlayer.git)
 
 ### LiveVideo
-[LiveVideoCoreSDK](https://github.com/runner365/LiveVideoCoreSDK)
+* [LiveVideoCoreSDK](https://github.com/runner365/LiveVideoCoreSDK)
+* [SmarterStreaming](https://github.com/daniulive/SmarterStreaming)
 
 ## Image
 ### Gif 
@@ -47,6 +48,7 @@
 ## View
 * [scrollView To Top](http://www.jianshu.com/p/68632cbd6263)
 * [why SDWebImageDecoder](http://www.jianshu.com/p/135e17c7d10f)
+* [Y_KLine](https://github.com/yate1996/Y_KLine)
 
 ## CALayer
 * [CALayer and subLayer](http://my.oschina.net/u/2340880/blog/536048)
@@ -100,6 +102,7 @@
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
 * [如何解决GitHub commit次数过多.git文件过大的问题?](https://www.zhihu.com/question/29769130)
+* [if you change your password or username on GitHub](https://help.github.com/articles/updating-credentials-from-the-osx-keychain/)
   
 ## Crash
 * [objc_retain] (http://www.bkjia.com/IOSjc/898404.html)
@@ -115,7 +118,7 @@
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Homebrew](http://brew.sh/)
 * [hosts](https://github.com/racaljk/hosts)
-
+* [hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
 
 
 #CSS
