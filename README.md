@@ -155,7 +155,7 @@ CMTimeMake(30, 15);
 
 ## Tutorial
 * [objc](http://objccn.io)
-
+* [Safari for OS X 你不可不知的 10 个快捷键](http://sspai.com/30902)
 #CSS
 
 `W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以说我们用他们俩的时候就要按照这个特性来使用。id 是不能重复的，class 却是可以重复使用，通过id可以找到页面上唯一的一个标签，而class呢可以多个标签使用同一种样式提供了可能`												
