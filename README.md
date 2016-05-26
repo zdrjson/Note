@@ -29,6 +29,34 @@
 * [SCRecorder iOS camera engine with Vine-like tap to record, animatable filters, slow motion, segments editing](https://github.com/rFlex/SCRecorder.git)
 * [ffmpeg principle](https://segmentfault.com/a/1190000000502967)
 
+```CMTimeMake和CMTimeMakeWithSeconds 详解
+
+CMTimeMake(a,b)    a当前第几帧, b每秒钟多少帧.当前播放时间a/b
+
+CMTimeMakeWithSeconds(a,b)    a当前时间,b每秒钟多少帧.
+
+CMTimeMake
+ 
+CMTime CMTimeMake (
+   int64_t value,
+   int32_t timescale
+);
+CMTimeMake顧名思義就是用來建立CMTime用的,
+但是千萬別誤會他是拿來用在一般時間用的,
+CMTime可是專門用來表示影片時間用的類別,
+他的用法為: CMTimeMake(time, timeScale)
+time指的就是時間(不是秒),
+而時間要換算成秒就要看第二個參數timeScale了.
+timeScale指的是1秒需要由幾個frame構成(可以視為fps),
+因此真正要表達的時間就會是 time / timeScale 才會是秒.
+簡單的舉個例子
+CMTimeMake(60, 30);
+CMTimeMake(30, 15);
+```
+
+
+
+
 ### muke
  * [segmentfault iOS share](http://www.imooc.com/learn/599)
  * [beijing swift conference](http://www.imooc.com/learn/600)
@@ -41,6 +69,7 @@
 ### LiveVideo
 * [LiveVideoCoreSDK](https://github.com/runner365/LiveVideoCoreSDK)
 * [SmarterStreaming](https://github.com/daniulive/SmarterStreaming)
+
 ##Audio
 * [MPVolumeView_iOS program modification system volume](https://segmentfault.com/a/1190000002401961)
 
@@ -123,10 +152,13 @@
 * [Homebrew](http://brew.sh/)
 * [hosts](https://github.com/racaljk/hosts)
 * [hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
+
 ## Tutorial
 * [objc](http://objccn.io)
 
 #CSS
 
 `W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以说我们用他们俩的时候就要按照这个特性来使用。id 是不能重复的，class 却是可以重复使用，通过id可以找到页面上唯一的一个标签，而class呢可以多个标签使用同一种样式提供了可能`												
+
+
 
