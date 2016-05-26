@@ -41,6 +41,8 @@
 ### LiveVideo
 * [LiveVideoCoreSDK](https://github.com/runner365/LiveVideoCoreSDK)
 * [SmarterStreaming](https://github.com/daniulive/SmarterStreaming)
+##Audio
+* [MPVolumeView_iOS program modification system volume](https://segmentfault.com/a/1190000002401961)
 
 ## Image
 ### Gif 
