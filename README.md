@@ -85,6 +85,17 @@ CMTimeMake(30, 15);
 
 ## CALayer
 * [CALayer and subLayer](http://my.oschina.net/u/2340880/blog/536048)
+* [CATextLayer](https://github.com/joeshang/CATextLayerTest)
+
+`
+普通CALayer在被初始化时是需要给一个frame值的,这个frame值一般都与给定view的bounds值一致,它本身是有形状的,而且是矩形.
+CAShapeLayer在初始化时也需要给一个frame值,但是,它本身没有形状,它的形状来源于你给定的一个path,然后它去取CGPath值,它与CALayer有着很大的区别
+CAShapeLayer有着几点很重要:
+1. 它依附于一个给定的path,必须给与path,而且,即使path不完整也会自动首尾相接
+2. strokeStart以及strokeEnd代表着在这个path中所占用的百分比
+`
+
+
 
 ## Model
 * [YYModel basic knowledge](http://www.jianshu.com/p/198af7042b2d)
