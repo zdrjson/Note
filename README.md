@@ -29,14 +29,10 @@
 * [SCRecorder iOS camera engine with Vine-like tap to record, animatable filters, slow motion, segments editing](https://github.com/rFlex/SCRecorder.git)
 * [ffmpeg principle](https://segmentfault.com/a/1190000000502967)
 
-```CMTimeMake和CMTimeMakeWithSeconds 详解
-
+`CMTimeMake和CMTimeMakeWithSeconds 详解
 CMTimeMake(a,b)    a当前第几帧, b每秒钟多少帧.当前播放时间a/b
-
 CMTimeMakeWithSeconds(a,b)    a当前时间,b每秒钟多少帧.
-
 CMTimeMake
- 
 CMTime CMTimeMake (
    int64_t value,
    int32_t timescale
@@ -51,7 +47,7 @@ timeScale指的是1秒需要由幾個frame構成(可以視為fps),
 因此真正要表達的時間就會是 time / timeScale 才會是秒.
 簡單的舉個例子
 CMTimeMake(60, 30);
-CMTimeMake(30, 15);```
+CMTimeMake(30, 15);`
 
 
 
