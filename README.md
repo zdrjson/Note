@@ -51,8 +51,7 @@ timeScale指的是1秒需要由幾個frame構成(可以視為fps),
 因此真正要表達的時間就會是 time / timeScale 才會是秒.
 簡單的舉個例子
 CMTimeMake(60, 30);
-CMTimeMake(30, 15);
-```
+CMTimeMake(30, 15);```
 
 
 
