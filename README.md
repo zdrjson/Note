@@ -186,10 +186,13 @@ CAShapeLayer有着几点很重要:
 ##Foundation
 * roundf 将浮点值四舍五入为最接近的整数
 
-## NetWoring
+## NetWorking
+* [RTNetworking](https://github.com/casatwy/RTNetworking)
 1. 以什么方式将数据交付给业务层？这个问题的回答是这样：
    尽可能通过Delegate的回调方式交付数据，这样可以避免不必要的跨层访问。当出现跨层访问的需求时（比如信号类型切换），通过Notification的方式交付数据。正常情况下应该是避免使用Block的。
-   
+      
+2. 使用reformer这个对象用于封装数据转化的逻辑，这个对象是一个独立对象，事实上，它是作为Adaptor(适配器)模式
+3. 对于业务层而言，由Controller根据View和APIManager之间的关系，选择合适的reformer将View可以直接使用的数据（甚至reformer可以用来直接生成view）转化好之后交付给View。对于网络层而言，只需要保持住原始数据即可，不需要主动转化成数据原型。然后数据采用NSDictionary加Const字符串key来表征，避免了使用对象来表征带来的迁移困难，同时不失去可读性。
 
 
 
