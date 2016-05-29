@@ -91,8 +91,11 @@ CMTimeMake(30, 15);
 * [CATextLayer](https://github.com/joeshang/CATextLayerTest)
 
 ```
-普通CALayer在被初始化时是需要给一个frame值的,这个frame值一般都与给定view的bounds值一致,它本身是有形状的,而且是矩形.
-CAShapeLayer在初始化时也需要给一个frame值,但是,它本身没有形状,它的形状来源于你给定的一个path,然后它去取CGPath值,它与CALayer有着很大的区别
+普通CALayer在被初始化时是需要给一个frame值的,这个frame值一般都与给定view的bounds值一致,它本
+身是有形状的,而且是矩形.
+CAShapeLayer在初始化时也需要给一个frame值,但是,它本身没有形状,它的形状来源于你给定的一个path,
+
+然后它去取CGPath值,它与CALayer有着很大的区别
 CAShapeLayer有着几点很重要:
 1. 它依附于一个给定的path,必须给与path,而且,即使path不完整也会自动首尾相接
 2. strokeStart以及strokeEnd代表着在这个path中所占用的百分比
@@ -171,13 +174,17 @@ CAShapeLayer有着几点很重要:
 * [Homebrew](http://brew.sh/)
 
 ```
-homebrew-cask,官网传送, 是一套建立在homebrew基础上的Mac软件安装命令行工具。与brew的区别就是，后者侧重于软件套件和软件环境的配置安装，而前者是mac平台软件
+homebrew-cask,官网传送, 是一套建立在homebrew基础上的Mac软件安装命令行工具。与brew的区别就
+是，后者侧重于软件套件和软件环境的配置安装，而前者是mac平台软件
 ```
 
 ```
-brew 是从下载源码解压然后 ./configure && make install ，同时会包含相关依存库。并自动配置好各种环境变量，而且易于卸载。 
+brew 是从下载源码解压然后 ./configure && make install ，同时会包含相关依存库。并自动配置好
+各种环境变量，而且易于卸载。 
 这个对程序员来说简直是福音，简单的指令，就能快速安装和升级本地的各种开发环境。
-而 brew cask 是 已经编译好了的应用包 （.dmg/.pkg），仅仅是下载解压，放在统一的目录中（/opt/homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装）等蛋疼步骤，同样，卸载相当容易与干净。这个对一般用户来说会比较方便，包含很多在 AppStore 里没有的常用软件。
+而 brew cask 是 已经编译好了的应用包 （.dmg/.pkg），仅仅是下载解压，放在统一的目录中（/opt/
+homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装）等蛋疼步骤，同样，卸载相当容易与
+干净。这个对一般用户来说会比较方便，包含很多在 AppStore 里没有的常用软件。
 ```
 
 
@@ -208,7 +215,9 @@ brew 是从下载源码解压然后 ./configure && make install ，同时会包�
 #CSS
 
 ```
-W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以说我们用他们俩的时候就要按照这个特性来使用。id 是不能重复的，class 却是可以重复使用，通过id可以找到页面上唯一的一个标签，而class呢可以多个标签使用同一种样式提供了可能
+W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以说我们用他们俩的时候就要按照这个特性
+来使用。id 是不能重复的，class 却是可以重复使用，通过id可以找到页面上唯一的一个标签，而class呢
+可以多个标签使用同一种样式提供了可能
 ```												
 
 
