@@ -12,10 +12,17 @@
 ### CollectionAnimation
 * [popping](https://github.com/schneiderandre/popping)
 
-### facebookAnimation
+### facebookPopMenuAnimation
 * [DXPopover](https://github.com/xiekw2010/DXPopover)
 * [CMPopTipView](https://github.com/chrismiles/CMPopTipView)
 * [NirKxMenu](https://github.com/zpz1237/NirKxMenu)
+
+###TinderSwipeAnimation
+* [MDCSwipeToChoose](https://github.com/modocache/MDCSwipeToChoose)
+* []
+
+
+
 
 ## Video
 ### AVFoundation
@@ -135,6 +142,7 @@ CAShapeLayer有着几点很重要:
 
 ##SomeGuysBlog
 * [WeiXinRead](http://wereadteam.github.io)
+* [sunnyxx](http://blog.sunnyxx.com)
 * [FMDB_description](http://blog.csdn.net/yixiangboy/article/details/51274186)
 * [integration ijkplayer](http://www.jianshu.com/p/1f06b27b3ac0)
 
