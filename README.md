@@ -21,7 +21,7 @@
 * [MDCSwipeToChoose](https://github.com/modocache/MDCSwipeToChoose)
 * [TinderSimpleSwipeCards](https://github.com/cwRichardKim/TinderSimpleSwipeCards)
 * [ZLSwipeableView](https://github.com/zhxnlai/ZLSwipeableView)
-
+* [Koloda](https://github.com/Yalantis/Koloda)
 
 
 ## Video
