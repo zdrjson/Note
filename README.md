@@ -194,6 +194,7 @@ brew 是从下载源码解压然后 ./configure && make install ，同时会包�
 
 ## NetWorking
 * [RTNetworking](https://github.com/casatwy/RTNetworking)
+
 1. 以什么方式将数据交付给业务层？这个问题的回答是这样：
    尽可能通过Delegate的回调方式交付数据，这样可以避免不必要的跨层访问。当出现跨层访问的需求时（比如信号类型切换），通过Notification的方式交付数据。正常情况下应该是避免使用Block的。
 
