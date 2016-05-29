@@ -19,7 +19,7 @@
 
 ###TinderSwipeAnimation
 * [MDCSwipeToChoose](https://github.com/modocache/MDCSwipeToChoose)
-* []
+* [TinderSimpleSwipeCards](https://github.com/cwRichardKim/TinderSimpleSwipeCards)
 
 
 
