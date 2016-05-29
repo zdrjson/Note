@@ -181,9 +181,15 @@ CAShapeLayer有着几点很重要:
 ## Tutorial
 * [objc](http://objccn.io)
 * [Safari for OS X 你不可不知的 10 个快捷键](http://sspai.com/30902)
+* [Markdown](https://github.com/younghz/Markdown)
 
 ##Foundation
 * roundf 将浮点值四舍五入为最接近的整数
+
+## NetWoring
+1. 以什么方式将数据交付给业务层？这个问题的回答是这样：
+   尽可能通过Delegate的回调方式交付数据，这样可以避免不必要的跨层访问。当出现跨层访问的需求时（比如信号类型切换），通过Notification的方式交付数据。正常情况下应该是避免使用Block的。
+   
 
 
 
