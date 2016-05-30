@@ -35,6 +35,7 @@
 * [AVFoundation 视频流处理](https://github.com/100mango/zen/blob/master/iOS学习：AVFoundation%20视频流处理/iOS学习：AVFoundation%20视频流处理%20.md)
 * [SCRecorder iOS camera engine with Vine-like tap to record, animatable filters, slow motion, segments editing](https://github.com/rFlex/SCRecorder.git)
 * [ffmpeg principle](https://segmentfault.com/a/1190000000502967)
+* [Cache media file while play media using AVPlayer](https://github.com/vitoziv/VIMediaCache)
 
 ```
 CMTimeMake和CMTimeMakeWithSeconds 详解
@@ -66,8 +67,55 @@ CMTimeMake(30, 15);
 
 ### Download
 * [MJDownload](https://github.com/CoderMJLee/MJDownload.git)
-* [TCBlobDownload](https://github.com/thibaultCha/TCBlobDownload.git)
 * [ZFPlayer](https://github.com/renzifeng/ZFPlayer.git)
+
+* [TCBlobDownload](https://github.com/thibaultCha/TCBlobDownload.git)
+
+```
+Features
+     后台下载文件
+	1	Download files in background threads
+	   代理或者blocks风格
+	2	Blocks or delegate style
+	   暂停 重新开始一个下载
+	3	Pause and resume a download
+	   设置最大并发下载数
+	4	Set a maximum number of concurrent downloads
+	   自定义下载路径
+	5	Custom download path
+	   下载速度与剩余时间
+	6	Download speed and remaining time
+	   取消下载
+	7	Download cancellation
+	    下载依赖 
+	8	Download dependencies
+	
+	•	If a download has been stopped and the local file has not been deleted, when you will restart the download to the same local path, the download will start where it has stopped using the HTTP Range header (14.35).
+	•	You can also set dependencies in your downloads using the addDependentDownload: method from TCBlobDownloader.
+```
+
+[MZDownloadManager(swfit now)](https://github.com/mzeeshanid/MZDownloadManager)
+
+```
+This download manager uses the iOS 7 NSURLSession api to download files.
+     能在后台下载大的文件
+	•	Can download large files if app is in background.
+	   能在后台下载文件
+	•	Can download files if app is in background.
+	   能在同一时间下载多个文件
+	•	Can download multiple files at a time.
+	   重新开始下载已经打断的下载任务
+	•	It can resume interrupted downloads.
+	   用户能够暂停下载
+	•	User can also pause the download.
+	   用户能够下载
+	•	User can retry any download if any error occurred during download.
+```
+
+
+
+
+
 
 ### LiveVideo
 * [LiveVideoCoreSDK](https://github.com/runner365/LiveVideoCoreSDK)
@@ -149,6 +197,7 @@ CAShapeLayer有着几点很重要:
 * [sunnyxx](http://blog.sunnyxx.com)
 * [FMDB_description](http://blog.csdn.net/yixiangboy/article/details/51274186)
 * [integration ijkplayer](http://www.jianshu.com/p/1f06b27b3ac0)
+* [daiming](http://www.jianshu.com/users/9a4903d7e3d1/latest_articles)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -161,6 +210,16 @@ CAShapeLayer有着几点很重要:
   
 ## Crash
 * [objc_retain] (http://www.bkjia.com/IOSjc/898404.html)
+* [NSTimer]
+
+```
+You must send this message from the thread on which the timer was installed. If
+you send this message from another thread, the input source associated with the
+timer may not be removed from its run loop, which could prevent the thread from
+exiting properly.
+NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源不能被正确的释放。看起来各种坑还不少。
+
+```
  
 ## Algorithm
 * [Direct insertion sort](http://www.henishuo.com/insert-sort/)
