@@ -17,7 +17,7 @@
 * [CMPopTipView](https://github.com/chrismiles/CMPopTipView)
 * [NirKxMenu](https://github.com/zpz1237/NirKxMenu)
 
-###TinderSwipeAnimation
+### TinderSwipeAnimation
 * [MDCSwipeToChoose](https://github.com/modocache/MDCSwipeToChoose)
 * [TinderSimpleSwipeCards](https://github.com/cwRichardKim/TinderSimpleSwipeCards)
 * [ZLSwipeableView](https://github.com/zhxnlai/ZLSwipeableView)
@@ -108,11 +108,30 @@ This download manager uses the iOS 7 NSURLSession api to download files.
 	•	It can resume interrupted downloads.
 	   用户能够暂停下载
 	•	User can also pause the download.
-	   用户能够下载
+	   如果任何错误发生了，用户能够重新下载
 	•	User can retry any download if any error occurred during download.
 ```
 
 
+* [Download-Manager](https://github.com/oarrabi/Download-Manager)
+
+```
+What it provides
+	•	Easy to integrate and use iOS download manager.
+	•	Easily download file with the very robust AFNetworking library.
+	•	Deal only with NSURL, you will never have to keep strong or weak references of the Download managers.
+	•	Download files in sequential and parallel order.
+	•	Make sure each file (NSURL) is being downloaded only once.
+	•	Have multiple listener/delegates on a single download operation.
+	•	Download operation unique by URL, never download a URL twice.
+	•	Cache the downloaded file in Memory and on Disk using EGOCache.
+	•	Easily add and remove listeners to observe the download operations.
+	•	Singleton classes for fast access and minimum memory overhead.
+	•	Ensure that the UI Thread is never blocked.
+	•	Delegate or Block event callbacks.
+	•	All of the above in two lines of code.
+
+```
 
 
 
@@ -125,6 +144,7 @@ This download manager uses the iOS 7 NSURLSession api to download files.
 * [MPVolumeView_iOS program modification system volume](https://segmentfault.com/a/1190000002401961)
 
 ## Image
+
 ### Gif 
 [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage)
 [sever return 304](http://weibo.com/1247589445/DwgHFs2cF?type=repost)
@@ -133,6 +153,9 @@ This download manager uses the iOS 7 NSURLSession api to download files.
 * [scrollView To Top](http://www.jianshu.com/p/68632cbd6263)
 * [why SDWebImageDecoder](http://www.jianshu.com/p/135e17c7d10f)
 * [Y_KLine](https://github.com/yate1996/Y_KLine)
+
+
+
 
 ## CALayer
 * [CALayer and subLayer](http://my.oschina.net/u/2340880/blog/536048)
@@ -210,7 +233,7 @@ CAShapeLayer有着几点很重要:
   
 ## Crash
 * [objc_retain] (http://www.bkjia.com/IOSjc/898404.html)
-* [NSTimer]
+* [NSTimer](http://blog.csdn.net/enuola/article/details/8099461)
 
 ```
 You must send this message from the thread on which the timer was installed. If
@@ -271,6 +294,83 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 
 
 
+
+## IQKeyboardManager
+```
+/*
+ 
+ /---------------------------------------------------------------------------------------------------\
+ \---------------------------------------------------------------------------------------------------/
+ |                                   iOS NSNotification Mechanism                                    |
+ /---------------------------------------------------------------------------------------------------\
+ \---------------------------------------------------------------------------------------------------/
+ 
+ 1) Begin Editing:-         When TextField begin editing.
+ 2) End Editing:-           When TextField end editing.
+ 3) Switch TextField:-      When Keyboard Switch from a TextField to another TextField.
+ 3) Orientation Change:-    When Device Orientation Change.
+ 
+ 
+ ----------------------------------------------------------------------------------------------------------------------------------------------
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ ----------------------------------------------------------------------------------------------------------------------------------------------
+ =============
+ UITextField
+ =============
+ 
+ Begin Editing                                Begin Editing
+ --------------------------------------------           ----------------------------------           ---------------------------------
+ |UITextFieldTextDidBeginEditingNotification| --------> | UIKeyboardWillShowNotification | --------> | UIKeyboardDidShowNotification |
+ --------------------------------------------           ----------------------------------           ---------------------------------
+ ^                  Switch TextField             ^               Switch TextField
+ |                                               |
+ |                                               |
+ | Switch TextField                              | Orientation Change
+ |                                               |
+ |                                               |
+ |                                               |
+ --------------------------------------------    |      ----------------------------------           ---------------------------------
+ | UITextFieldTextDidEndEditingNotification | <-------- | UIKeyboardWillHideNotification | --------> | UIKeyboardDidHideNotification |
+ --------------------------------------------           ----------------------------------           ---------------------------------
+ |                    End Editing                                                             ^
+ |                                                                                            |
+ |--------------------End Editing-------------------------------------------------------------|
+ 
+ 
+ ----------------------------------------------------------------------------------------------------------------------------------------------
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ ----------------------------------------------------------------------------------------------------------------------------------------------
+ =============
+ UITextView
+ =============
+ |-------------------Switch TextView--------------------------------------------------------------|
+ | |------------------Begin Editing-------------------------------------------------------------| |
+ | |                                                                                            | |
+ v |                  Begin Editing                               Switch TextView               v |
+ --------------------------------------------           ----------------------------------           ---------------------------------
+ | UITextViewTextDidBeginEditingNotification| <-------- | UIKeyboardWillShowNotification | --------> | UIKeyboardDidShowNotification |
+ --------------------------------------------           ----------------------------------           ---------------------------------
+ ^
+ |
+ |------------------------Switch TextView--------|
+ |                                               | Orientation Change
+ |                                               |
+ |                                               |
+ |                                               |
+ --------------------------------------------    |      ----------------------------------           ---------------------------------
+ | UITextViewTextDidEndEditingNotification  | <-------- | UIKeyboardWillHideNotification |           | UIKeyboardDidHideNotification |
+ --------------------------------------------           ----------------------------------           ---------------------------------
+ |                    End Editing                                                             ^
+ |                                                                                            |
+ |--------------------End Editing-------------------------------------------------------------|
+ 
+ 
+ ----------------------------------------------------------------------------------------------------------------------------------------------
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ ----------------------------------------------------------------------------------------------------------------------------------------------
+ */
+```
+
 #CSS
 
 ```
@@ -278,6 +378,8 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 来使用。id 是不能重复的，class 却是可以重复使用，通过id可以找到页面上唯一的一个标签，而class呢
 可以多个标签使用同一种样式提供了可能
 ```												
+
+
 
 
 
