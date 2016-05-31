@@ -1,0 +1,8 @@
+@import url(style.css);
+/* 引用扩展样式 */
+body{
+    font-size: 14px; line-height: 1.5em;
+}
+.layout *{
+    margin: 0;
+}
