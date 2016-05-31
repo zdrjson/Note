@@ -31,11 +31,21 @@
 * [AVFoundation Take photo](http://www.jianshu.com/p/6dd23699f92f)
 * [liveVideoIntroductionBiaoGeBlog](http://www.henishuo.com/ios-live-confused/)
 * [book](http://item.jd.com/11742630.html)
+
 * [Bilibili / ijkplayer baseed on FFmpeg with MediaCodec,Video Toolbox support](https://github.com/Bilibili/ijkplayer)
+
 * [AVFoundation 视频流处理](https://github.com/100mango/zen/blob/master/iOS学习：AVFoundation%20视频流处理/iOS学习：AVFoundation%20视频流处理%20.md)
+
 * [SCRecorder iOS camera engine with Vine-like tap to record, animatable filters, slow motion, segments editing](https://github.com/rFlex/SCRecorder.git)
+
 * [ffmpeg principle](https://segmentfault.com/a/1190000000502967)
+
 * [Cache media file while play media using AVPlayer](https://github.com/vitoziv/VIMediaCache)
+
+* [AVFoundation编程指南1-使用 Assets](https://segmentfault.com/a/1190000004049416)
+
+* [AVFoundation编程指南2-用AVPlayer播放视频](https://segmentfault.com/a/1190000004054258)
+
 
 ```
 CMTimeMake和CMTimeMakeWithSeconds 详解
@@ -132,7 +142,11 @@ What it provides
 	•	All of the above in two lines of code.
 
 ```
-
+```
+---> downloadManager task
+ 1. 后台下载
+ 2. 
+```
 
 
 
@@ -181,6 +195,7 @@ CAShapeLayer有着几点很重要:
 * [FMDB](https://github.com/ccgus/fmdb)
 * [realm](https://github.com/realm/realm-cocoa)
 * [MagicalRecord](https://github.com/magicalpanda/MagicalRecord)
+* [VIMediaCache](https://github.com/vitoziv/VIMediaCache)
 
 ## Text
 * [CoreText_xiongzenghu](http://xiongzenghuidegithub.github.io/blog/2016/04/26/coretext-part-3/)
@@ -291,7 +306,8 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 
 3. 对于业务层而言，由Controller根据View和APIManager之间的关系，选择合适的reformer将View可以直接使用的数据（甚至reformer可以用来直接生成view）转化好之后交付给View。对于网络层而言，只需要保持住原始数据即可，不需要主动转化成数据原型。然后数据采用NSDictionary加Const字符串key来表征，避免了使用对象来表征带来的迁移困难，同时不失去可读性。
 
-
+## Optimize
+[可以试试弃用 UILabel，使用 UIView，通过绘制一张圆角+文字的图片作为其 layer 的 contents。](http://reviewcode.cn/article.html?reviewId=7)
 
 
 
