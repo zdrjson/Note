@@ -260,6 +260,8 @@ CAShapeLayer有着几点很重要:
 * [xia](http://blog.txx.im/?from=inf&wvr=5&loc=infblog)
 * [zixun](http://zixun.github.io)
 * [zengxianhua](http://zengxianhua.com)
+* [kissGod](http://www.jianshu.com/users/8d704c0faf00/latest_articles)
+* [bang](http://blog.cnbang.net/archives/)
 
 
 ## Git
