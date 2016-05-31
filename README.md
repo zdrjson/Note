@@ -237,6 +237,28 @@ CAShapeLayer有着几点很重要:
 * [integration ijkplayer](http://www.jianshu.com/p/1f06b27b3ac0)
 * [daiming](http://www.jianshu.com/users/9a4903d7e3d1/latest_articles)
 * [Draveness](http://draveness.me/)
+* [chuange](http://adad184.com)
+* [tutuge](http://tutuge.me)
+* [casa](http://casatwy.com)
+* [leichunfeng](http://blog.leichunfeng.com)
+* [YY](http://blog.ibireme.com)
+* [onev](https://onevcat.com)
+* [youxianming](http://www.cnblogs.com/YouXianMing/)
+* [JohnLui](https://lvwenhan.com)
+* [mz](http://makezl.github.io)
+* [margtin](http://www.martinrgb.com)
+* [zhuo](http://www.jianshu.com/users/88a056103c02/latest_articles)
+* [tangqiao](http://blog.devtang.com)
+* [mrpeak](http://mrpeak.cn)
+* [yang](http://kittenyang.com)
+* [yanzu](http://www.jianshu.com/users/b82d2721ba07/latest_articles)
+* [beige](http://www.henishuo.com)
+* [nanfengzi](http://southpeak.github.io)
+* [xiongzenghuidegithu](http://xiongzenghuidegithub.github.io)
+* [lexrus](http://lexrus.com)
+* [xiaobenlang](http://jiangliancheng.gitcafe.io)
+* 
+
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
