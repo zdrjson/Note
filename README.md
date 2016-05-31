@@ -257,7 +257,9 @@ CAShapeLayer有着几点很重要:
 * [xiongzenghuidegithu](http://xiongzenghuidegithub.github.io)
 * [lexrus](http://lexrus.com)
 * [xiaobenlang](http://jiangliancheng.gitcafe.io)
-* 
+* [xia](http://blog.txx.im/?from=inf&wvr=5&loc=infblog)
+* [zixun](http://zixun.github.io)
+* [zengxianhua](http://zengxianhua.com)
 
 
 ## Git
