@@ -48,6 +48,7 @@
 * [AVFoundation编程指南1-使用 Assets](https://segmentfault.com/a/1190000004049416)
 
 * [AVFoundation编程指南2-用AVPlayer播放视频](https://segmentfault.com/a/1190000004054258)
+* [AVFoundation相关类的分析](http://www.fanliugen.com/?p=423)
 
 
 ```
