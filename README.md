@@ -23,6 +23,9 @@
 * [ZLSwipeableView](https://github.com/zhxnlai/ZLSwipeableView)
 * [Koloda](https://github.com/Yalantis/Koloda)
 
+### GestureAnimation
+* [DraggableYoutubeFloatingVideo](https://github.com/vizllx/DraggableYoutubeFloatingVideo)
+
 
 ## Video
 ### AVFoundation
@@ -319,6 +322,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [objc](http://objccn.io)
 * [Safari for OS X 你不可不知的 10 个快捷键](http://sspai.com/30902)
 * [Markdown](https://github.com/younghz/Markdown)
+* [TimLiu-iOS](https://github.com/Tim9Liu9/TimLiu-iOS)
 
 ##Foundation
 * roundf 将浮点值四舍五入为最接近的整数
