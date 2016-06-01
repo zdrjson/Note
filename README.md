@@ -153,9 +153,28 @@ What it provides
  2. 多任务下载
  3. 暂停
  4. 多任务暂停
- 5. delete
- 6. 多任务delete
- 7. 
+ 5. 全部暂停
+ 6. delete
+ 7. 多任务delete
+ 8. 全部delete
+ 9. 返回下载状态（1：没有下载 2：下载中 3：下载成功 4：下载失败：5：其他）
+ 10. 检测某个任务是否正在下载
+ 11. 查看已经下载文件存放位置（readonly）
+ 12. 查看已经下载文件大小（readonly）
+ 13. 查看已经下载文件名（readonly）
+ 14. 查看已经下载文件类型（readonly）
+ 15. 查看已经下载成功的时间（readonly）
+ 13. 下载中文件的进度
+ 14. 设置下载任务的优先级
+ 15. 设置断点续传
+ 16. 检测已经下载的文件是否完整
+ 17. 查看文件开始下载的时间(readonly)
+ 18. 检测已经下载的文件
+ 19. 检测全部已经下载文件的大小
+ 20. 设置下载超时时间
+ 21. 设置cdnurl
+ 22. 查看正在下载的文件数量
+ 23. 删除过期的文件
 ```
 
 
@@ -474,6 +493,90 @@ HTTP 502       – 网关错误
  ----------------------------------------------------------------------------------------------------------------------------------------------
  */
 ```
+
+### SDWebImage 删除过期图片算法
+
+```
+- (void)cleanDiskWithCompletionBlock:(SDWebImageNoParamsBlock)completionBlock {
+    dispatch_async(self.ioQueue, ^{
+        NSURL *diskCacheURL = [NSURL fileURLWithPath:self.diskCachePath isDirectory:YES];
+        NSArray *resourceKeys = @[NSURLIsDirectoryKey, NSURLContentModificationDateKey, NSURLTotalFileAllocatedSizeKey];
+
+        // This enumerator prefetches useful properties for our cache files.
+        NSDirectoryEnumerator *fileEnumerator = [_fileManager enumeratorAtURL:diskCacheURL
+                                                   includingPropertiesForKeys:resourceKeys
+                                                                      options:NSDirectoryEnumerationSkipsHiddenFiles
+                                                                 errorHandler:NULL];
+
+        NSDate *expirationDate = [NSDate dateWithTimeIntervalSinceNow:-self.maxCacheAge];
+        NSMutableDictionary *cacheFiles = [NSMutableDictionary dictionary];
+        NSUInteger currentCacheSize = 0;
+
+        // Enumerate all of the files in the cache directory.  This loop has two purposes:
+        //
+        //  1. Removing files that are older than the expiration date.
+        //  2. Storing file attributes for the size-based cleanup pass.
+        NSMutableArray *urlsToDelete = [[NSMutableArray alloc] init];
+        for (NSURL *fileURL in fileEnumerator) {
+            NSDictionary *resourceValues = [fileURL resourceValuesForKeys:resourceKeys error:NULL];
+
+            // Skip directories.
+            if ([resourceValues[NSURLIsDirectoryKey] boolValue]) {
+                continue;
+            }
+
+            // Remove files that are older than the expiration date;
+            NSDate *modificationDate = resourceValues[NSURLContentModificationDateKey];
+            if ([[modificationDate laterDate:expirationDate] isEqualToDate:expirationDate]) {
+                [urlsToDelete addObject:fileURL];
+                continue;
+            }
+
+            // Store a reference to this file and account for its total size.
+            NSNumber *totalAllocatedSize = resourceValues[NSURLTotalFileAllocatedSizeKey];
+            currentCacheSize += [totalAllocatedSize unsignedIntegerValue];
+            [cacheFiles setObject:resourceValues forKey:fileURL];
+        }
+        
+        for (NSURL *fileURL in urlsToDelete) {
+            [_fileManager removeItemAtURL:fileURL error:nil];
+        }
+
+        // If our remaining disk cache exceeds a configured maximum size, perform a second
+        // size-based cleanup pass.  We delete the oldest files first.
+        if (self.maxCacheSize > 0 && currentCacheSize > self.maxCacheSize) {
+            // Target half of our maximum cache size for this cleanup pass.
+            const NSUInteger desiredCacheSize = self.maxCacheSize / 2;
+
+            // Sort the remaining cache files by their last modification time (oldest first).
+            NSArray *sortedFiles = [cacheFiles keysSortedByValueWithOptions:NSSortConcurrent
+                                                            usingComparator:^NSComparisonResult(id obj1, id obj2) {
+                                                                return [obj1[NSURLContentModificationDateKey] compare:obj2[NSURLContentModificationDateKey]];
+                                                            }];
+
+            // Delete files until we fall below our desired cache size.
+            for (NSURL *fileURL in sortedFiles) {
+                if ([_fileManager removeItemAtURL:fileURL error:nil]) {
+                    NSDictionary *resourceValues = cacheFiles[fileURL];
+                    NSNumber *totalAllocatedSize = resourceValues[NSURLTotalFileAllocatedSizeKey];
+                    currentCacheSize -= [totalAllocatedSize unsignedIntegerValue];
+
+                    if (currentCacheSize < desiredCacheSize) {
+                        break;
+                    }
+                }
+            }
+        }
+        if (completionBlock) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completionBlock();
+            });
+        }
+    });
+}
+
+```
+
 
 #CSS
 
