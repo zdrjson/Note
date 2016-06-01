@@ -146,10 +146,16 @@ What it provides
 	•	All of the above in two lines of code.
 
 ```
+ **downloadManager should do**
+ 
 ```
----> downloadManager task
  1. 后台下载
- 2. 
+ 2. 多任务下载
+ 3. 暂停
+ 4. 多任务暂停
+ 5. delete
+ 6. 多任务delete
+ 7. 
 ```
 
 
