@@ -1,8 +1,40 @@
 @import url(style.css);
-/* 引用扩展样式 */
+ /*引用扩展样式 */
 body{
     font-size: 14px; line-height: 1.5em;
 }
+
 .layout *{
     margin: 0;
 }
+
+.sk_bg_color1{
+    background: #13283B;
+    color: white;
+}
+
+.sk_bg_color2{
+    background: #153959;
+    color: white;
+}
+
+/*.sk_bg_color3{*/
+    /*background: #BDDCF8;*/
+    /*color: #333;*/
+/*}*/
+
+/*footer,header{*/
+    /*line-height: 3em;*/
+/*}*/
+
+/*ul.sk_l_list{*/
+    /*!*text-indent: 1em;*!*/
+/*}*/
+
+/*ul.sk_l_list li {*/
+/*line-height: 50px;*/
+    /*border-bottom: #ddd solid 1px;*/
+/*}*/
+
+
+

@@ -49,7 +49,8 @@
 
 * [AVFoundation编程指南2-用AVPlayer播放视频](https://segmentfault.com/a/1190000004054258)
 * [AVFoundation相关类的分析](http://www.fanliugen.com/?p=423)
-
+* [iOS 视频剪切、旋转，视频添加音频、添加水印，视频导出](http://ios.jobbole.com/85309/)
+* [iOS 三种录制视频方式](http://ios.jobbole.com/85069/)
 
 ```
 CMTimeMake和CMTimeMakeWithSeconds 详解
@@ -175,6 +176,7 @@ What it provides
  21. 设置cdnurl
  22. 查看正在下载的文件数量
  23. 删除过期的文件
+ 24. 设置删除过期的文件的算法
 ```
 
 
