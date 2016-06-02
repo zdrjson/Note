@@ -51,9 +51,10 @@
 * [AVFoundation相关类的分析](http://www.fanliugen.com/?p=423)
 * [iOS 视频剪切、旋转，视频添加音频、添加水印，视频导出](http://ios.jobbole.com/85309/)
 * [iOS 三种录制视频方式](http://ios.jobbole.com/85069/)
+* [CMTime简单介绍](http://www.jianshu.com/p/f110bf6e0471)
 
 ```
-CMTimeMake和CMTimeMakeWithSeconds 详解
+CMTimeMake和CMTimeMakeWithSeconds 详解 
 CMTimeMake(a,b)    a当前第几帧, b每秒钟多少帧.当前播放时间a/b
 CMTimeMakeWithSeconds(a,b)    a当前时间,b每秒钟多少帧.
 CMTimeMake
