@@ -380,6 +380,8 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 
 3. 对于业务层而言，由Controller根据View和APIManager之间的关系，选择合适的reformer将View可以直接使用的数据（甚至reformer可以用来直接生成view）转化好之后交付给View。对于网络层而言，只需要保持住原始数据即可，不需要主动转化成数据原型。然后数据采用NSDictionary加Const字符串key来表征，避免了使用对象来表征带来的迁移困难，同时不失去可读性。
 
+* [iOS中的 NSURLProtocol](http://www.jianshu.com/p/0244e431fb3c)
+
 ## Optimize
 [可以试试弃用 UILabel，使用 UIView，通过绘制一张圆角+文字的图片作为其 layer 的 contents。](http://reviewcode.cn/article.html?reviewId=7)
 
