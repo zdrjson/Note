@@ -181,6 +181,9 @@ What it provides
  22. 查看正在下载的文件数量
  23. 删除过期的文件
  24. 设置删除过期的文件的算法
+ 25. 查询正在下载的任务
+ 26. 查询某个下载任务的进度
+ 27. 
 ```
 
 
@@ -254,7 +257,6 @@ CAShapeLayer有着几点很重要:
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
-
 
 ## Memory leaks
 * [MLeaksFinder](https://github.com/Zepo/MLeaksFinder)
@@ -332,6 +334,8 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Homebrew](http://brew.sh/)
 
+
+
 ```
 homebrew-cask,官网传送, 是一套建立在homebrew基础上的Mac软件安装命令行工具。与brew的区别就
 是，后者侧重于软件套件和软件环境的配置安装，而前者是mac平台软件
@@ -355,6 +359,11 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [Safari for OS X 你不可不知的 10 个快捷键](http://sspai.com/30902)
 * [Markdown](https://github.com/younghz/Markdown)
 * [TimLiu-iOS](https://github.com/Tim9Liu9/TimLiu-iOS)
+* [链式编程1](http://www.jianshu.com/p/87ef6720a096)
+* [链式编程2](http://xiongzenghuidegithub.github.io/blog/2015/12/04/blockmo-ni-lian-shi-yu-fa/)
+
+
+
 
 ##Foundation
 * roundf 将浮点值四舍五入为最接近的整数
