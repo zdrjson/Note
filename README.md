@@ -52,6 +52,9 @@
 * [iOS 视频剪切、旋转，视频添加音频、添加水印，视频导出](http://ios.jobbole.com/85309/)
 * [iOS 三种录制视频方式](http://ios.jobbole.com/85069/)
 * [CMTime简单介绍](http://www.jianshu.com/p/f110bf6e0471)
+* [AVFoundation(一):基础知识](http://www.jianshu.com/p/485e946f80b4)
+* [AVFoundation(二)：核心AVAsset](http://www.jianshu.com/p/9805be76ee68)
+* [iOS音视频实现边下载边播放](http://sky-weihao.github.io/2015/10/06/Video-streaming-and-caching-in-iOS/)
 
 ```
 CMTimeMake和CMTimeMakeWithSeconds 详解 
