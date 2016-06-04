@@ -364,7 +364,6 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 
 
 
-
 ##Foundation
 * roundf 将浮点值四舍五入为最接近的整数
 * `pow() 函数用来求 x 的 y 次幂（次方），其原型为：
