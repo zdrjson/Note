@@ -23,3 +23,28 @@ print(classmethod)
 print(len(classmethod))
 print(classmethod[0])
 print(classmethod[-1])
+classmethod.insert(1, 'Jack')
+print(classmethod)
+print(classmethod.pop())
+print(classmethod)
+print(classmethod.pop(1))
+print(classmethod)
+classmethod[1] = 'Sarah'
+print(classmethod)
+
+L = ['Apple', 123, True]
+print(L)
+s = ['python', 'java',['asp','php'],'scheme']
+print(len(s))
+
+L = []
+print(len(L))
+
+
+classmethod = ('Michael', 'Bob', 'Tracy')
+
+print(classmethod)
+t = (1)
+print(t)
+
+# 定义的不是tuple，是1这个数！这是因为括号()既可以表示tuple，又可以表示数学公式中的小括号，这就产生了歧义，因此，Python规定，这种情况下，按小括号进行计算，计算结果自然是1。
