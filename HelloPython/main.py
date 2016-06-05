@@ -150,3 +150,32 @@ for i in ['Bart','Lisa', 'Adam']:
 
 # while 1:
     # print(9)
+
+
+names = ['Michel','Bob','Tracy']
+scores = [95,75,85]
+
+d = {'Michael': 95, 'Bob': 75}
+print('Thomas' in d)
+
+print(d.get('Thomas'))
+print(d.get('Thomas',-1))
+
+print(d.pop('Bob'))
+
+key = [1,2,3]
+# d[key] = 'a list'
+# print(d)
+
+s = set([1,2,3])
+print(s)
+
+s1 = set([1,2,3])
+s2 = set([2,3,4])
+
+print(s1 & s2)
+print(s1 | s2)
+
+
+t = [1]
+print(set(t))
