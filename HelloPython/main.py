@@ -179,3 +179,42 @@ print(s1 | s2)
 
 t = [1]
 print(set(t))
+
+a = ['c','b','a']
+a.sort()
+print(a)
+
+a = 'abc'
+b = a.replace('a','A')
+print(b)
+
+print(a)
+
+
+d = {
+    'Michael': 95,
+    'Bob': 75,
+    'Tracy': 85
+}
+print('d[\'Michael\'] =', d['Michael'])
+print('d[\'Bob\'] =', d['Bob'])
+print('d[\'Tracy\'] =', d['Tracy'])
+print('d.get(\'Thomas\', -1) =', d.get('Thomas', -1))
+
+
+def fib(n):
+        a, b = 0,1
+        while a < n:
+            print(a, end=' ')
+            a, b = b, a + b
+        print()
+fib(1000)
+# abs('a')
+print(int('123'))
+# print(abs('a'))
+# print(abs(100))
+# print(abs(-20))
+
+# print(abs(1,2))
+
+
