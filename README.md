@@ -333,7 +333,7 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [Phabricator](http://phabricator.org/)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Homebrew](http://brew.sh/)
-
+* [fastlane(`The easiest way to automate building and releasing your iOS and Android apps`)](https://github.com/fastlane/fastlane)
 
 
 ```

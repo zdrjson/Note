@@ -202,19 +202,48 @@ print('d[\'Tracy\'] =', d['Tracy'])
 print('d.get(\'Thomas\', -1) =', d.get('Thomas', -1))
 
 
-def fib(n):
-        a, b = 0,1
-        while a < n:
-            print(a, end=' ')
-            a, b = b, a + b
-        print()
-fib(1000)
+# def fib(n):
+#         a, b = 0,1
+#         while a < n:
+#             print(a, end=' ')
+#             a, b = b, a + b
+#         print()
+# fib(1000)
 # abs('a')
 print(int('123'))
+print(int(12.34))
+print(str(1.23))
+
+print(str(100))
+print(bool(1))
+print(bool(''))
+a = abs
+print(a(-1))
+print('max(1,2,3) =',max(1,2,3))
+# print('sum([1, 2, 3]) =', sum([1, 2, 3]))
+# print('min(1,2,3) =',min(1,2,3))
+# print('sum([1,2,3]) =',sum([1 ,2 ,3]))
+
 # print(abs('a'))
 # print(abs(100))
 # print(abs(-20))
 
 # print(abs(1,2))
 
+
+
+def my_abs(x):
+    if x >= 0:
+        return x
+    else:
+        return -x
+
+my_abs(1,2)
+print(my_abs(5))
+
+def nop():
+    pass
+
+if age >= 18:
+    pass
 
