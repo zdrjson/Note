@@ -263,6 +263,12 @@ CAShapeLayer有着几点很重要:
 * [MLeaksFinder](https://github.com/Zepo/MLeaksFinder)
 * [FBRetainCycleDetector](https://github.com/facebook/FBRetainCycleDetector)
 
+## Runloop
+* [RunLoopWorkDistribution](https://github.com/diwu/RunLoopWorkDistribution)
+* [PerformanceMonitor](https://github.com/suifengqjn/PerformanceMonitor)
+* [RunLoop学习笔记](http://www.starming.com/index.php?v=index&view=74)
+* [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
+
 ##Cocoapods
 * [ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
 * [Operation not permitted - /usr/bin/fuzzy_match](http://blog.csdn.net/sinat_29998157/article/details/50070687)
@@ -335,6 +341,7 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Homebrew](http://brew.sh/)
 * [fastlane(`The easiest way to automate building and releasing your iOS and Android apps`)](https://github.com/fastlane/fastlane)
+
 
 
 ```
