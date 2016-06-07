@@ -306,7 +306,7 @@ CAShapeLayer有着几点很重要:
 * [zengxianhua](http://zengxianhua.com)
 * [kissGod](http://www.jianshu.com/users/8d704c0faf00/latest_articles)
 * [bang](http://blog.cnbang.net/archives/)
-
+* [TomatoRead](https://github.com/everettjf/TomatoRead)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
