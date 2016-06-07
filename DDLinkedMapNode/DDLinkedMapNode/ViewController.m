@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 #import <CoreFoundation/CoreFoundation.h>
+#import <pthread.h>
+static inline dispatch_queue_t DDMemoryCacheReleaseQueue() {
+    return dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
+}
 /**
  A node in linked map.
  Typically, you should not use this class directly.
@@ -52,6 +56,10 @@
  Node shouls already inside the dic.
  */
 - (void)removeNode:(_DDLinkedMapNode *)node;
+/**
+ Remove tail node if exist
+ */
+- (_DDLinkedMapNode *)removeTailNode;
 /**
  Remove all node in background queue.
  */
@@ -100,6 +108,53 @@
     node->_prev = nil;
     _head->_prev = node;
     _head = node;
+}
+- (void)removeNode:(_DDLinkedMapNode *)node {
+    CFDictionaryRemoveValue(_dic, (__bridge const void *)(node->_key));
+    _totalCost -= node->_cost;
+    _totalCount--;
+    if (node->_next) node->_next->_prev = node->_prev;
+    if (node->_prev) node->_prev->_next = node->_next;
+    if (_head == node) _head = node->_next;
+    if (_tail == node) _tail = node->_prev;
+}
+- (_DDLinkedMapNode *)removeTailNode {
+    if (!_tail)  return nil;
+    _DDLinkedMapNode *tail = _tail;
+    CFDictionaryRemoveValue(_dic, (__bridge const void *)(_tail->_key));
+    _totalCost -= _tail->_cost;
+    _totalCount--;
+    if (_head == _tail) {
+        _head = _tail = nil;
+    } else {
+        _tail = _tail->_prev;
+        _tail->_next = nil;
+    }
+    return tail;
+}
+- (void)removeAll {
+    _totalCost = 0;
+    _totalCount = 0;
+    _head = nil;
+    _tail = nil;
+    if (CFDictionaryGetCount(_dic) > 0) {
+        CFMutableDictionaryRef holder = _dic;
+        _dic = CFDictionaryCreateMutable(CFAllocatorGetDefault(), 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
+        
+        if (_releaseAsynchronously) {
+            dispatch_queue_t queue = _releaseOnMainThread ? dispatch_get_main_queue() :
+            DDMemoryCacheReleaseQueue();
+            dispatch_async(queue, ^{
+                CFRelease(holder);  // hold an release in specified queue
+            });
+        } else if (_releaseOnMainThread && !pthread_main_np()) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                CFRelease(holder); // hold and release in specified queue
+            });
+        } else {
+            CFRelease(holder);
+        }
+    }
 }
 @end
 
