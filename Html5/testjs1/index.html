@@ -272,6 +272,20 @@
         var fn = xiaoming.age;
         fn();
 
+        var xiaoming = {
+            name: '小明',
+            birth: 1990,
+            age: function () {
+                var that = this;  //在方法内部以开放就捕获this
+                function getAgeFromBirth() {
+                    var y = new Date().getFullYear();
+                    return y - that.birth; //用that而不是this
+                }
+                return getAgeFromBirth();
+            }
+        }
+        console.log(xiaoming.age);
+
     </script>
 </head>
 <body>
