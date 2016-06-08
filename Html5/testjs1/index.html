@@ -154,49 +154,91 @@
 //        console.log(abs(-9));
 
 
-        function foo(a ,b ,c) {
-            if (arguments.length === 2) {
-                //实际拿到的参数是a和b,c为undefined
-                c = b;     //把b赋值给c
-                b = null;  //b变为默认值
+//        function foo(a ,b ,c) {
+//            if (arguments.length === 2) {
+//                //实际拿到的参数是a和b,c为undefined
+//                c = b;     //把b赋值给c
+//                b = null;  //b变为默认值
+//            }
+//        }
+//
+//        function foo(a,b) {
+//            var i, rest = [];
+//            if (arguments.length > 2) {
+//                for (i = 2; i < arguments.length; i++) {
+//                    rest.push(arguments[i]);
+//                }
+//            }
+//        }
+//
+//        function foo(a,b, ...rest) {
+//            console.log('a = ' + a);
+//            console.log('b = ' + b);
+//            console.log(rest);
+//        }
+//
+//        foo(1,2,3,4,5);
+//        foo(1);
+//
+//
+//        function foo() {
+//            var y;
+//            var x = 'Hello,' + y;
+//            alert(x);
+//            y = 'Bob';
+//        }
+//
+//       var course = 'Learn JavaScript';
+//        alert(course);
+//        alert(window.console);
+//
+//        function foo() {
+//            alert('foo');
+//        }
+//        foo();
+//        window.foo();
+        window.alert('调用window.alert()');
+        var old_alert = window.alert;
+        window.alert = function () {
+            
+        }
+        window.alert = old_alert;
+        alert('又可以用alert()了');
+        //唯一的全局变量
+        var MYAPP = {};
+
+        //其他变量
+        MYAPP.name = 'myapp';
+        MYAPP.version = 1.0;
+
+        MYAPP.foo = function () {
+            return 'foo';
+        }
+
+        function foo1() {
+            for(var i = 0;i<100;i++) {
+
             }
+            i += 100;
+            alert(i);
         }
+        foo1();
+        function foo() {
+            for (let i=0; i<100; i++) {
 
-        function foo(a,b) {
-            var i, rest = [];
-            if (arguments.length > 2) {
-                for (i = 2; i < arguments.length; i++) {
-                    rest.push(arguments[i]);
-                }
             }
-        }
-
-        function foo(a,b, ...rest) {
-            console.log('a = ' + a);
-            console.log('b = ' + b);
-            console.log(rest);
-        }
-
-        foo(1,2,3,4,5);
-        foo(1);
-
-
-        function foo() {
-            var y;
-            var x = 'Hello,' + y;
-            alert(x);
-            y = 'Bob';
-        }
-
-       var course = 'Learn JavaScript';
-        alert(course);
-        alert(window.console);
-
-        function foo() {
-            alert('foo');
+            i += 1;
+            alert(i);
         }
         foo();
-        window.foo();
+
+//        var PI = 3.14;
+//        const PI = 3.14;
+//        PI = 3;
+//        PI;
+
+
+
     </script>
 </head>
 <body>
