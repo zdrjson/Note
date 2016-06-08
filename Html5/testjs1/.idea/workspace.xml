@@ -24,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="286" column="34" selection-start-line="286" selection-start-column="34" selection-end-line="286" selection-end-column="34" />
+            <state relative-caret-position="258">
+              <caret line="305" column="8" selection-start-line="305" selection-start-column="8" selection-end-line="305" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="594" />
+    <option name="x" value="622" />
     <option name="y" value="23" />
     <option name="width" value="900" />
     <option name="height" value="439" />
@@ -192,15 +192,15 @@
       <workItem from="1465188498291" duration="5781000" />
       <workItem from="1465207971182" duration="2112000" />
       <workItem from="1465354558936" duration="1000" />
-      <workItem from="1465379672402" duration="3951000" />
+      <workItem from="1465379672402" duration="4495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15109000" />
+    <option name="totallyTimeSpent" value="15653000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="594" y="23" width="900" height="439" extended-state="0" />
+    <frame x="622" y="23" width="900" height="439" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -233,8 +233,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="286" column="34" selection-start-line="286" selection-start-column="34" selection-end-line="286" selection-end-column="34" />
+        <state relative-caret-position="258">
+          <caret line="305" column="8" selection-start-line="305" selection-start-column="8" selection-end-line="305" selection-end-column="8" />
           <folding />
         </state>
       </provider>

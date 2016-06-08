@@ -197,94 +197,113 @@
 //        }
 //        foo();
 //        window.foo();
-        window.alert('调用window.alert()');
-        var old_alert = window.alert;
-        window.alert = function () {
-            
-        }
-        window.alert = old_alert;
-        alert('又可以用alert()了');
-        //唯一的全局变量
-        var MYAPP = {};
-
-        //其他变量
-        MYAPP.name = 'myapp';
-        MYAPP.version = 1.0;
-
-        MYAPP.foo = function () {
-            return 'foo';
-        }
-
-        function foo1() {
-            for(var i = 0;i<100;i++) {
-
-            }
-            i += 100;
-            alert(i);
-        }
-        foo1();
-        function foo() {
-            for (let i=0; i<100; i++) {
-
-            }
-//            i += 1;
+//        window.alert('调用window.alert()');
+//        var old_alert = window.alert;
+//        window.alert = function () {
+//
+//        }
+//        window.alert = old_alert;
+//        alert('又可以用alert()了');
+//        //唯一的全局变量
+//        var MYAPP = {};
+//
+//        //其他变量
+//        MYAPP.name = 'myapp';
+//        MYAPP.version = 1.0;
+//
+//        MYAPP.foo = function () {
+//            return 'foo';
+//        }
+//
+//        function foo1() {
+//            for(var i = 0;i<100;i++) {
+//
+//            }
+//            i += 100;
 //            alert(i);
-        }
-        foo();
+//        }
+//        foo1();
+//        function foo() {
+//            for (let i=0; i<100; i++) {
+//
+//            }
+////            i += 1;
+////            alert(i);
+//        }
+//        foo();
 
 //        var PI = 3.14;
 //        const PI = 3.14;
 //        PI = 3;
 //        PI;
 
-        var xiaoming = {
-            name : '小明',
-            birth:1990
-        }
+//        var xiaoming = {
+//            name : '小明',
+//            birth:1990
+//        }
+//
+//        var xiaoming = {
+//            name: '小明',
+//            birth: 1990,
+//            age: function () {
+//                var y = new Date().getFullYear();
+//                return y - this.birth;
+//            }
+//        }
+//
+//       console.log(xiaoming.age());
+//       console.log(xiaoming.age());
+//
+//
+//        function getAge() {
+//            var y = new Date().getFullYear();
+//            return y - this.birth;
+//        }
+//
+//        var xiaoming = {
+//            name: '小明',
+//            birth: 1990,
+//            age: getAge
+//        }
+//
+//        console.log(xiaoming.age());
+//        getAge();
+//
+//        var fn = xiaoming.age;
+//        fn();
+//
+//        var xiaoming = {
+//            name: '小明',
+//            birth: 1990,
+//            age: function () {
+//                var that = this;  //在方法内部以开放就捕获this
+//                function getAgeFromBirth() {
+//                    var y = new Date().getFullYear();
+//                    return y - that.birth; //用that而不是this
+//                }
+//                return getAgeFromBirth();
+//            }
+//        }
+//        console.log(xiaoming.age);
+//
+//        function getAge() {
+//            var y = new Date().getFullYear();
+//            return y - this.birth;
+//        }
+//
+//        var xiaoming = {
+//            name: '小明',
+//            birth: 1990,
+//            age: getAge
+//        };
+//
+//        xiaoming.age();
+//        getAge.apply(xiaoming,[]);
 
-        var xiaoming = {
-            name: '小明',
-            birth: 1990,
-            age: function () {
-                var y = new Date().getFullYear();
-                return y - this.birth;
-            }
-        }
+       console.log(Math.max.apply(null,[3,5,4]));
+       console.log( Math.max.call(null,3,5,4));
 
-       console.log(xiaoming.age());
-       console.log(xiaoming.age());
-
-
-        function getAge() {
-            var y = new Date().getFullYear();
-            return y - this.birth;
-        }
-
-        var xiaoming = {
-            name: '小明',
-            birth: 1990,
-            age: getAge
-        }
-
-        console.log(xiaoming.age());
-        getAge();
-
-        var fn = xiaoming.age;
-        fn();
-
-        var xiaoming = {
-            name: '小明',
-            birth: 1990,
-            age: function () {
-                var that = this;  //在方法内部以开放就捕获this
-                function getAgeFromBirth() {
-                    var y = new Date().getFullYear();
-                    return y - that.birth; //用that而不是this
-                }
-                return getAgeFromBirth();
-            }
-        }
-        console.log(xiaoming.age);
+        
 
     </script>
 </head>
