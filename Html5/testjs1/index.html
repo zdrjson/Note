@@ -227,8 +227,8 @@
             for (let i=0; i<100; i++) {
 
             }
-            i += 1;
-            alert(i);
+//            i += 1;
+//            alert(i);
         }
         foo();
 
@@ -237,7 +237,40 @@
 //        PI = 3;
 //        PI;
 
+        var xiaoming = {
+            name : '小明',
+            birth:1990
+        }
 
+        var xiaoming = {
+            name: '小明',
+            birth: 1990,
+            age: function () {
+                var y = new Date().getFullYear();
+                return y - this.birth;
+            }
+        }
+
+       console.log(xiaoming.age());
+       console.log(xiaoming.age());
+
+
+        function getAge() {
+            var y = new Date().getFullYear();
+            return y - this.birth;
+        }
+
+        var xiaoming = {
+            name: '小明',
+            birth: 1990,
+            age: getAge
+        }
+
+        console.log(xiaoming.age());
+        getAge();
+
+        var fn = xiaoming.age;
+        fn();
 
     </script>
 </head>
