@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/onevcat.iml" filepath="$PROJECT_DIR$/onevcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/onevcat.iml" filepath="$PROJECT_DIR$/.idea/onevcat.iml" />
     </modules>
   </component>
 </project>
