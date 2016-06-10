@@ -336,7 +336,7 @@ def calc(numbers):
 
 
 print(calc([1,2,3]))
-print(calc([1,3,5,7]))
+print(calc((1,3,5,7)))
 
 
 def calc(*numbers):
@@ -354,3 +354,12 @@ print(calc())
 nums = [1,2,3]
 print(calc(nums[0],nums[1],nums[2]))
 print(calc(*nums))
+
+
+def person(name, age, **kw):
+    print('name:', name, 'age:',age, 'other:',kw)
+
+
+# print('Michael',30)
+# print('Bob',35,city='Beijing')
+print('Adam',45,gender='M', job='Engineer')
