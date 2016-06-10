@@ -264,3 +264,62 @@ x, y = move(100, 100, 60, math.pi / 6)
 print(x,y)
 r = move(100,100,60, math.pi/ 6)
 print(r)
+
+def power(x):
+    return x * x
+
+print(power(5))
+print(power(15))
+
+def power(x, n):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+
+print(power(5,2))
+print(power(5,3))
+
+
+def power(x, n=2):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+
+print(power(5))
+print(power(5,2))
+
+def enroll(name, gender):
+    print('name:',name)
+    print('gender:',gender)
+
+
+# enroll('Sarah','F')
+
+def enroll(name, gender, age=6, city='Beijing'):
+    print('name:',name)
+    print('gender:',gender)
+    print('age:',age)
+    print('city:',city)
+
+print(enroll('Sarah','F'))
+# print(enroll('Bob','M',7))
+# print(enroll('Adam','M',city='Tianjin'))
+
+# 所以，定义默认参数要牢记一点：默认参数必须指向不变对象！
+def add_end(L=[]):
+    L.append('END')
+    return L
+
+print(add_end())
+print(add_end())
+print(add_end())
+
+def add_end(L=None):
+    if L is None:
+        L = []
+        L.append('END')
+        return L
