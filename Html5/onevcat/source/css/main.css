@@ -6,3 +6,23 @@ ol, ul {
 blockquote, q {
     quotes: none;
 }
+
+/*blockquote: before, blockquote:after {*/
+    /**/
+/*}*/
+
+html, body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    /*font-family: 'ff';*/
+    font-size: 1em;
+    color: #666666;
+    /*-webkit-font-smoothing: an;*/
+}

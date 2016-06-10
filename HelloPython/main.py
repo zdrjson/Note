@@ -233,12 +233,14 @@ print('max(1,2,3) =',max(1,2,3))
 
 
 def my_abs(x):
+    if not isinstance(x, (int, float)):
+        raise  TypeError('bad operand type')
     if x >= 0:
         return x
     else:
         return -x
 
-my_abs(1,2)
+# my_abs(1,2)
 print(my_abs(5))
 
 def nop():
@@ -247,3 +249,18 @@ def nop():
 if age >= 18:
     pass
 
+key = [1,2,3]
+# d[key] = 'a list'
+
+# 并允许后续代码引用math包里的sin、cos等函数
+
+import math
+def move(x,y, step, angle=0):
+    nx = x + step * math.cos(angle)
+    ny = y - step * math.sin(angle)
+    return nx, ny
+
+x, y = move(100, 100, 60, math.pi / 6)
+print(x,y)
+r = move(100,100,60, math.pi/ 6)
+print(r)
