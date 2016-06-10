@@ -361,9 +361,16 @@ def person(name, age, **kw):
     print('name:', name, 'age:',age, 'other:',kw)
 
 
-# print('Michael',30)
-# print('Bob',35,city='Beijing')
-# print('Adam',45,gender='M', job='Engineer')
+print(person('Michael',30))
+print(person('Bob',35,city='Beijing'))
+print(person('Adam',45,gender='M', job='Engineer'))
+
+extra = {'city': 'Beijing','job' :'Engineer'}
+
+print(person('Jack',24,city=extra['city'],job=extra['job']))
+
+print(person('Jack',24,**extra))
+
 
 # import urllib3
 # http = urllib3.PoolManager()
@@ -378,7 +385,7 @@ import urllib3
 import urllib
 import os
 
-from Beautifulsoup import Beautifulsoup
+# from Beautifulsoup import Beautifulsoup
 
 # def getAllImageLink():
 #     html = urllib3.urlopen('http://www.dbmeizi.com').read()
