@@ -372,6 +372,26 @@ print(person('Jack',24,city=extra['city'],job=extra['job']))
 print(person('Jack',24,**extra))
 
 
+def person(name, age, **kw):
+    if 'city' in kw:
+        #有city参数
+       pass
+    if 'job' in kw:
+        #有job参数
+       pass
+    print('name:',name, 'age:',age,'other:',kw)
+
+
+print(person('Jack',24, city='Beijing', addr='Chaoyang', zipcode=123456))
+
+# 命名关键字参数
+def person(name, age,*, city, job):
+    print(name,age,city,job)
+
+
+print(person('Jack',24,city='Beijing',job='Engineer'))
+
+
 # import urllib3
 # http = urllib3.PoolManager()
 # r = http.request('GET','https://baidu.com/')
