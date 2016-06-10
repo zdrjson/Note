@@ -1,3 +1,4 @@
+
 print("Hello pyton")
 print('''line1
 line2
@@ -362,4 +363,9 @@ def person(name, age, **kw):
 
 # print('Michael',30)
 # print('Bob',35,city='Beijing')
-print('Adam',45,gender='M', job='Engineer')
+# print('Adam',45,gender='M', job='Engineer')
+
+# import urllib3
+# http = urllib3.PoolManager()
+# r = http.request('GET','https://baidu.com/')
+# print(r.status, r.data)
