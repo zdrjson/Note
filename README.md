@@ -618,7 +618,15 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 [HTML 5 <a> 标签的 target 属性](http://www.w3school.com.cn/html5/att_a_target.asp)
 ```
 
-
+#Python
+```
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/index.html)
+* [scrapy](https://github.com/scrapy/scrapy)
+* [urllib3](https://github.com/shazow/urllib3)
+* [requests](https://github.com/kennethreitz/requests)
+* [youtube-dl](https://github.com/rg3/youtube-dl)
+* [you-get](https://github.com/soimort/you-get)
+```
 
 
 

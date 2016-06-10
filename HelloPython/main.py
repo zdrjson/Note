@@ -369,3 +369,31 @@ def person(name, age, **kw):
 # http = urllib3.PoolManager()
 # r = http.request('GET','https://baidu.com/')
 # print(r.status, r.data)
+
+#!/usr/bin/python
+#-*- coding: utf-8 -*-
+#encoding=utf-8
+
+import urllib3
+import urllib
+import os
+
+from Beautifulsoup import Beautifulsoup
+
+# def getAllImageLink():
+#     html = urllib3.urlopen('http://www.dbmeizi.com').read()
+#     soup = BeautifulSoup(html)
+#
+#     liResult = soup.findAll('li',attrs={"class":"span3"})
+#
+#     for li in liResult:
+#         imageEntityArray = li.findAll('img')
+#         for image in imageEntityArray:
+#             link = image.get('data-src')
+#             imageName = image.get('data-id')
+#             filesavepath = '/Users/weihua0618/Desktop/meizipicture/%s.jpg' % imageName
+#             urllib.urlretrieve(link,filesavepath)
+#             print filesavepath
+#
+# if __name__ == '__main__':
+#     getAllImageLink()
