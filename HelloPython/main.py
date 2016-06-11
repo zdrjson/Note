@@ -391,6 +391,21 @@ def person(name, age,*, city, job):
 
 print(person('Jack',24,city='Beijing',job='Engineer'))
 
+def person(name, age, *args, city,job):
+    print(name,age,args,city,job)
+
+# person('Jack',24,'Beijing','Enginner')
+
+def person(name, age, *, city='Beijing',job):
+    print(name, age, city, job)
+
+person('Jack',24,job='Enginner')
+
+
+
+
+
+
 
 # import urllib3
 # http = urllib3.PoolManager()
