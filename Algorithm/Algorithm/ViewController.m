@@ -47,9 +47,9 @@ int binarySearch1(int a[], int low, int high, int findNum) {
     }
     else{
         if (a[mid] > findNum) {
-            return binarySearch1(a,low,high - 1,findNum);
+            return binarySearch1(a,low,mid - 1,findNum);
         } else if (a[mid] < findNum){
-            return binarySearch1(a,low +1, high, findNum);
+            return binarySearch1(a,mid +1, high, findNum);
         } else {
             return mid;
         }
