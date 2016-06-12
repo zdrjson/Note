@@ -23,6 +23,7 @@
 * [TinderSimpleSwipeCards](https://github.com/cwRichardKim/TinderSimpleSwipeCards)
 * [ZLSwipeableView](https://github.com/zhxnlai/ZLSwipeableView)
 * [Koloda](https://github.com/Yalantis/Koloda)
+* [HotGirls](https://github.com/zangqilong198812/HotGirls)
 
 ### GestureAnimation
 * [DraggableYoutubeFloatingVideo](https://github.com/vizllx/DraggableYoutubeFloatingVideo)
@@ -207,6 +208,8 @@ What it provides
 * [Y_KLine](https://github.com/yate1996/Y_KLine)
 * [StockKLine](https://github.com/mengmanzbh/StockKLine)
 
+### MessageKit
+* [Atlas-iOS](https://github.com/layerhq/Atlas-iOS)
 
 
 ## CALayer
