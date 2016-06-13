@@ -57,6 +57,7 @@
 * [AVFoundation(一):基础知识](http://www.jianshu.com/p/485e946f80b4)
 * [AVFoundation(二)：核心AVAsset](http://www.jianshu.com/p/9805be76ee68)
 * [iOS音视频实现边下载边播放](http://sky-weihao.github.io/2015/10/06/Video-streaming-and-caching-in-iOS/)
+* [CTVideoPlayerView](https://github.com/casatwy/CTVideoPlayerView)
 
 ```
 CMTimeMake和CMTimeMakeWithSeconds 详解 
@@ -248,6 +249,7 @@ CAShapeLayer有着几点很重要:
 
 ## AutoLayout
 * [Autolayout standard style of writing](http://reviewcode.cn/article.html?reviewId=14)
+* [Masonry 源码解析](https://github.com/Draveness/iOS-Source-Code-Analyze/blob/master/Masonry/iOS%20源代码分析%20---%20Masonry.md)
 
 ## CADisplayLink
 * [CADisplayLink](http://www.jianshu.com/p/c35a81c3b9eb)
@@ -270,6 +272,8 @@ CAShapeLayer有着几点很重要:
 * [PerformanceMonitor](https://github.com/suifengqjn/PerformanceMonitor)
 * [RunLoop学习笔记](http://www.starming.com/index.php?v=index&view=74)
 * [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
+* [sunny runloop实战](http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/)
+
 
 ##Cocoapods
 * [ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
