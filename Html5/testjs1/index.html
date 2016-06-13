@@ -485,8 +485,37 @@ if (r.toString() === [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53
         
         function create_counter(initial) {
             var x = initial || 0;
-
+            return {
+                inc: function () {
+                    x += 1;
+                    return x;
+                }
+            }
         }
+
+        var c1 = create_counter();
+       console.log(c1.inc());
+       console.log(c1.inc());
+       console.log(c1.inc());
+
+        var c2 = create_counter(10);
+        console.log(c2.inc());
+        console.log(c2.inc());
+        console.log(c2.inc());
+
+        function make_pow(n) {
+            return function (x) {
+                return Math.pow(x,n);
+            }
+        }
+
+        //创建两个新函数:
+        var pow2 = make_pow(2);
+        var pow3 = make_pow(3);
+
+        console.log(pow2(5));
+        console.log(pow3(7));
+
 
 
 
