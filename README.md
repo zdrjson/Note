@@ -313,6 +313,7 @@ CAShapeLayer有着几点很重要:
 * [kissGod](http://www.jianshu.com/users/8d704c0faf00/latest_articles)
 * [bang](http://blog.cnbang.net/archives/)
 * [TomatoRead](https://github.com/everettjf/TomatoRead)
+* 
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -347,7 +348,7 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Homebrew](http://brew.sh/)
 * [fastlane(`The easiest way to automate building and releasing your iOS and Android apps`)](https://github.com/fastlane/fastlane)
-
+* [Charles抓包心得](http://itangqi.me/2016/05/30/tips-for-using-charles/#more)
 
 
 ```
