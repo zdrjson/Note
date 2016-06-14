@@ -319,6 +319,7 @@ CAShapeLayer有着几点很重要:
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
 * [如何解决GitHub commit次数过多.git文件过大的问题?](https://www.zhihu.com/question/29769130)
 * [if you change your password or username on GitHub](https://help.github.com/articles/updating-credentials-from-the-osx-keychain/)
+* [git 原理](http://gold.xitu.io/entry/575e223a165abd005559294f)
 
 ### gitpages
 * [southpeak.github.io](http://southpeak.github.io)
