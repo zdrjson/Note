@@ -713,6 +713,54 @@ var tongxue = JSON.parse('{"name":"小明","age":14}', function (key, value) {
 if (xiaoming.__proto__ === Student) {
     console.log('HELLO WWDC');
 }
+
+        function foo() {
+            return 0;
+        }
+
+        function Student(name) {
+            this.name = name;
+            this.hello = function () {
+                alert('Hello, ' this.name, + '!');
+            }
+        }
+
+
+        var xiaoming = new Student('小明');
+        console.log(xiaoming.name);
+        console.log(xiaoming.hello());
+
+
+        if (xiaoming.constructor === Student.prototype.constructor) {
+
+        }
+
+
+        function Student(name) {
+            this.name = name;
+        }
+
+        Student.prototype.hello = function () {
+            alert('Hello, ' + this.name+ '!');
+        }
+
+        function Student(props) {
+            this.name = props.name || '匿名'; //默认值匿名
+            this.grade = props.grade || 1;   //默认值1
+        }
+        
+        Student.prototype.hello = function () {
+           alert('Hello, ' + this.name+ '!');
+        }
+
+        function createStudent(props) {
+            return new Student(props || {})
+        }
+
+        var xiaoming = createStudent(
+                
+        )
+
     </script>
 </head>
 <body>
