@@ -516,8 +516,87 @@ if (r.toString() === [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53
         console.log(pow2(5));
         console.log(pow3(7));
 
+//        var obj = {
+//          birth: 1990,
+//            getAge: function () {
+//                var b = this.birth;
+//                var fn = function () {
+//                    return new Date.getFullYear() - this.birth; // this 指向window或undefined
+//                };
+//                return fn();
+//            }
+//        };
+//
+//        console.log(obj.getAge());
+
+        var obj = {
+          birth: 1990,
+            getAge: function () {
+                var b = this.birth;
+                var fn = () => new Date().getFullYear() - this.birth; // this 指向obj对象
+                return fn();
+            }
+        };
+
+       console.log(obj.getAge());
+
+//        //两个参数:
+//        (x,y) => x * x + y * y
+//
+//        //无参数:
+//        () => 3.14
+//
+//        //可变参数:
+//(x,y, ) => {
+//    var i, sum = x + y;
+//    for (i=0; i< rest.length,)
+//}
 
 
+        function fib(max) {
+            var
+               t,
+                    a = 0,
+                    b = 1,
+                    arr = [0,1];
+            while (arr.length < max) {
+                t = a + b;
+                a = b;
+                b = t;
+                arr.push(t);
+            }
+            return arr;
+        }
+
+        console.log(fib(5));
+        console.log((fib(10)));
+
+        function* fib(max) {
+            var
+                    t,
+                    a = 0,
+                    b = 1,
+                    n = 1;
+            while (n < max) {
+                yield a;
+                t = a + b;
+                a = b;
+                b = t;
+                n ++;
+            }
+            return a;
+        }
+
+//        var f = fib(5);
+//        console.log(f.next());
+//        console.log(f.next());
+//        console.log(f.next());
+//        console.log(f.next());
+//        console.log(f.next());
+
+        for (var x of fib(5)) {
+            console.log(x);
+        }
 
     </script>
 </head>
