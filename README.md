@@ -59,6 +59,7 @@
 * [iOS音视频实现边下载边播放](http://sky-weihao.github.io/2015/10/06/Video-streaming-and-caching-in-iOS/)
 * [CTVideoPlayerView](https://github.com/casatwy/CTVideoPlayerView)
 
+
 ```
 CMTimeMake和CMTimeMakeWithSeconds 详解 
 CMTimeMake(a,b)    a当前第几帧, b每秒钟多少帧.当前播放时间a/b
