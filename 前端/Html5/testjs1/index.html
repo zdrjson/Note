@@ -718,48 +718,77 @@ if (xiaoming.__proto__ === Student) {
             return 0;
         }
 
-        function Student(name) {
-            this.name = name;
-            this.hello = function () {
-                alert('Hello, ' this.name, + '!');
+//        function Student(name) {
+//            this.name = name;
+//            this.hello = function () {
+//                alert('Hello, ' + this.name, + '!');
+//            }
+//        }
+//
+//
+//        var xiaoming = new Student('小明');
+//        console.log(xiaoming.name);
+//        console.log(xiaoming.hello());
+//
+//
+//        if (xiaoming.constructor === Student.prototype.constructor) {
+//
+//        }
+//
+//
+//        function Student(name) {
+//            this.name = name;
+//        }
+//
+//        Student.prototype.hello = function () {
+//            alert('Hello, ' + this.name+ '!');
+//        }
+//
+//        function Student(props) {
+//            this.name = props.name || '匿名'; //默认值匿名
+//            this.grade = props.grade || 1;   //默认值1
+//        }
+        
+//        Student.prototype.hello = function () {
+//           alert('Hello, ' + this.name+ '!');
+//        }
+//
+//        function createStudent(props) {
+//            return new Student(props || {})
+//        }
+//
+//        var xiaoming = createStudent(
+//
+//        )
+
+class Student1 {
+    constructor(name) {
+        this.name = name;
+    }
+
+    hello() {
+        alert('Hello, ' + this.name + '!');
+    }
+}
+
+
+        var xiaoming = new Student1('小明');
+        xiaoming.hello();
+
+        class PrimaryStudent extends Student {
+            constructor(name, grade) {
+                super(name); // 记得用super调用父类的构造方法!
+                this.grade = grade;
+            }
+
+            myGrade() {
+                
             }
         }
 
 
-        var xiaoming = new Student('小明');
-        console.log(xiaoming.name);
-        console.log(xiaoming.hello());
 
 
-        if (xiaoming.constructor === Student.prototype.constructor) {
-
-        }
-
-
-        function Student(name) {
-            this.name = name;
-        }
-
-        Student.prototype.hello = function () {
-            alert('Hello, ' + this.name+ '!');
-        }
-
-        function Student(props) {
-            this.name = props.name || '匿名'; //默认值匿名
-            this.grade = props.grade || 1;   //默认值1
-        }
-        
-        Student.prototype.hello = function () {
-           alert('Hello, ' + this.name+ '!');
-        }
-
-        function createStudent(props) {
-            return new Student(props || {})
-        }
-
-        var xiaoming = createStudent(
-                
-        )
 
     </script>
 </head>
