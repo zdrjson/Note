@@ -19,5 +19,16 @@
 @property (nonatomic, strong, readonly) UIButton                *repeatBtn;
 /** 滑杆 */
 @property (nonatomic, strong, readonly) UISlider *videoSlider;
+/** 全屏按钮 */
+@property (nonatomic, strong) UIButton *fullScreenBtn;
+
+/** 重置ControlView */
+- (void)resestControlView;
+/** 切换分辨率时候调用此方法 */
+- (void)resetControlViewForResolution;
+/** 显示top bottom lockBtn */
+- (void)showControlView;
+/** 隐藏top bottom lockBtn */
+- (void)hideControlView;
 
 @end

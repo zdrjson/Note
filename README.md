@@ -246,6 +246,7 @@ CAShapeLayer有着几点很重要:
 * [TTTAttributedLabel](https://github.com/TTTAttributedLabel/TTTAttributedLabel)
 * [UILabel replacement with fine-grain appear/disappear animation](https://github.com/overboming/ZCAnimatedLabel)
 * [TYAttrubutedLabel](https://github.com/12207480/TYAttributedLabel)
+* [YYText 是如何绘制的](https://github.com/lzwjava/OpenSourceNotes)
 
 
 ## AutoLayout
@@ -315,7 +316,7 @@ CAShapeLayer有着几点很重要:
 * [kissGod](http://www.jianshu.com/users/8d704c0faf00/latest_articles)
 * [bang](http://blog.cnbang.net/archives/)
 * [TomatoRead](https://github.com/everettjf/TomatoRead)
-* 
+* [玉令天下的博客](http://yulingtianxia.com/blog/2016/06/15/Objective-C-Message-Sending-and-Forwarding/)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)

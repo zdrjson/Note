@@ -255,6 +255,42 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
     [tap requireGestureRecognizerToFail:doubleTap];
     
 }
+#pragma mark - Action
+- (void)tapActinon:(UITapGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateRecognized) {
+        if (self.isBottomVideo && !self.isFullScreen) {
+            [self fullScreenAction:self.controlView.fullScreenBtn];
+            return;
+        }
+        self.isMaskShowing ?([self hideControlView]):([self animateShow]);
+    }
+}
+/**
+ 隐藏控制层
+ */
+- (void)hideControlView
+{
+    if (!self.isMaskShowing) {
+        return;
+    }
+    [UIView animateWithDuration:DDPlayerControlBarAutoFadeOutTimeInterval animations:^{
+       self.controlView hidden
+    }];
+}
+- (void)animateShow
+{
+    
+}
+/**
+ 全屏按钮事件
+ 
+ @param sender 全屏Button
+ */
+- (void)fullScreenAction:(UIButton *)sender
+{
+    
+}
 /**
  获取系统音量
  */
