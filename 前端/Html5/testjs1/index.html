@@ -775,7 +775,7 @@ class Student1 {
         var xiaoming = new Student1('小明');
         xiaoming.hello();
 
-        class PrimaryStudent extends Student {
+        class PrimaryStudent extends Student1 {
             constructor(name, grade) {
                 super(name); // 记得用super调用父类的构造方法!
                 this.grade = grade;
@@ -787,12 +787,47 @@ class Student1 {
         }
 
 
+    </script>
+
+
+
+    <script>
+        var menu = document.getElementById('drink-menu');
+        var drinks = document.getElementsByTagName('dt');
+        var i, s, menu, drink;
+
+        menu = document.getElementById('')
+
+        var test = document.getElementById('test');
+        var trs = document.getElementById('test-table').getElementsByTagName('tr');
+        var reds = document.getElementById('test-div').getElementsByClassName('red');
+        var cs = test.children;
+
+        var first = test.firstElementChild;
+        var last = test.lastElementChild;
+
+        var q1 = document.querySelector('#q1');
+        var ps = q1.querySelectorAll('div.highlighted > p');
+
+        
+
 
 
 
     </script>
+
+
+
+
 </head>
 <body>
-
+<dl id="drink-menu" style="border:solid 1px #ccc;padding:6px;">
+    <dt>摩卡</dt>
+    <dd>热摩卡咖啡</dd>
+    <dt>酸奶</dt>
+    <dd>北京老酸奶</dd>
+    <dt>果汁</dt>
+    <dd>鲜榨苹果汁</dd>
+</dl>
 </body>
 </html>

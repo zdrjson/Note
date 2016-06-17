@@ -275,7 +275,10 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
         return;
     }
     [UIView animateWithDuration:DDPlayerControlBarAutoFadeOutTimeInterval animations:^{
-       self.controlView hidden
+        [self.controlView hideControlView];
+        if (self.isFullScreen) { //全屏状态
+            self.controlView.ba
+        }
     }];
 }
 - (void)animateShow

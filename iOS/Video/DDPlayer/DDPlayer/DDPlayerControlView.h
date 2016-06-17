@@ -9,10 +9,30 @@
 #import <UIKit/UIKit.h>
 
 @interface DDPlayerControlView : UIView
+/** 开始播放按钮 */
+@property (nonatomic, strong, readonly) UIButton *startBtn;
 /** 当前播放时长lable */
-@property (nonatomic, strong) UILabel *currentTimeLabel;
+@property (nonatomic, strong, readonly) UILabel *currentTimeLabel;
 /** 视频总时长label */
-@property (nonatomic, strong) UILabel *totalTimeLabel;
+@property (nonatomic, strong, readonly) UILabel *totalTimeLabel;
+/** 缓冲进度条 */
+@property (nonatomic, strong, readonly) UIProgressView *progressView;
+/** 滑竿 */
+@property (nonatomic, strong, readonly) UISlider *videoSlider;
+/** 全屏按钮 */
+@property (nonatomic, strong, readonly) UIButton *fullScreenBtn;
+/** 锁定屏幕方向按钮 */
+@property (nonatomic, strong, readonly) UIButton *lockBtn;
+
+
+
+
+
+
+
+
+
+
 
 
 /** 重播按钮 */
