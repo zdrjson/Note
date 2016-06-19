@@ -59,7 +59,7 @@ extra = {'city':'Beijing','job':'Engineer'}
 person1('Jack',24,**extra)
 
 
-def person(name, age, **kw)
+def person(name, age, **kw):
     if 'city' in kw:
         pass
     if 'job' in kw:
@@ -83,9 +83,19 @@ print(f1(1,2,c=3))
 
 print(f1(1,2,3,'a','b'))
 
+print(f1(1,2,3, 'a', 'b', x=99))
 
+print(f2(1,2, d=99, ext=None))
 
+args = (1,2,3,4)
 
+kw = {'d':99,'x':'#'}
+
+print(f1(*args, **kw))
+
+args = (1, 2, 3)
+kw = {'d': 88, 'x': '#'}
+print(f2(*args, **kw))
 
 
 

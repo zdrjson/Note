@@ -572,6 +572,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [youtube-dl](https://github.com/rg3/youtube-dl)
 * [you-get](https://github.com/soimort/you-get)
 
-
+# DNS 
+[DNS 原理入门](http://www.ruanyifeng.com/blog/2016/06/dns.html)
 
 
