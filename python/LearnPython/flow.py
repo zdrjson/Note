@@ -46,7 +46,13 @@ print(calc(nums[0],nums[1],nums[2]))
 # *nums表示把nums这个list的所有元素作为可变参数传进去。这种写法相当有用，而且很常见。
 print(calc(*nums))
 
+def person1(name, age, **kw):
+    print('name:',name,'age:',age, 'other:',kw)
 
+person1('Michael',30)
+
+person1('Bob',35,city='Beijing')
+person1('Adam',45,gender='M', job='Engineer')
 
 
 
