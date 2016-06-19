@@ -55,6 +55,34 @@ person1('Bob',35,city='Beijing')
 person1('Adam',45,gender='M', job='Engineer')
 
 
+extra = {'city':'Beijing','job':'Engineer'}
+person1('Jack',24,**extra)
+
+
+def person(name, age, **kw)
+    if 'city' in kw:
+        pass
+    if 'job' in kw:
+        pass
+
+    print('name:',name,'age:',age,'other:',kw)
+
+
+
+def f1(a, b, c=0, *args, **kw):
+    print('a=',a, 'b=',b, 'c=',c, 'args = ',args,'kw = ',kw)
+
+
+def f2(a, b, c=0, *,d, **kw):
+        print('a=', a, 'b=',b, 'c =',c,'d =',d,'kw = ',kw)
+
+
+print(f1(1,2))
+
+print(f1(1,2,c=3))
+
+print(f1(1,2,3,'a','b'))
+
 
 
 
