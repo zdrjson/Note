@@ -486,6 +486,28 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
     self.state = DDPlayerStateBuffering;
     //playbackBufferEmpty会反复进入，因此在bufferingOneSecond延时播放执行完之前再调用bufferingSomeSecond都忽略
     
+    __block BOOL isBuffering = NO;
+    if (isBuffering) {
+        return;
+    }
+    isBuffering = YES;
+    
+    // 需要先暂停一小会之后再播放，否则网络状况不好的时候时间在走，声音播放不出来
+    [self pause];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //如何此时用户已经暂停了，则不需要开启播放了
+        if (self.isPauseByUser) {
+            isBuffering = NO;
+            return ;
+        }
+        
+        [self play];
+        // 如果执行了play 还是没有播放则说明还没有缓存好，则再次缓存一段时间
+        isBuffering = NO;
+        if (!self.playerItem.isPlaybackLikelyToKeepUp) {
+            [self bufferingSomeSecond];
+        }
+    });
 }
 
 #pragma mark - 计时器事件
