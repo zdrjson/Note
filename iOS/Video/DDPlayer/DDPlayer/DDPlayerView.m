@@ -229,9 +229,11 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
 - (void)resetControlView
 {
 }
-
+#pragma mark - ShowOrHideControlView
 - (void)autoFadeOutControlBar {
-	
+	if (!self.isMaskShowing)  return ;
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideControlView) object:nil];
+    [self performSelector:@selector(hideControlView) withObject:nil afterDelay:DDPlayerControlBarAutoFadeOutTimeInterval];
 }
 /**
  创建timer
@@ -277,13 +279,40 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
     [UIView animateWithDuration:DDPlayerControlBarAutoFadeOutTimeInterval animations:^{
         [self.controlView hideControlView];
         if (self.isFullScreen) { //全屏状态
-            self.controlView.ba
+            self.controlView.backBtn.alpha = 0;
+            [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+        } else if (self.isBottomVideo && !self.isFullScreen) { //视频在底部bottom小屏，并且不是全屏状态
+            self.controlView.backBtn.alpha  = 1;
+        } else {
+            self.controlView.backBtn.alpha = 0;
         }
+    } completion:^(BOOL finished) {
+        self.isMaskShowing = NO;
     }];
 }
+/**
+ 显示控制层
+ */
 - (void)animateShow
 {
+    if (self.isMaskShowing) {
+        return;
+    }
     
+    [UIView animateWithDuration:DDPlayerControlBarAutoFadeOutTimeInterval animations:^{
+        self.controlView.backBtn.alpha = 1;
+        if (self.isBottomVideo && !self.isFullScreen) {
+            [self.controlView hideControlView]; //视频在底部bottom小屏，并且不是全屏状态
+        } else if (self.playDidEnd){
+            [self.controlView hideControlView]; //播放完了
+        } else {
+            [self.controlView showControlView];
+        }
+        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    } completion:^(BOOL finished) {
+        self.isMaskShowing = YES;
+        [self autoFadeOutControlBar];
+    }];
 }
 /**
  全屏按钮事件

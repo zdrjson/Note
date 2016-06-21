@@ -23,6 +23,20 @@
 @property (nonatomic, strong, readonly) UIButton *fullScreenBtn;
 /** 锁定屏幕方向按钮 */
 @property (nonatomic, strong, readonly) UIButton *lockBtn;
+/** 快进快退label */
+@property (nonatomic, strong) UILabel *horizontalLabel;
+/** 系统菊花 */
+@property (nonatomic, strong) UIActivityIndicatorView *activity;
+/** 重播按钮 */
+@property (nonatomic, strong) UIButton *backBtn;
+/** bottomView */
+@property (nonatomic, strong) UIImageView *bottomImageView;
+/** topView */
+@property (nonatomic, strong) UIImageView *topImageView;
+
+
+
+
 
 
 

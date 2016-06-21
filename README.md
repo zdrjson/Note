@@ -201,8 +201,10 @@ What it provides
 ## Image
 
 ### Gif 
-[FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage)
-[sever return 304](http://weibo.com/1247589445/DwgHFs2cF?type=repost)
+* [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage)
+* [sever return 304](http://weibo.com/1247589445/DwgHFs2cF?type=repost)
+* [关于UIImage的内存问题与解决方案](https://github.com/Magic-Unique/HXImage/blob/master/description.md)
+
 
 ## View
 * [scrollView To Top](http://www.jianshu.com/p/68632cbd6263)
@@ -278,6 +280,9 @@ CAShapeLayer有着几点很重要:
 * [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
 * [sunny runloop实战](http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/)
 
+## Runtime
+* [翻译-为什么objc_msgSend必须用汇编实现](http://tutuge.me/2016/06/19/translation-why-objcmsgsend-must-be-written-in-assembly/)
+* [Objective-C 消息发送与转发机制原理](http://yulingtianxia.com/blog/2016/06/15/Objective-C-Message-Sending-and-Forwarding/)
 
 ##Cocoapods
 * [ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
