@@ -77,8 +77,45 @@
         }];
         
         [self beforeAnimation];
+        [UIView animateWithDuration:0.7 delay:0.0f usingSpringWithDamping:0.6f initialSpringVelocity:0.9f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
+            helperSideView.center = CGPointMake(keyWindow.center.x, helperSideView.frame.size.height/2);
+        } completion:^(BOOL finished) {
+            [self finishAnimation];
+        }];
+        
+        [UIView animateWithDuration:0.3 animations:^{
+            blurView.alpha = 1.0f;
+        }];
+        [self beforeAnimation];
+        [UIView animateWithDuration:0.7 delay:0.0f usingSpringWithDamping:0.8f initialSpringVelocity:2.0f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
+            helperSideView.center = keyWindow.center;
+        } completion:^(BOOL finished) {
+            if (finished) {
+                UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapToUnrigger)];
+                [blurView addGestureRecognizer:tapGes];
+                [self finishAnimation];
+            }
+        }];
+        [self animateButtions];
+        
+        triggered = YES;
+    } else{
+        
     }
 }
+- (void)animateButtions
+{
+    for (NSInteger i = 0; i<self.subviews.count; i++) {
+        UIView *menuButton = self.subviews[i];
+        menuButton.transform = CGAffineTransformMakeTranslation(-90, 0);
+        [UIView animateWithDuration:0.7 delay:i*(0.3/self.subviews.count) usingSpringWithDamping:0.6f initialSpringVelocity:0.0f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
+            menuButton.transform = CGAffineTransformIdentity;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
+}
+//动画之前调用
 - (void)beforeAnimation
 {
     if (self.displayLink == nil) {
@@ -86,6 +123,26 @@
         [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
     }
     self.animationCount++;
+}
+//动画完成之后调用
+- (void)finishAnimation
+{
+    self.animationCount--;
+    if (self.animationCount == 0) {
+        [self.displayLink invalidate];
+        self.displayLink = nil;
+    }
+}
+- (void)displayLinkAction:(CADisplayLink *)dis{
+    CALayer *sideHelperPresentationLayer = (CALayer *)[helperSideView.layer presentationLayer];
+    CALayer *centerHelperPresentationLayer = (CALayer *)[helperCenterView.layer presentationLayer];
+    
+    CGRect centerRect = [[centerHelperPresentationLayer valueForKeyPath:@"frame"] CGRectValue];
+    CGRect sideRect = [[sideHelperPresentationLayer valueForKeyPath:@"frame"] CGRectValue];
+    
+    diff = sideRect.origin.x = centerRect.origin.x;
+    
+    [self setNeedsDisplay];
 }
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
