@@ -388,6 +388,10 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [链式编程1](http://www.jianshu.com/p/87ef6720a096)
 * [链式编程2](http://xiongzenghuidegithub.github.io/blog/2015/12/04/blockmo-ni-lian-shi-yu-fa/)
 
+## 设计模式
+* [youxianming](http://www.cnblogs.com/YouXianMing/tag/软件设计原则/)
+* [leichunfeng](https://github.com/leichunfeng/DesignPatterns-Objective-C)
+
 
 
 ##Foundation

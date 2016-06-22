@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5122C241D1A20B8008CC464 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5122C231D1A20B8008CC464 /* main.m */; };
+		F5122C271D1A20B8008CC464 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5122C261D1A20B8008CC464 /* AppDelegate.m */; };
+		F5122C2A1D1A20B8008CC464 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5122C291D1A20B8008CC464 /* ViewController.m */; };
+		F5122C2D1D1A20B8008CC464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5122C2B1D1A20B8008CC464 /* Main.storyboard */; };
+		F5122C301D1A20B8008CC464 /* GooeySlideMenuDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5122C2E1D1A20B8008CC464 /* GooeySlideMenuDemo.xcdatamodeld */; };
+		F5122C321D1A20B8008CC464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5122C311D1A20B8008CC464 /* Assets.xcassets */; };
+		F5122C351D1A20B8008CC464 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5122C331D1A20B8008CC464 /* LaunchScreen.storyboard */; };
+		F5122C401D1A20B9008CC464 /* GooeySlideMenuDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5122C3F1D1A20B9008CC464 /* GooeySlideMenuDemoTests.m */; };
+		F5122C4B1D1A20B9008CC464 /* GooeySlideMenuDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5122C4A1D1A20B9008CC464 /* GooeySlideMenuDemoUITests.m */; };
+		F5122C5B1D1A20EC008CC464 /* GooeySlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5122C5A1D1A20EC008CC464 /* GooeySlideMenu.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5122C3C1D1A20B9008CC464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5122C171D1A20B8008CC464 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5122C1E1D1A20B8008CC464;
+			remoteInfo = GooeySlideMenuDemo;
+		};
+		F5122C471D1A20B9008CC464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5122C171D1A20B8008CC464 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5122C1E1D1A20B8008CC464;
+			remoteInfo = GooeySlideMenuDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5122C1F1D1A20B8008CC464 /* GooeySlideMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooeySlideMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5122C231D1A20B8008CC464 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5122C251D1A20B8008CC464 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5122C261D1A20B8008CC464 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5122C281D1A20B8008CC464 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5122C291D1A20B8008CC464 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5122C2C1D1A20B8008CC464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5122C2F1D1A20B8008CC464 /* GooeySlideMenuDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GooeySlideMenuDemo.xcdatamodel; sourceTree = "<group>"; };
+		F5122C311D1A20B8008CC464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5122C341D1A20B8008CC464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5122C361D1A20B8008CC464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5122C3B1D1A20B9008CC464 /* GooeySlideMenuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooeySlideMenuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5122C3F1D1A20B9008CC464 /* GooeySlideMenuDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenuDemoTests.m; sourceTree = "<group>"; };
+		F5122C411D1A20B9008CC464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5122C461D1A20B9008CC464 /* GooeySlideMenuDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooeySlideMenuDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5122C4A1D1A20B9008CC464 /* GooeySlideMenuDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenuDemoUITests.m; sourceTree = "<group>"; };
+		F5122C4C1D1A20B9008CC464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5122C591D1A20EC008CC464 /* GooeySlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooeySlideMenu.h; sourceTree = "<group>"; };
+		F5122C5A1D1A20EC008CC464 /* GooeySlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenu.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5122C1C1D1A20B8008CC464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5122C381D1A20B9008CC464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5122C431D1A20B9008CC464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5122C161D1A20B8008CC464 = {
+			isa = PBXGroup;
+			children = (
+				F5122C211D1A20B8008CC464 /* GooeySlideMenuDemo */,
+				F5122C3E1D1A20B9008CC464 /* GooeySlideMenuDemoTests */,
+				F5122C491D1A20B9008CC464 /* GooeySlideMenuDemoUITests */,
+				F5122C201D1A20B8008CC464 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5122C201D1A20B8008CC464 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5122C1F1D1A20B8008CC464 /* GooeySlideMenuDemo.app */,
+				F5122C3B1D1A20B9008CC464 /* GooeySlideMenuDemoTests.xctest */,
+				F5122C461D1A20B9008CC464 /* GooeySlideMenuDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5122C211D1A20B8008CC464 /* GooeySlideMenuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F5122C581D1A20C8008CC464 /* Classes */,
+				F5122C251D1A20B8008CC464 /* AppDelegate.h */,
+				F5122C261D1A20B8008CC464 /* AppDelegate.m */,
+				F5122C281D1A20B8008CC464 /* ViewController.h */,
+				F5122C291D1A20B8008CC464 /* ViewController.m */,
+				F5122C2B1D1A20B8008CC464 /* Main.storyboard */,
+				F5122C311D1A20B8008CC464 /* Assets.xcassets */,
+				F5122C331D1A20B8008CC464 /* LaunchScreen.storyboard */,
+				F5122C361D1A20B8008CC464 /* Info.plist */,
+				F5122C2E1D1A20B8008CC464 /* GooeySlideMenuDemo.xcdatamodeld */,
+				F5122C221D1A20B8008CC464 /* Supporting Files */,
+			);
+			path = GooeySlideMenuDemo;
+			sourceTree = "<group>";
+		};
+		F5122C221D1A20B8008CC464 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5122C231D1A20B8008CC464 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5122C3E1D1A20B9008CC464 /* GooeySlideMenuDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5122C3F1D1A20B9008CC464 /* GooeySlideMenuDemoTests.m */,
+				F5122C411D1A20B9008CC464 /* Info.plist */,
+			);
+			path = GooeySlideMenuDemoTests;
+			sourceTree = "<group>";
+		};
+		F5122C491D1A20B9008CC464 /* GooeySlideMenuDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5122C4A1D1A20B9008CC464 /* GooeySlideMenuDemoUITests.m */,
+				F5122C4C1D1A20B9008CC464 /* Info.plist */,
+			);
+			path = GooeySlideMenuDemoUITests;
+			sourceTree = "<group>";
+		};
+		F5122C581D1A20C8008CC464 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5122C591D1A20EC008CC464 /* GooeySlideMenu.h */,
+				F5122C5A1D1A20EC008CC464 /* GooeySlideMenu.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5122C1E1D1A20B8008CC464 /* GooeySlideMenuDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5122C4F1D1A20B9008CC464 /* Build configuration list for PBXNativeTarget "GooeySlideMenuDemo" */;
+			buildPhases = (
+				F5122C1B1D1A20B8008CC464 /* Sources */,
+				F5122C1C1D1A20B8008CC464 /* Frameworks */,
+				F5122C1D1D1A20B8008CC464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooeySlideMenuDemo;
+			productName = GooeySlideMenuDemo;
+			productReference = F5122C1F1D1A20B8008CC464 /* GooeySlideMenuDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5122C3A1D1A20B9008CC464 /* GooeySlideMenuDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5122C521D1A20B9008CC464 /* Build configuration list for PBXNativeTarget "GooeySlideMenuDemoTests" */;
+			buildPhases = (
+				F5122C371D1A20B9008CC464 /* Sources */,
+				F5122C381D1A20B9008CC464 /* Frameworks */,
+				F5122C391D1A20B9008CC464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5122C3D1D1A20B9008CC464 /* PBXTargetDependency */,
+			);
+			name = GooeySlideMenuDemoTests;
+			productName = GooeySlideMenuDemoTests;
+			productReference = F5122C3B1D1A20B9008CC464 /* GooeySlideMenuDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5122C451D1A20B9008CC464 /* GooeySlideMenuDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5122C551D1A20B9008CC464 /* Build configuration list for PBXNativeTarget "GooeySlideMenuDemoUITests" */;
+			buildPhases = (
+				F5122C421D1A20B9008CC464 /* Sources */,
+				F5122C431D1A20B9008CC464 /* Frameworks */,
+				F5122C441D1A20B9008CC464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5122C481D1A20B9008CC464 /* PBXTargetDependency */,
+			);
+			name = GooeySlideMenuDemoUITests;
+			productName = GooeySlideMenuDemoUITests;
+			productReference = F5122C461D1A20B9008CC464 /* GooeySlideMenuDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5122C171D1A20B8008CC464 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zdrjson;
+				TargetAttributes = {
+					F5122C1E1D1A20B8008CC464 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F5122C3A1D1A20B9008CC464 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F5122C1E1D1A20B8008CC464;
+					};
+					F5122C451D1A20B9008CC464 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F5122C1E1D1A20B8008CC464;
+					};
+				};
+			};
+			buildConfigurationList = F5122C1A1D1A20B8008CC464 /* Build configuration list for PBXProject "GooeySlideMenuDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5122C161D1A20B8008CC464;
+			productRefGroup = F5122C201D1A20B8008CC464 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5122C1E1D1A20B8008CC464 /* GooeySlideMenuDemo */,
+				F5122C3A1D1A20B9008CC464 /* GooeySlideMenuDemoTests */,
+				F5122C451D1A20B9008CC464 /* GooeySlideMenuDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5122C1D1D1A20B8008CC464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5122C351D1A20B8008CC464 /* LaunchScreen.storyboard in Resources */,
+				F5122C321D1A20B8008CC464 /* Assets.xcassets in Resources */,
+				F5122C2D1D1A20B8008CC464 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5122C391D1A20B9008CC464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5122C441D1A20B9008CC464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5122C1B1D1A20B8008CC464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5122C2A1D1A20B8008CC464 /* ViewController.m in Sources */,
+				F5122C301D1A20B8008CC464 /* GooeySlideMenuDemo.xcdatamodeld in Sources */,
+				F5122C271D1A20B8008CC464 /* AppDelegate.m in Sources */,
+				F5122C241D1A20B8008CC464 /* main.m in Sources */,
+				F5122C5B1D1A20EC008CC464 /* GooeySlideMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5122C371D1A20B9008CC464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5122C401D1A20B9008CC464 /* GooeySlideMenuDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5122C421D1A20B9008CC464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5122C4B1D1A20B9008CC464 /* GooeySlideMenuDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5122C3D1D1A20B9008CC464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5122C1E1D1A20B8008CC464 /* GooeySlideMenuDemo */;
+			targetProxy = F5122C3C1D1A20B9008CC464 /* PBXContainerItemProxy */;
+		};
+		F5122C481D1A20B9008CC464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5122C1E1D1A20B8008CC464 /* GooeySlideMenuDemo */;
+			targetProxy = F5122C471D1A20B9008CC464 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5122C2B1D1A20B8008CC464 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5122C2C1D1A20B8008CC464 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5122C331D1A20B8008CC464 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5122C341D1A20B8008CC464 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5122C4D1D1A20B9008CC464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5122C4E1D1A20B9008CC464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5122C501D1A20B9008CC464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GooeySlideMenuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zdrjson.github.com.GooeySlideMenuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5122C511D1A20B9008CC464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GooeySlideMenuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zdrjson.github.com.GooeySlideMenuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5122C531D1A20B9008CC464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GooeySlideMenuDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zdrjson.github.com.GooeySlideMenuDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooeySlideMenuDemo.app/GooeySlideMenuDemo";
+			};
+			name = Debug;
+		};
+		F5122C541D1A20B9008CC464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GooeySlideMenuDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zdrjson.github.com.GooeySlideMenuDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooeySlideMenuDemo.app/GooeySlideMenuDemo";
+			};
+			name = Release;
+		};
+		F5122C561D1A20B9008CC464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GooeySlideMenuDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zdrjson.github.com.GooeySlideMenuDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GooeySlideMenuDemo;
+			};
+			name = Debug;
+		};
+		F5122C571D1A20B9008CC464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GooeySlideMenuDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zdrjson.github.com.GooeySlideMenuDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GooeySlideMenuDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5122C1A1D1A20B8008CC464 /* Build configuration list for PBXProject "GooeySlideMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5122C4D1D1A20B9008CC464 /* Debug */,
+				F5122C4E1D1A20B9008CC464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5122C4F1D1A20B9008CC464 /* Build configuration list for PBXNativeTarget "GooeySlideMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5122C501D1A20B9008CC464 /* Debug */,
+				F5122C511D1A20B9008CC464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5122C521D1A20B9008CC464 /* Build configuration list for PBXNativeTarget "GooeySlideMenuDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5122C531D1A20B9008CC464 /* Debug */,
+				F5122C541D1A20B9008CC464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5122C551D1A20B9008CC464 /* Build configuration list for PBXNativeTarget "GooeySlideMenuDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5122C561D1A20B9008CC464 /* Debug */,
+				F5122C571D1A20B9008CC464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5122C2E1D1A20B8008CC464 /* GooeySlideMenuDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5122C2F1D1A20B8008CC464 /* GooeySlideMenuDemo.xcdatamodel */,
+			);
+			currentVersion = F5122C2F1D1A20B8008CC464 /* GooeySlideMenuDemo.xcdatamodel */;
+			path = GooeySlideMenuDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5122C171D1A20B8008CC464 /* Project object */;
+}
