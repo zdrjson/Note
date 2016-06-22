@@ -23,7 +23,7 @@
     CGFloat menuButtonHeight;
 }
 @property (nonatomic, strong) CADisplayLink *displayLink;
-@property (nonatomic, assign) NSInteger amimationCount;//动画数量
+@property (nonatomic, assign) NSInteger animationCount;//动画数量
 
 @end
 
@@ -68,13 +68,40 @@
 {
     
 }
-
-
+- (void)trigger
+{
+    if (!triggered) {
+        [keyWindow insertSubview:blurView belowSubview:self];
+        [UIView animateWithDuration:0.3 animations:^{
+            self.frame = self.bounds;
+        }];
+        
+        [self beforeAnimation];
+    }
+}
+- (void)beforeAnimation
+{
+    if (self.displayLink == nil) {
+        self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkAction:)];
+        [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    }
+    self.animationCount++;
+}
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(0, 0)];
+    [path addLineToPoint:CGPointMake(self.frame.size.width - menuBlankWidth, 0)];
+    [path addQuadCurveToPoint:CGPointMake(self.frame.size.width - menuBlankWidth, self.frame.size.height) controlPoint:CGPointMake(keyWindow.frame.size.width/2+diff, keyWindow.frame.size.height/2)];
+    [path addLineToPoint:CGPointMake(0, self.frame.size.height)];
+    [path closePath];
     
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextAddPath(context, path.CGPath);
+    [_menuColor set];
+    CGContextFillPath(context);
 }
 
 

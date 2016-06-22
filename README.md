@@ -194,6 +194,7 @@ What it provides
 ### LiveVideo
 * [LiveVideoCoreSDK](https://github.com/runner365/LiveVideoCoreSDK)
 * [SmarterStreaming](https://github.com/daniulive/SmarterStreaming)
+* [主流跨平台媒体库ffmpeg，live555，MobileVLCKit简介](https://segmentfault.com/a/1190000002953107)
 
 ##Audio
 * [MPVolumeView_iOS program modification system volume](https://segmentfault.com/a/1190000002401961)
@@ -361,6 +362,7 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [fastlane(`The easiest way to automate building and releasing your iOS and Android apps`)](https://github.com/fastlane/fastlane)
 * [Charles抓包心得](http://itangqi.me/2016/05/30/tips-for-using-charles/#more)
 * [Surge原理](http://gold.xitu.io/entry/562eef4900b0acaac036ac11)
+* [WWDC 410 Visual Debugging With Xcode](https://mp.weixin.qq.com/s?__biz=MzIwMTYzMzcwOQ==&mid=2650948410&idx=1&sn=c48375a832b8769a0f43a293a3f09fe3&scene=0&key=f8ab7b995657050bada4064a262d2959647e1b5f90d16dc6aacd29bbb714ed1c9ab7d221648976431d558244cd7f7f4c&ascene=0&uin=NDU1NzA2MTk1&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=H4NFpA%2FV2mGlXbz6iuyTOJnJk06Bxbxc4ZX3kEuhqXJbEyQiJG8zuAWpLkapt%2F31)
 
 ```
 homebrew-cask,官网传送, 是一套建立在homebrew基础上的Mac软件安装命令行工具。与brew的区别就
