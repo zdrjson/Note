@@ -577,6 +577,12 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [详解js跨域问题](https://segmentfault.com/a/1190000000718840)
 * [js标准对象](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449957099176f55ba07b764c3daa522217d0e42643000)
 
+## 前端IDE
+* [brackets](https://github.com/adobe/brackets)
+* [atom](https://github.com/atom/atom)
+
+
+
 #Python
 
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/index.html)
@@ -588,5 +594,8 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 
 # DNS 
 [DNS 原理入门](http://www.ruanyifeng.com/blog/2016/06/dns.html)
+
+
+
 
 
