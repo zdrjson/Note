@@ -8,6 +8,8 @@
 
 #ifndef DDPlayer_h
 #define DDPlayer_h
+// player的单例
+#define DDPlayerShard   [DDBrightnessView sharedInstance]
 // 屏幕的宽
 #define ScreenWidth                         [[UIScreen mainScreen] bounds].size.width
 // 屏幕的高

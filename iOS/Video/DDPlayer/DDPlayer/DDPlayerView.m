@@ -11,6 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "DDPlayer.h"
 #import "DDPlayerControlView.h"
+#import "DDBrightnessView.h"
 
 static const CGFloat DDPlayerAnimationTimeInterval = 7.0f;
 static const CGFloat DDPlayerControlBarAutoFadeOutTimeInterval = 0.5f;
@@ -314,6 +315,13 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
         [self autoFadeOutControlBar];
     }];
 }
+- (void)setorientationLandscape
+{
+    
+}
+- (void)setOrientationPortrait
+{
+}
 /**
  强制屏幕旋转
  
@@ -332,6 +340,14 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
         [invocation setArgument:&val atIndex:2];
         [invocation invoke];
     }
+    
+    if (orientation == UIInterfaceOrientationLandscapeRight || orientation == UIInterfaceOrientationLandscapeLeft) {
+        //设置横屏
+        [self setorientationLandscape];
+    } else if (orientation == UIInterfaceOrientationPortrait) {
+        //设置竖屏
+        [self setOrientationPortrait];
+    }
 }
 /**
  全屏按钮事件
@@ -345,7 +361,42 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
         return;
     }
     if (self.isCellVideo && sender.selected == YES) {
-//        self inter
+        [self interfaceOrientation:UIInterfaceOrientationPortrait];
+        return;
+    }
+    
+    UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
+    UIInterfaceOrientation interfaceOrientation = (UIInterfaceOrientation)orientation;
+    
+    switch (interfaceOrientation) {
+        case UIInterfaceOrientationUnknown: {
+            
+            break;
+        }
+        case UIInterfaceOrientationPortrait: {
+            DDPlayerShard.isAllowLandscape = YES;
+            [self interfaceOrientation:UIInterfaceOrientationLandscapeRight];
+            break;
+        }
+        case UIInterfaceOrientationPortraitUpsideDown: {
+            DDPlayerShard.isAllowLandscape = NO;
+            [self interfaceOrientation:UIInterfaceOrientationLandscapeRight];
+            break;
+        }
+        case UIInterfaceOrientationLandscapeLeft: {
+            if (self.isBottomVideo || !self.isFullScreen) {
+                DDPlayerShard.isAllowLandscape = YES;
+                [self interfaceOrientation:UIInterfaceOrientationLandscapeRight];
+            } else {
+                DDPlayerShard.isAllowLandscape = NO;
+                [self interfaceOrientation:UIInterfaceOrientationPortrait];
+            }
+            break;
+        }
+        case UIInterfaceOrientationLandscapeRight: {
+            
+            break;
+        }
     }
 }
 /**

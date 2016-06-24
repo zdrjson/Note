@@ -15,6 +15,7 @@
 		F52E8E791D1BC804005D5CEF /* IMG_0028.PNG in Resources */ = {isa = PBXBuildFile; fileRef = F52E8E751D1BC804005D5CEF /* IMG_0028.PNG */; };
 		F52E8E7A1D1BC804005D5CEF /* IMG_0029.PNG in Resources */ = {isa = PBXBuildFile; fileRef = F52E8E761D1BC804005D5CEF /* IMG_0029.PNG */; };
 		F52E8E7B1D1BC804005D5CEF /* IMG_0030.PNG in Resources */ = {isa = PBXBuildFile; fileRef = F52E8E771D1BC804005D5CEF /* IMG_0030.PNG */; };
+		F52E8E881D1CE5B9005D5CEF /* DDBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E8E871D1CE5B8005D5CEF /* DDBrightnessView.m */; };
 		F56398551CE47A9000D185A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F56398541CE47A9000D185A4 /* main.m */; };
 		F56398581CE47A9000D185A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F56398571CE47A9000D185A4 /* AppDelegate.m */; };
 		F563985B1CE47A9000D185A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F563985A1CE47A9000D185A4 /* ViewController.m */; };
@@ -58,6 +59,8 @@
 		F52E8E751D1BC804005D5CEF /* IMG_0028.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0028.PNG; sourceTree = "<group>"; };
 		F52E8E761D1BC804005D5CEF /* IMG_0029.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0029.PNG; sourceTree = "<group>"; };
 		F52E8E771D1BC804005D5CEF /* IMG_0030.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0030.PNG; sourceTree = "<group>"; };
+		F52E8E861D1CE5B8005D5CEF /* DDBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBrightnessView.h; sourceTree = "<group>"; };
+		F52E8E871D1CE5B8005D5CEF /* DDBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBrightnessView.m; sourceTree = "<group>"; };
 		F56398501CE47A9000D185A4 /* DDPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56398541CE47A9000D185A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F56398561CE47A9000D185A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				F57D72021CFD401500100FF6 /* DDPlayer.h */,
 				F57D72031CFD412D00100FF6 /* DDPlayerControlView.h */,
 				F57D72041CFD412D00100FF6 /* DDPlayerControlView.m */,
+				F52E8E861D1CE5B8005D5CEF /* DDBrightnessView.h */,
+				F52E8E871D1CE5B8005D5CEF /* DDBrightnessView.m */,
 				F51055C21CFC2D7400F4B4AD /* DDSessionModel.h */,
 				F51055C31CFC2D7400F4B4AD /* DDSessionModel.m */,
 				F56398561CE47A9000D185A4 /* AppDelegate.h */,
@@ -387,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52CF7C81CF468AA00886073 /* DDDownloadManager.m in Sources */,
+				F52E8E881D1CE5B9005D5CEF /* DDBrightnessView.m in Sources */,
 				F57D72051CFD412D00100FF6 /* DDPlayerControlView.m in Sources */,
 				F563985B1CE47A9000D185A4 /* ViewController.m in Sources */,
 				F51055C41CFC2D7500F4B4AD /* DDSessionModel.m in Sources */,
