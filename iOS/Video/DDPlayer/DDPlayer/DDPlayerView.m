@@ -315,9 +315,12 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
         [self autoFadeOutControlBar];
     }];
 }
+//设置横屏的约束
 - (void)setorientationLandscape
 {
-    
+    if (self.isCellVideo) {
+        
+    }
 }
 - (void)setOrientationPortrait
 {

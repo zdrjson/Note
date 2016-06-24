@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F52E8E971D1CFBCE005D5CEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E8E961D1CFBCE005D5CEF /* main.m */; };
+		F52E8E9A1D1CFBCE005D5CEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E8E991D1CFBCE005D5CEF /* AppDelegate.m */; };
+		F52E8E9D1D1CFBCE005D5CEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E8E9C1D1CFBCE005D5CEF /* ViewController.m */; };
+		F52E8EA01D1CFBCE005D5CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52E8E9E1D1CFBCE005D5CEF /* Main.storyboard */; };
+		F52E8EA31D1CFBCE005D5CEF /* __________swap_a__b_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F52E8EA11D1CFBCE005D5CEF /* __________swap_a__b_.xcdatamodeld */; };
+		F52E8EA51D1CFBCE005D5CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52E8EA41D1CFBCE005D5CEF /* Assets.xcassets */; };
+		F52E8EA81D1CFBCE005D5CEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52E8EA61D1CFBCE005D5CEF /* LaunchScreen.storyboard */; };
+		F52E8EB31D1CFBCE005D5CEF /* __________swap_a__b_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E8EB21D1CFBCE005D5CEF /* __________swap_a__b_Tests.m */; };
+		F52E8EBE1D1CFBCE005D5CEF /* __________swap_a__b_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E8EBD1D1CFBCE005D5CEF /* __________swap_a__b_UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F52E8EAF1D1CFBCE005D5CEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F52E8E8A1D1CFBCD005D5CEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52E8E911D1CFBCE005D5CEF;
+			remoteInfo = "不用临时变量怎么实现swap(a, b)";
+		};
+		F52E8EBA1D1CFBCE005D5CEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F52E8E8A1D1CFBCD005D5CEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52E8E911D1CFBCE005D5CEF;
+			remoteInfo = "不用临时变量怎么实现swap(a, b)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F52E8E921D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "不用临时变量怎么实现swap(a, b).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52E8E961D1CFBCE005D5CEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F52E8E981D1CFBCE005D5CEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F52E8E991D1CFBCE005D5CEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F52E8E9B1D1CFBCE005D5CEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F52E8E9C1D1CFBCE005D5CEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F52E8E9F1D1CFBCE005D5CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F52E8EA21D1CFBCE005D5CEF /* __________swap_a__b_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "__________swap_a__b_.xcdatamodel"; sourceTree = "<group>"; };
+		F52E8EA41D1CFBCE005D5CEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F52E8EA71D1CFBCE005D5CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F52E8EA91D1CFBCE005D5CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52E8EAE1D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "不用临时变量怎么实现swap(a, b)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52E8EB21D1CFBCE005D5CEF /* __________swap_a__b_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__________swap_a__b_Tests.m"; sourceTree = "<group>"; };
+		F52E8EB41D1CFBCE005D5CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52E8EB91D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "不用临时变量怎么实现swap(a, b)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52E8EBD1D1CFBCE005D5CEF /* __________swap_a__b_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__________swap_a__b_UITests.m"; sourceTree = "<group>"; };
+		F52E8EBF1D1CFBCE005D5CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F52E8E8F1D1CFBCE005D5CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52E8EAB1D1CFBCE005D5CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52E8EB61D1CFBCE005D5CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F52E8E891D1CFBCD005D5CEF = {
+			isa = PBXGroup;
+			children = (
+				F52E8E941D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b) */,
+				F52E8EB11D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)Tests */,
+				F52E8EBC1D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)UITests */,
+				F52E8E931D1CFBCE005D5CEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F52E8E931D1CFBCE005D5CEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F52E8E921D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b).app */,
+				F52E8EAE1D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)Tests.xctest */,
+				F52E8EB91D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F52E8E941D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b) */ = {
+			isa = PBXGroup;
+			children = (
+				F52E8E981D1CFBCE005D5CEF /* AppDelegate.h */,
+				F52E8E991D1CFBCE005D5CEF /* AppDelegate.m */,
+				F52E8E9B1D1CFBCE005D5CEF /* ViewController.h */,
+				F52E8E9C1D1CFBCE005D5CEF /* ViewController.m */,
+				F52E8E9E1D1CFBCE005D5CEF /* Main.storyboard */,
+				F52E8EA41D1CFBCE005D5CEF /* Assets.xcassets */,
+				F52E8EA61D1CFBCE005D5CEF /* LaunchScreen.storyboard */,
+				F52E8EA91D1CFBCE005D5CEF /* Info.plist */,
+				F52E8EA11D1CFBCE005D5CEF /* __________swap_a__b_.xcdatamodeld */,
+				F52E8E951D1CFBCE005D5CEF /* Supporting Files */,
+			);
+			path = "不用临时变量怎么实现swap(a, b)";
+			sourceTree = "<group>";
+		};
+		F52E8E951D1CFBCE005D5CEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F52E8E961D1CFBCE005D5CEF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F52E8EB11D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F52E8EB21D1CFBCE005D5CEF /* __________swap_a__b_Tests.m */,
+				F52E8EB41D1CFBCE005D5CEF /* Info.plist */,
+			);
+			path = "不用临时变量怎么实现swap(a, b)Tests";
+			sourceTree = "<group>";
+		};
+		F52E8EBC1D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F52E8EBD1D1CFBCE005D5CEF /* __________swap_a__b_UITests.m */,
+				F52E8EBF1D1CFBCE005D5CEF /* Info.plist */,
+			);
+			path = "不用临时变量怎么实现swap(a, b)UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F52E8E911D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52E8EC21D1CFBCE005D5CEF /* Build configuration list for PBXNativeTarget "不用临时变量怎么实现swap(a, b)" */;
+			buildPhases = (
+				F52E8E8E1D1CFBCE005D5CEF /* Sources */,
+				F52E8E8F1D1CFBCE005D5CEF /* Frameworks */,
+				F52E8E901D1CFBCE005D5CEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "不用临时变量怎么实现swap(a, b)";
+			productName = "不用临时变量怎么实现swap(a, b)";
+			productReference = F52E8E921D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b).app */;
+			productType = "com.apple.product-type.application";
+		};
+		F52E8EAD1D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52E8EC51D1CFBCE005D5CEF /* Build configuration list for PBXNativeTarget "不用临时变量怎么实现swap(a, b)Tests" */;
+			buildPhases = (
+				F52E8EAA1D1CFBCE005D5CEF /* Sources */,
+				F52E8EAB1D1CFBCE005D5CEF /* Frameworks */,
+				F52E8EAC1D1CFBCE005D5CEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F52E8EB01D1CFBCE005D5CEF /* PBXTargetDependency */,
+			);
+			name = "不用临时变量怎么实现swap(a, b)Tests";
+			productName = "不用临时变量怎么实现swap(a, b)Tests";
+			productReference = F52E8EAE1D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F52E8EB81D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52E8EC81D1CFBCE005D5CEF /* Build configuration list for PBXNativeTarget "不用临时变量怎么实现swap(a, b)UITests" */;
+			buildPhases = (
+				F52E8EB51D1CFBCE005D5CEF /* Sources */,
+				F52E8EB61D1CFBCE005D5CEF /* Frameworks */,
+				F52E8EB71D1CFBCE005D5CEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F52E8EBB1D1CFBCE005D5CEF /* PBXTargetDependency */,
+			);
+			name = "不用临时变量怎么实现swap(a, b)UITests";
+			productName = "不用临时变量怎么实现swap(a, b)UITests";
+			productReference = F52E8EB91D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F52E8E8A1D1CFBCD005D5CEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zdrjson;
+				TargetAttributes = {
+					F52E8E911D1CFBCE005D5CEF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 32Q79DRCS7;
+					};
+					F52E8EAD1D1CFBCE005D5CEF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 32Q79DRCS7;
+						TestTargetID = F52E8E911D1CFBCE005D5CEF;
+					};
+					F52E8EB81D1CFBCE005D5CEF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 32Q79DRCS7;
+						TestTargetID = F52E8E911D1CFBCE005D5CEF;
+					};
+				};
+			};
+			buildConfigurationList = F52E8E8D1D1CFBCD005D5CEF /* Build configuration list for PBXProject "不用临时变量怎么实现swap(a, b)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F52E8E891D1CFBCD005D5CEF;
+			productRefGroup = F52E8E931D1CFBCE005D5CEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F52E8E911D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b) */,
+				F52E8EAD1D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)Tests */,
+				F52E8EB81D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F52E8E901D1CFBCE005D5CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52E8EA81D1CFBCE005D5CEF /* LaunchScreen.storyboard in Resources */,
+				F52E8EA51D1CFBCE005D5CEF /* Assets.xcassets in Resources */,
+				F52E8EA01D1CFBCE005D5CEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52E8EAC1D1CFBCE005D5CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52E8EB71D1CFBCE005D5CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F52E8E8E1D1CFBCE005D5CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52E8E9D1D1CFBCE005D5CEF /* ViewController.m in Sources */,
+				F52E8E9A1D1CFBCE005D5CEF /* AppDelegate.m in Sources */,
+				F52E8E971D1CFBCE005D5CEF /* main.m in Sources */,
+				F52E8EA31D1CFBCE005D5CEF /* __________swap_a__b_.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52E8EAA1D1CFBCE005D5CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52E8EB31D1CFBCE005D5CEF /* __________swap_a__b_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52E8EB51D1CFBCE005D5CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52E8EBE1D1CFBCE005D5CEF /* __________swap_a__b_UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F52E8EB01D1CFBCE005D5CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52E8E911D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b) */;
+			targetProxy = F52E8EAF1D1CFBCE005D5CEF /* PBXContainerItemProxy */;
+		};
+		F52E8EBB1D1CFBCE005D5CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52E8E911D1CFBCE005D5CEF /* 不用临时变量怎么实现swap(a, b) */;
+			targetProxy = F52E8EBA1D1CFBCE005D5CEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F52E8E9E1D1CFBCE005D5CEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52E8E9F1D1CFBCE005D5CEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F52E8EA61D1CFBCE005D5CEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52E8EA71D1CFBCE005D5CEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F52E8EC01D1CFBCE005D5CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F52E8EC11D1CFBCE005D5CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F52E8EC31D1CFBCE005D5CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "不用临时变量怎么实现swap(a, b)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zdrjson.github.com.----------swap-a--b-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F52E8EC41D1CFBCE005D5CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "不用临时变量怎么实现swap(a, b)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zdrjson.github.com.----------swap-a--b-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F52E8EC61D1CFBCE005D5CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "不用临时变量怎么实现swap(a, b)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zdrjson.github.com.----------swap-a--b-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/不用临时变量怎么实现swap(a, b).app/不用临时变量怎么实现swap(a, b)";
+			};
+			name = Debug;
+		};
+		F52E8EC71D1CFBCE005D5CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "不用临时变量怎么实现swap(a, b)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zdrjson.github.com.----------swap-a--b-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/不用临时变量怎么实现swap(a, b).app/不用临时变量怎么实现swap(a, b)";
+			};
+			name = Release;
+		};
+		F52E8EC91D1CFBCE005D5CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "不用临时变量怎么实现swap(a, b)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zdrjson.github.com.----------swap-a--b-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "不用临时变量怎么实现swap(a, b)";
+			};
+			name = Debug;
+		};
+		F52E8ECA1D1CFBCE005D5CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "不用临时变量怎么实现swap(a, b)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zdrjson.github.com.----------swap-a--b-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "不用临时变量怎么实现swap(a, b)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F52E8E8D1D1CFBCD005D5CEF /* Build configuration list for PBXProject "不用临时变量怎么实现swap(a, b)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52E8EC01D1CFBCE005D5CEF /* Debug */,
+				F52E8EC11D1CFBCE005D5CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F52E8EC21D1CFBCE005D5CEF /* Build configuration list for PBXNativeTarget "不用临时变量怎么实现swap(a, b)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52E8EC31D1CFBCE005D5CEF /* Debug */,
+				F52E8EC41D1CFBCE005D5CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F52E8EC51D1CFBCE005D5CEF /* Build configuration list for PBXNativeTarget "不用临时变量怎么实现swap(a, b)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52E8EC61D1CFBCE005D5CEF /* Debug */,
+				F52E8EC71D1CFBCE005D5CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F52E8EC81D1CFBCE005D5CEF /* Build configuration list for PBXNativeTarget "不用临时变量怎么实现swap(a, b)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52E8EC91D1CFBCE005D5CEF /* Debug */,
+				F52E8ECA1D1CFBCE005D5CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F52E8EA11D1CFBCE005D5CEF /* __________swap_a__b_.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F52E8EA21D1CFBCE005D5CEF /* __________swap_a__b_.xcdatamodel */,
+			);
+			currentVersion = F52E8EA21D1CFBCE005D5CEF /* __________swap_a__b_.xcdatamodel */;
+			path = "__________swap_a__b_.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F52E8E8A1D1CFBCD005D5CEF /* Project object */;
+}
