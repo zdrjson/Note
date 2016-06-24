@@ -369,10 +369,7 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
     UIInterfaceOrientation interfaceOrientation = (UIInterfaceOrientation)orientation;
     
     switch (interfaceOrientation) {
-        case UIInterfaceOrientationUnknown: {
-            
-            break;
-        }
+        
         case UIInterfaceOrientationPortrait: {
             DDPlayerShard.isAllowLandscape = YES;
             [self interfaceOrientation:UIInterfaceOrientationLandscapeRight];
@@ -394,9 +391,29 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
             break;
         }
         case UIInterfaceOrientationLandscapeRight: {
-            
+            if (self.isBottomVideo || !self.isFullScreen) {
+                DDPlayerShard.isAllowLandscape = YES;
+                [self interfaceOrientation:UIInterfaceOrientationLandscapeRight];
+            } else {
+                DDPlayerShard.isAllowLandscape = NO;
+                [self interfaceOrientation:UIInterfaceOrientationPortrait];
+            }
             break;
         }
+        case UIInterfaceOrientationUnknown: {
+            
+//            break;
+        }
+        default:{
+            if (self.isBottomVideo || !self.isFullScreen) {
+                DDPlayerShard.isAllowLandscape = YES;
+                [self interfaceOrientation:UIInterfaceOrientationLandscapeRight];
+            } else {
+                DDPlayerShard.isAllowLandscape = NO;
+                [self interfaceOrientation:UIInterfaceOrientationPortrait];
+            }
+        }
+            break;
     }
 }
 /**
