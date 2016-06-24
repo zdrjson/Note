@@ -51,10 +51,7 @@
 
 /** 重播按钮 */
 @property (nonatomic, strong, readonly) UIButton                *repeatBtn;
-/** 滑杆 */
-@property (nonatomic, strong, readonly) UISlider *videoSlider;
-/** 全屏按钮 */
-@property (nonatomic, strong) UIButton *fullScreenBtn;
+
 
 /** 重置ControlView */
 - (void)resestControlView;

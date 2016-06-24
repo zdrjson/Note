@@ -315,13 +315,38 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
     }];
 }
 /**
+ 强制屏幕旋转
+ 
+ @param orientation 屏幕方向
+ */
+- (void)interfaceOrientation:(UIInterfaceOrientation)orientation
+{
+    //arc下
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+        SEL selector = NSSelectorFromString(@"setOrientation:");
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
+        [invocation setSelector:selector];
+        [invocation setTarget:[UIDevice currentDevice]];
+        int val = orientation;
+        //从而开始是因为 0 1 两个参数已经被seletor和target占用
+        [invocation setArgument:&val atIndex:2];
+        [invocation invoke];
+    }
+}
+/**
  全屏按钮事件
  
  @param sender 全屏Button
  */
 - (void)fullScreenAction:(UIButton *)sender
 {
-    
+    if (self.isLocked) {
+        [self unlockTheScreen];
+        return;
+    }
+    if (self.isCellVideo && sender.selected == YES) {
+//        self inter
+    }
 }
 /**
  获取系统音量
@@ -438,17 +463,6 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
     }
 }
 
-/**
- 显示控制层
- */
-- (void)animateShow {
-	if (self.isMaskShowing)  return;
-    [UIView animateWithDuration:DDPlayerControlBarAutoFadeOutTimeInterval animations:^{
-        
-    } completion:^(BOOL finished) {
-        
-    }];
-}
 #pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
     if (object == self.player.currentItem) {
