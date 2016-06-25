@@ -44,42 +44,42 @@
 </script>
 
 
-<script>
-    var fileInput = document.getElementById('test-image-file'),
-            info = document.getElementById('test-file-info'),
-            prview = document.getElementById('test-imge-preview');
-    //监听change事件
-    fileInput.addEventListener('change',function () {
-        // 清除背景图片:
-        preview.style.backgroundImage = '';
-        //检查文件是否选择:
-        if (!fileInput.value) {
-            info.innerHTML = '没有选择文件';
-            return;
-        }
-        //获取Fil引用:
-        var file = fileInput.files[0];
-        //获取File信息:
-        info.innerHTML = '文件: ' + file.name + '<br>' +
-                         '大小:' + file.size + '<br>' +
-                        '修改:' + file.lastModifiedDate;
-        if (file.type !== 'image/jepg' && file.type !== 'image/png' && file.type !== 'image/gif') {
-            alert('不是游戏的图片文件!');
-            return;
-        }
-        //读取文件:
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            var
-                    data = e.target.result;
-            preview.style.backgroundImage = 'url(' + data + ')';
-        };
-        //以DataURL的形式读取文件:
-        reader.readAsDataURL(file);
+<!--<script>-->
+    <!--var fileInput = document.getElementById('test-image-file'),-->
+            <!--info = document.getElementById('test-file-info'),-->
+            <!--prview = document.getElementById('test-imge-preview');-->
+    <!--//监听change事件-->
+    <!--fileInput.addEventListener('change',function () {-->
+        <!--// 清除背景图片:-->
+        <!--preview.style.backgroundImage = '';-->
+        <!--//检查文件是否选择:-->
+        <!--if (!fileInput.value) {-->
+            <!--info.innerHTML = '没有选择文件';-->
+            <!--return;-->
+        <!--}-->
+        <!--//获取Fil引用:-->
+        <!--var file = fileInput.files[0];-->
+        <!--//获取File信息:-->
+        <!--info.innerHTML = '文件: ' + file.name + '<br>' +-->
+                         <!--'大小:' + file.size + '<br>' +-->
+                        <!--'修改:' + file.lastModifiedDate;-->
+        <!--if (file.type !== 'image/jepg' && file.type !== 'image/png' && file.type !== 'image/gif') {-->
+            <!--alert('不是游戏的图片文件!');-->
+            <!--return;-->
+        <!--}-->
+        <!--//读取文件:-->
+        <!--var reader = new FileReader();-->
+        <!--reader.onload = function (e) {-->
+            <!--var-->
+                    <!--data = e.target.result;-->
+            <!--preview.style.backgroundImage = 'url(' + data + ')';-->
+        <!--};-->
+        <!--//以DataURL的形式读取文件:-->
+        <!--reader.readAsDataURL(file);-->
 
-    })
-    
-</script>
+    <!--})-->
+    <!---->
+<!--</script>-->
 
 <script>
 
@@ -90,7 +90,7 @@
 
     function fail(code) {
         var textarea = document.getElementById('test-response-text');
-        textarea.value = 'Error code:' + code;
+//        textarea.value = 'Error code:' + code;
     }
 
 
@@ -120,10 +120,45 @@
     }
 
     //发送请求:
-    request.open('GET','/api/categories');
-    request.send();
+//    request.open('GET','/api/categories');
+//    request.send();
 
     alert('请求已发送,请等待响应...');
+    function callback() {
+        console.log('Done');
+    }
+    console.log('before setTimeout()');
+    setTimeout(callback,1000); //1秒钟后调用callback函数
+    console.log('after setTimeout()');
+
+function test(resolve, reject) {
+    var timeOut = Math.random() * 2;
+    log('set Timeout to:' + timeOut + ' seconds.');
+    setTimeout(function () {
+        if (timeOut < 1) {
+            log('call resolve()...');
+            resolve('200 OK');
+        } else  {
+            log('call reject()...');
+            reject('timeout in' + timeOut + ' seconds.');
+        }
+    }, timeOut * 1000);
+}
+    var p1 = new Promise(test);
+    var p2 = p1.then(function (result) {
+       console.log('成功:' + result); 
+    });
+    var p3 = p2.catch(function (reson) {
+        console.log('失败:' + reson);
+    })
+    new Promise(test).then(function (result) {
+        console.log('成功' + result);
+    }).catch(function (reason) {
+       console.log('失败' + reason);
+    });
+
+
+
 </script>
 
 </body>
