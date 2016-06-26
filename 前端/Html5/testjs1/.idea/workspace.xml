@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46a97e68-c931-4cdb-b593-9493042c30ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js.html" afterPath="$PROJECT_DIR$/js.html" />
     </list>
     <ignored path="testjs1.iws" />
@@ -51,9 +50,9 @@
         <entry file="file://$PROJECT_DIR$/js.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="146">
-              <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
+              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding>
-                <marker date="1466916249000" expanded="true" signature="1587:1597" ph="..." />
+                <marker date="1466917626000" expanded="true" signature="1587:1597" ph="..." />
               </folding>
             </state>
           </provider>
@@ -301,12 +300,12 @@
       <workItem from="1466832635412" duration="700000" />
       <workItem from="1466844090353" duration="54000" />
       <workItem from="1466865428412" duration="1479000" />
-      <workItem from="1466868202935" duration="10508000" />
+      <workItem from="1466868202935" duration="11074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61321000" />
+    <option name="totallyTimeSpent" value="61887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="179" y="31" width="1280" height="297" extended-state="0" />
@@ -770,9 +769,9 @@
     <entry file="file://$PROJECT_DIR$/js.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
-          <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding>
-            <marker date="1466916249000" expanded="true" signature="1587:1597" ph="..." />
+            <marker date="1466917626000" expanded="true" signature="1587:1597" ph="..." />
           </folding>
         </state>
       </provider>

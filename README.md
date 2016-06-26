@@ -389,6 +389,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [TimLiu-iOS](https://github.com/Tim9Liu9/TimLiu-iOS)
 * [链式编程1](http://www.jianshu.com/p/87ef6720a096)
 * [链式编程2](http://xiongzenghuidegithub.github.io/blog/2015/12/04/blockmo-ni-lian-shi-yu-fa/)
+* [一些 iOS / Web 开发相关的翻译或原创博客文章](https://github.com/nixzhu/dev-blog)
 
 ## 设计模式
 * [youxianming](http://www.cnblogs.com/YouXianMing/tag/软件设计原则/)
