@@ -36,7 +36,111 @@
     </select></label></p>
     <p><button type="submit">Submit</button></p>
 
-    
+
 </form>
+<ul id="test-ul">
+    <li class="js">JavaScript</li>
+    <li class="book">Java & amp; JavaScript</li>
+</ul>
+
+<script>
+    $('#test-ul li[name=book]').text();
+    $('#test-ul li[name=book]').html();
+
+    var j1 = $('#test-ul li.js');
+    var j2 = $('#test-ul li[name=book]');
+    j1.html('<span style="color: red">JavaScript</span>');
+    j2.text('JavaScript & ECMAScript');
+
+    $('#test-ul li').text('JS');
+
+
+
+
+
+</script>
+
+<ul id="test-css">
+    <li class="lang dy"><span>JavaScript</span></li>
+    <li class="lang"><span>Java</span></li>
+    <li class="lang dy"><span>Python</span></li>
+    <li class="lang"><span>Swift</span></li>
+    <li class="lang dy"><span>Scheme</span></li>
+</ul>
+
+<div id="test-div" name="Test" start="1">...</div>
+
+<input id="test-input" name="email" value="">
+<select id="test-select" name="city">
+    <option value="BJ" selected>Beijing</option>
+    <option value="SH">Shanghai</option>
+    <option value="SZ">Shenzhen</option>
+</select>
+<textarea id="test-textarea">Hello</textarea>
+
+<script>
+    $('#test-css li.dy>span').css('background-color','#ffd351').css('color','red');
+    var div = $('#test-div');
+    div.css('color');
+    div.css('color','#336699'); //设置css属性
+    div.css('color',''); //清除css属性
+
+var div = $('#test-div');
+    div.hasClass('highlight'); // false , clas 是否包含highlight
+    div.addClass('hightlight'); // 添加highlight这个class
+    div.removeClass('highlight'); // 删除highlight这个class
+    var a = $('a[target=_blank]);
+    a.hide();
+    a.show();
+
+    $(window).width();
+    $(window).height();
+
+
+    $(document).width();
+    $(document).height();
+
+    var div = $('#test-div');
+    div.width();
+    div.height();
+    div.width(400);
+    div.height('200px');
+
+    var div = $('#test-div');
+    div.attr('data');
+    div.attr('name');
+    div.attr('name', 'Hello');
+    div.removeAttr('name');
+    div.attr('name');
+
+    var radio = $('#test-radio');
+    radio.is(':checked');
+    radio.is(':selected');
+
+    var
+            input = $('#test-input');
+    select = $('#test-select');
+    textarea = $('#test-textarea');
+
+    input.val();
+    input.val('abc@example.com');
+
+    select.val();
+    select.val('SH');
+
+
+    textarea.val();
+    textarea.val('Hi');
+    
+
+
+</script>
+
+
+
+
+
+
+
 </body>
 </html>

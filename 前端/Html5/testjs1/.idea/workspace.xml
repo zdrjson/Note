@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46a97e68-c931-4cdb-b593-9493042c30ab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js.html" afterPath="$PROJECT_DIR$/js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="testjs1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,9 +50,11 @@
       <file leaf-file-name="js.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="146">
+              <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
+              <folding>
+                <marker date="1466916249000" expanded="true" signature="1587:1597" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,8 +103,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="332" />
-    <option name="y" value="447" />
+    <option name="x" value="179" />
+    <option name="y" value="31" />
     <option name="width" value="1280" />
     <option name="height" value="297" />
   </component>
@@ -299,15 +301,15 @@
       <workItem from="1466832635412" duration="700000" />
       <workItem from="1466844090353" duration="54000" />
       <workItem from="1466865428412" duration="1479000" />
-      <workItem from="1466868202935" duration="7118000" />
+      <workItem from="1466868202935" duration="10508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57931000" />
+    <option name="totallyTimeSpent" value="61321000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="332" y="447" width="1280" height="297" extended-state="0" />
+    <frame x="179" y="31" width="1280" height="297" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -731,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery-1.11.3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="1" column="431" selection-start-line="1" selection-start-column="431" selection-end-line="1" selection-end-column="431" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -765,11 +759,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-1.11.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" column="13984" selection-start-line="4" selection-start-column="13984" selection-end-line="4" selection-end-column="13984" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="146">
+          <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
+          <folding>
+            <marker date="1466916249000" expanded="true" signature="1587:1597" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
