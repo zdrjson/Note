@@ -4,6 +4,53 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        $(document).on('ready',function () {
+            $('#testForm').on('submit',function () {
+               alert('submit!');
+            });
+        });
+        $(document).ready(function () {
+           $('#testFrom').submit(function () {
+             alert('submit!');
+           });
+        });
+        $(function () {
+           //牢记这是document对象的ready事件处理函数
+        });
+        $(function () {
+            console.log('init A...');
+        });
+        $(function () {
+           console.log('init B...');
+        });
+        $(function () {
+           console.log('init C..');
+        });
+        $(function () {
+            $('#testMouseMoveDiv').mousemove(function (e) {
+                $('#testMouseMoveSpan').text('pageX = ' + e.pageX + ',pageY = ' + e.pageY);
+            });
+        });
+        function hello() {
+            alert('hello!');
+        }
+
+        a.click(hello);
+
+        setTimeout(function () {
+            a.off('click',hello);
+        }, 10000);
+        var input = $('#test-input');
+        input.change(function () {
+           console.log('changed...');
+        });
+
+        var input = $('#test-input');
+        input.val('change it!'); // 无法触发change事件
+        input.change();  // 触发change事件
+
+    </script>
 </head>
 <body>
 <div class="testing">
@@ -171,6 +218,19 @@ var div = $('#test-div');
 
     var li = $('#test-div1>ul>li');
     li.remove();
+</script>
+
+<a id="test-link" href="#0">点我试试</a>
+
+
+<script>
+    var a = $('#test-link');
+    a.on('click',function () {
+     alert('Hello!');
+    });
+    a.click(function () {
+       alert('Hello!');
+    });
 </script>
 </body>
 </html>
