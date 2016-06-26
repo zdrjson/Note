@@ -21,4 +21,10 @@ $('p,div');
 $('p.red,p.green');
 
 
+alert($('ul.lang li.lang-javascript'));
+$('div.testing li.lang-javascript');
 
+$('ul.lang li');
+
+
+$('form[name=upload] input');
