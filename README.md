@@ -284,6 +284,7 @@ CAShapeLayer有着几点很重要:
 ## Runtime
 * [翻译-为什么objc_msgSend必须用汇编实现](http://tutuge.me/2016/06/19/translation-why-objcmsgsend-must-be-written-in-assembly/)
 * [Objective-C 消息发送与转发机制原理](http://yulingtianxia.com/blog/2016/06/15/Objective-C-Message-Sending-and-Forwarding/)
+* [Calling Conventions](http://slides.com/sunnyxx/calling-conventions-in-cocoa#/)
 
 ##Cocoapods
 * [ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
