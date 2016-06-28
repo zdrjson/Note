@@ -1,5 +1,11 @@
 # DDNote
 
+## **Algorithm**
+* [Direct insertion sort](http://www.henishuo.com/insert-sort/)
+* [张不坏的博客](http://zhangbuhuai.com/2015/06/28/Array-and-Algorithm/)
+
+
+
 ## Animaton
 ### TransitionAnimation
 * [VCTransitionsLibrary](https://github.com/ColinEberhardt/VCTransitionsLibrary)
@@ -350,9 +356,6 @@ exiting properly.
 NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源不能被正确的释放。看起来各种坑还不少。
 
 ```
- 
-## Algorithm
-* [Direct insertion sort](http://www.henishuo.com/insert-sort/)
 
 ## Efficiency 
 * [Mac_MrPeak](http://mrpeak.cn/blog/mac-efficiency/)
