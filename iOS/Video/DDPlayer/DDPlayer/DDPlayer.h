@@ -8,6 +8,8 @@
 
 #ifndef DDPlayer_h
 #define DDPlayer_h
+//监听TableView的contentOffset
+#define kDDPlayerViewContentOffSet @"contentOffset"
 // player的单例
 #define DDPlayerShard   [DDBrightnessView sharedInstance]
 // 屏幕的宽

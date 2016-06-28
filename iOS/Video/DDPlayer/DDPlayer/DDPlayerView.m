@@ -13,6 +13,7 @@
 #import "DDPlayerControlView.h"
 #import "DDBrightnessView.h"
 
+
 static const CGFloat DDPlayerAnimationTimeInterval = 7.0f;
 static const CGFloat DDPlayerControlBarAutoFadeOutTimeInterval = 0.5f;
 
@@ -319,7 +320,16 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
 - (void)setorientationLandscape
 {
     if (self.isCellVideo) {
+        //横屏时候移除tableVIe的观察着
+        [self.tableView removeObserver:self forKeyPath:kDDPlayerViewContentOffSet];
         
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+        // 亮度view加到window最上层
+        DDBrightnessView *brightnessView = [DDBrightnessView sharedInstance];
+        [[UIApplication sharedApplication].keyWindow insertSubview:self belowSubview:brightnessView];
+        [self mas_remakeConstraints:^(MASConstraintMaker *make) {
+            
+        }];
     }
 }
 - (void)setOrientationPortrait
