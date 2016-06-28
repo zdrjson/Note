@@ -242,6 +242,8 @@ CAShapeLayer有着几点很重要:
 
 ## Model
 * [YYModel basic knowledge](http://www.jianshu.com/p/198af7042b2d)
+* [YYModel 源码历险记](http://www.jianshu.com/users/aa41dad549af/latest_articles)
+* [YYModel Part](http://xiongzenghuidegithub.github.io/blog/archives/)
 
 ## Cache
 * [FMDB](https://github.com/ccgus/fmdb)

@@ -3,5 +3,6 @@ inhibit_all_warnings!
 
 target ‘DDPlayer’ do
 pod "VTMagic"
+
 end
 
