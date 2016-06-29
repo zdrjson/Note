@@ -341,6 +341,8 @@ CAShapeLayer有着几点很重要:
 * [TomatoRead](https://github.com/everettjf/TomatoRead)
 * [玉令天下的博客](http://yulingtianxia.com/blog/2016/06/15/Objective-C-Message-Sending-and-Forwarding/)
 * [bestswifter](https://bestswifter.com)
+* [百度Hi团队 iOS 技术周报](https://github.com/BaiduHiDeviOS/iOS-Tech-Weekly)
+* [iOS-Source-Code-Analyze](https://github.com/Draveness/iOS-Source-Code-Analyze)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -403,6 +405,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [链式编程1](http://www.jianshu.com/p/87ef6720a096)
 * [链式编程2](http://xiongzenghuidegithub.github.io/blog/2015/12/04/blockmo-ni-lian-shi-yu-fa/)
 * [一些 iOS / Web 开发相关的翻译或原创博客文章](https://github.com/nixzhu/dev-blog)
+
 
 ## 设计模式
 * [youxianming](http://www.cnblogs.com/YouXianMing/tag/软件设计原则/)

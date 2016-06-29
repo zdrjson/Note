@@ -366,7 +366,26 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
         return;
     }
     [[UIApplication sharedApplication].keyWindow addSubview:self];
-    
+    //解决4s, 屏幕宽高比不是16：9的问题
+    if (iPhone4s) {
+        [self mas_remakeConstraints:^(MASConstraintMaker *make) {
+            CGFloat width = ScreenWidth * 0.5 - 20;
+            make.width.mas_equalTo(-10);
+            make.trailing.mas_equalTo(-10);
+            make.bottom.mas_equalTo(-self.tableView.contentInset.bottom - 10);
+            make.height.mas_equalTo(width*320/480).priority(750);
+        }];
+    } else {
+        [self mas_remakeConstraints:^(MASConstraintMaker *make) {
+            CGFloat width = ScreenWidth*0.5-20;
+            make.width.mas_equalTo(width);
+            make.trailing.mas_equalTo(-10);
+            make.bottom.mas_equalTo(-self.tableView.contentInset.bottom-10);
+            make.height.equalTo(self.mas_width).multipliedBy(9.0/16.0).priority(750);
+        }];
+    }
+    //不显示控制层
+    [self.controlView hideControlView];
 }
 /**
  强制屏幕旋转
