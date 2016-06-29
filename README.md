@@ -237,7 +237,7 @@ CAShapeLayer有着几点很重要:
 1. 它依附于一个给定的path,必须给与path,而且,即使path不完整也会自动首尾相接
 2. strokeStart以及strokeEnd代表着在这个path中所占用的百分比
 ```
-
+* [CAGradientLayer](https://zsisme.gitbooks.io/ios-/content/chapter6/cagradientLayer.html)
 
 
 ## Model
@@ -263,6 +263,10 @@ CAShapeLayer有着几点很重要:
 ## AutoLayout
 * [Autolayout standard style of writing](http://reviewcode.cn/article.html?reviewId=14)
 * [Masonry 源码解析](https://github.com/Draveness/iOS-Source-Code-Analyze/blob/master/Masonry/iOS%20源代码分析%20---%20Masonry.md)
+* [HandyAutoLayout](https://github.com/casatwy/HandyAutoLayout)
+* [SDAutoLayout](https://github.com/gsdios/SDAutoLayout)
+* [Masonry](https://github.com/SnapKit/Masonry)
+* [FDStackView —— Downward Compatible UIStackView](http://blog.wtlucky.com)
 
 ## CADisplayLink
 * [CADisplayLink](http://www.jianshu.com/p/c35a81c3b9eb)

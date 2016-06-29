@@ -7,7 +7,7 @@
 //
 
 #import "DDBrightnessView.h"
-
+#import "DDPlayer.h"
 @implementation DDBrightnessView
 
 + (instancetype)sharedInstance
@@ -23,12 +23,24 @@
     return instance;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.frame = CGRectMake(ScreenWidth * 0.5, ScreenHeight * 0.5, 155, 155);
+        
+        self.layer.cornerRadius = 10;
+        self.layer.masksToBounds = YES;
+        
+        
+        UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:self.bounds];
+        toolbar.alpha = 0.97;
+        [self addSubview:toolbar];
+        
+        
+        
+    }
+    return self;
 }
-*/
 
 @end
