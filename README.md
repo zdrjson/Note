@@ -274,6 +274,10 @@ CAShapeLayer有着几点很重要:
 * [know or understand](http://casatwy.com/zen-yao-mian-shi-jia-gou-shi.html)
 * [路由跳转的思考](http://awhisper.github.io/2016/06/12/路由跳转的思考/)
 * [CDD](http://mrpeak.cn/blog/cdd/)
+* [天猫架构解耦之路 by gaosboy（高嘉峻)](http://weibo.com/1708947107/DBQxn64gC?type=repost#_rnd1467178225666)
+* [新浪微博iOS客户端架构与优化之路](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112273&idx=1&sn=893a66a04e541a99b7bc4d7cf227e2f7#rd)
+* [滴滴出行iOS客户端架构演进之路](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=402854111&idx=1&sn=5876e615fabd6d921285d904e16670fb#rd)
+
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -288,6 +292,7 @@ CAShapeLayer有着几点很重要:
 * [RunLoop学习笔记](http://www.starming.com/index.php?v=index&view=74)
 * [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
 * [sunny runloop实战](http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/)
+* [NSRunLoop、参与多线程之间的通信](http://xiongzenghuidegithub.github.io/blog/2015/08/21/nsrunloop,-can-yu-duo-xian-cheng-zhi-jian-de-tong-xin/)
 
 ## Runtime
 * [翻译-为什么objc_msgSend必须用汇编实现](http://tutuge.me/2016/06/19/translation-why-objcmsgsend-must-be-written-in-assembly/)
@@ -299,6 +304,7 @@ CAShapeLayer有着几点很重要:
 * [ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
 * [Operation not permitted - /usr/bin/fuzzy_match](http://blog.csdn.net/sinat_29998157/article/details/50070687)
 * [While executing gem ... (TypeError) no implicit conversion of nil into String](http://stackoverflow.com/questions/25844937/how-to-install-cocoa-pods-in-terminal)
+* [When using cocoapods, what is the best way to change the PRODUCT_NAME?](http://stackoverflow.com/questions/31120403/when-using-cocoapods-what-is-the-best-way-to-change-the-product-name)
 
 ##SomeGuysBlog
 * [WeiXinRead](http://wereadteam.github.io)

@@ -332,9 +332,41 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
         }];
     }
 }
-
+/**
+ 设置竖屏的约束
+ */
 - (void)setOrientationPortrait
 {
+    if (self.isCellVideo) {
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+        [self removeFromSuperview];
+        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:self.indexPath];
+        NSArray *visableCells = self.tableView.visibleCells;
+        self.isBottomVideo = NO;
+        if (![visableCells containsObject:cell]) {
+            [self updatePlayerViewToBottom];
+        } else {
+            //根据tag取到对应的cellImageView
+            UIImageView *cellImageView = [cell viewWithTag:self.cellImageViewTag];
+            [self addPlayerToCellImageView:cellImageView];
+        }
+    }
+}
+/**
+ 缩小到底部，显示小视频
+ */
+- (void)updatePlayerViewToBottom
+{
+    if (self.isBottomVideo)  return ;
+    self.isBottomVideo = YES;
+    if (self.playDidEnd) { //如果播放完了,滑动到小屏bottom位置时，直接resetPlayer
+        self.repeatToPlay = NO;
+        self.playDidEnd = NO;
+        [self resetPlayer];
+        return;
+    }
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
+    
 }
 /**
  强制屏幕旋转
