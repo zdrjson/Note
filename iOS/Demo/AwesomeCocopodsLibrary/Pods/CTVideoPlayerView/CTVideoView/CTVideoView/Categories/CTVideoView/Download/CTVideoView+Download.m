@@ -7,14 +7,17 @@
 //
 
 #import "CTVideoView+Download.h"
+#import "CTVideoView+OperationButtons.h"
 #import <objc/runtime.h>
 #import "CTVideoManager.h"
+#import <HandyFrame/UIView+LayoutMethods.h>
 
 /* ----------------- Public methods ----------------- */
 
 NSString * const kCTVideoViewShouldDownloadWhenNotWifi = @"kCTVideoViewShouldDownloadWhenNotWifi";
 
 static void * CTVideoViewDownloadPrivatePropertyDownloadDelegate;
+static void * CTVideoViewDownloadPrivatePropertyDownloadView;
 
 @implementation CTVideoView (Download)
 
@@ -92,46 +95,106 @@ static void * CTVideoViewDownloadPrivatePropertyDownloadDelegate;
 - (void)didReceivekCTVideoManagerWillDownloadVideoNotification:(NSNotification *)notification
 {
     if ([notification.userInfo[kCTVideoManagerNotificationUserInfoKeyRemoteUrl] isEqual:self.videoUrl]) {
-        if ([self.downloadDelegate respondsToSelector:@selector(videoViewWillStartDownload:)]) {
-            [self.downloadDelegate videoViewWillStartDownload:self];
-        }
+        
+        __weak typeof(self) weakSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            if ([strongSelf.downloadingView respondsToSelector:@selector(videoViewStartDownload:)]) {
+                [strongSelf addSubview:strongSelf.downloadingView];
+                [strongSelf.downloadingView fill];
+                [strongSelf.downloadingView videoViewStartDownload:strongSelf];
+            }
+            
+            [strongSelf hidePlayButton];
+            [strongSelf hideRetryButton];
+            
+            if ([strongSelf.downloadDelegate respondsToSelector:@selector(videoViewWillStartDownload:)]) {
+                [strongSelf.downloadDelegate videoViewWillStartDownload:strongSelf];
+            }
+        });
     }
 }
 
 - (void)didReceivekCTVideoManagerDidFinishDownloadVideoNotification:(NSNotification *)notification
 {
     if ([notification.userInfo[kCTVideoManagerNotificationUserInfoKeyRemoteUrl] isEqual:self.videoUrl]) {
-        if ([self.downloadDelegate respondsToSelector:@selector(videoViewDidFinishDownload:)]) {
-            [self.downloadDelegate videoViewDidFinishDownload:self];
-        }
+        
+        [self refreshUrl];
+        
+        __weak typeof(self) weakSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            if ([strongSelf.downloadingView respondsToSelector:@selector(videoViewFinishDownload:)]) {
+                [strongSelf.downloadingView videoViewFinishDownload:strongSelf];
+            }
+            
+            [strongSelf showPlayButton];
+            
+            if ([strongSelf.downloadDelegate respondsToSelector:@selector(videoViewDidFinishDownload:)]) {
+                [strongSelf.downloadDelegate videoViewDidFinishDownload:strongSelf];
+            }
+        });
     }
 }
 
 - (void)didReceivekCTVideoManagerDownloadVideoProgressNotification:(NSNotification *)notification
 {
     if ([notification.userInfo[kCTVideoManagerNotificationUserInfoKeyRemoteUrl] isEqual:self.videoUrl]) {
-        if ([self.downloadDelegate respondsToSelector:@selector(videoView:downloadProgress:)]) {
-            [self.downloadDelegate videoView:self
-                            downloadProgress:[notification.userInfo[kCTVideoManagerNotificationUserInfoKeyProgress] floatValue]];
-        }
+        CGFloat progress = [notification.userInfo[kCTVideoManagerNotificationUserInfoKeyProgress] floatValue];
+        
+        __weak typeof(self) weakSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            if ([strongSelf.downloadingView respondsToSelector:@selector(videoView:progress:)]) {
+                [strongSelf.downloadingView videoView:strongSelf progress:progress];
+            }
+            
+            if ([strongSelf.downloadDelegate respondsToSelector:@selector(videoView:downloadProgress:)]) {
+                [strongSelf.downloadDelegate videoView:strongSelf
+                                      downloadProgress:progress];
+            }
+        });
+        
+        
     }
 }
 
 - (void)didReceivekCTVideoManagerDidFailedDownloadVideoNotification:(NSNotification *)notification
 {
     if ([notification.userInfo[kCTVideoManagerNotificationUserInfoKeyRemoteUrl] isEqual:self.videoUrl]) {
-        if ([self.downloadDelegate respondsToSelector:@selector(videoViewDidFailDownload:)]) {
-            [self.downloadDelegate videoViewDidFailDownload:self];
-        }
+        
+        __weak typeof(self) weakSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            if ([strongSelf.downloadingView respondsToSelector:@selector(videoViewFailedDownload:)]) {
+                [strongSelf.downloadingView videoViewFailedDownload:strongSelf];
+            }
+            
+            [strongSelf showRetryButton];
+            
+            if ([strongSelf.downloadDelegate respondsToSelector:@selector(videoViewDidFailDownload:)]) {
+                [strongSelf.downloadDelegate videoViewDidFailDownload:strongSelf];
+            }
+        });
+        
     }
 }
 
 - (void)didReceivedkCTVideoManagerDidPausedDownloadVideoNotification:(NSNotification *)notification
 {
     if ([notification.userInfo[kCTVideoManagerNotificationUserInfoKeyRemoteUrl] isEqual:self.videoUrl]) {
-        if ([self.downloadDelegate respondsToSelector:@selector(videoViewDidPausedDownload:)]) {
-            [self.downloadDelegate videoViewDidPausedDownload:self];
-        }
+        
+        __weak typeof(self) weakSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            if ([strongSelf.downloadingView respondsToSelector:@selector(videoViewPauseDownload:)]) {
+                [strongSelf.downloadingView videoViewPauseDownload:strongSelf];
+            }
+            
+            if ([strongSelf.downloadDelegate respondsToSelector:@selector(videoViewDidPausedDownload:)]) {
+                [strongSelf.downloadDelegate videoViewDidPausedDownload:strongSelf];
+            }
+        });
     }
 }
 
@@ -149,6 +212,16 @@ static void * CTVideoViewDownloadPrivatePropertyDownloadDelegate;
 - (void)setDownloadDelegate:(id<CTVideoViewDownloadDelegate>)downloadDelegate
 {
     objc_setAssociatedObject(self, &CTVideoViewDownloadPrivatePropertyDownloadDelegate, downloadDelegate, OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (UIView<CTVideoPlayerDownloadingViewProtocol> *)downloadingView
+{
+    return objc_getAssociatedObject(self, &CTVideoViewDownloadPrivatePropertyDownloadView);
+}
+
+- (void)setDownloadingView:(UIView<CTVideoPlayerDownloadingViewProtocol> *)downloadingView
+{
+    objc_setAssociatedObject(self, &CTVideoViewDownloadPrivatePropertyDownloadView, downloadingView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

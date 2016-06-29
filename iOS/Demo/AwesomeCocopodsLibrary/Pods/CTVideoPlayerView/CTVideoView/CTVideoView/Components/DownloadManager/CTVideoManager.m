@@ -42,6 +42,7 @@ NSString * const kCTVideoManagerNotificationUserInfoKeyProgress = @"kCTVideoMana
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         videoManager = [[CTVideoManager alloc] init];
+        videoManager.totalDownloadedFileCountLimit = 50;
         videoManager.maxConcurrentDownloadCount = 3;
     });
     return videoManager;
@@ -92,6 +93,10 @@ NSString * const kCTVideoManagerNotificationUserInfoKeyProgress = @"kCTVideoMana
     }
     
     if (videoStatus == CTVideoRecordStatusNotFound) {
+        [self resumeDownloadWithUrl:url];
+    }
+
+    if (videoStatus == CTVideoRecordStatusPaused) {
         [self resumeDownloadWithUrl:url];
     }
 }
@@ -244,7 +249,9 @@ NSString * const kCTVideoManagerNotificationUserInfoKeyProgress = @"kCTVideoMana
                                                                                    [strongSelf.dataCenter updateStatus:CTVideoRecordStatusDownloadFinished toRemoteUrl:url];
 
                                                                                }
+                                                                               
                                                                                if (filePath) {
+                                                                                   [strongSelf.dataCenter deleteAllOldEntitiesAboveCount:strongSelf.totalDownloadedFileCountLimit];
                                                                                    [[NSNotificationCenter defaultCenter] postNotificationName:notificationNameToPost
                                                                                                                                        object:nil
                                                                                                                                      userInfo:@{
@@ -312,6 +319,7 @@ NSString * const kCTVideoManagerNotificationUserInfoKeyProgress = @"kCTVideoMana
                                                                             }
 
                                                                             if (filePath) {
+                                                                                [strongSelf.dataCenter deleteAllOldEntitiesAboveCount:strongSelf.totalDownloadedFileCountLimit];
                                                                                 [[NSNotificationCenter defaultCenter] postNotificationName:notificationNameToPost
                                                                                                                                     object:nil
                                                                                                                                   userInfo:@{
@@ -364,7 +372,8 @@ NSString * const kCTVideoManagerNotificationUserInfoKeyProgress = @"kCTVideoMana
             _sessionManager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
         }
         if (self.downloadStrategy == CTVideoViewDownloadStrategyDownloadForegroundAndBackground) {
-            NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"CTVideoDownloadTask"];
+            NSString *identifier = [NSString stringWithFormat:@"CTVideoDownloadTask - %@", [NSUUID UUID].UUIDString];
+            NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:identifier];
             configuration.sessionSendsLaunchEvents = YES;
             configuration.discretionary = YES;
             _sessionManager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];

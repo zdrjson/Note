@@ -97,11 +97,13 @@ pod 'FCUUID'
 
 pod 'SDCycleScrollView'
 pod 'SDAutoLayout'
+pod 'VTMagic'
 pod 'pop'
 pod 'IQKeyboardManager'
 pod 'SCRecorder'
 pod 'JSQMessagesViewController'
 #pod 'Atlas'
+
 
 pod 'KMNavigationBarTransition'
 pod 'Masonry'
