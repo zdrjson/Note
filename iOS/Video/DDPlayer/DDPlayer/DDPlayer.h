@@ -8,6 +8,14 @@
 
 #ifndef DDPlayer_h
 #define DDPlayer_h
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+
 //监听TableView的contentOffset
 #define kDDPlayerViewContentOffSet @"contentOffset"
 // player的单例

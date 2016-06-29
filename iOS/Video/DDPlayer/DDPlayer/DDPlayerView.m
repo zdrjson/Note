@@ -328,10 +328,11 @@ typedef NS_ENUM(NSUInteger, DDPlayerState) {
         DDBrightnessView *brightnessView = [DDBrightnessView sharedInstance];
         [[UIApplication sharedApplication].keyWindow insertSubview:self belowSubview:brightnessView];
         [self mas_remakeConstraints:^(MASConstraintMaker *make) {
-            
+            (void)make.edges;
         }];
     }
 }
+
 - (void)setOrientationPortrait
 {
 }

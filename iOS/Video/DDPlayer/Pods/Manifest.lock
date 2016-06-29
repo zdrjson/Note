@@ -1,14 +1,22 @@
 PODS:
+  - Masonry (1.0.1)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
   - VTMagic (1.2.1):
     - VTMagic/Core (= 1.2.1)
   - VTMagic/Core (1.2.1)
 
 DEPENDENCIES:
+  - Masonry
+  - SDWebImage
   - VTMagic
 
 SPEC CHECKSUMS:
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   VTMagic: c50543e5f5faf2985940f05050ec962cd8410036
 
-PODFILE CHECKSUM: d88b7f2e3734705ce31e5db7b3447b4ba59de66c
+PODFILE CHECKSUM: ce833d70fb52fbda01445f2806f33f4a98d911c2
 
 COCOAPODS: 1.0.1
