@@ -84,7 +84,55 @@
         UIImageView *imageView = [[UIImageView alloc] init];
         imageView.backgroundColor = [UIColor whiteColor];
         imageView.frame = CGRectMake(tipX, tipY, tipW, tipH);
+        [self.longView addSubview:imageView];
+        [self.tipArray addObject:imageView];
+    }
+    [self updateLongView:[UIScreen mainScreen].brightness];
+}
+- (void)updateLongView:(CGFloat)sound
+{
+    CGFloat stage = 1 /15.0;
+    NSInteger level = sound / stage;
+    
+    
+    for (int i = 0; i<self.tipArray.count; i++) {
+        UIImageView *img = self.tipArray[i];
+        if (i <= level) {
+            img.hidden = NO;
+        } else {
+            img.hidden = YES;
+        }
     }
 }
-
+- (void)willMoveToSuperview:(UIView *)newSuperview
+{
+    [self setNeedsLayout];
+}
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    if (self.orientationDidChange) {
+        [UIView animateWithDuration:0.25 animations:^{
+            if ([UIDevice currentDevice].orientation == UIDeviceOrientationPortrait || [UIDevice currentDevice].orientation == UIDeviceOrientationFaceUp) {
+                self.center = CGPointMake(ScreenWidth * 0.5, (ScreenHeight - 10) * 0.5);
+            } else {
+                self.center = CGPointMake(ScreenWidth * 0.5, ScreenHeight * 0.5);
+            }
+        } completion:^(BOOL finished) {
+            self.orientationDidChange = NO;
+        }];
+    } else {
+        if ([UIDevice currentDevice].orientation == UIDeviceOrientationPortrait) {
+            self.center = CGPointMake(ScreenWidth * 0.5, (ScreenHeight - 10) * 0.5);
+        } else {
+            self.center = CGPointMake(ScreenWidth * 0.5, ScreenHeight * 0.5);
+        }
+    }
+    self.backImage.center = CGPointMake(155 * 0.5, 155 * 0.5);
+}
+- (void)dealloc
+{
+    [[UIScreen mainScreen] removeObserver:self forKeyPath:@"brightness"];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end

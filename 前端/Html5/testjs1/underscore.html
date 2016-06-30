@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+           $('p').click(function () {
+               $(this).hide();
+           });
+        });
+    </script>
     <script>
         var arr = [3,5,7,9];
 //        console.log(_.max(arr));
@@ -57,6 +66,6 @@
     </script>
 </head>
 <body>
-
+<p>If you click on me, I will disapper.</p>
 </body>
 </html>
