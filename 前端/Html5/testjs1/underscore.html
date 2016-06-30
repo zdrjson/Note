@@ -5,29 +5,54 @@
     <title>Title</title>
     <script>
         var arr = [3,5,7,9];
-        console.log(_.max(arr));
-        console.log(_.min(arr));
+//        console.log(_.max(arr));
+//        console.log(_.min(arr));
+//
+//
+//        var scores = [20,81,75,40,91,59,77,66,72,88,99];
+//        var groups = _.groupBy(scores, function (x) {
+//            if (x < 60) {
+//                return 'C';
+//            } else if (x < 80) {
+//                return 'B';
+//            } else  {
+//                return 'A';
+//            }
+//        });
+
+//        //洗牌算法随机打乱一个集合：
+//        _.shuffle([1,2,3,4,5,6]);
+//
+//        //随机选一个
+//        _.sample([1,2,3,4,5,6]);
+//
+//        //随机选择3个:
+//        _.sample([1,2,3,4,5,6],3);
+
+        var a = new Array();
+        if (a.__proto__ === Array.prototype) {
+            console.log('1');
+        }
 
 
-        var scores = [20,81,75,40,91,59,77,66,72,88,99];
-        var groups = _.groupBy(scores, function (x) {
-            if (x < 60) {
-                return 'C';
-            } else if (x < 80) {
-                return 'B';
-            } else  {
-                return 'A';
-            }
-        });
+        var Bar = function () {
 
-        //洗牌算法随机打乱一个集合：
-        _.shuffle([1,2,3,4,5,6]);
+        }
 
-        //随机选一个
-        _.sample([1,2,3,4,5,6]);
+        var b = new Bar();
 
-        //随机选择3个:
-        _.sample([1,2,3,4,5,6],3);
+        if (b instanceof Bar) {
+            console.log('a');
+        }
+
+        if (Bar.prototype.isPrototypeOf(b)) {
+            console.log('b');
+        }
+
+        if (Object.prototype.isPrototypeOf(Bar)) {
+            console.log('Bar');
+        }
+
 
     </script>
 </head>
