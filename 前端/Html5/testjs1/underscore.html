@@ -6,10 +6,12 @@
 
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript">
+        //这是为了防止文档在完全加载（就绪）之前运行 jQuery 代码。
         $(document).ready(function () {
            $('p').click(function () {
                $(this).hide();
            });
+            $('p').css('backgroud-color','red');
         });
     </script>
     <script>
