@@ -348,6 +348,7 @@ CAShapeLayer有着几点很重要:
 * [bestswifter](https://bestswifter.com)
 * [百度Hi团队 iOS 技术周报](https://github.com/BaiduHiDeviOS/iOS-Tech-Weekly)
 * [iOS-Source-Code-Analyze](https://github.com/Draveness/iOS-Source-Code-Analyze)
+* [Ghost博客搭建 - 追随猫神之路](http://402v.com/ghostbo-ke-da-jian-xi-lie-zhui-sui-mao-shen-zhi-lu/)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
