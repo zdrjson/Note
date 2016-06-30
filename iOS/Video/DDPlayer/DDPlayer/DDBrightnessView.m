@@ -81,7 +81,9 @@
     
     for (int i = 0; i<16; i++) {
         CGFloat tipX = i * (tipW + 1) + 1;
-        
+        UIImageView *imageView = [[UIImageView alloc] init];
+        imageView.backgroundColor = [UIColor whiteColor];
+        imageView.frame = CGRectMake(tipX, tipY, tipW, tipH);
     }
 }
 

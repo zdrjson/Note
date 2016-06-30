@@ -506,6 +506,7 @@ HTTP 502       – 网关错误
 isKindOfClass来确定一个对象是否是一个类的成员，或者是派生自该类的成员
 isMemberOfClass只能确定一个对象是否是当前类的成员
 ```
+* [纯IPv6环境App适配的坑](http://mrpeak.cn/blog/ipv6/)
 
 #CSS
 
