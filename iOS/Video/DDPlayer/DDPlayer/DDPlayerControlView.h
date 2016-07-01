@@ -24,15 +24,15 @@
 /** 锁定屏幕方向按钮 */
 @property (nonatomic, strong, readonly) UIButton *lockBtn;
 /** 快进快退label */
-@property (nonatomic, strong) UILabel *horizontalLabel;
+@property (nonatomic, strong,readonly) UILabel *horizontalLabel;
 /** 系统菊花 */
-@property (nonatomic, strong) UIActivityIndicatorView *activity;
+@property (nonatomic, strong, readonly) UIActivityIndicatorView *activity;
 /** 重播按钮 */
-@property (nonatomic, strong) UIButton *backBtn;
+@property (nonatomic, strong, readonly) UIButton *backBtn;
 /** bottomView */
-@property (nonatomic, strong) UIImageView *bottomImageView;
+@property (nonatomic, strong, readonly) UIImageView *bottomImageView;
 /** topView */
-@property (nonatomic, strong) UIImageView *topImageView;
+@property (nonatomic, strong, readonly) UIImageView *topImageView;
 
 
 

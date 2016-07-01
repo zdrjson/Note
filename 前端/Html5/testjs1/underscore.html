@@ -10,32 +10,15 @@
         $(document).ready(function () {
            $('p').click(function () {
                $(this).hide();
+               alert(_.range(10));
            });
             $('p').css('backgroud-color','red');
         });
 
 
-       alert(_.range(10));
-        var names = ['Adam', 'Lisa', 'Bart'];
-        var scores = [85, 92, 59];
-        _.object(names, scores);
-
-        var names = ['Adam', 'Lisa', 'Bart'];
-        var scores = [85, 92, 59];
-        _.zip(names, scores);
-
-        var namesAndScores = [['Adam', 85], ['Lisa', 92], ['Bart', 59]];
-        _.unzip(namesAndScores);
-
-        _.flatten([1, [2], [3, [[4], [5]]]]); // [1, 2, 3, 4, 5]
 
 
-        var arr = [2, 4, 6, 8];
-        _.first(arr); // 2
-        _.last(arr); // 8
 
-        var log = _.bind(console.log, console);
-        log('Hello, world!');
     </script>
     <script>
         var arr = [3,5,7,9];

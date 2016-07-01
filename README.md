@@ -250,6 +250,7 @@ CAShapeLayer有着几点很重要:
 * [realm](https://github.com/realm/realm-cocoa)
 * [MagicalRecord](https://github.com/magicalpanda/MagicalRecord)
 * [VIMediaCache](https://github.com/vitoziv/VIMediaCache)
+* [NSURLCache 网络请求缓存指南](http://www.cocoachina.com/ios/20160701/16895.html)
 
 ## Text
 * [CoreText_xiongzenghu](http://xiongzenghuidegithub.github.io/blog/2016/04/26/coretext-part-3/)
@@ -349,6 +350,7 @@ CAShapeLayer有着几点很重要:
 * [百度Hi团队 iOS 技术周报](https://github.com/BaiduHiDeviOS/iOS-Tech-Weekly)
 * [iOS-Source-Code-Analyze](https://github.com/Draveness/iOS-Source-Code-Analyze)
 * [Ghost博客搭建 - 追随猫神之路](http://402v.com/ghostbo-ke-da-jian-xi-lie-zhui-sui-mao-shen-zhi-lu/)
+* [MartinRGB](http://www.martinrgb.com)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -414,6 +416,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [链式编程1](http://www.jianshu.com/p/87ef6720a096)
 * [链式编程2](http://xiongzenghuidegithub.github.io/blog/2015/12/04/blockmo-ni-lian-shi-yu-fa/)
 * [一些 iOS / Web 开发相关的翻译或原创博客文章](https://github.com/nixzhu/dev-blog)
+* [YY整理- ( ゜- ゜)つロ Github-iOS备忘](http://github.ibireme.com/github/list/ios/)
 
 
 ## 设计模式
@@ -511,8 +514,13 @@ HTTP 502       – 网关错误
 isKindOfClass来确定一个对象是否是一个类的成员，或者是派生自该类的成员
 isMemberOfClass只能确定一个对象是否是当前类的成员
 ```
-* [纯IPv6环境App适配的坑](http://mrpeak.cn/blog/ipv6/)
 
+```
+删除Xcode多余描述文件
+~/Library/MobileDevice/Provisioning Profiles
+```
+* [纯IPv6环境App适配的坑](http://mrpeak.cn/blog/ipv6/)
+* [前端技能汇总](https://github.com/JacksonTian/fks)
 #CSS
 
 ```
@@ -528,6 +536,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 #JS
 * [详解js跨域问题](https://segmentfault.com/a/1190000000718840)
 * [js标准对象](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449957099176f55ba07b764c3daa522217d0e42643000)
+
 
 ## 前端IDE
 * [brackets](https://github.com/adobe/brackets)

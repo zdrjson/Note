@@ -589,11 +589,24 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
 #if !defined(SV_APP_EXTENSIONS)
         // Default case: iterate over UIApplication windows
         NSEnumerator *frontToBackWindows = [UIApplication.sharedApplication.windows reverseObjectEnumerator];
+        //reverseObjectEnumerator 数组反序
+        
+        //window add self.overlayview add self add self.hud
+        
+        
+        
+//        NSLog(@"%@",frontToBackWindows);
+//        NSLog(@"%@",[UIApplication sharedApplication].keyWindow);
+        NSLog(@"%d",[UIApplication sharedApplication].keyWindow.windowLevel);
+//        NSLog(@"%d",UIWindowLevelNormal);
         for (UIWindow *window in frontToBackWindows) {
+            NSLog(@"%@",window);
             BOOL windowOnMainScreen = window.screen == UIScreen.mainScreen;
             BOOL windowIsVisible = !window.hidden && window.alpha > 0;
             BOOL windowLevelNormal = window.windowLevel == UIWindowLevelNormal;
-            
+            NSLog(@"%d",UIWindowLevelNormal);
+            NSLog(@"%d",window.windowLevel);
+            NSLog(@"%d",windowLevelNormal);
             if(windowOnMainScreen && windowIsVisible && windowLevelNormal) {
                 [window addSubview:self.overlayView];
                 break;
