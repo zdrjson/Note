@@ -17,7 +17,19 @@ print(isinstance(iter([]), Iterator))
 
 print(isinstance(iter('abc'), Iterator))
 
+it = iter([1,2,3,4,5])
+while True:
+    try:
+        x = next(it)
+        print(x)
+    except StopIteration:
+        print('stop')
+        break
 
+def add(x, y, f):
+    return f(x) + f(y)
+
+print(add(-5,6,abs))
 
 def removeElement(self, A, elem):
     ret = 0
