@@ -88,6 +88,46 @@ def char2num(s):
 def str2int(s):
     return reduce(lambda x, y: x * 10 + y, map(char2num, s))
 
+def is_odd(n):
+    return n % 2 == 1
+
+print(list(filter(is_odd, [1,2,4,5,6,9,10,15])))
+
+
+def not_empty(s):
+    return s and s.strip()
+print(list(filter(not_empty,['A','','B',None,'C','   '])))
+
+def _odd_iter():
+    n = 1
+    while True:
+        n = n + 2
+        # print('xxx')
+        yield n
+
+# 定义刷选函数
+def _not_divisible(n):
+    return lambda  x : x % n > 0
+
+def primes():
+    yield 2
+    it = _odd_iter()  # 初始序列
+    print(it)
+    while True:
+        n = next(it)  # 返回序列的第一个数
+        yield n
+        it = filter(_not_divisible(n),it) # 构成新序列
+
+# 打印1000以内的素数
+for n in primes():
+    if n < 1000:
+        print('')
+    else:
+        break
+
+
+
+# 这里，最难理解的就是generator和函数的执行流程不一样。函数是顺序执行，遇到return语句或者最后一行函数语句就返回。而变成generator的函数，在每次调用next()的时候执行，遇到yield语句返回，再次执行时从上次返回的yield语句处继续执行。
 
 
 
