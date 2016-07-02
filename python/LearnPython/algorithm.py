@@ -119,16 +119,24 @@ def primes():
         it = filter(_not_divisible(n),it) # 构成新序列
 
 # 打印1000以内的素数
-for n in primes():
-    if n < 1000:
-        print('')
-    else:
-        break
-
-
+# for n in primes():
+#     if n < 1000:
+#         print('')
+#     else:
+#         break
 
 # 这里，最难理解的就是generator和函数的执行流程不一样。函数是顺序执行，遇到return语句或者最后一行函数语句就返回。而变成generator的函数，在每次调用next()的时候执行，遇到yield语句返回，再次执行时从上次返回的yield语句处继续执行。
 
+print(sorted([36,5,-12,9,-21]))
+
+print(sorted([36,5,-12,9,-21],key=abs))
+
+print(sorted(['bob','about','Zoo','Credit']))
+
+
+
+print(sorted(['bob','about','Zoo','Credit'],key=str.lower))
+print(sorted(['bob','about','Zoo','Credit'],key=str.lower,reverse=True))
 
 
 
