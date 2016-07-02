@@ -389,6 +389,7 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [Surge config](https://github.com/lhie1/Surge)
 * [AppleDNS](https://github.com/gongjianhui/AppleDNS)
 * [alfred workflow 李大锤同学](http://weibo.com/lizexipablo?profile_ftype=1&is_all=1&is_search=1&key_word=alfred#_0)
+* [鼠须管](https://github.com/rime/squirrel)
 
 ```
 homebrew-cask,官网传送, 是一套建立在homebrew基础上的Mac软件安装命令行工具。与brew的区别就
