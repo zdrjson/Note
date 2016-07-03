@@ -19,6 +19,23 @@ def test():
 if __name__=='__main__':
     test()
 
+from PIL import Image
+im = Image.open('test.png')
+print(im.format, im.size, im.mode)
+print(im.thumbnail((200, 100)))
+print(im.save('thum.jpg', 'JEPG'))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def _private_1(name):
@@ -35,3 +52,4 @@ def greeting(name):
         return _private_2(name)
 
 print(greeting('xxxx'))
+
