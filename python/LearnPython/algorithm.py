@@ -209,6 +209,61 @@ def build(x, y):
 
 
 
+def now():
+    print('2015-3-25')
+
+f = now
+
+print(f())
+
+print(now.__name__)
+print(f.__name__)
+
+def log(func):
+    def wrapper(*args, **kw):
+        print('call %s():' % func.__name__)
+        return func(*args, **kw)
+    return wrapper
+
+
+@log
+def now():
+    print('2015-3-125')
+now()
+
+
+def log(text):
+    def decorator(func):
+        def wrapper(*args,**kw):
+            print('%s %s():'% (text, func.__name__))
+            return func(*args, **kw)
+        return wrapper
+    return decorator
+
+@log('execute')
+def now():
+    print('2015-3-25')
+now()
+
+import functools
+#不需要编写wrapper.__name__ = func.__name__这样的代码，Python内置的functools.wraps就是干这个事的，所以，一个完整的decorator的写法如下：
+def log(func):
+    @functools.wraps(func)
+    def wrapper(*args,**kw):
+        print('call %s():' % func.__name__)
+        return func(*args, **kw)
+    return wrapper
+
+def log(text):
+    def decorator(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kw):
+            print('%s %s()' %(text, func.__name__))
+            return func(*args, **kw)
+        return wrapper
+    return decorator
+
+
 
 
 

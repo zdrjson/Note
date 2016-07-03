@@ -527,7 +527,7 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
     if(NSClassFromString(@"UIBlurEffect") && self.defaultStyle != SVProgressHUDStyleCustom) {
         // Remove background color, else the effect would not work
         self.hudView.backgroundColor = [UIColor clearColor];
-        
+            
         // Remove any old instances of UIVisualEffectViews
         for (UIView *subview in self.hudView.subviews) {
             if([subview isKindOfClass:[UIVisualEffectView class]]) {
