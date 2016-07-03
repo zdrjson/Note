@@ -20,11 +20,21 @@ if __name__=='__main__':
     test()
 
 from PIL import Image
-im = Image.open('test.png')
-print(im.format, im.size, im.mode)
-print(im.thumbnail((200, 100)))
-print(im.save('thum.jpg', 'JEPG'))
+# im = Image.open('test.png')
+# print(im.format, im.size, im.mode)
+# print(im.thumbnail((200, 100)))
+# print(im.save('thum.jpg', 'JEPG'))
 
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+
+if __name__ == "__main__":
+    app.run()
 
 
 
