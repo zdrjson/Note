@@ -351,6 +351,7 @@ CAShapeLayer有着几点很重要:
 * [iOS-Source-Code-Analyze](https://github.com/Draveness/iOS-Source-Code-Analyze)
 * [Ghost博客搭建 - 追随猫神之路](http://402v.com/ghostbo-ke-da-jian-xi-lie-zhui-sui-mao-shen-zhi-lu/)
 * [MartinRGB](http://www.martinrgb.com)
+* [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
