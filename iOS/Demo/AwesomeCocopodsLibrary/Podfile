@@ -102,8 +102,8 @@ pod 'pop'
 pod 'IQKeyboardManager'
 pod 'SCRecorder'
 pod 'JSQMessagesViewController'
-#pod 'Atlas'
-
+pod 'Atlas'
+pod 'LayerKit'
 
 pod 'KMNavigationBarTransition'
 pod 'Masonry'

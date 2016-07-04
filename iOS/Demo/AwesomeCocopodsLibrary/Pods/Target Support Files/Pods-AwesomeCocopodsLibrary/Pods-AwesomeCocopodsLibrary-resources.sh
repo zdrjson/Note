@@ -80,6 +80,7 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/Atlas/AtlasResource.bundle"
   install_resource "FlatUIKit/Resources/flat-ui-icons-regular.ttf"
   install_resource "FlatUIKit/Resources/Lato-Bold.ttf"
   install_resource "FlatUIKit/Resources/Lato-Italic.ttf"
@@ -153,6 +154,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "ZFPlayer/ZFPlayer/ZFPlayer.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/Atlas/AtlasResource.bundle"
   install_resource "FlatUIKit/Resources/flat-ui-icons-regular.ttf"
   install_resource "FlatUIKit/Resources/Lato-Bold.ttf"
   install_resource "FlatUIKit/Resources/Lato-Italic.ttf"

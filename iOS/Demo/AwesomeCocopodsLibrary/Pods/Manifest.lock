@@ -23,6 +23,8 @@ PODS:
   - AsyncDisplayKit/PINRemoteImage (1.9.80):
     - AsyncDisplayKit/Core
     - PINRemoteImage/iOS (>= 3.0.0-beta.2)
+  - Atlas (1.0.23):
+    - LayerKit (>= 0.21.0)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -90,6 +92,7 @@ PODS:
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
   - KMNavigationBarTransition (0.0.9)
+  - LayerKit (0.22.0)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
@@ -323,6 +326,7 @@ DEPENDENCIES:
   - AFNetworking
   - Aspects
   - AsyncDisplayKit
+  - Atlas
   - BlocksKit
   - CocoaAsyncSocket
   - CocoaLumberjack
@@ -348,6 +352,7 @@ DEPENDENCIES:
   - JSPatch
   - JSQMessagesViewController
   - KMNavigationBarTransition
+  - LayerKit
   - MagicalRecord
   - Mantle
   - Masonry
@@ -400,6 +405,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   AsyncDisplayKit: ab57b10cd058797015c77be10407f3dc13027c85
+  Atlas: acf154ee2a10c6257a47e872366154653932302f
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
@@ -428,6 +434,7 @@ SPEC CHECKSUMS:
   JSQMessagesViewController: 0ee3f80237268192a3e8337fd0d787f1a1bf5a7a
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   KMNavigationBarTransition: cc9dce7baa86d054bc9998d9ce6be8b12ae9a961
+  LayerKit: dc3f45305bd0d520e5a586247d93c6e03b803ccd
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
@@ -480,6 +487,6 @@ SPEC CHECKSUMS:
   zipzap: 940162d9c9c60472c2eab341385e4214da0fdf1c
   ZLSwipeableView: df385760ff4838935cdbcb62878ac5acd7355949
 
-PODFILE CHECKSUM: 08fd5a471a23f3685b8b6c213f965993098c92d2
+PODFILE CHECKSUM: 58e730561e889a44ddf2cab8615361854b14ded7
 
 COCOAPODS: 1.0.1
