@@ -324,6 +324,7 @@ CAShapeLayer有着几点很重要:
 * [casa](http://casatwy.com)
 * [leichunfeng](http://blog.leichunfeng.com)
 * [YY](http://blog.ibireme.com)
+* [YY github ios list](http://github.ibireme.com/github/list/ios/)
 * [onev](https://onevcat.com)
 * [youxianming](http://www.cnblogs.com/YouXianMing/)
 * [JohnLui](https://lvwenhan.com)
