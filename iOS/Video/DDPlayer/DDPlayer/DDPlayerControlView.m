@@ -66,6 +66,12 @@
         UITapGestureRecognizer *sliderTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapSliderAction:)];
         [self.videoSlider addGestureRecognizer:sliderTap];
         
+        [self.activity stopAnimating];
+        self.downloadBtn.hidden = YES;
+        self.resolutionBtn.hidden = YES;
+        //初始化时重置controlView
+        [self resestControlView];
+        
         
     }
     return self;
