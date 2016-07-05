@@ -59,11 +59,17 @@
         
         [self.topImageView addSubview:self.resolutionBtn];
         
+        //添加子控件的约束
+        [self makeSubViewsConstraints];
         
         
         
     }
     return self;
+}
+
+- (void)makeSubViewsConstraints {
+	
 }
 @end
 
