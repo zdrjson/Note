@@ -2,7 +2,9 @@
 
 VTMagic is a page container library, you can custom every page controller by different identifier if you need. It's so easy to use!（[中文手册传送门](http://www.jianshu.com/p/cb2edb21055f)）
 
-[change log][CHANGELOG_EN]\([修改日志][CHANGELOG_CN])
+[CHANGELOG][CHANGELOG_EN]\([变更日志][CHANGELOG_CN])
+
+![preview image](Gif/magic.gif)
 
 
 ## Installation
@@ -18,8 +20,8 @@ pod "VTMagic"
 
 ### Manually
 
-1. Download the project and drop folder VTMagic into your project.
-2. Import file VTMagic.h.
+1. Download the project and drop folder `VTMagic` into your project.
+2. Import file `VTMagic.h`.
 
 ```objective-c
 #import "VTMagic.h"
@@ -41,7 +43,6 @@ To run the example project, clone the repo, and run `pod install` from the proje
 
     [self addChildViewController:self.magicController];
     [self.view addSubview:_magicController.view];
-    [_magicController didMoveToParentViewController:self];
 
     [_magicController.magicView reloadData];
 }
@@ -137,14 +138,14 @@ You must conform to `<VTMagicViewDataSource>`. `<VTMagicViewDelegate>` and `<VTM
 #### VTMagicViewDelegate
 
 ```objective-c
-- (void)magicView:(VTMagicView *)magicView viewDidAppeare:(UIViewController *)viewController atPage:(NSUInteger)pageIndex
+- (void)magicView:(VTMagicView *)magicView viewDidAppear:(UIViewController *)viewController atPage:(NSUInteger)pageIndex
 {
-    NSLog(@"pageIndex:%ld viewDidAppeare:%@", (long)pageIndex, viewController.view);
+    NSLog(@"pageIndex:%ld viewDidAppear:%@", (long)pageIndex, viewController.view);
 }
 
-- (void)magicView:(VTMagicView *)magicView viewDidDisappeare:(UIViewController *)viewController atPage:(NSUInteger)pageIndex
+- (void)magicView:(VTMagicView *)magicView viewDidDisappear:(UIViewController *)viewController atPage:(NSUInteger)pageIndex
 {
-    NSLog(@"pageIndex:%ld viewDidDisappeare:%@", (long)pageIndex, viewController.view);
+    NSLog(@"pageIndex:%ld viewDidDisappear:%@", (long)pageIndex, viewController.view);
 }
 
 - (void)magicView:(VTMagicView *)magicView didSelectItemAtIndex:(NSUInteger)itemIndex
@@ -192,7 +193,7 @@ VTMagic will automatically calls the appearance methods when user switches the p
 You can get the nearest magicController in any child view controller which is conforms to `<VTMagicProtocol>`, after you import file `VTMagic.h`.
 
 ```objective-c
-NSInteger currentPage = [self.magicController currentPage];
+NSInteger currentPage = self.magicController.currentPage;
 UIViewController *viewController = self.magicController.currentViewController;
 ```
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA94DFEBB34397F7588C7EA5 /* libPods-AwesomeCocopodsLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBBD9B42DD097059A0D41D4 /* libPods-AwesomeCocopodsLibrary.a */; };
+		921232075367D504FCB7BC62 /* libPods-AwesomeCocopodsLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E933FB46D371FBBDCDF2A49 /* libPods-AwesomeCocopodsLibrary.a */; };
 		F52E8DB31D1A5151005D5CEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E8DB21D1A5151005D5CEF /* main.m */; };
 		F52E8DB61D1A5151005D5CEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E8DB51D1A5151005D5CEF /* AppDelegate.m */; };
 		F52E8DB91D1A5151005D5CEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E8DB81D1A5151005D5CEF /* ViewController.m */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2DBBD9B42DD097059A0D41D4 /* libPods-AwesomeCocopodsLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCocopodsLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E933FB46D371FBBDCDF2A49 /* libPods-AwesomeCocopodsLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCocopodsLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7156632003437BAAD3E24A /* Pods-AwesomeCocopodsLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCocopodsLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeCocopodsLibrary/Pods-AwesomeCocopodsLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		3E76D9D5BC0CD571D3D3A810 /* Pods-AwesomeCocopodsLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCocopodsLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeCocopodsLibrary/Pods-AwesomeCocopodsLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		F52E8DAE1D1A5151005D5CEF /* AwesomeCocopodsLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeCocopodsLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA94DFEBB34397F7588C7EA5 /* libPods-AwesomeCocopodsLibrary.a in Frameworks */,
+				921232075367D504FCB7BC62 /* libPods-AwesomeCocopodsLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 		87D39A39BE78732FB5266522 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2DBBD9B42DD097059A0D41D4 /* libPods-AwesomeCocopodsLibrary.a */,
+				2E933FB46D371FBBDCDF2A49 /* libPods-AwesomeCocopodsLibrary.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

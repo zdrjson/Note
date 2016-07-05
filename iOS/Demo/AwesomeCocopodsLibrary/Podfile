@@ -1,4 +1,5 @@
 platform :ios, '8.0'
+#use_frameworks!
 inhibit_all_warnings!
 
 target ‘AwesomeCocopodsLibrary’ do
@@ -85,7 +86,10 @@ pod 'FastImageCache'
 
 pod 'ZFPlayer'
 pod 'XMPPFramework'
+
 pod 'DZNEmptyDataSet'
+pod 'CYLTableViewPlaceHolder'
+
 pod 'BlocksKit'
 pod 'FreeStreamer'
 pod 'RealReachability'
@@ -102,7 +106,8 @@ pod 'pop'
 pod 'IQKeyboardManager'
 pod 'SCRecorder'
 pod 'JSQMessagesViewController'
-pod 'Atlas'
+
+#pod 'Atlas'
 pod 'LayerKit'
 
 pod 'KMNavigationBarTransition'
