@@ -35,5 +35,13 @@
 @end
 
 @implementation DDPlayerControlView
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self addSubview:self.topImageView];
+        self 
+    }
+    return self;
+}
 @end

@@ -227,6 +227,10 @@ What it provides
 * [Atlas-iOS](https://github.com/layerhq/Atlas-iOS)
 
 
+### Button
+* [图片与文字不定Btn](https://github.com/lianchengjiang/LCUIKit)
+
+
 ## CALayer
 * [CALayer and subLayer](http://my.oschina.net/u/2340880/blog/536048)
 * [CATextLayer](https://github.com/joeshang/CATextLayerTest)
@@ -263,6 +267,10 @@ CAShapeLayer有着几点很重要:
 * [UILabel replacement with fine-grain appear/disappear animation](https://github.com/overboming/ZCAnimatedLabel)
 * [TYAttrubutedLabel](https://github.com/12207480/TYAttributedLabel)
 * [YYText 是如何绘制的](https://github.com/lzwjava/OpenSourceNotes)
+
+
+
+
 
 
 ## AutoLayout
@@ -308,7 +316,8 @@ CAShapeLayer有着几点很重要:
 * [翻译-为什么objc_msgSend必须用汇编实现](http://tutuge.me/2016/06/19/translation-why-objcmsgsend-must-be-written-in-assembly/)
 * [Objective-C 消息发送与转发机制原理](http://yulingtianxia.com/blog/2016/06/15/Objective-C-Message-Sending-and-Forwarding/)
 * [Calling Conventions](http://slides.com/sunnyxx/calling-conventions-in-cocoa#/)
-
+## Socket
+* [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
 
 ##Cocoapods
 * [ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
@@ -365,7 +374,7 @@ CAShapeLayer有着几点很重要:
 * [if you change your password or username on GitHub](https://help.github.com/articles/updating-credentials-from-the-osx-keychain/)
 * [git 原理](http://gold.xitu.io/entry/575e223a165abd005559294f)
 
-### gitpages
+### Gitpages
 * [southpeak.github.io](http://southpeak.github.io)
   
   
@@ -384,7 +393,7 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 
 ## Efficiency 
 * [Mac_MrPeak](http://mrpeak.cn/blog/mac-efficiency/)
-
+* 
 ## Tool
 * [Phabricator](http://phabricator.org/)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
@@ -554,7 +563,11 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 
 
 
-## 前端IDE
+## 前端
+
+* [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/preference/browser-rendering-performance.html)
+
+### IDE
 * [brackets](https://github.com/adobe/brackets)
 * [atom](https://github.com/atom/atom)
 
