@@ -61,7 +61,10 @@
         
         //添加子控件的约束
         [self makeSubViewsConstraints];
-        
+        // 分辨率btn点击
+        [self.resolutionBtn addTarget:self action:@selector(resolutionAction:) forControlEvents:UIControlEventTouchUpInside];
+        UITapGestureRecognizer *sliderTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapSliderAction:)];
+        [self.videoSlider addGestureRecognizer:sliderTap];
         
         
     }
