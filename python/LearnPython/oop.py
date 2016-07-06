@@ -76,3 +76,32 @@ bart = Student('Bart Simpson', 98)
 
 print(bart._Student__name)
 
+
+class Animal(object):
+    def run(self):
+        print('Animal is running...')
+
+
+class Dog(Animal):
+    pass
+
+class Cat(Animal):
+    pass
+
+dog = Dog()
+dog.run()
+
+cat = Cat()
+cat.run()
+
+class Dog(Animal):
+    def run(self):
+        print('Dog is running...')
+
+    def eat(self):
+        print('Eating meat...')
+
+
+        
+
+
