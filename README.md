@@ -295,6 +295,7 @@ CAShapeLayer有着几点很重要:
 * [新浪微博iOS客户端架构与优化之路](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112273&idx=1&sn=893a66a04e541a99b7bc4d7cf227e2f7#rd)
 * [滴滴出行iOS客户端架构演进之路](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=402854111&idx=1&sn=5876e615fabd6d921285d904e16670fb#rd)
 * [面向切面编程之 Aspects 源码解析及应用](http://wereadteam.github.io/2016/06/30/Aspects/)
+* [解耦神器 —— 统跳协议和Rewrite引擎_Gaosboy](http://pingguohe.net/2015/11/24/Navigator-and-Rewrite.html?from=timeline&isappinstalled=0)
 
 
 ### FRP
