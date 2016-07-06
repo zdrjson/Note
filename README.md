@@ -64,7 +64,7 @@
 * [AVFoundation(二)：核心AVAsset](http://www.jianshu.com/p/9805be76ee68)
 * [iOS音视频实现边下载边播放](http://sky-weihao.github.io/2015/10/06/Video-streaming-and-caching-in-iOS/)
 * [CTVideoPlayerView](https://github.com/casatwy/CTVideoPlayerView)
-
+* [Eleven Player is a simple powerful video player.use ffmpeg](https://github.com/coderyi/Eleven)
 
 ```
 CMTimeMake和CMTimeMakeWithSeconds 详解 
@@ -218,6 +218,7 @@ What it provides
 * [why SDWebImageDecoder](http://www.jianshu.com/p/135e17c7d10f)
 * [Y_KLine](https://github.com/yate1996/Y_KLine)
 * [StockKLine](https://github.com/mengmanzbh/StockKLine)
+* [高仿支付宝解锁](https://github.com/CharlinFeng/CoreLock)
 
 ### 占位视图
 * [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
@@ -229,6 +230,7 @@ What it provides
 
 ### Button
 * [图片与文字不定Btn](https://github.com/lianchengjiang/LCUIKit)
+
 
 
 ## CALayer
