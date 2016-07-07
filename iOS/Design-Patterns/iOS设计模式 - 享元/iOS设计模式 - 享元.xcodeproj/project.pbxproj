@@ -17,6 +17,8 @@
 		F52E4EDA1D2EA7A6002BDD52 /* iOS_________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E4ED91D2EA7A6002BDD52 /* iOS_________Tests.m */; };
 		F52E4EE51D2EA7A6002BDD52 /* iOS_________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E4EE41D2EA7A6002BDD52 /* iOS_________UITests.m */; };
 		F52E4EF41D2EA7CA002BDD52 /* CoffeeShop.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E4EF31D2EA7CA002BDD52 /* CoffeeShop.m */; };
+		F52E4EF71D2EA89D002BDD52 /* CoffeeFlavor.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E4EF61D2EA89D002BDD52 /* CoffeeFlavor.m */; };
+		F52E4EFA1D2EA90A002BDD52 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E4EF91D2EA90A002BDD52 /* Menu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		F52E4EE61D2EA7A6002BDD52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F52E4EF21D2EA7CA002BDD52 /* CoffeeShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeShop.h; sourceTree = "<group>"; };
 		F52E4EF31D2EA7CA002BDD52 /* CoffeeShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeShop.m; sourceTree = "<group>"; };
+		F52E4EF51D2EA89D002BDD52 /* CoffeeFlavor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeFlavor.h; sourceTree = "<group>"; };
+		F52E4EF61D2EA89D002BDD52 /* CoffeeFlavor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeFlavor.m; sourceTree = "<group>"; };
+		F52E4EF81D2EA90A002BDD52 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		F52E4EF91D2EA90A002BDD52 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				F52E4EC01D2EA7A5002BDD52 /* AppDelegate.m */,
 				F52E4EC21D2EA7A5002BDD52 /* ViewController.h */,
 				F52E4EC31D2EA7A5002BDD52 /* ViewController.m */,
+				F52E4EF51D2EA89D002BDD52 /* CoffeeFlavor.h */,
+				F52E4EF61D2EA89D002BDD52 /* CoffeeFlavor.m */,
+				F52E4EF81D2EA90A002BDD52 /* Menu.h */,
+				F52E4EF91D2EA90A002BDD52 /* Menu.m */,
 				F52E4EF21D2EA7CA002BDD52 /* CoffeeShop.h */,
 				F52E4EF31D2EA7CA002BDD52 /* CoffeeShop.m */,
 				F52E4EC51D2EA7A5002BDD52 /* Main.storyboard */,
@@ -279,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52E4EC41D2EA7A5002BDD52 /* ViewController.m in Sources */,
+				F52E4EFA1D2EA90A002BDD52 /* Menu.m in Sources */,
+				F52E4EF71D2EA89D002BDD52 /* CoffeeFlavor.m in Sources */,
 				F52E4EC11D2EA7A5002BDD52 /* AppDelegate.m in Sources */,
 				F52E4EBE1D2EA7A5002BDD52 /* main.m in Sources */,
 				F52E4ECA1D2EA7A5002BDD52 /* iOS_________.xcdatamodeld in Sources */,
