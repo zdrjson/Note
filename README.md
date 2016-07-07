@@ -378,7 +378,7 @@ CAShapeLayer有着几点很重要:
 * [如何解决GitHub commit次数过多.git文件过大的问题?](https://www.zhihu.com/question/29769130)
 * [if you change your password or username on GitHub](https://help.github.com/articles/updating-credentials-from-the-osx-keychain/)
 * [git 原理](http://gold.xitu.io/entry/575e223a165abd005559294f)
-* [Shell 编程初探](http://draveness.me/shell-bian-cheng-chu-tan/)
+
 ```
 git Alias
 autoPush() {
@@ -591,7 +591,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 
 
 
-#Python
+# Python
 
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/index.html)
 * [scrapy](https://github.com/scrapy/scrapy)
@@ -603,6 +603,9 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 
 # DNS 
 [DNS 原理入门](http://www.ruanyifeng.com/blog/2016/06/dns.html)
+
+# Shell
+* [Shell 编程初探](http://draveness.me/shell-bian-cheng-chu-tan/)
 
 
 
