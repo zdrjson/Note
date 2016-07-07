@@ -122,7 +122,7 @@ print(isinstance(c, Dog))
 
 
 def run_twice(animal):
-    
+
 
 
 
