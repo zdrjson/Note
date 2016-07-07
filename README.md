@@ -379,6 +379,16 @@ CAShapeLayer有着几点很重要:
 * [if you change your password or username on GitHub](https://help.github.com/articles/updating-credentials-from-the-osx-keychain/)
 * [git 原理](http://gold.xitu.io/entry/575e223a165abd005559294f)
 
+```
+git Alias
+autoPush() {
+    git add -A
+    git commit -m $1
+    git push
+}
+alias g=autoPush
+```
+
 ### Gitpages
 * [southpeak.github.io](http://southpeak.github.io)
   
