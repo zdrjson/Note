@@ -201,6 +201,7 @@ What it provides
 * [LiveVideoCoreSDK](https://github.com/runner365/LiveVideoCoreSDK)
 * [SmarterStreaming](https://github.com/daniulive/SmarterStreaming)
 * [主流跨平台媒体库ffmpeg，live555，MobileVLCKit简介](https://segmentfault.com/a/1190000002953107)
+* [MiaowShow iOS视频直播项目](https://github.com/SunLiner/MiaowShow)
 
 ##Audio
 * [MPVolumeView_iOS program modification system volume](https://segmentfault.com/a/1190000002401961)
@@ -320,6 +321,11 @@ CAShapeLayer有着几点很重要:
 * [Objective-C 消息发送与转发机制原理](http://yulingtianxia.com/blog/2016/06/15/Objective-C-Message-Sending-and-Forwarding/)
 * [Calling Conventions](http://slides.com/sunnyxx/calling-conventions-in-cocoa#/)
 * [如何动态调用 C 函数](http://mp.weixin.qq.com/s?__biz=MzIzNTQ2MDg2Ng==&mid=2247483687&idx=1&sn=94d3ce224e5e25f2e1ae8a6046efb472#rd)
+
+## SQLite
+* [GYDataCenter](https://github.com/Zepo/GYDataCenter)
+* [CTPersistance](https://github.com/casatwy/CTPersistance)
+* [FMDB](https://github.com/ccgus/fmdb)
 
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
