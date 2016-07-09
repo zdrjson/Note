@@ -315,6 +315,7 @@ CAShapeLayer有着几点很重要:
 * [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
 * [sunny runloop实战](http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/)
 * [NSRunLoop、参与多线程之间的通信](http://xiongzenghuidegithub.github.io/blog/2015/08/21/nsrunloop,-can-yu-duo-xian-cheng-zhi-jian-de-tong-xin/)
+* [iOS实时卡顿监控](http://ios.jobbole.com/83742/)
 
 ## Runtime
 * [翻译-为什么objc_msgSend必须用汇编实现](http://tutuge.me/2016/06/19/translation-why-objcmsgsend-must-be-written-in-assembly/)
@@ -377,7 +378,7 @@ CAShapeLayer有着几点很重要:
 * [Ghost博客搭建 - 追随猫神之路](http://402v.com/ghostbo-ke-da-jian-xi-lie-zhui-sui-mao-shen-zhi-lu/)
 * [MartinRGB](http://www.martinrgb.com)
 * [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
-* [](http://toolinbox.net)
+* [iPic](http://toolinbox.net)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -428,6 +429,10 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [AppleDNS](https://github.com/gongjianhui/AppleDNS)
 * [alfred workflow 李大锤同学](http://weibo.com/lizexipablo?profile_ftype=1&is_all=1&is_search=1&key_word=alfred#_0)
 * [鼠须管](https://github.com/rime/squirrel)
+* [Mac  开发者  怕雾霾和没vim  设计师](http://liqi.io/zhangbin/)
+* [Mac  Swift  同用书垫电脑  开发者](http://liqi.io/wangling/)
+
+
 
 ```
 homebrew-cask,官网传送, 是一套建立在homebrew基础上的Mac软件安装命令行工具。与brew的区别就
