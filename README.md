@@ -336,6 +336,7 @@ CAShapeLayer有着几点很重要:
 * [Operation not permitted - /usr/bin/fuzzy_match](http://blog.csdn.net/sinat_29998157/article/details/50070687)
 * [While executing gem ... (TypeError) no implicit conversion of nil into String](http://stackoverflow.com/questions/25844937/how-to-install-cocoa-pods-in-terminal)
 * [When using cocoapods, what is the best way to change the PRODUCT_NAME?](http://stackoverflow.com/questions/31120403/when-using-cocoapods-what-is-the-best-way-to-change-the-product-name)
+* [理解Cocoapods](https://segmentfault.com/a/1190000005041357)
 
 ##SomeGuysBlog
 * [WeiXinRead](http://wereadteam.github.io)
@@ -629,4 +630,6 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 
 
 
+
+用telnet命令来测试服务器
 
