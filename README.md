@@ -586,17 +586,22 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [HTML 5 <a> 标签的 target 属性](http://www.w3school.com.cn/html5/att_a_target.asp)
 
 #JS
+
 * [详解js跨域问题](https://segmentfault.com/a/1190000000718840)
 * [js标准对象](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449957099176f55ba07b764c3daa522217d0e42643000)
-* [JavaScript 之 this 详解](http://www.jeffjade.com/2015/08/03/2015-08-03-javascript-this/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 * [Node.js 包教不包会](https://github.com/alsotang/node-lessons)
 * [vue.js 60分钟快速入门](http://www.cnblogs.com/keepfool/p/5625583.html)
 * [lihei_jquery](http://blog.csdn.net/lihei12345/article/category/2393611)
 
+## this
+* [JavaScript 之 this 详解](http://www.jeffjade.com/2015/08/03/2015-08-03-javascript-this/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
+* [Javascript的this用法](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
 
-## 前端
+
+# 前端
 
 * [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/preference/browser-rendering-performance.html)
+* [iOS客户端开发与Web前端开发](http://blog.cnbang.net/tech/1813/)
 
 ### IDE
 * [brackets](https://github.com/adobe/brackets)
