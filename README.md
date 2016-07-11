@@ -417,6 +417,9 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 ## Efficiency 
 * [Mac_MrPeak](http://mrpeak.cn/blog/mac-efficiency/)
 
+## Vim
+* [VIM——帮助和配置](http://macshuo.com/?p=769)
+
 
 ## Tool
 * [Phabricator](http://phabricator.org/)
@@ -618,6 +621,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [youtube-dl](https://github.com/rg3/youtube-dl)
 * [you-get](https://github.com/soimort/you-get)
 * [Python的所有内置函数](https://docs.python.org/3/library/functions.html)
+* [AppleDNS](https://github.com/gongjianhui/AppleDNS)
 
 # DNS 
 [DNS 原理入门](http://www.ruanyifeng.com/blog/2016/06/dns.html)
