@@ -417,8 +417,11 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 ## Efficiency 
 * [Mac_MrPeak](http://mrpeak.cn/blog/mac-efficiency/)
 
+
 ## Vim
 * [VIM——帮助和配置](http://macshuo.com/?p=769)
+* [VIM——为效率而生](http://macshuo.com/?p=755)
+* [VIM——缘起](http://macshuo.com/?p=748)
 
 
 ## Tool
