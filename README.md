@@ -3,6 +3,7 @@
 ## **Algorithm**
 * [Direct insertion sort](http://www.henishuo.com/insert-sort/)
 * [张不坏的博客](http://zhangbuhuai.com/2015/06/28/Array-and-Algorithm/)
+* [git二分法查找命令的使用](http://blog.csdn.net/maybe_windleave/article/details/8532092)
 
 
 
