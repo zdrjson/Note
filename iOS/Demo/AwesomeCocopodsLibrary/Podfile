@@ -41,6 +41,7 @@ pod 'GPUImage'
 #pod 'RestKit'
 pod 'Mantle'
 
+pod 'HYBHelperKit'
 pod 'EZAudio'
 pod 'CocoaLumberjack'
 pod 'FlatUIKit'

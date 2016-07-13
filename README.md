@@ -18,6 +18,7 @@
 
 ### CollectionAnimation
 * [popping](https://github.com/schneiderandre/popping)
+* [The Animation Collection_YouXianMing](https://github.com/YouXianMing/Animations)
 
 ### facebookPopMenuAnimation
 * [DXPopover](https://github.com/xiekw2010/DXPopover)
