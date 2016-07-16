@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        alert(document) //[object HTML]
+        var document
+    </script>
+
+    <script>
+        (function () {
+            alert(document) //undefined
+            var document
+        })()
+    </script>
+
+    <script>
+
+        var obj = {a : 1}
+        with (obj) {
+            var a = 2
+        }
+        alert(obj.a)
+
+        with (obj) {
+            a = 5
+        }
+        alert(obj.a) 
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
