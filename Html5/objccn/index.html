@@ -10,7 +10,8 @@
   <div id="__wrapper">
       <header>
       <nav class="navbar navbar-default">
-          <div class="navbar-header">
+          <div class="container">
+           <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                  <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
@@ -19,25 +20,50 @@
                   <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="/">[@] Objc 中国</a>
-          </div>
+           </div>
 
-          <div class="collapse navbar-collapse" id="navbar-collapse">
+           <div class="collapse navbar-collapse" id="navbar-collapse">
               <ul class="nav navbar-nav">
-              <li><a href="/issuses/">旗杆</a></li>
-              <li><a href="/products/">书籍</a></li>
+                 <li><a href="/issuses/">旗杆</a></li>
+                 <li><a href="/products/">书籍</a></li>
               </ul>
 
               <ul class="nav navbar-nav navbar-right">
                   <li><a href="/login/"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
               </ul>
+           </div>
 
-              
           </div>
-
-
-
       </nav>
       </header>
+      <main class="container">
+          <div class="page-header">
+              <h1 class="text-center">ObjC 中国</h1>
+          </div>
+
+          <row>
+              <div class="col-md-10 col-md-offset-1">
+                  <h3 class="text-center subtitle">为中国 Apple 开发社区带来最佳实践和先进技术</h3>
+              </div>
+          </row>
+
+          <div class="container">
+              <div class="row">
+                  <div class="index-content col-sm-6">
+                      <div class="boxed-content left-aligned left-boxed-icon">
+                          <span class="icon glyphicon glyphicon-eduication"></span>
+                          <h2 class="boxed-content-title"><a href="/issues/">期刊</a></h2>
+                          <p><a href="https://www.objc.io/issues/">objc.io 期刊</a>自 2013 年中以来，在两年时间内发布了 24 期高质量的 Apple 平台开发相关的文章，内容涉及视图、动画、架构、测试等诸多方面，涵盖了优秀 Apple 开发者需要知道的各项进阶内容。</p>
+                          <p>ObjC 中国项目与 objc.io 展开合作，我们的<a href="https://github.com/objccn/articles/graphs/contributors">志愿者</a>将这些期刊翻译成了中文,以飨广大中文读者。</p>
+                      </div>
+                      <a class="btn btn-index btn-lg" href="/issues/">查看期刊专题</a>
+                      <p class="dim">您也可以访问我们的 <a href="https://github.com/objccn/articles">GitHub 仓库</a>获取所有开源的期刊译文</p>
+
+                  </div>
+              </div>
+          </div>
+
+      </main>
   </div>
 </body>
 </html>
