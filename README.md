@@ -302,6 +302,7 @@ CAShapeLayer有着几点很重要:
 * [滴滴出行iOS客户端架构演进之路](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=402854111&idx=1&sn=5876e615fabd6d921285d904e16670fb#rd)
 * [面向切面编程之 Aspects 源码解析及应用](http://wereadteam.github.io/2016/06/30/Aspects/)
 * [解耦神器 —— 统跳协议和Rewrite引擎_Gaosboy](http://pingguohe.net/2015/11/24/Navigator-and-Rewrite.html?from=timeline&isappinstalled=0)
+* [不要写死！天猫App的动态化配置中心实践](http://mp.weixin.qq.com/s?plg_nld=1&plg_uin=1&mid=402842876&idx=1&plg_nld=1&scene=23&plg_auth=1&__biz=MzA3ODg4MDk0Ng%3D%3D&plg_dev=1&srcid=0714QNbdzbzuS1Ulam0tklNi&plg_usr=1&plg_vkey=1&sn=e15d596c95bf7d1ed579cfd7e410696a#rd)
 
 
 ### FRP
