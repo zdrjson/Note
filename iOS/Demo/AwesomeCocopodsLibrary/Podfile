@@ -56,7 +56,7 @@ pod 'FDStackView'
 pod 'FDFullscreenPopGesture'
 
 pod 'JLRoutes'
-pod "MWPhotoBrowser"
+#pod "MWPhotoBrowser"
 pod 'JazzHands'
 pod 'Aspects'
 pod 'JSPatch'
