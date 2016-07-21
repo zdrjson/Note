@@ -74,8 +74,8 @@
       <file leaf-file-name="vue.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            <state relative-caret-position="94">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -109,8 +109,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-164" />
-    <option name="y" value="112" />
+    <option name="x" value="68" />
+    <option name="y" value="156" />
     <option name="width" value="1280" />
     <option name="height" value="683" />
   </component>
@@ -257,15 +257,15 @@
       <workItem from="1468673999089" duration="3775000" />
       <workItem from="1468679240611" duration="4170000" />
       <workItem from="1468819964739" duration="5872000" />
-      <workItem from="1469012554389" duration="415000" />
+      <workItem from="1469012554389" duration="1999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14232000" />
+    <option name="totallyTimeSpent" value="15816000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-164" y="112" width="1280" height="683" extended-state="0" />
+    <frame x="68" y="156" width="1280" height="683" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -404,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        <state relative-caret-position="94">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding />
         </state>
       </provider>
