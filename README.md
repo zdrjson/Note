@@ -648,6 +648,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 # Shell
 * [Shell 编程初探](http://draveness.me/shell-bian-cheng-chu-tan/)
 * [入门bash Shell脚本](http://blog.wtlucky.com/blog/2013/05/02/start-write-shell/)
+* [Shell脚本编程总结及速查手册](http://blog.jobbole.com/103790/)
 
 # VPN
 * [clowwindy](https://github.com/clowwindy?tab=repositories)
