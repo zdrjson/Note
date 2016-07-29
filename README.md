@@ -591,6 +591,20 @@ rnr,flask,express
 用telnet命令来测试服务器
 ```
 
+
+
+```
+端口
+
+端口的作用：通过端口来区分出同一电脑内不同应用或者进程，从而实现一条物理网线(通过分组交换技术-比如
+internet)同时链接多个程序 Port_(computer_networking)
+
+端口号是一个 16位的 uint, 所以其范围为 1 to 65535 (对TCP来说, port 0 被保留，不能被使用. 对
+于UDP来说, source端的端口号是可选的， 为0时表示无端口).
+
+app.listen(3000)，进程就被打标，电脑接收到的3000端口的网络消息就会被发送给我们启动的这个进程
+```
+
 * [纯IPv6环境App适配的坑](http://mrpeak.cn/blog/ipv6/)
 * [前端技能汇总](https://github.com/JacksonTian/fks)
 * [JSPatch实现原理详解](http://blog.cnbang.net/tech/2808/)
