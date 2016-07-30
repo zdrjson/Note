@@ -637,6 +637,9 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [lihei_jquery](http://blog.csdn.net/lihei12345/article/category/2393611)
 * [Blog_Platform](https://github.com/TryGhost/Ghost)
 
+## Nodejs
+[淘宝 NPM 镜像](https://npm.taobao.org)
+
 
 ## this
 * [JavaScript 之 this 详解](http://www.jeffjade.com/2015/08/03/2015-08-03-javascript-this/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
