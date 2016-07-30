@@ -1,0 +1,17 @@
+{
+  "name": "lesson5",
+  "version": "1.1.2",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "superagent": "^2.1.0",
+    "eventproxy": "^0.3.5",
+    "cheerio": "^0.20.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
