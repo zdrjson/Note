@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    top:
+            for (var i = 0; i < 3; i++) {
+                for (var j = 0; j < 3; j++) {
+                    if (i===1 && j === 1) break top;
+                    console.log('i=' + i + ', j=' + j);
+                }
+            }
+    function countdown(n) {
+        while (n --> 0) console.log(n); //n-- > 0
+    }
+    countdown(3);
+
+
+    var x = 1;
+    switch (x) {
+        case true:
+            console.log('x发生类型装换');
+        default:
+            console.log('x没有发生类型转换');
+    }
+
+
+    var pricing = {
+        'VIP': 0.50,
+        'Preferred': 0.75,
+        'Regular': 1.0
+    };
+
+    function getItempPricing(customer, item) {
+        if (pricing[customer.type]) {
+          return item.price * item.quantity * pricing[customer.type];
+        }  else  {
+            return item.price * item.quantity * pricing.Regular;
+        }
+    }
+
+
+//    var even = (n % 2 === 0) ? true : false;
+
+
+    var myVar;
+    console.log(myVar ?
+            'myVar has a value'
+            : 'myVar do not has a value'
+    );
+
+//    var msg = 'The number' + n + ' is ' + ((n % 2 === 0) ? 'even': 'odd');
+
+    var x = 3;
+    for (var i = 0; i < x; i++) {
+        console.log(i);
+    }
+
+    top:
+    for (var i = 0; i < 3; i++) {
+        for (var j = 0; j < 3; j++) {
+            if (i===1 && j === 1) break top;
+            console.log('i=' + i + ', j=' + j);
+        }
+    }
+</script>
+</body>
+</html>

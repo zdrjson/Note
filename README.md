@@ -605,6 +605,11 @@ internet)同时链接多个程序 Port_(computer_networking)
 app.listen(3000)，进程就被打标，电脑接收到的3000端口的网络消息就会被发送给我们启动的这个进程
 ```
 
+
+
+JavaScript引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行一行地运行。这造成的结果，就是所有的变量的声明语句，**都会被提升到代码的头部**，这就叫做变量提升（hoisting）。
+
+
 * [纯IPv6环境App适配的坑](http://mrpeak.cn/blog/ipv6/)
 * [前端技能汇总](https://github.com/JacksonTian/fks)
 * [JSPatch实现原理详解](http://blog.cnbang.net/tech/2808/)
@@ -675,6 +680,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [Potatso](https://github.com/shadowsocks/Potatso)
 * [VPNOn](https://github.com/lexrus/VPNOn)
 * [FireUpYourVPN](https://github.com/johnlui/FireUpYourVPN)
+* [Potatso使用说明](https://manual.potatso.com)
 
 # GitHubStars
 [TinyPNG4Mac 图片压缩MacApp](https://github.com/kyleduo/TinyPNG4Mac)
