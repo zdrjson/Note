@@ -6,6 +6,42 @@
 </head>
 <body>
 <script>
+
+    if ('') {
+        console.log(true);
+    }
+    //没有任何输出
+
+    //需要特别注意的是，空数组（[]）和空对象（{}）对应的布尔值，都是true。
+    if([]) {
+        console.log(true);
+    }
+
+    if ({}) {
+        console.log(true);
+    }
+
+    // undefined
+    var i;
+    i;
+    function f(x) {
+        return x;
+    }
+    f()
+
+    var o = new Object();
+    o.p
+
+    function f() {
+
+    }
+
+    f()
+
+    // undefined
+
+
+
     top:
             for (var i = 0; i < 3; i++) {
                 for (var j = 0; j < 3; j++) {
