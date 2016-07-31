@@ -305,6 +305,7 @@ CAShapeLayer有着几点很重要:
 * [解耦神器 —— 统跳协议和Rewrite引擎_Gaosboy](http://pingguohe.net/2015/11/24/Navigator-and-Rewrite.html?from=timeline&isappinstalled=0)
 * [不要写死！天猫App的动态化配置中心实践](http://mp.weixin.qq.com/s?plg_nld=1&plg_uin=1&mid=402842876&idx=1&plg_nld=1&scene=23&plg_auth=1&__biz=MzA3ODg4MDk0Ng%3D%3D&plg_dev=1&srcid=0714QNbdzbzuS1Ulam0tklNi&plg_usr=1&plg_vkey=1&sn=e15d596c95bf7d1ed579cfd7e410696a#rd)
 * [从无到有：微信后台系统的演进之路](http://geek.csdn.net/news/detail/51045)
+* [万亿级调用系统：微信序列号生成器架构设计及演变](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=503509249&idx=1&sn=44fbaff1e0fc0b5e8a8f8ad9585086f0#rd)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
