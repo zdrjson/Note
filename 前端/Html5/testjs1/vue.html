@@ -73,5 +73,42 @@
         }
     })
 </script>
+
+<div id="vue-demo1">
+    <ul>
+        <li v-for="data in list">
+            {{ data.text }}
+        </li>
+    </ul>
+</div>
+<script>
+    new Vue({
+       el: '#vue-demo1',
+        data: {
+            list: [
+                {text: 'fengyu'},
+                {text: '冯小兵'},
+                {text: '学习Vue'}
+            ]
+        }
+    });
+</script>
+<div id="vue-demo11">
+    {{message}}
+    <button v-on:click="trim" type="button" name="button">过滤消息中的空格</button>
+</div>
+<script>
+    new Vue({
+       el: '#vue-demo11',
+        data: {
+            message1:"He llo Vu e"
+        },
+        methods: {
+            trim: function () {
+                this.message1 = this.message.replace(\/sgi, "");
+            }
+        }
+    });
+</script>
 </body>
 </html>

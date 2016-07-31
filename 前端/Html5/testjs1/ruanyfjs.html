@@ -6,6 +6,84 @@
 </head>
 <body>
 <script>
+    var items = [1,2,3,4,5,6];
+    var results = [];
+    function series(item) {
+        if (item) {
+            async(item, function (result) {
+               results.push(result);
+                return series(items.shift());
+            });
+        } else  {
+            return final(results);
+        }
+    }
+
+
+    items.forEach(function (item) {
+       async(item, function (result) {
+         results.push(result);
+           if (results.length == items.length) {
+               final(results);
+           }
+       });
+    });
+
+
+    var items = [1,2,3,4,5,6];
+    var results = [];
+    var running = 0;
+    var limit = 2;
+    function launcher() {
+        while (running < limit && items.length > 0) {
+            var item = items.shift();
+            async(item, function (result) {
+               results.push(result);
+                running--;
+                if (items.length > 0) {
+                    launcher();
+                } else if (running == 0) {
+                    final();
+                }
+            });
+            running++;
+        }
+    }
+
+    (new Promise(f1)).then(f2);
+
+
+    (new Promise(step1))
+            .then(step2)
+            .then(step3)
+            .then(step4);
+
+
+    
+    series(items.shift());
+
+    function checkStorageSupport() {
+        if (window.sessionStorage) {
+            return true;
+        } else  {
+            return false;
+        }
+
+        if (window.localStorage) {
+            return true;
+        } else  {
+            return false;
+        }
+
+
+    }
+
+    window.addEventListener("storage",onStorageChange);
+
+
+    function onStorageChange(e) {
+        console.log(e.key);
+    }
 
     if ('') {
         console.log(true);
