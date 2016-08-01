@@ -109,6 +109,54 @@
             }
         }
     });
+
+
+
+</script>
+
+
+<h3>综合应用(SQL-IN查询-参数处理工具)</h3>
+<div id="vue-demo1">
+    {{intro}}
+    <br><br>
+    <ul>
+        <li v-for="data in list">
+            {{data.id}}
+        </li>
+    </ul>
+
+    <br>
+    {{intro1}}
+    <br><br>
+
+    <span v-for="data in list">
+        '{{data.id}}',
+    </span>
+
+    <br><br>
+    <textarea name="sqlinquery" class="sqlinquery" v-model="querydata"></textarea>
+
+    <button v-on:click="change" type="button" name="button">转换</button>
+</div>
+
+<script>
+    new Vue({
+        el: '#vue-demo1',
+        data: {
+            intro: "当我们从excel中粘出需要查询的数据时，往往是这种格式的",
+            intro1: "如果需要使用sql中in条件查询，我们多么希望它能变为下面这种格式",
+            list: [
+                {id: '商品1'},
+                {id: '商品2'},
+                {id: '商品3'}
+            ]
+        },
+        methods: {
+            change: function(){
+                this.querydata = "('" + this.querydata.trim().replace(/\n/gi, "\',\'") + "')";
+            }
+        }
+    })
 </script>
 </body>
 </html>

@@ -59,7 +59,59 @@
             .then(step4);
 
 
-    
+//    return {
+//      key : value
+//    };
+
+    var f = function f() {
+
+    };
+
+    if(!0) {
+        var o = {};
+    }
+
+    var o;
+    if (!o) {
+        o = {};
+    }
+
+    function doAction(action) {
+        var actions = {
+            'hack': function () {
+              return 'hack';
+            },
+            'slash': function () {
+                return 'slash';
+            },
+            'run':function () {
+                return 'run';
+            }
+        };
+
+        if  (typeof  actions[action] !== 'function') {
+            throw new Error('Invalid action.');
+        }
+        return actions[action]();
+    }
+
+    function myIsNaN(value) {
+        return value !== value;
+    }
+
+    function myIsNaN() {
+        return typeof value === 'number' && isNaN(value);
+    }
+
+    var o = {
+        p : function (x) {
+            return 2 * x;
+        }
+    };
+
+    o.p(1);
+
+
     series(items.shift());
 
     function checkStorageSupport() {

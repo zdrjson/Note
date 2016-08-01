@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj = {
+      m1: function f() {
+
+      },
+       m2: function () {
+
+       }
+    };
+    console.log(obj.m1.name);
+    console.log(obj.m2.name);
+
+    console.log(eval('{foo: 123}'));
+    console.log(eval('({foo: 123})'));
+
+    var o = {
+      key1: 1,
+      key2: 2
+    };
+
+    console.log(Object.keys(o));
+
+
+    delete  o.p;
+
+    var o = Object.defineProperties({}, 'p',{
+        value: 123,
+        configurable: false
+    });
+
+    
+
+
+</script>
+</body>
+</html>
