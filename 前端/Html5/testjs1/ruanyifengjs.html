@@ -88,9 +88,103 @@ console.log(o1.toString());
     console.log(type.isNumber(NaN))
     console.log(type.isRegExp(/abc/))
     
+    var add = new Function (
+      'x',
+      'y',
+      'return (x + y)'
+    );
     
-    
-    
+    function add(x , y) {
+        return (x + y);
+    }
+
+    var foo = new Function(
+            'return "Hello world"'
+    );
+
+    function foo() {
+      return 'hello world';
+    };
+
+
+    function f() {
+        console.log(1);
+    }
+    f()
+
+
+    function f() {
+        console.log(2);
+    }
+
+    f()
+
+    function fib(num) {
+        if (num > 2) {
+            return fib (num - 2) + fib(num - 1);
+        } else {
+            return 1;
+        }
+    }
+
+    fib(6)
+
+    function add(x,y) {
+        return x + y;
+    }
+
+    var operator = add;
+    function a(op) {
+        return op;
+    }
+
+   console.log(a(add)(1,1));
+
+    function f1() {
+
+    };
+    console.log(f1.name)
+
+    var f2 = function () {
+
+    };
+
+    console.log(f2.name)
+
+    var f3 = function myName() {
+
+    };
+
+    console.log(f3.name)
+
+    var multiline = function (fn) {
+      var arr = fn.toString().split('\n');
+        return arr.slice(1, arr.length - 1).join('\n');
+    };
+
+    function f() {/*
+       这是一个
+       多行注释
+    */}
+
+    console.log(multiline(f.toString()));
+
+
+    var v = 1;
+    function f() {
+        var v = 2;
+        console.log(v);
+    }
+
+    f();
+    console.log('vvvvv'+ v);
+
+
+    if (true) {
+        var x = 5;
+    }
+
+    console.log(x);
     console.log('-----------------------');
 
 

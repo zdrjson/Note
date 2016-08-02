@@ -611,6 +611,9 @@ app.listen(3000)，进程就被打标，电脑接收到的3000端口的网络消
 JavaScript引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行一行地运行。这造成的结果，就是所有的变量的声明语句，**都会被提升到代码的头部**，这就叫做变量提升（hoisting）。
 
 
+**注意，对于var命令来说，局部变量只能在函数内部声明，在其他区块中声明，一律都是全局变量**
+
+
 * [纯IPv6环境App适配的坑](http://mrpeak.cn/blog/ipv6/)
 * [前端技能汇总](https://github.com/JacksonTian/fks)
 * [JSPatch实现原理详解](http://blog.cnbang.net/tech/2808/)
