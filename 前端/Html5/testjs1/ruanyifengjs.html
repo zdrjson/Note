@@ -185,6 +185,19 @@ console.log(o1.toString());
     }
 
     console.log(x);
+
+
+    var a = 1;
+    var xx = function () {
+      console.log('1' + a);
+    };
+
+    function f() {
+      var a = 2;
+        xx();
+    };
+
+    f();
     console.log('-----------------------');
 
 

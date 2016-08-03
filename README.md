@@ -637,9 +637,14 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
 * [js标准对象](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449957099176f55ba07b764c3daa522217d0e42643000)
 * [Node.js 包教不包会](https://github.com/alsotang/node-lessons)
-* [vue.js 60分钟快速入门](http://www.cnblogs.com/keepfool/p/5625583.html)
+
 * [lihei_jquery](http://blog.csdn.net/lihei12345/article/category/2393611)
 * [Blog_Platform](https://github.com/TryGhost/Ghost)
+
+## Vue.js
+* [vue.js 60分钟快速入门](http://www.cnblogs.com/keepfool/p/5625583.html)
+* [vue勾三股四](http://jiongks.name/)
+
 
 ## Nodejs
 [淘宝 NPM 镜像](https://npm.taobao.org)
@@ -648,6 +653,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 ## this
 * [JavaScript 之 this 详解](http://www.jeffjade.com/2015/08/03/2015-08-03-javascript-this/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 * [Javascript的this用法](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
+
 
 
 # 前端
