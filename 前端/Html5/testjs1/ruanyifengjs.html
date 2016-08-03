@@ -56,6 +56,8 @@ console.log(o1.toString());
     };
 
 
+
+
     console.log('-----------------------');
     console.log(type({}));
     console.log(type([]));
@@ -192,12 +194,41 @@ console.log(o1.toString());
       console.log('1' + a);
     };
 
-    function f() {
+    function ff() {
       var a = 2;
         xx();
     };
 
-    f();
+    ff();
+
+
+//    var xa = function () {
+//        console.log('zazaza');
+//      console.log(aa);
+//    };
+//
+//    function y(fa) {
+//      var aa = 2;
+//        fa();
+//    };
+//
+//    y(xa);
+
+
+
+    function  fooo() {
+        var xx = 1;
+        function bar() {
+            console.log(x);
+        }
+        return bar;
+    };
+
+    var xx = 2;
+    var fff = fooo();
+
+    fff();
+
     console.log('-----------------------');
 
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function foo() {
+        var x = 1;
+        function bar() {
+            console.log(x);
+        }
+        return bar;
+    }
+
+    var x = 2;
+    var f = foo();
+    f() // 1
+
+
+    function square(x) {
+        return x * x;
+    }
+
+    console.log(square(2));
+    console.log(square(3));
+
+    function  f1(a, b) {
+        return a;
+    }
+
+   console.log(f1(1, 2, 3));
+   console.log(f1(1));
+    console.log(f1());
+
+    console.log(f1.length);
+
+
+    function f2(a, b) {
+        return a;
+    }
+
+//    f2(, 1)
+    f2(undefined, 1)
+
+//    function f3(a) {
+//        a = a || 1;
+//        return a;
+//    }
+//
+//
+//    f3('');
+//    f3(0);
+
+
+    function f4(a) {
+        (a !== undefined && a != null) ? a = a: a = 1;
+        return a;
+    }
+
+   console.log(f4());
+   console.log(f4(''));
+    console.log(f4(0));
+    console.log(f4(null));
+
+
+
+
+
+
+</script>
+</body>
+</html>
