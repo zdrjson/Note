@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52275771D54378200B603BA /* JSProtocolObj.m in Sources */ = {isa = PBXBuildFile; fileRef = F52275761D54378200B603BA /* JSProtocolObj.m */; };
 		F5282E1D1D4861930034933D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5282E1C1D4861930034933D /* main.m */; };
 		F5282E201D4861930034933D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5282E1F1D4861930034933D /* AppDelegate.m */; };
 		F5282E231D4861930034933D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5282E221D4861930034933D /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F52275751D54378200B603BA /* JSProtocolObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProtocolObj.h; sourceTree = "<group>"; };
+		F52275761D54378200B603BA /* JSProtocolObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProtocolObj.m; sourceTree = "<group>"; };
 		F5282E181D4861930034933D /* JSContextTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSContextTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5282E1C1D4861930034933D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5282E1E1D4861930034933D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				F5282E1F1D4861930034933D /* AppDelegate.m */,
 				F5282E211D4861930034933D /* ViewController.h */,
 				F5282E221D4861930034933D /* ViewController.m */,
+				F52275751D54378200B603BA /* JSProtocolObj.h */,
+				F52275761D54378200B603BA /* JSProtocolObj.m */,
 				F5282E241D4861930034933D /* Main.storyboard */,
 				F5282E2A1D4861930034933D /* Assets.xcassets */,
 				F5282E2C1D4861930034933D /* LaunchScreen.storyboard */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5282E291D4861930034933D /* JSContextTest.xcdatamodeld in Sources */,
+				F52275771D54378200B603BA /* JSProtocolObj.m in Sources */,
 				F5282E231D4861930034933D /* ViewController.m in Sources */,
 				F5282E201D4861930034933D /* AppDelegate.m in Sources */,
 				F5282E1D1D4861930034933D /* main.m in Sources */,
@@ -502,6 +508,7 @@
 				F5282E4A1D4861930034933D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5282E4B1D4861930034933D /* Build configuration list for PBXNativeTarget "JSContextTestTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				F5282E4D1D4861930034933D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5282E4E1D4861930034933D /* Build configuration list for PBXNativeTarget "JSContextTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				F5282E501D4861930034933D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
