@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var longString = "Long \
+    long \
+    long \
+    string";
+
+    var longString1 = 'Long ' + ' long' + 'long' + 'string';
+    console.log(
+    (function () { /*
+    line 1
+    line 2
+    line 3
+    */}).toString().split('\n').slice(1, -1).join('\n'))
+
+
+    Array.prototype.join.call(s,'  ')
+
+
+    var s = '\u'
+
+
+</script>
+</body>
+</html>
