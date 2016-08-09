@@ -85,14 +85,94 @@
     String(obj);
 
 
-    Object.defineProperty(Object.prototype, '__c',{value: function (methodName) {
-        if (!this.__obj && !this.__clsName) return this[methodName].bind(this);
-        var self = this
-        return function () {
-            var args = Array.prototype.slice.call(arguments)
-            return _method
+//    Object.defineProperty(Object.prototype, '__c',{value: function (methodName) {
+//        if (!this.__obj && !this.__clsName) return this[methodName].bind(this);
+//        var self = this
+//        return function () {
+//            var args = Array.prototype.slice.call(arguments)
+//            return _method
+//        }
+//    }})
+
+
+    Boolean(undefined)
+    Boolean(null)
+    Boolean(0)
+    Boolean(Nan)
+    Boolean('')
+
+    Boolean({})
+    Boolean([])
+    Boolean(new Boolean(false))
+
+
+    if (! undefined && ! null && !0 && !NaN && !'') {
+        console.log('true');
+    }
+
+    '5' + 1
+    '5' + true
+    '5' + false
+    '5' + {}
+    '5' + []
+    '5' + function () {
+
+    }
+    '5' + undefined
+    '5' + null
+
+
+    var obj = {
+      width: '100'
+    };
+
+    obj.width + 20
+
+    +'abc'
+    -'abc'
+    +true
+    -false
+
+
+
+    var menu = {
+        //当前状态
+        currentState: 'hide',
+
+        //绑定事件
+        initialize: function () {
+            var self = this;
+            self.on("click",self.transaction);
+        },
+
+        //状态转换
+        transition: function (event) {
+            switch (this.currentState) {
+                case "hide":
+                    this.currentState = 'show';
+                    doSomething();
+                    break;
+                case "show":
+                    this.currentState = "hide";
+                    doSomething();
+                    break;
+                default:
+                    console.log('Invalid State!');
+                    break;
+            }
         }
-    }})
+    };
+
+    '5' - '2'
+    '5' * '2'
+    true - 1
+    false - 1
+    '1' - 1
+    '5' * []
+    false / '5'
+    'abc' - 1
+
+
 
 </script>
 </body>

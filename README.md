@@ -655,6 +655,12 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [JavaScript 之 this 详解](http://www.jeffjade.com/2015/08/03/2015-08-03-javascript-this/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 * [Javascript的this用法](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
 
+## js与Native交互
+* [CTJSBridge](https://github.com/casatwy/CTJSBridge)
+* [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge)
+* [JSPatch](https://github.com/bang590/JSPatch)
+
+
 
 
 # 前端

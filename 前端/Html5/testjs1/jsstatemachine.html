@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/state-machine.js"></script>
+</head>
+<body>
+<script>
+    var fsm= StateMachine.create({
+       initial: 'green',
+        events: [
+            {name: 'warn', from: 'green', to: 'yellow'},
+            {name: 'stop', from: 'yellow',to: 'red'},
+            {name: 'ready', from: 'red', to: 'yellow'},
+            {name: 'go', from: 'yellow', to: 'green'}
+        ]
+    });
+
+    fsm.onleavegreen = function () {
+       light.fadeOut('slow', function () {
+           fsm.transition();
+       });
+        return StateMachine.ASYNC;
+    };
+
+
+
+    var o = {p: 'a'};
+
+
+   console.log(Object.getOwnPropertyDescriptor(o, 'p'));
+
+
+    var o = Object.defineProperty({},'p', {
+        value: 123,
+        writeable: false,
+        enumerable: true,
+        configurable: false
+    });
+
+    var o = Object.defineProperties({},{
+        p1: {value:123, enumerable: true},
+        p2: {value:'abc', enumverable: true},
+        p3: {get : function () {
+            return this.p1 + this.p2
+        }, enumerable: true,
+           configurable: true}
+    });
+
+    console.log(o.p1);
+    console.log(o.p2);
+    console.log(o.p3);
+
+
+</script>
+</body>
+</html>
