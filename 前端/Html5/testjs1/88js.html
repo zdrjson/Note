@@ -24,7 +24,66 @@
     Array.prototype.join.call(s,'  ')
 
 
-    var s = '\u'
+    var s = '\u';
+    var  string = 'Hello World!';
+    btoa(string);
+    atob('SGVsbG8gV29ybGQh');
+
+    function b64Encode(str) {
+        return btoa(encodeURIComponent(str));
+    }
+
+    function b64Decode(str) {
+        return decodeURIComponent(atob(str));
+    }
+
+
+    b64Encode('你好')
+    b64Decode('JUU0JUJEJUEwJUU1JUE1JUJE')
+
+
+    var  arr = [
+        {a: 1},
+            [1,2,3],
+            function () {
+                return true;
+            }
+    ];
+
+    var arr = ['a', 'b', 'c'];
+    Object.keys(arr);
+
+    arr['0']
+    arr[0]
+
+
+    var a = [];
+    a['10000'] = 'abc';
+    a[1000]
+
+    a[1.00]
+    a[1]
+
+
+    var arr = ['a','b','c'];
+
+    arr.length = 2;
+
+    [].length = Math.pow(2, 32)
+
+    var a = [];
+    a['p'] = 'abc';
+    a.length;
+
+
+    a[2.1] = 'abc';
+    a.length;
+
+
+    var arr = [];
+    arr[-1] = 'a';
+    arr[Math.pow(2,32)] = 'b';
+
 
 
 </script>

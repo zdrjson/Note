@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>xxx</h3>
+<script>
+    var obj = {
+      0: 'a',
+      1: 'b',
+      2: 'c',
+      length: 3
+    };
+    alert(obj.length);
+
+
+    var obj1 = {
+        length: 0
+    };
+    obj1[3] = 'd';
+    alert(obj1.length);
+
+    function args() {
+        return arguments;
+    }
+
+    var arrayLike = args('a', 'b');
+
+    console.log(arrayLike[0]);
+    console.log(arrayLike.length);
+    console.log(arrayLike instanceof Array);
+
+    // DOM元素集
+    var elts = document.getElementsByTagName('h3');
+    console.log(elts.length);
+    console.log(elts instanceof Array)
+
+    'abc'[1]
+    'abc'.length
+    'abc' instanceof Array
+
+    var arr = Array.prototype.slice.call(arrayLike);
+
+    function logArgs() {
+        for (var i = 0; i < arguments.length; i++) {
+            console.log(i + '.  ' + arguments[i]);
+        }
+    }
+
+    logArgs();
+
+
+    function logArgs() {
+        Array.prototype.forEach.call(arguments, function (elem, i) {
+           console.log(i + '. ' + elem);
+        });
+    }
+
+
+    Array.prototype.forEach.call('abc', function (chr) {
+       console.log(chr);
+    });
+
+    var arr = ['a', 'b', 'c'];
+
+    2 in arr
+    '2' in  arr
+    4 in arr
+
+    var arr = [];
+    arr[100] = 'a';
+
+    100 in arr
+    1 in arr
+
+
+    var a = [1,2,3];
+    a.foo = true;
+
+    for (var key in a) {
+        console.log(key);
+    }
+
+    var a = [1,2,3];
+
+    for (var i = 0; i < a.length; i++) {
+        console.log(a[i]);
+    }
+
+
+    var i = 0;
+    while (i < a.length) {
+        console.log(a[i]);
+        i++;
+    }
+
+    var l = a.length;
+    while (l--) {
+        console.log(a[1]);
+    }
+
+    var colors = ['red','green','blue'];
+    colors.forEach(function (color) {
+       console.log(color);
+    });
+
+    var a = [1,,1];
+    a.length
+
+
+    var a = [, , ,];
+    a[1]
+
+
+    var a = [1, 2, 3];
+    delete a[1];
+
+    a[1]
+    a.length
+
+
+    var a = [, , ,];
+    a.forEach(function (x, i) {
+       console.log(i + '.' + x);
+    });
+
+    for (var i in a) {
+        console.log(i);
+    }
+
+    Object.keys(a);
+    
+    
+    var a = [undefined, undefined, undefined];
+    
+    a.forEach(function (x, i) {
+       console.log(i + '. ' + x);
+    });
+
+    for (var i in a) {
+        console.log(i);
+    }
+
+    Object.keys(a);
+
+</script>
+</body>
+</html>
