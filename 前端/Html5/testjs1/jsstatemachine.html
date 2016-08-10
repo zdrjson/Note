@@ -52,6 +52,10 @@
     console.log(o.p2);
     console.log(o.p3);
 
+    var obj = {};
+    Object.defineProperty(obj, 'foo', { configurable: true});
+    Object.getOwnPropertyDescriptor(obj, 'foo');
+
 
 </script>
 </body>
