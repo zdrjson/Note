@@ -17,13 +17,22 @@
 * The left 1/2 position on the sliding screen brightness adjustment (simulator can't adjust brightness, please in the real machine debugging)
 * The right 1/2 position on the sliding screen volume adjustment (simulator can't adjust the volume, please in the real machine debugging)
 * Left and right sliding adjustment play schedule
+* Full screen mode to drag the slider control progress, display video preview
 * Breakpoint Download 
 * Toggle video resolution
 
 ## Requirements
 
 - iOS 8+
-- Xcode 6.0+
+- Xcode 7+
+
+## Blog
+[博客地址](http://www.jianshu.com/p/5566077bb25f)
+
+
+## Statistics
+
+What APP using ZFPlayer, and on AppStore, please tell me, help me to statistics.
 
 ## Component
 
@@ -122,6 +131,8 @@ self.playerView.placeholderImageName = @"...";
 
 ![Brightness adjustment demonstration](https://github.com/renzifeng/ZFPlayer/raw/master/brightness.png)
 
+![Progress adjustment demonstration](https://github.com/renzifeng/ZFPlayer/raw/master/progress.png)
+
 
 ### reference material：
 
@@ -146,3 +157,4 @@ I recently written [ZFZhiHuDaily](https://github.com/renzifeng/ZFZhiHuDaily).
 # License
 
 ZFPlayer is available under the MIT license. See the LICENSE file for more info.
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.getElementById('backLink').onclick = function () {
+        window.history.back();
+    }
+    if (!!(window.history && history.pushState)) {
+
+    }
+
+
+    window.onpopstate = function (event) {
+        console.log("location:" + document.location);
+        console.log("state: " + JSON.stringify(event.state));
+    };
+
+    window.addEventListener('popstate', function (event) {
+       console.log("location: " + document.location);
+        console.log("state: " + JSON.stringify(event.state));
+    });
+
+
+    var currentState = history.state;
+
+
+    var paramsString = 'q=URLUtils.searchParams&topic=api'
+    var searchParams = new URLSearchParams(paramsString);
+
+
+    var err = new Error('出错了');
+    console.log(err.message);
+
+    if (error.name) {
+        console.log(error.name + ": " + error.message);
+    }
+
+    function throwit() {
+        throw  new Error('');
+    }
+
+    function catchit() {
+        try {
+            throwit();
+        } catch (e) {
+            console.log(e.stack);
+        }
+    }
+
+    catchit();
+
+
+    new Array(-1);
+    (1234).toExponential(21)
+
+    new Error('出错了!');
+    new RangeError('出错了,变量超出有效范围!');
+    new TypeError('出错了,变量类型无效');
+
+
+    function UserError(message) {
+        this.message = message || "默认信息";
+        this.name = "UserError";
+    }
+
+    UserError.prototype = new Error();
+    UserError.prototype.constructor = UserError;
+
+
+    new UserError("这是自定义的错误!");
+
+    throw "Error!";
+    throw  42;
+    throw  true;
+    throw  {toString: function () {
+        return "Error!";
+    }};
+
+    throw  new Error('出错了');
+
+
+
+</script>
+</body>
+</html>

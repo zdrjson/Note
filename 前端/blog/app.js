@@ -6,9 +6,26 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var settings = require('./settings');
 var users = require('./routes/users');
 
 var app = express();
+
+
+var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
+
+app.use(session({
+  secret: settings.cookieSecret,
+  key: settings.db, //cookie name
+  cookie: {maxAge: 1000 * 60 * 60 * 24 * 30}, //30days
+  store: new MongoStore({
+    db: settings.db,
+    host: settings.host,
+    port: settings.port,
+    url: 'mongodb://localhost/blog'
+  })
+}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -10,10 +10,10 @@
 #import "CTPersistanceConfiguration.h"
 #import "CTPersistanceMigrator.h"
 #import "NSString+ReqularExpression.h"
-
+#import <sqlite3.h>
 @interface CTPersistanceDataBase ()
 
-@property (nonatomic, assign) sqlite3 *database;
+@property (nonatomic, assign) void *database;
 @property (nonatomic, copy) NSString *databaseName;
 @property (nonatomic, copy) NSString *databaseFilePath;
 @property (nonatomic, strong) CTPersistanceMigrator *migrator;
@@ -30,10 +30,16 @@
         self.databaseName = databaseName;
         self.databaseFilePath = [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:databaseName];
 
-        BOOL isFileExists = [[NSFileManager defaultManager] fileExistsAtPath:self.databaseFilePath];
+        NSString *checkFilePath = [self.databaseFilePath stringByDeletingLastPathComponent];
+        NSFileManager *defaultFileManager = [NSFileManager defaultManager];
+        if (![defaultFileManager fileExistsAtPath:checkFilePath]) {
+            [defaultFileManager createDirectoryAtPath:checkFilePath withIntermediateDirectories:YES attributes:nil error:nil];
+        }
+        
+        BOOL isFileExists = [defaultFileManager fileExistsAtPath:self.databaseFilePath];
 
         const char *path = [self.databaseFilePath UTF8String];
-        int result = sqlite3_open_v2(path, &_database,
+        int result = sqlite3_open_v2(path, (sqlite3**)&_database,
                                      SQLITE_OPEN_CREATE |
                                      SQLITE_OPEN_READWRITE |
                                      SQLITE_OPEN_FULLMUTEX |

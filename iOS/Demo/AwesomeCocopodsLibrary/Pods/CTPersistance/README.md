@@ -1,7 +1,5 @@
 Persistence, Persistance, lol.
 
-2016-06-03: make migration works better! I'm still maintaining this pod~ Welcome issues and PRs, and I'm glad to hear you are using this pod in your project.
-
 define the marco `CTPersistanceShowSQLLog` to show SQL log.
 
 #CTPersistance
@@ -14,7 +12,18 @@ Any object who conforms to `<CTPersistanceRecordProtocol>` can be a record and c
 
 #Install (CocoaPods)
 
-`pod 'CTPersistance'`
+for Objective-C:
+
+```
+pod 'CTPersistance'
+```
+
+for Swift
+
+```
+use_frameworks!
+pod 'CTPersistance'
+```
 
 #Features
 
@@ -60,7 +69,11 @@ go to `Build Phases` and add `sqlite3` into your library list.
 #pragma mark - CTPersistanceTableProtocol
 - (NSString *)databaseName
 {
-    return @"TestDataBase.sqlite";
+    //you can use like:
+    return @"testdatabase.sqlite";
+    
+    //Or
+    //return @"User/Shopping/testdatabase.sqlite";
 }
 
 - (NSString *)tableName
@@ -314,3 +327,13 @@ NOTICE: You should always create a new table in the async block.
                  |             Database Pool               |
                  -------------------------------------------
 ```
+
+# Log
+
+2016-07-27: merged Pull Request [#35](https://github.com/casatwy/CTPersistance/pull/35)
+
+2016-07-20: merged Pull Request [#34](https://github.com/casatwy/CTPersistance/pull/34)
+
+2016-07-09: fixed bug [#33](https://github.com/casatwy/CTPersistance/issues/33)
+
+2016-06-03: make migration works better! I'm still maintaining this pod~ Welcome issues and PRs, and I'm glad to hear you are using this pod in your project.

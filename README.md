@@ -648,7 +648,8 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 
 
 ## Nodejs
-[淘宝 NPM 镜像](https://npm.taobao.org)
+* [淘宝 NPM 镜像](https://npm.taobao.org)
+* [Node.js的Event Loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)
 
 
 ## this

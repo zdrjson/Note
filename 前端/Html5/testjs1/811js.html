@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var o = {a: 1, b: 2};
+
+    o.c = 3;
+    Object.defineProperty(o, 'd', {
+        value:4,
+        enumerable: false
+    });
+
+    o.d = 4;
+    for (var key in o) {
+        console.log(o[key]);
+    }
+
+    console.log(o.d);
+
+    console.log(Object.keys(o));
+    console.log(JSON.stringify(o));
+
+
+    setTimeout(function () {
+        console.log(1);
+    }, 0);
+    console.log(2);
+
+    
+</script>
+</body>
+</html>
