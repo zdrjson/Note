@@ -30,7 +30,87 @@
     }, 0);
     console.log(2);
 
-    
+
+    var Vehicle = function () {
+      this.price = 1000;
+    };
+
+    var v = new Vehicle();
+    console.log(v.price);
+
+
+    var Vehicle = function (p) {
+      this.price = p;
+    };
+
+    var v = new Vehicle(500);
+
+    var v = new Vehicle();
+    var v = new Vehicle;
+
+
+    var Vehicle = function () {
+      this.price = 1000;
+    };
+
+    function Fubar(foo, bar) {
+        'use strict';
+        this._foo = foo;
+        this._bar = bar;
+    }
+
+    function Fubar(foo, bar) {
+        if (!(this instanceof Fubar)) {
+            return new Fubar(foo, bar);
+        }
+
+        this._foo = foo;
+        this._bar = bar;
+    }
+
+   console.log(Fubar(1, 2)._foo);
+    (new Fubar(1, 2))._foo
+
+
+    var Vehicle = function () {
+      this.price = 1000;
+        return 1000;
+    };
+
+    var Vehicle = function () {
+        this.price = 1000;
+        return {price: 2000};
+    };
+
+    (new Vehicle()).price
+
+
+    function getMessage() {
+        return 'this is a message';
+    }
+
+    var msg = new getMessage();
+
+    typeof msg
+
+
+
+    function _new(/* 构造函数*/constructor,/* 构造函数参数*/ param1) {
+        // 将 arguements 对象转为数组
+        var args = [].slice.call(arguments);
+        // 取出构造函数
+        var  contstructor = args.shift();
+        // 创建一个空对象, 继承构造函数的 prototype 属性
+        var  context = Object.create(contstructor.prototype);
+        // 执行构造函数
+        var result = constructor.apply(context, arg);
+        // 如果返回结果是对象,就直接返回,则返回 context 对象
+        return (typeof result === 'object' && result != null) ? result : context;
+    }
+
+    //实例
+    var actor = _new(Person,'张三',28);
+
 </script>
 </body>
 </html>
