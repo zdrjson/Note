@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var A = {
+        print: function () {
+            console.log('hello');
+        }
+    };
+
+    var B = Object.create(A);
+
+    B.print()
+
+
+    var A = function () {
+
+    };
+
+    A.prototype = {
+      print: function () {
+          console.log('hello');
+      }
+    };
+
+    var B = new A();
+
+
+    if (typeof  Object.create !== 'function') {
+        Object.create = function (o) {
+          function F() {
+
+          }
+            F.prototype = o;
+            return new F();
+        };
+    }
+
+    var o1 = Object.create({});
+    var o2 = Object.create(Object.prototype);
+    var o3 = new Object();
+
+    var o = Object.create(null);
+
+    o.valueOf()
+
+    var o1 = {p : 1};
+    var o2 = Object.create(o1);
+
+    var o = Object.create({}, {
+       p1 : {value: 123, enumberable: true},
+       p2 : {value: 'abc', enumberable: true}
+    });
+
+    var o = Object.create({});
+    o.p1 = 123;
+    o.p2 = 'abc';
+
+
+    function A() {
+
+    }
+
+    var a = new A();
+    var b = Object.create(a);
+
+</script>
+</body>
+</html>
