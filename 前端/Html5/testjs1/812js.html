@@ -68,6 +68,29 @@
     var a = new A();
     var b = Object.create(a);
 
+    b.constructor === A;
+    b instanceof A
+
+    var o1 = {};
+    var o2 = Object.create(o1);
+    var o3 = Object.create(o2);
+
+    o2.isPrototypeOf(o3);
+    o1.isPrototypeOf(o3);
+
+    Object.prototype.isPrototypeOf({})
+    Object.prototype.isPrototypeOf([])
+    Object.prototype.isPrototypeOf(/xyz/)
+    Object.prototype.isPrototypeOf(Object.create(null))
+
+
+    var obj = {};
+    var p = {};
+
+    obj.__proto__ = p;
+    Object.getPrototypeOf(obj) === p
+
+
 </script>
 </body>
 </html>
