@@ -622,6 +622,7 @@ JavaScript引擎的工作方式是，先解析代码，获取所有被声明的�
 * [纯IPv6环境App适配的坑](http://mrpeak.cn/blog/ipv6/)
 * [前端技能汇总](https://github.com/JacksonTian/fks)
 * [JSPatch实现原理详解](http://blog.cnbang.net/tech/2808/)
+* [浅谈浏览器http的缓存机制](http://web.jobbole.com/86970/)
 
 #CSS
 
