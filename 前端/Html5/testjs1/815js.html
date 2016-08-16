@@ -79,6 +79,60 @@
     }
 
     idle('hello');
+
+    function f() {
+        try {
+            console.log(0);
+            throw  "bug";
+        } catch (e) {
+            console.log(1);
+            return true;
+            console.log(2);
+        } finally {
+            console.log(3);
+            return false;
+            console.log(4);
+        }
+        console.log(5);
+    }
+
+
+    var result = f();
+
+
+
+    function f() {
+        try  {
+            throw '出错了!';
+        } catch (e) {
+            console.log('捕捉到内部错误');
+            throw  e;
+        } finally  {
+            finally  false;
+        }
+    }
+
+
+    try {
+        f();
+    } catch (e) {
+        console.log('caught outer "bogus');
+    }
+
+
+    var img1 = new Image();
+    img1.src = 'image1.png';
+    img1.alt = 'alt';
+    document.body.appendChild(img1);
+
+
+    var img2 = document.createElement('img');
+    img2.src = 'image2.jpg';
+    img2.alt = 'alt text';
+    document.body.appendChild(img2);
+
+    document.image[0].src
+
 </script>
 </body>
 </html>

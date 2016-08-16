@@ -5,7 +5,7 @@
 * [张不坏的博客](http://zhangbuhuai.com/2015/06/28/Array-and-Algorithm/)
 * [git二分法查找命令的使用](http://blog.csdn.net/maybe_windleave/article/details/8532092)
 * [LeetCode_Swift](https://github.com/soapyigu/LeetCode_Swift)
-
+* [swift算法](http://www.jianshu.com/users/8d5b91490ca5/latest_articles)
 
 
 ## Animaton
