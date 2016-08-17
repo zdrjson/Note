@@ -428,7 +428,7 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [VIM——帮助和配置](http://macshuo.com/?p=769)
 * [VIM——为效率而生](http://macshuo.com/?p=755)
 * [VIM——缘起](http://macshuo.com/?p=748)
-* [简明 Vim 练级攻略]()
+* [简明 Vim 练级攻略](http://coolshell.cn/articles/5426.html)
 * [Vim常用命令_标哥](http://www.huangyibiao.com/vim-xcode/)
 * [Vim 用户的大脑形态](http://blog.jobbole.com/104276/)
 
