@@ -386,6 +386,7 @@ CAShapeLayer有着几点很重要:
 * [MartinRGB](http://www.martinrgb.com)
 * [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 * [iPic](http://toolinbox.net)
+* [手机天猫技术大赏](http://pingguohe.net/tmalltech/)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
