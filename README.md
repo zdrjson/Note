@@ -674,6 +674,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/preference/browser-rendering-performance.html)
 * [iOS客户端开发与Web前端开发](http://blog.cnbang.net/tech/1813/)
 * [钉钉H5如何性能优化](https://github.com/dingtalkFE/blog/issues/1)
+* [QQ空间面向移动时代Hybrid架构设计](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650993637&idx=1&sn=8a2673272575abbef4b0f6dbc25e0186)
 
 ### IDE
 * [brackets](https://github.com/adobe/brackets)
