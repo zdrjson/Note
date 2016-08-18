@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="os">
+    Operating System
+    <select name="categories" id="categories" multiple>
+        <option>
+            Choose
+        </option>
+        <optgroup label="Windows">
+            <option value="7 Home Basic">7 Home Basic</option>
+            <option value="7 Home Premium">7 Home Premium</option>
+            <option value="7 Professional">7 Professional</option>
+            <option value="7 Ultimate">7 Ultimate</option>
+            <option value="Vista">Vista</option>
+            <option value="XP">XP</option>
+        </optgroup>
+    </select>
+</label>
+<script>
+//    var data = document.getElementById('selectMenu').value;
+//    document.getElementById('selecteMenu').selectedIndex = 1;
+
+    var selected = [];
+    for (var i = 0, count = elem.options.length; i < count; i++) {
+        if(elem.options[i].selected) {
+            selected.push(elem.options[i].value);
+        }
+    }
+</script>
+</body>
+</html>
