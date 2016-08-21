@@ -465,7 +465,6 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 干净。这个对一般用户来说会比较方便，包含很多在 AppStore 里没有的常用软件。
 ```
 
-
 * [hosts](https://github.com/racaljk/hosts)
 * [hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
 
