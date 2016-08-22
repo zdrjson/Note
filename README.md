@@ -1,15 +1,17 @@
 # DDNote
 
 
- **我花费了大量的时间阅读和学习各种开源的代码、研究其中的实现原理、尝试自己实现相关技术、尝试在工作中使用，这使得我在 iOS 开发技术上进步很快。 —— YY**
+> **我花费了大量的时间阅读和学习各种开源的代码、研究其中的实现原理、尝试自己实现相关技术、尝试在工作中使用，这使得我在 iOS 开发技术上进步很快。 —— YY**
 
- **每天都有很多事情要做，但是事情永远做不完，所以做事必须有明确优先级，明确一个目标，给定一段时间,坚持看看效果如何。**
+> **每天都有很多事情要做，但是事情永远做不完，所以必须有明确优先级，明确一个目标，给定一段时间,坚持看看效果如何。**
 
 | Target | Level | Reference | Time |
 |:-------:|:-------:|:------|:------|
-| Algorithm | Super High |  [Direct insertion sort](http://www.henishuo.com/insert-sort/) <br> [张不坏的博客](http://zhangbuhuai.com/2015/06/28/Array-and-Algorithm/) <br> [git二分法查找命令的使用](http://blog.csdn.net/maybe_windleave/article/details/8532092) <br> [LeetCode_Swift](https://github.com/soapyigu/LeetCode_Swift) <br> [swift算法](http://www.jianshu.com/users/8d5b91490ca5/latest_articles)
-|Vim| Super High | 
-
+| Algorithm | Super High |  [Direct insertion sort](http://www.henishuo.com/insert-sort/) <br> [张不坏的博客](http://zhangbuhuai.com/2015/06/28/Array-and-Algorithm/) <br> [git二分法查找命令的使用](http://blog.csdn.net/maybe_windleave/article/details/8532092) <br> [LeetCode_Swift](https://github.com/soapyigu/LeetCode_Swift) <br> [swift算法](http://www.jianshu.com/users/8d5b91490ca5/latest_articles) | 
+|Vim| Super High | [vim搜索命令](http://blog.csdn.net/luomoweilan/article/details/6260179) <br> 
+|前端| Super High | | |
+|造轮子 |Super High| |
+|write blog |Super High| |
 
 ## **Algorithm**
 * [Direct insertion sort](http://www.henishuo.com/insert-sort/)
