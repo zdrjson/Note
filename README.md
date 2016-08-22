@@ -7,11 +7,12 @@
 
 | Target | Level | Reference | Time |
 |:-------:|:-------:|:------|:------|
-| Algorithm | Super High |  [Direct insertion sort](http://www.henishuo.com/insert-sort/) <br> [张不坏的博客](http://zhangbuhuai.com/2015/06/28/Array-and-Algorithm/) <br> [git二分法查找命令的使用](http://blog.csdn.net/maybe_windleave/article/details/8532092) <br> [LeetCode_Swift](https://github.com/soapyigu/LeetCode_Swift) <br> [swift算法](http://www.jianshu.com/users/8d5b91490ca5/latest_articles) | 
-|Vim| Super High | [vim搜索命令](http://blog.csdn.net/luomoweilan/article/details/6260179) <br> 
+| Algorithm | Super High |  | 
+|vim| Super High | | |
 |前端| Super High | | |
 |造轮子 |Super High| |
 |write blog |Super High| |
+
 
 ## **Algorithm**
 * [Direct insertion sort](http://www.henishuo.com/insert-sort/)
