@@ -280,6 +280,7 @@ CAShapeLayer有着几点很重要:
 * [MagicalRecord](https://github.com/magicalpanda/MagicalRecord)
 * [VIMediaCache](https://github.com/vitoziv/VIMediaCache)
 * [NSURLCache 网络请求缓存指南](http://www.cocoachina.com/ios/20160701/16895.html)
+* [SQLite线程模式探讨](http://wereadteam.github.io/2016/08/19/SQLite/)
 
 ## Text
 * [CoreText_xiongzenghu](http://xiongzenghuidegithub.github.io/blog/2016/04/26/coretext-part-3/)
@@ -359,6 +360,7 @@ CAShapeLayer有着几点很重要:
 * [理解Cocoapods](https://segmentfault.com/a/1190000005041357)
 
 ##SomeGuysBlog
+* [WeMobileDev](https://github.com/WeMobileDev/article)
 * [WeiXinRead](http://wereadteam.github.io)
 * [sunnyxx](http://blog.sunnyxx.com)
 * [FMDB_description](http://blog.csdn.net/yixiangboy/article/details/51274186)
