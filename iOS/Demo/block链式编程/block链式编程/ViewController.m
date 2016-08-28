@@ -19,10 +19,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     Person *p = [Person new];
-    
+    Person *p1 = [Person new];
     p.run().sleep();
     
     p.a.b.run();
+
+    
+   NSLog(@"%@",[p go:^Person *(Person *p) {
+         return p1;
+    }]);
 }
 
 - (void)didReceiveMemoryWarning {

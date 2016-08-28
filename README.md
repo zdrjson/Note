@@ -493,6 +493,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [TimLiu-iOS](https://github.com/Tim9Liu9/TimLiu-iOS)
 * [链式编程1](http://www.jianshu.com/p/87ef6720a096)
 * [链式编程2](http://xiongzenghuidegithub.github.io/blog/2015/12/04/blockmo-ni-lian-shi-yu-fa/)
+* [链式语法与 Objective-C](http://draveness.me/lian-shi-yu-fa-yu-objective-c/)
 * [一些 iOS / Web 开发相关的翻译或原创博客文章](https://github.com/nixzhu/dev-blog)
 * [YY整理- ( ゜- ゜)つロ Github-iOS备忘](http://github.ibireme.com/github/list/ios/)
 
@@ -641,6 +642,13 @@ JavaScript引擎的工作方式是，先解析代码，获取所有被声明的�
 * [前端技能汇总](https://github.com/JacksonTian/fks)
 * [JSPatch实现原理详解](http://blog.cnbang.net/tech/2808/)
 * [浅谈浏览器http的缓存机制](http://web.jobbole.com/86970/)
+
+
+## 链式调用最佳实践
+* [SDAutoLayout](https://github.com/gsdios/SDAutoLayout)
+* [Masonry](https://github.com/SnapKit/Masonry)
+* [Typeset](https://github.com/Draveness/Typeset)
+
 
 #CSS
 

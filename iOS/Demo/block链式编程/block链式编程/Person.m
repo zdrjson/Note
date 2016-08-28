@@ -27,4 +27,12 @@
 {
     return self;
 }
+- (Person *(^)())go:(Person * (^)(Person *p))pp {
+    NSLog(@"%@",pp);
+      return ^id(){
+        return self;
+    };
+}
+
+
 @end

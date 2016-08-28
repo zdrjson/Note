@@ -13,4 +13,5 @@
 - (Person *(^)())sleep;
 - (Person *)a;
 - (Person *)b;
+- (Person *(^)())go:(Person * (^)(Person *p))pp;
 @end
