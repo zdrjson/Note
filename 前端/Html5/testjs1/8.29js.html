@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var o = {p: 'a'};
+//   alert(Object.getOwnPropertyDescriptor(o,'p'));
+   console.log(Object.getOwnPropertyDescriptor(o,'p'));
+    var o = Object.defineProperty({}, 'p', {
+       value: 123,
+       writable: false,
+       enumerable: true,
+       configurable: false
+    });
+
+    console.log(o.p);
+    console.log('a','b','c');
+    console.log(' %s + %s = %s', 1, 1, 2);
+
+    var number = 11 * 9;
+    var color = 'red';
+    console.log('%d %s balloons', number, color);
+    console.log('%cThis text is styled!', 'color: red; background: yellow, font-size: 124px;');
+    console.log('%s + %s',1, 1, '=2');
+    console.log({foo: 'bar'});
+    console.log(Date);
+
+    ['log','info','warn','error'].forEach(function (method) {
+       console[method] = console[method].bind(
+         console,
+               new Date().toISOString()
+       );
+    });
+
+    console.log("出错了!");
+
+
+
+    console.error('Error: %s (%i)','Server is not responding', 500);
+    console.warn('Warning! Too few nodes (%d)',document.childNodes.length);
+
+    var languages = [
+        {name: "JavaScript", fileExtension: ".js"},
+        {name: "TypeScript", fileExtension: ".ts"},
+        {name: "ConffeeScript", fileExtension: ".coffee"}
+    ];
+
+    console.table(languages);
+
+    var languages = {
+        csharp: {name: "C#", paradigm: "object-oriented"},
+        fsharp: {name: "F#", paradigm: "functional"}
+    };
+
+    console.table(languages);
+
+    function greet(user) {
+        console.count();
+        return 'hi ' + user;
+    }
+
+    greet('bob');
+    greet('alice');
+    greet('bob');
+
+    function greet(user) {
+        console.count(user);
+        return "hi " + user;
+    }
+
+    greet('bob');
+    greet('alice');
+    greet('bob');
+
+
+
+    console.log({f1: 'foo', f2: 'bar'});
+    console.dir({f1: 'foo', f2: 'bar'});
+
+    console.dir(document.body);
+    console.dirxml(document.body);
+
+    console.dirxml([1,2,3]);
+    console.dir([1,2,3]);
+
+    
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
