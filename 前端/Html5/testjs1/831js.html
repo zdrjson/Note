@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="example">
+    a= {{a }}, b={{ b }},
+</div>
+
+<script>
+    var vm = new Vue({
+        el: '#example',
+        data : {
+            a :1
+        },
+        computed: {
+            //一个计算属性的getter
+            b : function () {
+                //
+                return this.a + 1;
+            }
+        }
+    })
+    console.log(vm.b);
+    vm.a = 2
+    console.log(vm.b);
+</script>
+</body>
+</html>
