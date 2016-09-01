@@ -235,9 +235,13 @@ What it provides
 ## View
 * [scrollView To Top](http://www.jianshu.com/p/68632cbd6263)
 * [why SDWebImageDecoder](http://www.jianshu.com/p/135e17c7d10f)
+* [高仿支付宝解锁](https://github.com/CharlinFeng/CoreLock)
+
+### k线
+* [iOS-Echarts](https://github.com/Pluto-Y/iOS-Echarts)
 * [Y_KLine](https://github.com/yate1996/Y_KLine)
 * [StockKLine](https://github.com/mengmanzbh/StockKLine)
-* [高仿支付宝解锁](https://github.com/CharlinFeng/CoreLock)
+
 
 ### 占位视图
 * [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
