@@ -45,9 +45,41 @@
     })
 </script>
 
-<div v-for="(index, item) in items"></div>
+<!--<div v-for="(index, item) in items"></div>-->
+
+
+<ul id="repeat-object" class="demo">
+    <li v-for="value in object">
+        {{ $key }} : {{ value }}
+    </li>
+</ul>
+
+<script>
+    new Vue({
+        el: '#repeat-object',
+        data: {
+            object: {
+                FirstName: 'John',
+                LastName: 'Doe',
+                Age: 30
+            }
+        }
+    })
+</script>
+
+<div id="xxx">
+    <span v-for="n in 10">{{ n }}</span>
+</div>
+
+<script>
+   new Vue({
+        el: '#xxx',
+        data: {
+            n : 0
+        }
+    })
+</script>
+
 
 </body>
-
-
 </html>
