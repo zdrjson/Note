@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<span>Message is : {{ message }}</span>
+<br>
+<input type="text" v-model="message" placeholder="edit me">
+<script>
+   new Vue({
+        el: '#message'
+
+    })
+</script>
+
+
+<script>
+    var store = {
+        state: {
+          message: 'Hello!'
+        },
+        actionA: function () {
+            this.state.message = 'action A triggered'
+        },
+        actionB: function () {
+            this.state.message = 'action B triggered'
+        }
+    }
+
+    var vmA = new Vue({
+        data: {
+            privateState: {},
+            sharedState: store.state
+        }
+    })
+
+    var vmB = new Vue({
+        data: {
+            privateState: {},
+            sharedState: store.state
+        }
+    })
+
+
+
+</script>
+</body>
+</html>
