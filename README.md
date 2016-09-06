@@ -747,13 +747,14 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [Potatso使用说明](https://manual.potatso.com)
 
 # GitHubStars
-[TinyPNG4Mac 图片压缩MacApp](https://github.com/kyleduo/TinyPNG4Mac)
+* [TinyPNG4Mac 图片压缩MacApp](https://github.com/kyleduo/TinyPNG4Mac)
 
-[WeChat 实现类似微信朋友圈或者QQ空间，评论回复，九宫格布局。处理键盘弹出后定位到当前点击的被评论人处。另：滑动时候FPS在57-60之间，纵享丝滑！](https://github.com/zhengwenming/WeChat)
+* [WeChat 实现类似微信朋友圈或者QQ空间，评论回复，九宫格布局。处理键盘弹出后定位到当前点击的被评论人处。另：滑动时候FPS在57-60之间，纵享丝滑！](https://github.com/zhengwenming/WeChat)
 
-[知乎日报web版---vue](https://github.com/yatessss/zhihudaily-vue)
+* [知乎日报web版---vue](https://github.com/yatessss/zhihudaily-vue)
 
-[一个 iOS 上的弹幕渲染库](https://github.com/unash/BarrageRenderer)
+* [一个 iOS 上的弹幕渲染库](https://github.com/unash/BarrageRenderer)
 
-
+# Interview
+* [如何面试iOS工程师](http://blog.cnbang.net/internet/3245/#comment_title)
 
