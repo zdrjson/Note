@@ -685,6 +685,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 ## Vue.js
 * [vue.js 60分钟快速入门](http://www.cnblogs.com/keepfool/p/5625583.html)
 * [vue勾三股四](http://jiongks.name/)
+* [Desktop UI elements for Vue.js 2.0](https://github.com/ElemeFE/element)
 
 
 ## Nodejs
