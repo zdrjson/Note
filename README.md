@@ -641,6 +641,7 @@ JavaScript引擎的工作方式是，先解析代码，获取所有被声明的�
 
 **注意，对于var命令来说，局部变量只能在函数内部声明，在其他区块中声明，一律都是全局变量**
 
+** 由于HTML特性不区分大小写 **
 
 **shell来批量删除：svn status | grep ! | awk '{print $2}' | xargs svn delete **
 * [批量svn delete](http://hushicai.com/2014/02/28/pi-liang-svn-delete.html)

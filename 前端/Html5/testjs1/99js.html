@@ -84,8 +84,132 @@
 
 
 
+
+
+
+
+
 </script>
 
+
+<script>
+    Vue.component('my-component5',{
+        template: '<div>This is the first component!</div>'
+    })
+
+    var vm1 = new Vue({
+        el: '#app5'
+    })
+
+    var vm2 = new Vue({
+                el: '#app5',
+                components: {
+                    // 局部注册, my-component2是标签名称
+                    'my-component2': {
+                        template: '<div>This is the second component!</div>'
+                    },
+                    //局部注册,my-component3是标签名称
+                    'my-component3': {
+                        template: '<div>This is the third component!</div>'
+                    }
+                }
+            })
+
+</script>
+
+
+
+<div id="app6">
+    <my-component></my-component>
+</div>
+
+<script type="text/x-template" id="myComponent">
+    <div>This is a component!!!!!!</div>
+</script>
+
+
+<script>
+
+    Vue.component('my-component',{
+        template: '#myComponent'
+    })
+
+    new Vue({
+        el: '#app6'
+    })
+
+</script>
+
+
+
+<div id="app7">
+    <my-componenta></my-componenta>
+</div>
+
+<template id="myComponenta">
+    <div>This is a component!7</div>
+</template>
+
+<script>
+
+    Vue.component('my-componenta',{
+        template: '#myComponenta'
+    })
+
+    new Vue({
+        el: '#app7'
+    })
+</script>
+
+
+<script>
+    Vue.component('my-component8',{
+        data: function () {
+            return {a : 1}
+        }
+    })
+</script>
+
+
+<script>
+    var vm  = new Vue({
+        el: '#app',
+        data: {
+            name: 'keepfool',
+            age: 28
+        },
+        components: {
+            'my-component9': {
+                template: '#myComponent9',
+                props: ['myName','myAge']
+            }
+        }
+    })
+</script>
+
+<template id="myComponent10">
+    <table>
+        <tr>
+            <th colspan="2">
+
+            </th>
+        </tr>
+        <tr>
+            <td>my name</td>
+            <td>{{ myName }}</td>
+        </tr>
+        <tr>
+            <td>my age</td>
+            <td>{{ myAge }}</td>
+        </tr>
+
+    </table>
+</template>
+
+
+<div id="#app10">
+    <my-component10 v-bind:my-name="name" v-bind:my-age="age"></my-component10>
+</div>
 
 </body>
 
