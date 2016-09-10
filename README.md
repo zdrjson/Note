@@ -534,6 +534,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [可以试试弃用 UILabel，使用 UIView，通过绘制一张圆角+文字的图片作为其 layer 的 contents。](http://reviewcode.cn/article.html?reviewId=7)
 * [YYModel 性能优化的几个 Tip：](http://blog.ibireme.com/2015/10/23/ios_model_framework_benchmark/)
 * [HXImage,UIImage 的内存优化](https://github.com/Magic-Unique/HXImage/blob/master/description.md) [微博addational](http://weibo.com/2180203585/DtI4UvP8w?type=comment#_rnd1468979516204)
+* [惰性计算辨析](http://casatwy.com/lazy_evaluation.html)
 
 
 ## Device
