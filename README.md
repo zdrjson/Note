@@ -82,6 +82,8 @@
 * [iOS音视频实现边下载边播放](http://sky-weihao.github.io/2015/10/06/Video-streaming-and-caching-in-iOS/)
 * [CTVideoPlayerView](https://github.com/casatwy/CTVideoPlayerView)
 * [Eleven Player is a simple powerful video player.use ffmpeg](https://github.com/coderyi/Eleven)
+* [about FFmpeg的基本概念](http://www.cnphp6.com/archives/134463)
+
 
 ```
 CMTimeMake和CMTimeMakeWithSeconds 详解 
