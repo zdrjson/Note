@@ -448,6 +448,10 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [Mac_MrPeak](http://mrpeak.cn/blog/mac-efficiency/)
 
 
+# 效率
+## codesnippet
+* [qmui-ios-codesnippets](https://github.com/QMUI/qmui-ios-codesnippets)
+
 ## Vim
 * [vim搜索命令](http://blog.csdn.net/luomoweilan/article/details/6260179)
 * [VIM——帮助和配置](http://macshuo.com/?p=769)
