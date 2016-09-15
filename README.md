@@ -444,11 +444,9 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 
 ```
 
-## Efficiency 
+# Efficiency 
 * [Mac_MrPeak](http://mrpeak.cn/blog/mac-efficiency/)
 
-
-# 效率
 ## codesnippet
 * [qmui-ios-codesnippets](https://github.com/QMUI/qmui-ios-codesnippets)
 
