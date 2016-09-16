@@ -460,7 +460,6 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [Vim 用户的大脑形态](http://blog.jobbole.com/104276/)
 * [Vim - 适合自己的，才是最好的](http://geekplux.com/2015/06/06/vim-those-fit-yourself-are-the-best.html)
 
-
 ## Tool
 * [Phabricator](http://phabricator.org/)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
