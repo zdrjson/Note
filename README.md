@@ -539,6 +539,8 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [HXImage,UIImage 的内存优化](https://github.com/Magic-Unique/HXImage/blob/master/description.md) [微博addational](http://weibo.com/2180203585/DtI4UvP8w?type=comment#_rnd1468979516204)
 * [惰性计算辨析](http://casatwy.com/lazy_evaluation.html)
 
+## Crash
+* [漫谈iOS Crash收集框架](http://www.cocoachina.com/ios/20150701/12301.html)
 
 ## Device
 * [getUUID](http://www.henishuo.com/uuid-udid/)
