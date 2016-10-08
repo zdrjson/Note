@@ -82,8 +82,6 @@
 * [iOS音视频实现边下载边播放](http://sky-weihao.github.io/2015/10/06/Video-streaming-and-caching-in-iOS/)
 * [CTVideoPlayerView](https://github.com/casatwy/CTVideoPlayerView)
 * [Eleven Player is a simple powerful video player.use ffmpeg](https://github.com/coderyi/Eleven)
-* [about FFmpeg的基本概念](http://www.cnphp6.com/archives/134463)
-
 
 ```
 CMTimeMake和CMTimeMakeWithSeconds 详解 
@@ -237,13 +235,9 @@ What it provides
 ## View
 * [scrollView To Top](http://www.jianshu.com/p/68632cbd6263)
 * [why SDWebImageDecoder](http://www.jianshu.com/p/135e17c7d10f)
-* [高仿支付宝解锁](https://github.com/CharlinFeng/CoreLock)
-
-### k线
-* [iOS-Echarts](https://github.com/Pluto-Y/iOS-Echarts)
 * [Y_KLine](https://github.com/yate1996/Y_KLine)
 * [StockKLine](https://github.com/mengmanzbh/StockKLine)
-
+* [高仿支付宝解锁](https://github.com/CharlinFeng/CoreLock)
 
 ### 占位视图
 * [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
@@ -286,7 +280,6 @@ CAShapeLayer有着几点很重要:
 * [MagicalRecord](https://github.com/magicalpanda/MagicalRecord)
 * [VIMediaCache](https://github.com/vitoziv/VIMediaCache)
 * [NSURLCache 网络请求缓存指南](http://www.cocoachina.com/ios/20160701/16895.html)
-* [SQLite线程模式探讨](http://wereadteam.github.io/2016/08/19/SQLite/)
 
 ## Text
 * [CoreText_xiongzenghu](http://xiongzenghuidegithub.github.io/blog/2016/04/26/coretext-part-3/)
@@ -327,7 +320,6 @@ CAShapeLayer有着几点很重要:
 * [不要写死！天猫App的动态化配置中心实践](http://mp.weixin.qq.com/s?plg_nld=1&plg_uin=1&mid=402842876&idx=1&plg_nld=1&scene=23&plg_auth=1&__biz=MzA3ODg4MDk0Ng%3D%3D&plg_dev=1&srcid=0714QNbdzbzuS1Ulam0tklNi&plg_usr=1&plg_vkey=1&sn=e15d596c95bf7d1ed579cfd7e410696a#rd)
 * [从无到有：微信后台系统的演进之路](http://geek.csdn.net/news/detail/51045)
 * [万亿级调用系统：微信序列号生成器架构设计及演变](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=503509249&idx=1&sn=44fbaff1e0fc0b5e8a8f8ad9585086f0#rd)
-* [软件架构入门](http://www.ruanyifeng.com/blog/2016/09/software-architecture.html)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -367,7 +359,6 @@ CAShapeLayer有着几点很重要:
 * [理解Cocoapods](https://segmentfault.com/a/1190000005041357)
 
 ##SomeGuysBlog
-* [WeMobileDev](https://github.com/WeMobileDev/article)
 * [WeiXinRead](http://wereadteam.github.io)
 * [sunnyxx](http://blog.sunnyxx.com)
 * [FMDB_description](http://blog.csdn.net/yixiangboy/article/details/51274186)
@@ -444,11 +435,9 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 
 ```
 
-# Efficiency 
+## Efficiency 
 * [Mac_MrPeak](http://mrpeak.cn/blog/mac-efficiency/)
 
-## codesnippet
-* [qmui-ios-codesnippets](https://github.com/QMUI/qmui-ios-codesnippets)
 
 ## Vim
 * [vim搜索命令](http://blog.csdn.net/luomoweilan/article/details/6260179)
@@ -459,6 +448,7 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [Vim常用命令_标哥](http://www.huangyibiao.com/vim-xcode/)
 * [Vim 用户的大脑形态](http://blog.jobbole.com/104276/)
 * [Vim - 适合自己的，才是最好的](http://geekplux.com/2015/06/06/vim-those-fit-yourself-are-the-best.html)
+
 
 ## Tool
 * [Phabricator](http://phabricator.org/)
@@ -501,7 +491,6 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [TimLiu-iOS](https://github.com/Tim9Liu9/TimLiu-iOS)
 * [链式编程1](http://www.jianshu.com/p/87ef6720a096)
 * [链式编程2](http://xiongzenghuidegithub.github.io/blog/2015/12/04/blockmo-ni-lian-shi-yu-fa/)
-* [链式语法与 Objective-C](http://draveness.me/lian-shi-yu-fa-yu-objective-c/)
 * [一些 iOS / Web 开发相关的翻译或原创博客文章](https://github.com/nixzhu/dev-blog)
 * [YY整理- ( ゜- ゜)つロ Github-iOS备忘](http://github.ibireme.com/github/list/ios/)
 
@@ -537,10 +526,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [可以试试弃用 UILabel，使用 UIView，通过绘制一张圆角+文字的图片作为其 layer 的 contents。](http://reviewcode.cn/article.html?reviewId=7)
 * [YYModel 性能优化的几个 Tip：](http://blog.ibireme.com/2015/10/23/ios_model_framework_benchmark/)
 * [HXImage,UIImage 的内存优化](https://github.com/Magic-Unique/HXImage/blob/master/description.md) [微博addational](http://weibo.com/2180203585/DtI4UvP8w?type=comment#_rnd1468979516204)
-* [惰性计算辨析](http://casatwy.com/lazy_evaluation.html)
 
-## Crash
-* [漫谈iOS Crash收集框架](http://www.cocoachina.com/ios/20150701/12301.html)
 
 ## Device
 * [getUUID](http://www.henishuo.com/uuid-udid/)
@@ -638,16 +624,12 @@ app.listen(3000)，进程就被打标，电脑接收到的3000端口的网络消
 ```
 
 
-```
-ifconfig 查找局域网ip地址
-```
 
 JavaScript引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行一行地运行。这造成的结果，就是所有的变量的声明语句，**都会被提升到代码的头部**，这就叫做变量提升（hoisting）。
 
 
 **注意，对于var命令来说，局部变量只能在函数内部声明，在其他区块中声明，一律都是全局变量**
 
-** 由于HTML特性不区分大小写 **
 
 **shell来批量删除：svn status | grep ! | awk '{print $2}' | xargs svn delete **
 * [批量svn delete](http://hushicai.com/2014/02/28/pi-liang-svn-delete.html)
@@ -657,14 +639,9 @@ JavaScript引擎的工作方式是，先解析代码，获取所有被声明的�
 * [前端技能汇总](https://github.com/JacksonTian/fks)
 * [JSPatch实现原理详解](http://blog.cnbang.net/tech/2808/)
 * [浅谈浏览器http的缓存机制](http://web.jobbole.com/86970/)
-* [curl网站开发指南](http://www.ruanyifeng.com/blog/2011/09/curl.html)
-* [程序员小测试：保守派 vs 自由派](http://www.ruanyifeng.com/blog/2016/09/conservative_vs_liberal_programmer.html)
 
-## 链式调用最佳实践
-* [SDAutoLayout](https://github.com/gsdios/SDAutoLayout)
-* [Masonry](https://github.com/SnapKit/Masonry)
-* [Typeset](https://github.com/Draveness/Typeset)
 
+架构书籍：大型网站技术架构
 
 #CSS
 
@@ -692,7 +669,6 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 ## Vue.js
 * [vue.js 60分钟快速入门](http://www.cnblogs.com/keepfool/p/5625583.html)
 * [vue勾三股四](http://jiongks.name/)
-* [Desktop UI elements for Vue.js 2.0](https://github.com/ElemeFE/element)
 
 
 ## Nodejs
@@ -754,16 +730,13 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [FireUpYourVPN](https://github.com/johnlui/FireUpYourVPN)
 * [Potatso使用说明](https://manual.potatso.com)
 
-
 # GitHubStars
-* [TinyPNG4Mac 图片压缩MacApp](https://github.com/kyleduo/TinyPNG4Mac)
+[TinyPNG4Mac 图片压缩MacApp](https://github.com/kyleduo/TinyPNG4Mac)
 
-* [WeChat 实现类似微信朋友圈或者QQ空间，评论回复，九宫格布局。处理键盘弹出后定位到当前点击的被评论人处。另：滑动时候FPS在57-60之间，纵享丝滑！](https://github.com/zhengwenming/WeChat)
+[WeChat 实现类似微信朋友圈或者QQ空间，评论回复，九宫格布局。处理键盘弹出后定位到当前点击的被评论人处。另：滑动时候FPS在57-60之间，纵享丝滑！](https://github.com/zhengwenming/WeChat)
 
-* [知乎日报web版---vue](https://github.com/yatessss/zhihudaily-vue)
+[知乎日报web版---vue](https://github.com/yatessss/zhihudaily-vue)
 
-* [一个 iOS 上的弹幕渲染库](https://github.com/unash/BarrageRenderer)
+[一个 iOS 上的弹幕渲染库](https://github.com/unash/BarrageRenderer)
 
-# Interview
-* [如何面试iOS工程师](http://blog.cnbang.net/internet/3245/#comment_title)
 
