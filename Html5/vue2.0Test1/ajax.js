@@ -22,3 +22,6 @@ xhr.onerror = function (e) {
     console.error(xhr.statusText);
 }
 
+xhr.open('GET','/endpoint', ture);
+
+xhr.send(null);
