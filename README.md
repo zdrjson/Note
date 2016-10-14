@@ -687,8 +687,6 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [JSPatch](https://github.com/bang590/JSPatch)
 
 
-
-
 # 前端
 
 * [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/preference/browser-rendering-performance.html)
