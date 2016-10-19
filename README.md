@@ -402,6 +402,7 @@ CAShapeLayer有着几点很重要:
 * [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 * [iPic](http://toolinbox.net)
 * [手机天猫技术大赏](http://pingguohe.net/tmalltech/)
+* [XcodeMen](http://www.jianshu.com/users/d509cc369c78/latest_articles)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
