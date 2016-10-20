@@ -238,6 +238,7 @@ What it provides
 * [why SDWebImageDecoder](http://www.jianshu.com/p/135e17c7d10f)
 * [Y_KLine](https://github.com/yate1996/Y_KLine)
 * [StockKLine](https://github.com/mengmanzbh/StockKLine)
+* [YYStock](https://github.com/yate1996/YYStock)
 * [高仿支付宝解锁](https://github.com/CharlinFeng/CoreLock)
 
 ### 占位视图
