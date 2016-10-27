@@ -749,4 +749,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 # JAVA
 * [Java 基本语法](http://wiki.jikexueyuan.com/project/java/basic-syntax.html)
  
+# 产品
+* [不要在功能上竞争](http://www.ruanyifeng.com/blog/2011/07/dont_compete_on_features.html)
+ 
 
