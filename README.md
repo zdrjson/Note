@@ -324,6 +324,7 @@ CAShapeLayer有着几点很重要:
 * [万亿级调用系统：微信序列号生成器架构设计及演变](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=503509249&idx=1&sn=44fbaff1e0fc0b5e8a8f8ad9585086f0#rd)
 * [天下武功出少林，天下架构出MVC](/Architecture/天下武功出少林，天下架构出MVC.jpg
 )
+* [大型网站技术架构（1）](https://segmentfault.com/a/1190000007390358?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -351,6 +352,7 @@ CAShapeLayer有着几点很重要:
 * [GYDataCenter](https://github.com/Zepo/GYDataCenter)
 * [CTPersistance](https://github.com/casatwy/CTPersistance)
 * [FMDB](https://github.com/ccgus/fmdb)
+* [realm之于iOS](http://mp.weixin.qq.com/s?__biz=MzI5MjEzNzA1MA==&mid=2650264208&idx=1&sn=edfeb6ec6d14bddeb3c3ac3367045456&chksm=f40683a5c3710ab3adce18244f5c02bbf3e2b3b156162e90b8c4ecf9a58fcf9f50987706db3e#wechat_redirect)
 
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
