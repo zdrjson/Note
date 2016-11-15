@@ -705,6 +705,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [QQ空间面向移动时代Hybrid架构设计](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650993637&idx=1&sn=8a2673272575abbef4b0f6dbc25e0186)
 * [15年双11手淘前端技术巡演 - H5性能最佳实践](https://github.com/amfe/article/issues/21)
 * [构建单页Web应用](https://github.com/xufei/blog/issues/5)
+* [全栈工程师培训材料ruanyifeng](https://github.com/ruanyf/jstraining)
 
 ### IDE
 * [brackets](https://github.com/adobe/brackets)
