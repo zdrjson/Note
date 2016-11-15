@@ -12,6 +12,7 @@
 #import "CTVideoView+Download.h"
 #import "CTVideoView+VideoCoverView.h"
 #import "CTVideoView+OperationButtons.h"
+#import "CTVideoView+PlayControlPrivate.h"
 
 #import "AVAsset+CTVideoView.h"
 
@@ -21,15 +22,15 @@ NSString * const kCTVideoViewShouldPlayRemoteVideoWhenNotWifi = @"kCTVideoViewSh
 
 NSString * const kCTVideoViewKVOKeyPathPlayerItemStatus = @"player.currentItem.status";
 NSString * const kCTVideoViewKVOKeyPathPlayerItemDuration = @"player.currentItem.duration";
+NSString * const kCTVideoViewKVOKeyPathLayerReadyForDisplay = @"layer.readyForDisplay";
 
 static void * kCTVideoViewKVOContext = &kCTVideoViewKVOContext;
 
 @interface CTVideoView ()
 
 @property (nonatomic, assign) BOOL isVideoUrlChanged;
-@property (nonatomic, assign) BOOL isPreparedForPlay;
-@property (nonatomic, assign) CTVideoViewPrepareStatus prepareStatus;
 
+@property (nonatomic, assign, readwrite) CTVideoViewPrepareStatus prepareStatus;
 @property (nonatomic, assign, readwrite) CTVideoViewVideoUrlType videoUrlType;
 @property (nonatomic, strong, readwrite) NSURL *actualVideoPlayingUrl;
 @property (nonatomic, assign, readwrite) CTVideoViewVideoUrlType actualVideoUrlType;
@@ -38,52 +39,84 @@ static void * kCTVideoViewKVOContext = &kCTVideoViewKVOContext;
 @property (nonatomic, strong, readwrite) AVURLAsset *asset;
 @property (nonatomic, strong, readwrite) AVPlayerItem *playerItem;
 
+
 @end
 
 @implementation CTVideoView
 
 #pragma mark - life cycle
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self performInitProcess];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self performInitProcess];
+    }
+    return self;
+}
+
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        
-        // KVO
-        [self addObserver:self
-               forKeyPath:kCTVideoViewKVOKeyPathPlayerItemStatus
-                  options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial
-                  context:&kCTVideoViewKVOContext];
-        
-        [self addObserver:self
-               forKeyPath:kCTVideoViewKVOKeyPathPlayerItemDuration
-                  options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial
-                  context:&kCTVideoViewKVOContext];
-        
-        // Notifications
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveAVPlayerItemDidPlayToEndTimeNotification:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveAVPlayerItemPlaybackStalledNotification:) name:AVPlayerItemPlaybackStalledNotification object:nil];
-
-        _shouldPlayAfterPrepareFinished = YES;
-        _shouldReplayWhenFinish = NO;
-        _shouldChangeOrientationToFitVideo = NO;
-        _isPreparedForPlay = NO;
-
-        if ([self.playerLayer isKindOfClass:[AVPlayerLayer class]]) {
-            self.playerLayer.player = self.player;
-        }
-        
-        [self initTime];
-        [self initDownload];
-        [self initVideoCoverView];
-        [self initOperationButtons];
+        [self performInitProcess];
     }
     return self;
+}
+
+- (void)performInitProcess
+{
+    // KVO
+    [self addObserver:self
+           forKeyPath:kCTVideoViewKVOKeyPathPlayerItemStatus
+              options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial
+              context:&kCTVideoViewKVOContext];
+    
+    [self addObserver:self
+           forKeyPath:kCTVideoViewKVOKeyPathPlayerItemDuration
+              options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial
+              context:&kCTVideoViewKVOContext];
+
+    [self addObserver:self
+           forKeyPath:kCTVideoViewKVOKeyPathLayerReadyForDisplay
+              options:NSKeyValueObservingOptionNew
+              context:&kCTVideoViewKVOContext];
+    
+    // Notifications
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveAVPlayerItemDidPlayToEndTimeNotification:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveAVPlayerItemPlaybackStalledNotification:) name:AVPlayerItemPlaybackStalledNotification object:nil];
+    
+    if ([self.playerLayer isKindOfClass:[AVPlayerLayer class]]) {
+        self.playerLayer.player = self.player;
+    }
+    
+    _shouldPlayAfterPrepareFinished = YES;
+    _shouldReplayWhenFinish = YES;
+    _shouldChangeOrientationToFitVideo = NO;
+    _prepareStatus = CTVideoViewPrepareStatusNotPrepared;
+
+    [self initTime];
+    [self initDownload];
+    [self initVideoCoverView];
+    [self initOperationButtons];
+    [self initPlayControlGestures];
+
+    [self stopWithReleaseVideo:YES];
 }
 
 - (void)dealloc
 {
     [self removeObserver:self forKeyPath:kCTVideoViewKVOKeyPathPlayerItemStatus context:kCTVideoViewKVOContext];
     [self removeObserver:self forKeyPath:kCTVideoViewKVOKeyPathPlayerItemDuration context:kCTVideoViewKVOContext];
+    [self removeObserver:self forKeyPath:kCTVideoViewKVOKeyPathLayerReadyForDisplay context:kCTVideoViewKVOContext];
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
@@ -126,7 +159,9 @@ static void * kCTVideoViewKVOContext = &kCTVideoViewKVOContext;
     }
     
     if (self.prepareStatus == CTVideoViewPrepareStatusPrepareFinished) {
-        [self checkAndPlayAfterPrepareFinished];
+        if ([self.operationDelegate respondsToSelector:@selector(videoViewDidFinishPrepare:)]) {
+            [self.operationDelegate videoViewDidFinishPrepare:self];
+        }
         return;
     }
 }
@@ -157,7 +192,7 @@ static void * kCTVideoViewKVOContext = &kCTVideoViewKVOContext;
         }
 
     } else {
-        self.isPreparedForPlay = YES;
+        self.shouldPlayAfterPrepareFinished = YES;
         [self prepare];
     }
 }
@@ -237,7 +272,7 @@ static void * kCTVideoViewKVOContext = &kCTVideoViewKVOContext;
         [self.operationDelegate videoViewWillStartPrepare:self];
     }
     WeakSelf;
-    [asset loadValuesAsynchronouslyForKeys:@[@"tracks"] completionHandler:^{
+    [asset loadValuesAsynchronouslyForKeys:@[@"tracks", @"duration", @"playable"] completionHandler:^{
         dispatch_async(dispatch_get_main_queue(), ^{
             StrongSelf;
 
@@ -281,44 +316,15 @@ static void * kCTVideoViewKVOContext = &kCTVideoViewKVOContext;
             strongSelf.playerItem = [AVPlayerItem playerItemWithAsset:asset];
             strongSelf.prepareStatus = CTVideoViewPrepareStatusPrepareFinished;
 
+            if (strongSelf.shouldPlayAfterPrepareFinished) {
+                [strongSelf play];
+            }
+
             if ([strongSelf.operationDelegate respondsToSelector:@selector(videoViewDidFinishPrepare:)]) {
                 [strongSelf.operationDelegate videoViewDidFinishPrepare:strongSelf];
             }
-            
-            [strongSelf checkAndPlayAfterPrepareFinished];
         });
     }];
-}
-
-- (void)checkAndPlayAfterPrepareFinished
-{
-    if (self.shouldPlayAfterPrepareFinished) {
-        
-        // always play native video
-        if (self.actualVideoUrlType == CTVideoViewVideoUrlTypeNative) {
-            [self play];
-            return;
-        }
-        
-        // always play video under wifi
-        if ([CTVideoManager sharedInstance].isWifi) {
-            [self play];
-            return;
-        }
-        
-        // even user is not in wifi, we still play video if user allows us to play remote video when not wifi
-        if (self.shouldAutoPlayRemoteVideoWhenNotWifi == YES) {
-            [self play];
-            return;
-        }
-    }
-    
-    if (self.isPreparedForPlay) {
-        // because user tapped play button, video plays anyway, no matter whether user is in wifi.
-        self.isPreparedForPlay = NO;
-        [self play];
-        return;
-    }
 }
 
 #pragma mark - KVO
@@ -340,6 +346,17 @@ static void * kCTVideoViewKVOContext = &kCTVideoViewKVOContext;
     
     if ([keyPath isEqualToString:kCTVideoViewKVOKeyPathPlayerItemDuration]) {
         [self durationDidLoadedWithChange:change];
+    }
+
+    if ([keyPath isEqualToString:kCTVideoViewKVOKeyPathLayerReadyForDisplay]) {
+        if ([change[@"new"] boolValue] == YES) {
+            [self setNeedsDisplay];
+            if (self.prepareStatus == CTVideoViewPrepareStatusPrepareFinished) {
+                if ([self.operationDelegate respondsToSelector:@selector(videoViewDidFinishPrepare:)]) {
+                    [self.operationDelegate videoViewDidFinishPrepare:self];
+                }
+            }
+        }
     }
 }
 
@@ -380,7 +397,7 @@ static void * kCTVideoViewKVOContext = &kCTVideoViewKVOContext;
     _assetToPlay = assetToPlay;
     if (assetToPlay) {
         self.isVideoUrlChanged = YES;
-        self.isPreparedForPlay = NO;
+        self.prepareStatus = CTVideoViewPrepareStatusNotPrepared;
         self.videoUrlType = CTVideoViewVideoUrlTypeAsset;
         self.actualVideoUrlType = CTVideoViewVideoUrlTypeAsset;
     }

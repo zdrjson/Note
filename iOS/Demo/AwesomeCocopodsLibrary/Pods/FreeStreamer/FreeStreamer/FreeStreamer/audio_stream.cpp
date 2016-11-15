@@ -773,6 +773,25 @@ void Audio_Stream::audioQueueBuffersEmpty()
         
         pthread_mutex_lock(&m_packetQueueMutex);
         m_playPacket = m_queuedHead;
+        if (m_processedPackets.size() > 0) {
+            /*
+             * We have audio packets in memory (only case with a non-continuous stream),
+             * so figure out the correct location to set the playback pointer so that we don't
+             * start decoding the packets from the beginning when
+             * buffering resumes.
+             */
+            queued_packet_t *firstPacket = m_processedPackets.front();
+            queued_packet_t *cur = m_queuedHead;
+            while (cur) {
+                if (cur->identifier == firstPacket->identifier) {
+                    break;
+                }
+                cur = cur->next;
+            }
+            if (cur) {
+                m_playPacket = cur;
+            }
+        }
         pthread_mutex_unlock(&m_packetQueueMutex);
         
         // Always make sure we are scheduled to receive data if we start buffering
@@ -1498,7 +1517,14 @@ bool Audio_Stream::decoderShouldRun()
 {
     const Audio_Stream::State state = this->state();
     
+    /* if audio queue paused, decoder should not run */
+    bool isAudioQueuePaused = false;
+    if (m_audioQueue) {
+        isAudioQueuePaused = m_audioQueue->state() == m_audioQueue->PAUSED;
+    }
+    
     pthread_mutex_lock(&m_streamStateMutex);
+    
     
     if (m_preloading ||
         !m_decoderShouldRun ||
@@ -1509,7 +1535,8 @@ bool Audio_Stream::decoderShouldRun()
         state == SEEKING ||
         state == FAILED ||
         state == PLAYBACK_COMPLETED ||
-        m_dstFormat.mBytesPerPacket == 0) {
+        m_dstFormat.mBytesPerPacket == 0 ||
+        isAudioQueuePaused ) {
         pthread_mutex_unlock(&m_streamStateMutex);
         return false;
     } else {

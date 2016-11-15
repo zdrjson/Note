@@ -156,11 +156,11 @@ extern NSString * _Nonnull const LYRConversationSynchronizationProgressUserInfoK
 
 /**
  @abstract The date and time that the conversation was created.
- @discussion This value specifies the time that receiver was locally created and will vary across devices.
+ @discussion This value specifies the time that the conversation was created on the Layer backend and is sychronized across devices.
  
  The `createdAt` property is queryable using all predicate operators.
  */
-@property (nonatomic, readonly, nonnull) NSDate *createdAt LYR_QUERYABLE_PROPERTY;
+@property (nonatomic, readonly, nullable) NSDate *createdAt LYR_QUERYABLE_PROPERTY;
 
 /**
  @abstract Returns the last Message recevied or sent in this Conversation.
