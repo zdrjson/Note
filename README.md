@@ -711,8 +711,6 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [brackets](https://github.com/adobe/brackets)
 * [atom](https://github.com/atom/atom)
 
-
-
 # Python
 
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/index.html)
