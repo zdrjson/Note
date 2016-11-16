@@ -325,6 +325,7 @@ CAShapeLayer有着几点很重要:
 * [天下武功出少林，天下架构出MVC](/Architecture/天下武功出少林，天下架构出MVC.jpg
 )
 * [大型网站技术架构（1）](https://segmentfault.com/a/1190000007390358?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
+* [大型网站技术架构（2）：架构要素和高性能架构](https://segmentfault.com/a/1190000007409203)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
