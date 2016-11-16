@@ -119,5 +119,7 @@ pod 'CTPersistance'
 
 pod 'MJExtension'
 pod 'MJRefresh'
+
+pod 'SocketRocket'
 end
 
