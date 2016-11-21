@@ -708,6 +708,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [15年双11手淘前端技术巡演 - H5性能最佳实践](https://github.com/amfe/article/issues/21)
 * [构建单页Web应用](https://github.com/xufei/blog/issues/5)
 * [全栈工程师培训材料ruanyifeng](https://github.com/ruanyf/jstraining)
+* [前端面试题整理汇总](http://web.jobbole.com/88177/)
 
 ### IDE
 * [brackets](https://github.com/adobe/brackets)
