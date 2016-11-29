@@ -681,6 +681,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [vue.js 60分钟快速入门](http://www.cnblogs.com/keepfool/p/5625583.html)
 * [vue勾三股四](http://jiongks.name/)
 * [Vue.js作者尢雨溪：Vue 2.0——渐进式前端解决方案](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650994529&idx=1&sn=953bf1d92cc2a7b278d0761d3e433803&chksm=bdbf0f328ac886245652735e4dfa1b39b1357b9f36ccf1b337714ac81810f8441d189ce89615&scene=0#wechat_redirect)
+* [vue2.0实战DICK-BooM-tutorial](https://github.com/MeCKodo/vue-tutorial)
 
 
 ## Nodejs
