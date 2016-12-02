@@ -667,7 +667,6 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [HTML 5 <a> 标签的 target 属性](http://www.w3school.com.cn/html5/att_a_target.asp)
 
 #JS
-
 * [详解js跨域问题](https://segmentfault.com/a/1190000000718840)
 * [关于javascript跨域及JSONP的原理与应用](https://segmentfault.com/a/1190000002438126)
 * [跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
@@ -686,9 +685,10 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [vue.js中文api](https://cn.vuejs.org/v2/api/#Vue-set)
 
 
-## Nodejs
+## Node.js
 * [淘宝 NPM 镜像](https://npm.taobao.org)
 * [Node.js的Event Loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)
+* [一起学 Node.js](https://github.com/nswbmw/N-blog)
 
 
 ## this
