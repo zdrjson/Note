@@ -653,6 +653,7 @@ JavaScript引擎的工作方式是，先解析代码，获取所有被声明的�
 
 
 架构书籍：大型网站技术架构
+mac 下运行 xx.js 文件可以通过 terminal run  "$ node xx.js"
 
 #CSS
 
