@@ -240,6 +240,7 @@ What it provides
 * [StockKLine](https://github.com/mengmanzbh/StockKLine)
 * [YYStock](https://github.com/yate1996/YYStock)
 * [高仿支付宝解锁](https://github.com/CharlinFeng/CoreLock)
+* [VTMagic is a page container library for iOS](https://github.com/tianzhuo112/VTMagic)
 
 ### 占位视图
 * [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
