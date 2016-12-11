@@ -764,4 +764,11 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 # 产品
 * [不要在功能上竞争](http://www.ruanyifeng.com/blog/2011/07/dont_compete_on_features.html)
  
+# 常用命令行
+
+```
+du -sh * 查看文件大小
+```	
+
+
 
