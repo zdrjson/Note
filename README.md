@@ -768,6 +768,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 
 ```
 du -sh * 查看文件大小
+git commit -am ''
 ```	
 
 
