@@ -411,6 +411,7 @@ CAShapeLayer有着几点很重要:
 * [手机天猫技术大赏](http://pingguohe.net/tmalltech/)
 * [XcodeMen](http://www.jianshu.com/users/d509cc369c78/latest_articles)
 * [Keynotes of lzwjava at github](https://github.com/lzwjava/Keynotes)
+* [isaced](http://www.isaced.com/sort/6)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -657,6 +658,7 @@ JavaScript引擎的工作方式是，先解析代码，获取所有被声明的�
 架构书籍：大型网站技术架构
 mac 下运行 xx.js 文件可以通过 terminal run  "$ node xx.js"
 ERROR Deployer not found: git ---> npm install hexo-deployer-git --save
+By default, you will be promted to check for upgrades every few weeks. If you would like oh-my-zsh to automatically upgrade itself without prompting you, set the following in your ~/.zshrc:
 #CSS
 
 ```
