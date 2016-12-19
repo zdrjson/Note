@@ -80,5 +80,210 @@ var y = 2;
         }
     }
 </script>
+
+<script>
+    var arr = [
+        {a: 1},
+        [1,2,3],
+        function () {
+            return true;
+        }
+    ];
+    var a = [[1, 2], [3, 4]];
+    console.log(typeof [1, 2, 3])
+    var arr1 = ['a','b','c'];
+    console.log(arr1['0']);
+    console.log(arr1[0]);
+
+</script>
+<script>
+    var a = [];'
+        a['1000'] = 'abc';
+    console.log(a[1000]);
+    a[1.00] = 6;
+    console.log(a[1]);
+
+</script>
+<script>
+    var arr = ['a','b','c'];
+    console.log(arr.length);
+    arr.length = 2;
+    console.log(arr);
+    arr.length = 0;
+    console.log(arr);
+
+    var a = ['a'];
+    a.length = 3;
+    console.log(a[1]);
+</script>
+
+<script>
+//    [].length = -1;
+//    [].length = Math.pow(2,32);
+//    [].length = 'abc';
+
+     var a = [];
+     a['p'] = 'abc';
+     console.log(a.length);
+     a[2.1] = 'abc';
+     console.log(a.length);
+
+     var arr = [];
+     arr[-1] = 'a';
+     arr[Math.pow(2,32)] = 'b';
+
+     console.log(arr.length);
+     console.log(arr[-1]);
+     console.log(arr[4294967296]);
+</script>
+<script>
+    var obj = {
+      legnth: 0
+    };
+
+    obj[3] = 'd';
+    console.log(obj.legnth);
+</script>
+<script>
+    // arguments对象
+    function args() {
+        return arguments
+    }
+    var arrayLike = args('a','b');
+    console.log(arrayLike[0]);
+    console.log(arrayLike.length);
+    console.log(arrayLike instanceof Array);
+
+    // DOM元素集
+    var elts = document.getElementsByTagName('h3');
+    console.log(elts.length);
+    console.log(elts instanceof Array);
+
+    //字符串
+    console.log('abc'[1]);
+    console.log('abc'.length);
+    console.log('abc' instanceof Array);
+
+    var arr = Array.prototype.slice.call(arrayLike);
+    console.log(arr);
+
+
+    function logArgs() {
+        for (var i = 0; i < arguments.length; i++) {
+            console.log(i + '. ' + arguments[i]);
+        }
+    }
+
+    function logArgs1() {
+        Array.prototype.forEach.call(arguments,function (elem, i) {
+            console.log(i + '.' + elem);
+        });
+    }
+
+    logArgs();
+    logArgs1();
+
+    Array.prototype.forEach.call('abc', function (chr) {
+       console.log(chr);
+    });
+
+
+</script>
+
+<script>
+    var arr = ['a','b','c'];
+    console.log(2 in arr);
+    console.log('2' in arr);
+    console.log(4 in arr);
+
+
+
+</script>
+
+<script>
+    var arr = [];
+    arr[100] = 'a';
+    console.log(100 in arr);
+    console.log(1 in arr);
+</script>
+
 </body>
+<script>
+    var a = [1,2,3];
+    a.foo = true;
+    for (var i in a) {
+        console.log(a[i]);
+    }
+</script>
+<script>
+    var a = [1,2,3];
+    //for 循环
+    for(var i = 0; i < a.length; i++) {
+        console.log(a[i]);
+    }
+
+    //while循环
+    var i = 0;
+    while (i < a.length) {
+        console.log(a[i]);
+        i++;
+    }
+
+    var l = a.length;
+    while (l--) {
+        console.log(a[l]);
+    }
+</script>
+<script>
+    var colors = ['red','green','blue'];
+    colors.forEach(function (color) {
+       console.log(color);
+    });
+</script>
+
+<script>
+    var a = [1, ,1];
+    console.log(a.length);
+    var aa = [1,2,3,];
+    console.log(aa.length);
+    console.log(aa);
+
+
+
+</script>
+<script>
+    var a = [,,,];
+    console.log(a[1]);
+</script>
+<script>
+    var a = [1,2,3];
+    delete a[1];
+
+    console.log(a[1]);
+    console.log(a.length);
+</script>
+
+<script>
+    var a = [, , ,];
+    a.forEach(function (x,i) {
+        console.log(i + '. ' + x);
+    })
+    for (var i in a) {
+        console.log(i);
+    }
+    console.log(Object.keys(a));
+</script>
+<script>
+    var a = [undefined, undefined, undefined];
+    a.forEach(function (x, i) {
+        console.log(i + '. ' + x);
+    });
+    for (var i in a) {
+        console.log(i);
+    }
+    console.log(Object.keys(a));
+
+
+
+</script>
 </html>
