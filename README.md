@@ -665,6 +665,11 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 mac 下运行 xx.js 文件可以通过 terminal run  "$ node xx.js"
 ERROR Deployer not found: git ---> npm install hexo-deployer-git --save
 By default, you will be promted to check for upgrades every few weeks. If you would like oh-my-zsh to automatically upgrade itself without prompting you, set the following in your ~/.zshrc:
+
+***
+在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。
+***
+
 #CSS
 
 ```
