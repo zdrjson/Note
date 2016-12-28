@@ -1,4 +1,7 @@
-# DDNote
+# DDNote 
+#Why you are coding?
+#what do you do after ten years from now? 
+#what do you do for your future and your kids?
 # * [career of a programmer](http://coolshell.cn/articles/17583.html#comments)
 
 > **我花费了大量的时间阅读和学习各种开源的代码、研究其中的实现原理、尝试自己实现相关技术、尝试在工作中使用，这使得我在 iOS 开发技术上进步很快。 —— YY**
