@@ -1,6 +1,6 @@
 # DDNote 
 #Why you are coding?
-#what do you do after ten years from now? 
+#what will you do after ten years from now? 
 #what do you do for your future and your kids?
 # * [career of a programmer](http://coolshell.cn/articles/17583.html#comments)
 
