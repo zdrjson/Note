@@ -671,6 +671,7 @@ By default, you will be promted to check for upgrades every few weeks. If you wo
 
 ***
 在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。
+返回闭包时牢记的一点就是：返回函数不要引用任何循环变量，或者后续会发生变化的变量。
 ***
 
 #CSS
