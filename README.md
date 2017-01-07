@@ -796,6 +796,8 @@ git commit -am ''
 * [React](https://github.com/facebook/react)
 * [weex](http://alibaba.github.io/weex/cn/doc/get-started.html)
 
+# Job
+* [How could you work for facebook especially for Chinese](http://cenalulu.github.io/mysql/how-i-become-a-facebook-dba/)
 
 
 
