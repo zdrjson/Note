@@ -799,5 +799,7 @@ git commit -am ''
 # Job
 * [How could you work for facebook especially for Chinese](http://cenalulu.github.io/mysql/how-i-become-a-facebook-dba/)
 
+# Security
+* [从 MONGODB “赎金事件” 看安全问题](http://coolshell.cn/articles/17607.html)
 
 
