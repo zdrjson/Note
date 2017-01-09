@@ -309,4 +309,63 @@ var y = 2;
 
      }
 </script>
+<div id="test">I am an element with id #test</div>
+<script>
+//    js中this的引用
+    foo = 'abc';
+//    alert(foo);
+
+    this.foo = 'def';
+//    alert(foo); //global
+
+    var boat = {
+      size: 'normal',
+
+        boatIfo: function () {
+//            alert(this);
+//            alert(this == boat);
+//            alert(this.size);
+        }
+    };
+
+    boat.boatIfo();
+
+    var bigBoat = {
+      size: 'big'
+    };
+    bigBoat.boatIfo = boat.boatIfo;
+    bigBoat.boatIfo();
+
+
+    function bar() {
+//        alert(this);
+    }
+
+    bar();
+
+    var foo = {
+        baz: function () {
+//            alert(this);
+        }
+    }
+    foo.baz();
+
+    var anotherBaz = foo.baz;
+    anotherBaz();
+
+    function doAlert() {
+       alert(this.innerHTML);
+    }
+
+    doAlert();
+
+    var myElem = document.getElementById('test');
+    myElem.onclick = doAlert;
+
+
+    alert(myElem.onclick === doAlert);
+
+    myElem.onclick();
+</script>
+
 </html>
