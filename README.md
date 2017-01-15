@@ -805,3 +805,8 @@ git commit -am ''
 * [从 MONGODB “赎金事件” 看安全问题](http://coolshell.cn/articles/17607.html)
 
 
+
+# Go
+*[A guy from Apple](https://www.zhihu.com/lives/800688114623463424)
+
+
