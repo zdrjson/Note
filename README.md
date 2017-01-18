@@ -806,6 +806,7 @@ git commit -am ''
 
 
 # Go
-*[A guy from Apple](https://www.zhihu.com/lives/800688114623463424)
+* [A guy from Apple](https://www.zhihu.com/lives/800688114623463424)
+* [beego 文档](https://beego.me/docs/intro/)
 
 
