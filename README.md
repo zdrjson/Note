@@ -225,7 +225,7 @@ What it provides
 * [520Linkee](https://github.com/GrayJIAXU/520Linkee)
 * [RTMPCHybridEngine-IOS](https://github.com/AnyRTC/RTMPCHybridEngine-IOS)
 
-##Audio
+## Audio
 * [MPVolumeView_iOS program modification system volume](https://segmentfault.com/a/1190000002401961)
 
 ## Image
@@ -362,14 +362,14 @@ CAShapeLayer有着几点很重要:
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
 
-##Cocoapods
+## Cocoapods
 * [ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
 * [Operation not permitted - /usr/bin/fuzzy_match](http://blog.csdn.net/sinat_29998157/article/details/50070687)
 * [While executing gem ... (TypeError) no implicit conversion of nil into String](http://stackoverflow.com/questions/25844937/how-to-install-cocoa-pods-in-terminal)
 * [When using cocoapods, what is the best way to change the PRODUCT_NAME?](http://stackoverflow.com/questions/31120403/when-using-cocoapods-what-is-the-best-way-to-change-the-product-name)
 * [理解Cocoapods](https://segmentfault.com/a/1190000005041357)
 
-##SomeGuysBlog
+## SomeGuysBlog
 * [WeiXinRead](http://wereadteam.github.io)
 * [sunnyxx](http://blog.sunnyxx.com)
 * [FMDB_description](http://blog.csdn.net/yixiangboy/article/details/51274186)
@@ -518,7 +518,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 
 
 
-##Foundation
+## Foundation
 * roundf 将浮点值四舍五入为最接近的整数
 * `pow() 函数用来求 x 的 y 次幂（次方），其原型为：
     double pow(double x, double y);`
@@ -685,7 +685,6 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 ```									
 			
 #HTML
-
 * [HTML 5 <a> 标签的 target 属性](http://www.w3school.com.cn/html5/att_a_target.asp)
 
 #JS
@@ -772,14 +771,16 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [Potatso使用说明](https://manual.potatso.com)
 
 # GitHubStars
-[TinyPNG4Mac 图片压缩MacApp](https://github.com/kyleduo/TinyPNG4Mac)
+* [TinyPNG4Mac 图片压缩MacApp](https://github.com/kyleduo/TinyPNG4Mac)
 
-[WeChat 实现类似微信朋友圈或者QQ空间，评论回复，九宫格布局。处理键盘弹出后定位到当前点击的被评论人处。另：滑动时候FPS在57-60之间，纵享丝滑！](https://github.com/zhengwenming/WeChat)
+* [WeChat 实现类似微信朋友圈或者QQ空间，评论回复，九宫格布局。处理键盘弹出后定位到当前点击的被评论人处。另：滑动时候FPS在57-60之间，纵享丝滑！](https://github.com/zhengwenming/WeChat)
 
-[知乎日报web版---vue](https://github.com/yatessss/zhihudaily-vue)
+* [知乎日报web版---vue](https://github.com/yatessss/zhihudaily-vue)
 
-[一个 iOS 上的弹幕渲染库](https://github.com/unash/BarrageRenderer)
+* [一个 iOS 上的弹幕渲染库](https://github.com/unash/BarrageRenderer)
 
+# Crash soluation 
+* [GYBootingProtection](https://github.com/liuslevis/GYBootingProtection)
 
 # JAVA
 * [Java 基本语法](http://wiki.jikexueyuan.com/project/java/basic-syntax.html)
