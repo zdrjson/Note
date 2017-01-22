@@ -697,6 +697,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [lihei_jquery](http://blog.csdn.net/lihei12345/article/category/2393611)
 * [Blog_Platform](https://github.com/TryGhost/Ghost)
 * [js单线程模型](http://javascript.ruanyifeng.com/advanced/single-thread.html)
+* [ANGULARJS实现单页面应用的原理-路由(ROUTE)](http://www.cnblogs.com/iCafe/p/5732159.html)
 
 ## Vue.js
 * [vue.js 60分钟快速入门](http://www.cnblogs.com/keepfool/p/5625583.html)
