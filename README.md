@@ -330,6 +330,7 @@ CAShapeLayer有着几点很重要:
 )
 * [大型网站技术架构（1）](https://segmentfault.com/a/1190000007390358?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
 * [大型网站技术架构（2）：架构要素和高性能架构](https://segmentfault.com/a/1190000007409203)
+* [年度盘点（三） | 2016 年十大架构师必读好文](http://weibo.com/ttarticle/p/show?id=2309404060110799426234)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
