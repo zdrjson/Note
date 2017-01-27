@@ -15,15 +15,13 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
-  - AsyncDisplayKit (1.9.92):
-    - AsyncDisplayKit/PINRemoteImage (= 1.9.92)
-  - AsyncDisplayKit/ASDealloc2MainObject (1.9.92)
-  - AsyncDisplayKit/Core (1.9.92):
-    - AsyncDisplayKit/ASDealloc2MainObject
-  - AsyncDisplayKit/PINRemoteImage (1.9.92):
+  - AsyncDisplayKit (2.0.2):
+    - AsyncDisplayKit/PINRemoteImage (= 2.0.2)
+  - AsyncDisplayKit/Core (2.0.2)
+  - AsyncDisplayKit/PINRemoteImage (2.0.2):
     - AsyncDisplayKit/Core
-    - PINCache (= 3.0.1-beta)
-    - PINRemoteImage/iOS (= 3.0.0-beta.3)
+    - PINRemoteImage/iOS (= 3.0.0-beta.7)
+    - PINRemoteImage/PINCache
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -51,7 +49,7 @@ PODS:
   - CocoaLumberjack/Core (1.9.2)
   - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
-  - CTPersistance (1.3.2)
+  - CTPersistance (1.3.5)
   - CTVideoPlayerView (1.3.1):
     - AFNetworking
     - CTPersistance
@@ -75,25 +73,25 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - FreeStreamer (3.6.5):
+  - FreeStreamer (3.7.2):
     - Reachability (~> 3.0)
   - GPUImage (0.1.7)
-  - HandyFrame (1.1.1)
+  - HandyFrame (1.1.2)
   - HYBHelperKit (0.2.0):
     - Masonry (~> 1.0.1)
   - iCarousel (1.8.3)
-  - IQKeyboardManager (4.0.7)
+  - IQKeyboardManager (4.0.8)
   - JazzHands (2.0.8)
   - JHChainableAnimations (1.3.0)
   - JLRoutes (2.0.1)
-  - JSPatch (1.1):
-    - JSPatch/Core (= 1.1)
-  - JSPatch/Core (1.1)
+  - JSPatch (1.1.2):
+    - JSPatch/Core (= 1.1.2)
+  - JSPatch/Core (1.1.2)
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
   - KMNavigationBarTransition (0.0.10)
-  - LayerKit (0.23.3)
+  - LayerKit (0.24.0)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
@@ -109,10 +107,17 @@ PODS:
     - TTTAttributedLabel (= 1.13.3)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
-  - PINCache (3.0.1-beta)
-  - PINRemoteImage/Core (3.0.0-beta.3):
-    - PINCache (>= 3.0.0-beta)
-  - PINRemoteImage/iOS (3.0.0-beta.3):
+  - PINCache (3.0.1-beta.2):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.2)
+    - PINCache/Core (= 3.0.1-beta.2)
+  - PINCache/Arc-exception-safe (3.0.1-beta.2):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.2)
+  - PINRemoteImage/Core (3.0.0-beta.7)
+  - PINRemoteImage/iOS (3.0.0-beta.7):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.7):
+    - PINCache (= 3.0.1-beta.2)
     - PINRemoteImage/Core
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
@@ -142,8 +147,8 @@ PODS:
   - SlackTextViewController (1.9.5)
   - SocketRocket (0.5.1)
   - SSKeychain (1.4.1)
-  - SSZipArchive (1.6.2)
-  - SVProgressHUD (2.0.4)
+  - SSZipArchive (1.7)
+  - SVProgressHUD (2.1.2)
   - TCBlobDownload (2.1.1)
   - TPCircularBuffer (1.1)
   - TTTAttributedLabel (1.13.3)
@@ -155,7 +160,7 @@ PODS:
   - VTMagic (1.2.4):
     - VTMagic/Core (= 1.2.4)
   - VTMagic/Core (1.2.4)
-  - WebViewJavascriptBridge (5.0.5)
+  - WebViewJavascriptBridge (6.0.2)
   - XMPPFramework (3.6.6):
     - XMPPFramework/Authentication (= 3.6.6)
     - XMPPFramework/BandwidthMonitor (= 3.6.6)
@@ -314,7 +319,7 @@ PODS:
     - YYCache
     - YYImage
   - ZFDragableModalTransition (0.6)
-  - ZFPlayer (2.0.3):
+  - ZFPlayer (2.1.1):
     - Masonry
   - ZipArchive (1.4.0)
   - zipzap (8.1.1)
@@ -403,11 +408,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  AsyncDisplayKit: 49d94f5739669d666ff7cdc3430f43f0b2cfbeaf
+  AsyncDisplayKit: 5c22daa1499c530fcc3e5589ddb201bf1176842b
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
-  CTPersistance: 54c11b2e503c5519ad3b791b134d5326069ac080
+  CTPersistance: 6d20d164da1e922f598f886eaf5e5a64ea653a08
   CTVideoPlayerView: e66df1b5939c6db2af3aa203b4b5a66755e71ed6
   CYLTableViewPlaceHolder: 44075c119aab78bbc514c75d771d6565e19938e8
   DWURunLoopWorkDistribution: 553fa18b78ccfc5330258210cc810b2c2da6dc0b
@@ -420,20 +425,20 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  FreeStreamer: 81973ddd08677aa40f5edebc867664a7c0326da5
+  FreeStreamer: 98f42f926bed70e3f8873930bc530aae83082d9f
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
-  HandyFrame: 4e95cc495e84e91f9434fe316f992ba4ee713e3a
+  HandyFrame: d505faced4d4fb820d66bd88b654dbf7b88da424
   HYBHelperKit: 504b3ef89778c1d7f4bd8faf0abfeed96cd2e5f9
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
-  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
   JazzHands: 355dc5c2b6fc38ee460d0ed7836c69539263f477
   JHChainableAnimations: 22085fcb04ca87349e584573558e637f659fd769
   JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
-  JSPatch: ade285ad1d8f06146ed6054a39cef87509453299
+  JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   KMNavigationBarTransition: 7a519f915cfe6fe09764b2061ea01043b445f7d2
-  LayerKit: 128b3b0c036422458d621f81f36e6b42d372feba
+  LayerKit: ef028036b5623d2daf2f590c688fd790cd90340c
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
@@ -442,8 +447,8 @@ SPEC CHECKSUMS:
   MHVideoPhotoGallery: aa36cdd9b75c6d5a19b48005cddb9b730c2e27e8
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  PINCache: 6911fe422a633e18b3d3ddf2bd4f0e55e36e2892
-  PINRemoteImage: 308731aa6534500e58fc211b9cc2bb7252df25ba
+  PINCache: 6d273a6e0754bd26e3f12a38a90dde73cc6a42b2
+  PINRemoteImage: ff63baf185088530db6cfa41cb665e2b5126b5c3
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
@@ -453,13 +458,13 @@ SPEC CHECKSUMS:
   SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
-  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
-  SSZipArchive: 428eb1ac8d37dd133404d30f422b23958c1f9acc
-  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
+  SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   TCBlobDownload: 8726f054cc00bb5f66a57bb0c99764842dfa5c9f
   TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
   TTTAttributedLabel: 6f3174aef8e738f44dff97c2eb7d8184f6ab6277
@@ -469,7 +474,7 @@ SPEC CHECKSUMS:
   VCTransitionsLibrary: d61fd9b7b6721942f0d583bcc0e7f8c31ec9271b
   VIMediaCache: 1f5fec19aa3a818a9a2e47fa2699b422c8530450
   VTMagic: b49e5f456dbcbfd9a3588ba92417233a105bc193
-  WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
+  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   XMPPFramework: b06c210b0b71c08aa41a646bffd2021fa43bb43b
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
@@ -481,7 +486,7 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
   ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
-  ZFPlayer: ff74ca27faa41e8f6df42ea038c951353246f97f
+  ZFPlayer: c36657da33c28c75dfb100e98e7976b5b3e1fc10
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
   zipzap: 940162d9c9c60472c2eab341385e4214da0fdf1c
   ZLSwipeableView: df385760ff4838935cdbcb62878ac5acd7355949
