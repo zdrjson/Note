@@ -815,4 +815,6 @@ git commit -am ''
 * [A guy from Apple](https://www.zhihu.com/lives/800688114623463424)
 * [beego 文档](https://beego.me/docs/intro/)
 
+# Business model
+* [the profit model of tencent](http://www.51a.la/keji/8850.html)
 
