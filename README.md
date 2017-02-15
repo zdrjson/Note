@@ -356,11 +356,12 @@ CAShapeLayer有着几点很重要:
 * [Calling Conventions](http://slides.com/sunnyxx/calling-conventions-in-cocoa#/)
 * [如何动态调用 C 函数](http://mp.weixin.qq.com/s?__biz=MzIzNTQ2MDg2Ng==&mid=2247483687&idx=1&sn=94d3ce224e5e25f2e1ae8a6046efb472#rd)
 
-## SQLite
+## SQ
 * [GYDataCenter](https://github.com/Zepo/GYDataCenter)
 * [CTPersistance](https://github.com/casatwy/CTPersistance)
 * [FMDB](https://github.com/ccgus/fmdb)
 * [realm之于iOS](http://mp.weixin.qq.com/s?__biz=MzI5MjEzNzA1MA==&mid=2650264208&idx=1&sn=edfeb6ec6d14bddeb3c3ac3367045456&chksm=f40683a5c3710ab3adce18244f5c02bbf3e2b3b156162e90b8c4ecf9a58fcf9f50987706db3e#wechat_redirect)
+* [当磁盘空间爆满后，MySQL会发生什么事呢？又应该怎么应对？](http://imysql.com/2015/09/23/mysql-faq-what-will-happen-when-disk-full.shtml?f=http://blogread.cn/)
 
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
