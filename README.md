@@ -1,7 +1,7 @@
 # DDNote 
 
 
-![What is your main focus for toady](/Users/j/Downloads/DDKit/What is your main focus for toady.png
+![What is your main focus for toady](What is your main focus for toady.png
 )
 
 
