@@ -1,4 +1,11 @@
 # DDNote 
+
+
+![What is your main focus for toady](/Users/j/Downloads/DDKit/What is your main focus for toady.png
+)
+
+
+
 #Why are you coding?
 #What will you do after ten years from now? 
 #What do you do for your future and your kids?
