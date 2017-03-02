@@ -9,6 +9,9 @@
 #Why are you coding?
 #What will you do after ten years from now? 
 #What do you do for your future and your kids?
+#Will you code for your entire life?
+
+
 # * [the career of a programmer](http://coolshell.cn/articles/17583.html#comments)
 
 > **我花费了大量的时间阅读和学习各种开源的代码、研究其中的实现原理、尝试自己实现相关技术、尝试在工作中使用，这使得我在 iOS 开发技术上进步很快。 —— YY**
@@ -458,7 +461,6 @@ you send this message from another thread, the input source associated with the
 timer may not be removed from its run loop, which could prevent the thread from
 exiting properly.
 NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源不能被正确的释放。看起来各种坑还不少。
-
 ```
 
 ## Efficiency 
@@ -824,4 +826,9 @@ git commit -am ''
 
 # Business model
 * [the profit model of tencent](http://www.51a.la/keji/8850.html)
+
+
+# Coding for Money
+* [FinancialSupportForOpenSource](https://github.com/wizicer/FinancialSupportForOpenSource#%E5%B9%BF%E5%91%8A)
+
 
