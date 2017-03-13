@@ -750,6 +750,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [构建单页Web应用](https://github.com/xufei/blog/issues/5)
 * [全栈工程师培训材料ruanyifeng](https://github.com/ruanyf/jstraining)
 * [前端面试题整理汇总](http://web.jobbole.com/88177/)
+* [什么是服务端渲染](https://segmentfault.com/q/1010000004293653)
 
 ### IDE
 * [brackets](https://github.com/adobe/brackets)
