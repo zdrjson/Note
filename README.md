@@ -1,4 +1,4 @@
-# DDNote 
+# Note 
 
 
 ![What is your main focus for toady](What is your main focus for toady.png
@@ -809,7 +809,14 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 ```
 du -sh * 查看文件大小
 git commit -am ''
-```	
+```
+	
+```
+copy所以文件，包括隐藏文件
+cp -r /opt/usr/20070723/.  /backup/latest/
+这里不能用*,一定要用.
+```
+
 # Cross-Platform
 * [ionic](https://ionicframework.com/)
 * [React](https://github.com/facebook/react)
