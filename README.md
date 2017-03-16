@@ -2,15 +2,14 @@
 
 
 
-![What is your main focus for toady](What is your main focus for toady.png
-)
+![What is your main focus for toady](What is your main focus for toady.png)
 
 
 
-#Why are you coding?
-#What will you do after ten years from now? 
-#What do you do for your future and your kids?
-#Will you code for your entire life?
+# Why are you coding?
+# What will you do after ten years from now? 
+# What do you do for your future and your kids?
+# Will you code for your entire life?
 
 
 # * [the career of a programmer](http://coolshell.cn/articles/17583.html#comments)
