@@ -687,7 +687,7 @@ By default, you will be promted to check for upgrades every few weeks. If you wo
 能用type()判断的基本类型也可以用isinstance()判断：
 ***
 
-#CSS
+# CSS
 
 ```
 W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以说我们用他们俩的时候就要按照这个特性
@@ -696,10 +696,10 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 ```
 *[Sass中文网](http://www.sass.hk/guide/)			
 			
-#HTML
-* [HTML 5 <a> 标签的 target 属性](http://www.w3school.com.cn/html5/att_a_target.asp)
+# HTML
+* [HTML5<a>标签的 target 属性](http://www.w3school.com.cn/html5/att_a_target.asp)
 
-#JS
+# JS
 * [详解js跨域问题](https://segmentfault.com/a/1190000000718840)
 * [关于javascript跨域及JSONP的原理与应用](https://segmentfault.com/a/1190000002438126)
 * [跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
@@ -755,7 +755,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [atom](https://github.com/atom/atom)
 
 # Python
-** Python程序是大小写敏感的 **
+> Python程序是大小写敏感的
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/index.html)
 * [scrapy](https://github.com/scrapy/scrapy)
 * [urllib3](https://github.com/shazow/urllib3)
