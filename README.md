@@ -1,8 +1,6 @@
 # Note 
 
-
-
-![What is your main focus for toady](What is your main focus for toady.png)
+![What is your main focus for toady](mainFocus.png)
 
 
 
