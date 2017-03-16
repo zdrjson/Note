@@ -651,8 +651,7 @@ internet)同时链接多个程序 Port_(computer_networking)
 app.listen(3000)，进程就被打标，电脑接收到的3000端口的网络消息就会被发送给我们启动的这个进程
 ```
 
-
-```
+
 JavaScript引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行一行地运行。这造成的结果，就是所有的变量的声明语句，**都会被提升到代码的头部**，这就叫做变量提升（hoisting）。
 
 **JavaScript 
@@ -661,11 +660,10 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 数组的某个位置是空位，与某个位置是undefined，是不一样的。如果是空位，使用数组的forEach方法、for...in结构、以及Object.keys方法进行遍历，空位都会被跳过。
 空位就是数组没有这个元素，所以不会被遍历到，而undefined则表示数组有这个元素，值是undefined，所以遍历不会跳过。**
 
-**注意，对于var命令来说，局部变量只能在函数内部声明，在其他区块中声明，一律都是全局变量**
-
+注意，对于var命令来说，局部变量只能在函数内部声明，在其他区块中声明，一律都是全局变量**
 
 **shell来批量删除：svn status | grep ! | awk '{print $2}' | xargs svn delete**
-```
+
 
 * [批量svn delete](http://hushicai.com/2014/02/28/pi-liang-svn-delete.html)
 * [纯IPv6环境App适配的坑](http://mrpeak.cn/blog/ipv6/)
