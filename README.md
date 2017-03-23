@@ -684,6 +684,9 @@ By default, you will be promted to check for upgrades every few weeks. If you wo
 能用type()判断的基本类型也可以用isinstance()判断：
 ***
 
+### [Vue实例](https://cn.vuejs.org/v2/guide/instance.html#生命周期图示)
+
+
 # CSS
 
 ```
