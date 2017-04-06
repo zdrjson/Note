@@ -686,8 +686,6 @@ By default, you will be promted to check for upgrades every few weeks. If you wo
 能用type()判断的基本类型也可以用isinstance()判断：
 ***
 
-### [Vue实例](https://cn.vuejs.org/v2/guide/instance.html#生命周期图示)
-
 
 # CSS
 
@@ -722,6 +720,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [vue.js中文api](https://cn.vuejs.org/v2/api/#Vue-set)
 * [vue-router description](http://router.vuejs.org/zh-cn/essentials/getting-started.html)
 * [Vue documents](https://github.com/zhaohaodang/vue-WeChat/wiki)
+* ### [Vue实例](https://cn.vuejs.org/v2/guide/instance.html#生命周期图示)
 
 
 
