@@ -496,7 +496,8 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [鼠须管](https://github.com/rime/squirrel)
 * [Mac  开发者  怕雾霾和没vim  设计师](http://liqi.io/zhangbin/)
 * [Mac  Swift  同用书垫电脑  开发者](http://liqi.io/wangling/)
-
+* [hosts](https://github.com/racaljk/hosts)
+* [hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
 
 
 ```
@@ -513,8 +514,6 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 干净。这个对一般用户来说会比较方便，包含很多在 AppStore 里没有的常用软件。
 ```
 
-* [hosts](https://github.com/racaljk/hosts)
-* [hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
 
 ## Tutorial
 * [objc](http://objccn.io)
