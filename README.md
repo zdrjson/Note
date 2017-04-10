@@ -273,6 +273,7 @@ What it provides
 ## CALayer
 * [CALayer and subLayer](http://my.oschina.net/u/2340880/blog/536048)
 * [CATextLayer](https://github.com/joeshang/CATextLayerTest)
+* [CAGradientLayer](https://zsisme.gitbooks.io/ios-/content/chapter6/cagradientLayer.html)
 
 ```
 普通CALayer在被初始化时是需要给一个frame值的,这个frame值一般都与给定view的bounds值一致,它本
@@ -284,7 +285,7 @@ CAShapeLayer有着几点很重要:
 1. 它依附于一个给定的path,必须给与path,而且,即使path不完整也会自动首尾相接
 2. strokeStart以及strokeEnd代表着在这个path中所占用的百分比
 ```
-* [CAGradientLayer](https://zsisme.gitbooks.io/ios-/content/chapter6/cagradientLayer.html)
+
 
 
 ## Model
