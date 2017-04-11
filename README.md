@@ -8,6 +8,7 @@
 # What will you do after ten years from now? 
 # What do you do for your future and your kids?
 # Will you code for your entire life?
+# Where do you see yourself in 5 years?
 
 
 # * [the career of a programmer](http://coolshell.cn/articles/17583.html#comments)
@@ -16,7 +17,7 @@
 
 > **每天都有很多事情要做，但是事情永远做不完，所以必须有明确优先级，明确一个目标，给定一段时间,坚持看看效果如何。**
 
-> **make a project for business, do it now**
+> **make a project for business, do it now.**
 
 | Target | Level | Reference | Time |
 |:-------:|:-------:|:------|:------|
