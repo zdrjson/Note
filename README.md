@@ -765,6 +765,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [AppleDNS](https://github.com/gongjianhui/AppleDNS)
 * [Python os模块参考手册](http://kuanghy.github.io/2015/08/02/python-os)
 * [Python并发编程之协程/异步IO](http://python.jobbole.com/87202/)
+* [python web 入坑指南](http://python-web-guide.readthedocs.io/zh/latest/)
 
 # DNS 
 [DNS 原理入门](http://www.ruanyifeng.com/blog/2016/06/dns.html)
