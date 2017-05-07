@@ -838,6 +838,7 @@ cp -r /opt/usr/20070723/.  /backup/latest/
 
 # Coding for Money
 * [FinancialSupportForOpenSource](https://github.com/wizicer/FinancialSupportForOpenSource#%E5%B9%BF%E5%91%8A)
+* [How to make more than $1mn+/yr as a software engineer?](https://news.ycombinator.com/item?id=13613911)
 
 # SEO 
 * [SEO 网站优化的步骤和技巧有哪些?](https://www.zhihu.com/question/19808905)
