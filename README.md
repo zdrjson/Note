@@ -749,6 +749,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [全栈工程师培训材料ruanyifeng](https://github.com/ruanyf/jstraining)
 * [前端面试题整理汇总](http://web.jobbole.com/88177/)
 * [什么是服务端渲染](https://segmentfault.com/q/1010000004293653)
+* [服务器端渲染和客户端渲染有什么区别?](https://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=2659599236&idx=1&sn=e8ed7de4c63f24cbd02dc6fd42ef8789&key=3fa25093d92ebc15fdc2dbf821311ba4005747edbc6b6203a91e8e685be3052b7034ce29c8a288f56159ca7f506112a1be182bf24b76a8588637c534f259bbfb6b9e4589455c364297af04644b39dc88&ascene=0&uin=MjkxMjg4Nzk4Mg%3D%3D&devicetype=iMac+MacBookPro13%2C3+OSX+OSX+10.12.4+build(16E195)&version=12020610&nettype=WIFI&fontScale=100&pass_ticket=ZOkHWsVN15NpM5f47IdypX3P9y265kbkaMOX7QSowcBdkFBmjxS4kxz%2B%2FAEfxCaa)
 
 ### IDE
 * [brackets](https://github.com/adobe/brackets)
@@ -842,4 +843,6 @@ cp -r /opt/usr/20070723/.  /backup/latest/
 
 # SEO 
 * [SEO 网站优化的步骤和技巧有哪些?](https://www.zhihu.com/question/19808905)
+
+
 
