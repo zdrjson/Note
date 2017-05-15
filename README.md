@@ -366,6 +366,7 @@ CAShapeLayer有着几点很重要:
 * [FMDB](https://github.com/ccgus/fmdb)
 * [realm之于iOS](http://mp.weixin.qq.com/s?__biz=MzI5MjEzNzA1MA==&mid=2650264208&idx=1&sn=edfeb6ec6d14bddeb3c3ac3367045456&chksm=f40683a5c3710ab3adce18244f5c02bbf3e2b3b156162e90b8c4ecf9a58fcf9f50987706db3e#wechat_redirect)
 * [当磁盘空间爆满后，MySQL会发生什么事呢？又应该怎么应对？](http://imysql.com/2015/09/23/mysql-faq-what-will-happen-when-disk-full.shtml?f=http://blogread.cn/)
+* [误删 300G，GitLab 官方对删库事故的事后分析](http://blog.jobbole.com/110171/)
 
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
@@ -719,6 +720,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [vue-router description](http://router.vuejs.org/zh-cn/essentials/getting-started.html)
 * [Vue documents](https://github.com/zhaohaodang/vue-WeChat/wiki)
 * ### [Vue实例](https://cn.vuejs.org/v2/guide/instance.html#生命周期图示)
+* [Vue源码学习](http://hcysun.me/2017/03/03/Vue%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0/)
 
 
 
