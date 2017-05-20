@@ -9,13 +9,7 @@
 
 > **每天都有很多事情要做，但是事情永远做不完，所以必须有明确优先级，明确一个目标，给定一段时间,坚持看看效果如何。**
 
-| Target | Level | Reference | Time |
-|:-------:|:-------:|:------|:------|
-| Algorithm | Super High |  | 
-|vim| Super High | | |
-|前端| Super High | | |
-|造轮子 |Super High| |
-|write blog |Super High| |
+
 
 
 ## **Algorithm**
