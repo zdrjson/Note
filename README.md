@@ -371,6 +371,7 @@ CAShapeLayer有着几点很重要:
 * [While executing gem ... (TypeError) no implicit conversion of nil into String](http://stackoverflow.com/questions/25844937/how-to-install-cocoa-pods-in-terminal)
 * [When using cocoapods, what is the best way to change the PRODUCT_NAME?](http://stackoverflow.com/questions/31120403/when-using-cocoapods-what-is-the-best-way-to-change-the-product-name)
 * [理解Cocoapods](https://segmentfault.com/a/1190000005041357)
+* [CocoaPods安装出现SSL verification error](http://www.jianshu.com/p/17043faee2e6)
 
 ## SomeGuysBlog
 * [WeiXinRead](http://wereadteam.github.io)
