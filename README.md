@@ -422,6 +422,7 @@ CAShapeLayer有着几点很重要:
 * [酷 壳 – COOLSHELL](http://coolshell.cn)
 * [王垠](http://www.yinwang.org/)
 * [iOS开发常用三方库、插件、知名博客等等](https://github.com/Tim9Liu9/TimLiu-iOS)
+* [多年iOS开发经验总结(一)](多年iOS开发经验总结(一))
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
