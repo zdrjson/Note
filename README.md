@@ -675,6 +675,7 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 * [what is ABI?](http://www.jianshu.com/p/66a76df0db95?utm_campaign=maleskine&utm_content=note&utm_medium=writer_share&utm_source=weibo)
 * [301/ 302 description](https://www.nowcoder.com/questionTerminal/b196fb6e27704b1b89253da3d49bc80f?orderByHotValue=0&done=0&pos=11&mutiTagIds=157)
 * [Linux 的文件权限与目录配置](http://beyondvincent.com/2016/10/07/2016-10-07-linux-file-permissions-and-directory-configuration/#more)
+* [怎么学习golang？以及如何学习一门新的语言](https://www.zhihu.com/people/astaxie/answers)
 
 
 架构书籍：大型网站技术架构
