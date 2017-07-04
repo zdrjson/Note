@@ -677,6 +677,7 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 * [Linux 的文件权限与目录配置](http://beyondvincent.com/2016/10/07/2016-10-07-linux-file-permissions-and-directory-configuration/#more)
 * [怎么学习golang？以及如何学习一门新的语言](https://www.zhihu.com/people/astaxie/answers)
 * [Linux 的文件与目录管理 含查看文件内容](http://beyondvincent.com/2016/10/10/2016-10-10-linux-file-and-directory-manager/)
+* [WEB请求处理流程](http://www.jianshu.com/p/558455228c43)
 
 
 架构书籍：大型网站技术架构
