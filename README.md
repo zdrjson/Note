@@ -22,6 +22,7 @@
 * [Solutions to LeetCode by Swift](https://github.com/soapyigu/LeetCode_Swift)
 * [时间复杂度和空间复杂度](https://www.zybuluo.com/Sakura-W/note/384646)
 * [Swift 算法实战之路：二叉树](http://www.jianshu.com/p/28f6b0b85ec1)
+* [Swift 算法实战之路：二分搜索](http://www.jianshu.com/p/b4036e6d3f13)
 
 ## **System design**
 [System-design-interview-for-IT-companies](https://github.com/checkcheckzz/system-design-interview)
