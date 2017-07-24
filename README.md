@@ -687,6 +687,7 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 * [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl)
 * [爬虫访问中，如何解决网站限制IP的问题？](https://www.zhihu.com/question/20392627)
 * [设置Xcode下Version Build版本号自增长脚本](http://www.jianshu.com/p/5c98023ac440)
+* [数据同步方案](https://casatwy.com/iosying-yong-jia-gou-tan-ben-di-chi-jiu-hua-fang-an-ji-dong-tai-bu-shu.html)
 
 
 架构书籍：大型网站技术架构
