@@ -696,6 +696,8 @@ mac 下运行 xx.js 文件可以通过 terminal run  "$ node xx.js"
 ERROR Deployer not found: git ---> npm install hexo-deployer-git --save
 By default, you will be promted to check for upgrades every few weeks. If you would like oh-my-zsh to automatically upgrade itself without prompting you, set the following in your ~/.zshrc:
 
+* [WEB请求处理系列5篇](http://www.jianshu.com/p/558455228c43)
+
 ***
 在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。
 返回闭包时牢记的一点就是：返回函数不要引用任何循环变量，或者后续会发生变化的变量。
