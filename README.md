@@ -729,6 +729,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [ANGULARJS实现单页面应用的原理-路由(ROUTE)](http://www.cnblogs.com/iCafe/p/5732159.html)
 * [JavaScript运行原理解析](https://www.kancloud.cn/digest/liao-js/149467)
 * [JS重塑学习](https://www.kancloud.cn/digest/liao-js/149473)
+* [JavaScript 新手的踩坑日记](http://www.jianshu.com/p/6280d0f12feb)
 
 ## Vue.js
 * [vue.js 60分钟快速入门](http://www.cnblogs.com/keepfool/p/5625583.html)
