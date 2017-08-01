@@ -568,6 +568,10 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [iOS应用程序打包](http://www.jianshu.com/p/bd953c3e389f)
 * [使用fastlane gym/xctool编写ipa打包脚本](http://www.jianshu.com/p/54ab07f2e63b)
 
+## Upgrade
+* [你可能需要为你的 APP 适配 iOS 11](https://mp.weixin.qq.com/s/AZFrqL9dnlgA6Vt2sVhxIw)
+
+
 ## Http Code description
 
 ```
