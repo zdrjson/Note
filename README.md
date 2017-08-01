@@ -430,6 +430,7 @@ CAShapeLayer有着几点很重要:
 * [王垠](http://www.yinwang.org/)
 * [iOS开发常用三方库、插件、知名博客等等](https://github.com/Tim9Liu9/TimLiu-iOS)
 * [多年iOS开发经验总结(一)](多年iOS开发经验总结(一))
+* [可可笔记-分享 Cocoa 开发中遇到的坑和有趣的事](https://zhuanlan.zhihu.com/cocoanotes)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
