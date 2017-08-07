@@ -870,6 +870,7 @@ cp -r /opt/usr/20070723/.  /backup/latest/
 
 # Business model
 * [the profit model of tencent](http://www.51a.la/keji/8850.html)
+* [史上最全面解释：APP是如何赚钱的?](http://www.woshipm.com/operate/252076.html)
 
 
 # Coding for Money
