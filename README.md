@@ -338,6 +338,7 @@ CAShapeLayer有着几点很重要:
 * [对象间交互模式](https://casatwy.com/communication_patterns.html)
 * [一种基于ResponderChain的对象交互方式](https://casatwy.com/responder_chain_communication.html)
 * [京东iOS客户端组件管理实践](https://mp.weixin.qq.com/s/AzbK8oynTVnsawlg5iT0bg)
+* [单向数据流动的函数式 View Controller](https://onevcat.com/2017/07/state-based-viewcontroller/)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
