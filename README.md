@@ -574,6 +574,9 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [你可能需要为你的 APP 适配 iOS 11](https://mp.weixin.qq.com/s/AZFrqL9dnlgA6Vt2sVhxIw)
 
 
+# HotPatch
+* [史上最疯狂的 iOS 动态化方案](http://hao.caibaojian.com/20052.html)
+
 ## Http Code description
 
 ```
