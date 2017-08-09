@@ -369,6 +369,7 @@ CAShapeLayer有着几点很重要:
 * [realm之于iOS](http://mp.weixin.qq.com/s?__biz=MzI5MjEzNzA1MA==&mid=2650264208&idx=1&sn=edfeb6ec6d14bddeb3c3ac3367045456&chksm=f40683a5c3710ab3adce18244f5c02bbf3e2b3b156162e90b8c4ecf9a58fcf9f50987706db3e#wechat_redirect)
 * [当磁盘空间爆满后，MySQL会发生什么事呢？又应该怎么应对？](http://imysql.com/2015/09/23/mysql-faq-what-will-happen-when-disk-full.shtml?f=http://blogread.cn/)
 * [误删 300G，GitLab 官方对删库事故的事后分析](http://blog.jobbole.com/110171/)
+* [『浅入浅出』MySQL 和 InnoDB](http://draveness.me/mysql-innodb.html)
 
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
