@@ -697,6 +697,7 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 * [设置Xcode下Version Build版本号自增长脚本](http://www.jianshu.com/p/5c98023ac440)
 * [数据同步方案](https://casatwy.com/iosying-yong-jia-gou-tan-ben-di-chi-jiu-hua-fang-an-ji-dong-tai-bu-shu.html)
 * [理解Ionic、Angular、Cordova及插件之间的关系](http://blog.csdn.net/u010730126/article/details/61413346?utm_source=itdadao&utm_medium=referral)
+* [nginx服务器绑定域名和设置根目录的方法](http://www.cnblogs.com/freeweb/p/5261077.html)
 
 
 架构书籍：大型网站技术架构
