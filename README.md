@@ -771,6 +771,7 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 * [数据同步方案](https://casatwy.com/iosying-yong-jia-gou-tan-ben-di-chi-jiu-hua-fang-an-ji-dong-tai-bu-shu.html)
 * [理解Ionic、Angular、Cordova及插件之间的关系](http://blog.csdn.net/u010730126/article/details/61413346?utm_source=itdadao&utm_medium=referral)
 * [nginx服务器绑定域名和设置根目录的方法](http://www.cnblogs.com/freeweb/p/5261077.html)
+* [编译型与解释型、动态语言与静态语言、强类型语言与弱类型语言的区别](http://www.cnblogs.com/dzhanjie/archive/2011/07/07/2100340.html)
 
 
 架构书籍：大型网站技术架构
@@ -977,4 +978,5 @@ cp -r /opt/usr/20070723/.  /backup/latest/
 * [快速找出一个数组中的两个数字，让这两个数字之和等于一个给定的值](http://blog.csdn.net/mimi9919/article/details/51335337)
 * [爬虫访问中，如何解决网站限制IP的问题？](https://www.zhihu.com/question/20392627)
 * [a couple of Front-end interviews](https://github.com/whybalance/Front-end-questions-to-the-interview-stage)
+* [答卓同学的iOS面试题](http://www.jianshu.com/p/c687110e552c)
 
