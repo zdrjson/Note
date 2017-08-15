@@ -23,6 +23,8 @@
 * [时间复杂度和空间复杂度](https://www.zybuluo.com/Sakura-W/note/384646)
 * [Swift 算法实战之路：二叉树](http://www.jianshu.com/p/28f6b0b85ec1)
 * [Swift 算法实战之路：二分搜索](http://www.jianshu.com/p/b4036e6d3f13)
+* [Swift 算法实战之路：链表](http://www.jianshu.com/p/cf962aeff643)
+* [Swift 算法实战之路：数组，字符串，集合，与字典](http://www.jianshu.com/p/977736b08bd7)
 
 ## **System design**
 [System-design-interview-for-IT-companies](https://github.com/checkcheckzz/system-design-interview)
@@ -582,6 +584,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 ## Http Code description
 
 ```
+
 HTTP状态码介绍
 
 HTTP 301 Moved Permanently 被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个URI之一。如果可能，拥有链接编辑功能的客户端应当自动把请求的地址修改为从服务器反馈回来的地址。除非额外指定，否则这个响应也是可缓存的。
@@ -702,7 +705,7 @@ HTTP 502       – 网关错误
   505 HTTP  Version  Not Supported 
       服务器收到的请求使用了它无法或不愿支持的协议版本时。有些服务器应用程序会选择不支持协议的早期版本
 ```
-
+* [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # 小知识
 
@@ -773,6 +776,8 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 * [理解Ionic、Angular、Cordova及插件之间的关系](http://blog.csdn.net/u010730126/article/details/61413346?utm_source=itdadao&utm_medium=referral)
 * [nginx服务器绑定域名和设置根目录的方法](http://www.cnblogs.com/freeweb/p/5261077.html)
 * [编译型与解释型、动态语言与静态语言、强类型语言与弱类型语言的区别](http://www.cnblogs.com/dzhanjie/archive/2011/07/07/2100340.html)
+* [React Native 从入门到原理](http://www.jianshu.com/p/978c4bd3a759)
+* [写给Web开发人员看的Nginx介绍](https://fraserxu.me/2013/06/22/Nginx-for-developers/)
 
 
 架构书籍：大型网站技术架构
@@ -980,4 +985,5 @@ cp -r /opt/usr/20070723/.  /backup/latest/
 * [爬虫访问中，如何解决网站限制IP的问题？](https://www.zhihu.com/question/20392627)
 * [a couple of Front-end interviews](https://github.com/whybalance/Front-end-questions-to-the-interview-stage)
 * [答卓同学的iOS面试题](http://www.jianshu.com/p/c687110e552c)
+* [iOS英文综合面试题](http://www.cnblogs.com/YajunBlog/p/4843880.html)
 
