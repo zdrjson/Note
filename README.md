@@ -562,6 +562,7 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [基于clang插件的一种iOS包大小瘦身方案](https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112856&idx=1&sn=b2c74c62a10b4c9a4e7538d1ad7eb739)
 * [如何将 iOS 项目的编译速度提高5倍](https://zhuanlan.zhihu.com/p/27584726)
 * [深入剖析 iOS 性能优化](https://ming1016.github.io/2017/06/20/deeply-ios-performance-optimization/#more)
+* [移动 H5 首屏秒开优化方案探讨](http://blog.cnbang.net/tech/3477/)
 
 
 ## Device
