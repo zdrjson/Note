@@ -21,6 +21,7 @@
 * [Learn-Algorithms](https://github.com/nonstriater/Learn-Algorithms)
 * [Solutions to LeetCode by Swift](https://github.com/soapyigu/LeetCode_Swift)
 * [时间复杂度和空间复杂度](https://www.zybuluo.com/Sakura-W/note/384646)
+* [快速找出一个数组中的两个数字，让这两个数字之和等于一个给定的值](http://blog.csdn.net/mimi9919/article/details/51335337)
 * [Swift 算法实战之路：二叉树](http://www.jianshu.com/p/28f6b0b85ec1)
 * [Swift 算法实战之路：二分搜索](http://www.jianshu.com/p/b4036e6d3f13)
 * [Swift 算法实战之路：链表](http://www.jianshu.com/p/cf962aeff643)
@@ -1003,6 +1004,7 @@ cp -r /opt/usr/20070723/.  /backup/latest/
 # Business model
 * [the profit model of tencent](http://www.51a.la/keji/8850.html)
 * [史上最全面解释：APP是如何赚钱的?](http://www.woshipm.com/operate/252076.html)
+* [苹果 App Store 的免费软件如何获利？](https://www.zhihu.com/question/19612732)
 
 
 # Coding for Money
