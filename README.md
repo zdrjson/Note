@@ -984,6 +984,36 @@ cp -r /opt/usr/20070723/.  /backup/latest/
 这里不能用*,一定要用.
 ```
 
+```
+#upgrade_oh_my_zsh
+#brew update && brew upgrade
+sudo gem install gym
+
+sudo gem install fastlane
+
+#fir upgrade 指令用于升级最新版本的 fir-cli
+#$ fir upgrade
+sudo gem install fir-cli --no-ri --no-rdoc
+
+
+cnpm sync connect
+
+brew cleanup
+
+brew cask cleanup
+
+brew update && brew upgrade
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+npm install hexo-cli -g
+
+#Hexo 3.0 把服务器独立成了个别模块，您必须先安装 hexo-server 才能使用。
+
+#$ npm install hexo-server --save
+
+```
+
 # Cross-Platform
 * [ionic](https://ionicframework.com/)
 * [React](https://github.com/facebook/react)
