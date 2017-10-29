@@ -437,6 +437,7 @@ CAShapeLayer有着几点很重要:
 * [多年iOS开发经验总结(一)](多年iOS开发经验总结(一))
 * [可可笔记-分享 Cocoa 开发中遇到的坑和有趣的事](https://zhuanlan.zhihu.com/cocoanotes)
 * [大漠](https://www.w3cplus.com)
+* [LeoMobileDeveloper](https://github.com/LeoMobileDeveloper/Blogs)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -1036,6 +1037,7 @@ npm install hexo-cli -g
 * [the profit model of tencent](http://www.51a.la/keji/8850.html)
 * [史上最全面解释：APP是如何赚钱的?](http://www.woshipm.com/operate/252076.html)
 * [苹果 App Store 的免费软件如何获利？](https://www.zhihu.com/question/19612732)
+* [iOS10 IDFA AD tracking limit solution](https://github.com/youmi/SimulateIDFA)
 
 
 # Coding for Money
