@@ -1054,4 +1054,5 @@ npm install hexo-cli -g
 * [a couple of Front-end interviews](https://github.com/whybalance/Front-end-questions-to-the-interview-stage)
 * [答卓同学的iOS面试题](http://www.jianshu.com/p/c687110e552c)
 * [iOS英文综合面试题](http://www.cnblogs.com/YajunBlog/p/4843880.html)
+* [何时使用block, 何时使用delegate](https://casatwy.com/iosying-yong-jia-gou-tan-wang-luo-ceng-she-ji-fang-an.html)
 
