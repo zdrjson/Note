@@ -293,6 +293,7 @@ CAShapeLayer有着几点很重要:
 * [MagicalRecord](https://github.com/magicalpanda/MagicalRecord)
 * [VIMediaCache](https://github.com/vitoziv/VIMediaCache)
 * [NSURLCache 网络请求缓存指南](http://www.cocoachina.com/ios/20160701/16895.html)
+* [iOS当中的Cache设计](http://mrpeak.cn/blog/ios-cache/)
 
 ## Text
 * [CoreText_xiongzenghu](http://xiongzenghuidegithub.github.io/blog/2016/04/26/coretext-part-3/)
