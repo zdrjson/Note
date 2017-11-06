@@ -377,6 +377,7 @@ CAShapeLayer有着几点很重要:
 
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
+* [CocoaAsyncSocket-Asynchronous socket networking library for Mac and iOS](https://github.com/robbiehanson/CocoaAsyncSocket)
 
 ## Cocoapods
 * [ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
