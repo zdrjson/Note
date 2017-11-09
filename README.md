@@ -1059,6 +1059,7 @@ npm install hexo-cli -g
 * [iOS英文综合面试题](http://www.cnblogs.com/YajunBlog/p/4843880.html)
 * [何时使用block, 何时使用delegate](https://casatwy.com/iosying-yong-jia-gou-tan-wang-luo-ceng-she-ji-fang-an.html)
 * [nsurlsession 与 nsurlconnection 区别](https://objccn.io/issue-5-4/)
+* [深入研究Block用weakSelf、strongSelf、@weakify、@strongify解决循环引用](http://ios.jobbole.com/88708/)
 
   ## [the interview of front-end](https://github.com/yangshun/tech-interview-handbook.git)
 
