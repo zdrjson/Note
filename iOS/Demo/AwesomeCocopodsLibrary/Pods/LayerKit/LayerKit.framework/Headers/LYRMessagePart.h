@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, LYRContentTransferStatus) {
     /**
      @abstract Content is not available locally but it is ready for download.
      @discussion This state is expected when message part didn't met the criteria to be auto-downloaded. Use `downloadContent` to initiate a manual download process.
-     @see `LYRConnectionConfigurationAutodownloadMIMETypesKey`, `LYRConnectionConfigurationAutodownloadMaximumFileSizeKey` and `[(LYRClient *)client setConfiguration:forConnection:]` on how to use auto-downlod features.
+     @see `[(LYRClient *)client setConfiguration:forConnection:]` on how to use auto-downlod features.
      */
     LYRContentTransferReadyForDownload,
     /**
@@ -39,8 +39,7 @@ typedef NS_ENUM(NSUInteger, LYRContentTransferStatus) {
      */
     LYRContentTransferDownloading,
     /**
-     @abstract Content is available locally.
-     @abstract This state is expected when the transfer completes.
+     @abstract Content is available locally. This state is expected when the transfer completes.
      */
     LYRContentTransferComplete,
 };

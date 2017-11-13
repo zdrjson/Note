@@ -30,6 +30,9 @@ typedef NS_ENUM(NSUInteger, LYRError) {
     LYRErrorParticipantNotAParticipantInConversation= 1014,
     LYRErrorDistinctDeletedConversationExists       = 1015,
     LYRErrorParticipantsContainsBlockedUser         = 1016,
+    LYRErrorDeletionFailed                          = 1017,
+    LYRErrorNotSupported                            = 1018,
+    LYRErrorInvalidUserID                           = 1019,
     
     // Validation Errors
     LYRErrorInvalidKey                              = 2000,
@@ -89,10 +92,13 @@ typedef NS_ENUM(NSUInteger, LYRClientError) {
     LYRClientErrorMessageDeleted                    = 11001,
     LYRClientErrorConversationDeleted               = 11002,
     LYRClientErrorInvalidClassType                  = 11003,
-    
+
     // Session Errors
     LYRClientErrorInvalidSession                    = 12001,
     LYRClientErrorDuplicateSession                  = 12002,
+
+    // Presence
+    LYRClientErrorFailedUpdatingPresence            = 13001
 };
 
 extern NSString * _Nonnull const LYRErrorAuthenticatedUserIDUserInfoKey;

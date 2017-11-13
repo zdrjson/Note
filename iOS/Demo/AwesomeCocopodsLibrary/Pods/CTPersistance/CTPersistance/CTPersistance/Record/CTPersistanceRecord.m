@@ -8,7 +8,6 @@
 
 #import "CTPersistanceRecord.h"
 #import "objc/runtime.h"
-#import "NSString+SQL.h"
 #import "CTPersistanceTable.h"
 
 @implementation CTPersistanceRecord
@@ -44,27 +43,8 @@
 - (void)objectRepresentationWithDictionary:(NSDictionary *)dictionary
 {
     [dictionary enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSString * _Nonnull value, BOOL * _Nonnull stop) {
-        [self setPersistanceValue:value forKey:key];
+        [self setValue:value forKey:key];
     }];
-}
-
-- (BOOL)setPersistanceValue:(id)value forKey:(NSString *)key
-{
-    BOOL result = YES;
-    NSString *setter = [NSString stringWithFormat:@"set%@%@:", [[key substringToIndex:1] capitalizedString], [key substringFromIndex:1]];
-    if ([self respondsToSelector:NSSelectorFromString(setter)]) {
-        if ([value isKindOfClass:[NSString class]]) {
-            [self setValue:[value safeSQLDecode] forKey:key];
-        } else if ([value isKindOfClass:[NSNull class]]) {
-            [self setValue:nil forKey:key];
-        } else {
-            [self setValue:value forKey:key];
-        }
-    } else {
-        result = NO;
-    }
-    
-    return result;
 }
 
 - (NSObject<CTPersistanceRecordProtocol> *)mergeRecord:(NSObject<CTPersistanceRecordProtocol> *)record shouldOverride:(BOOL)shouldOverride
@@ -75,17 +55,23 @@
             if ([record respondsToSelector:NSSelectorFromString(key)]) {
                 id recordValue = [record valueForKey:key];
                 if (shouldOverride) {
-                    [self setPersistanceValue:recordValue forKey:key];
+                    [self setValue:recordValue forKey:key];
                 } else {
                     id selfValue = [self valueForKey:key];
                     if (selfValue == nil) {
-                        [self setPersistanceValue:recordValue forKey:key];
+                        [self setValue:recordValue forKey:key];
                     }
                 }
             }
         }];
     }
     return self;
+}
+
+#pragma mark - method override
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    // do nothing
 }
 
 @end

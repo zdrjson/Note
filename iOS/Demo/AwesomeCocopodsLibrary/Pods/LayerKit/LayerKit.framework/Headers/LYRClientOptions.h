@@ -29,4 +29,17 @@
  */
 @property (nonatomic) NSUInteger partialHistoryMessageCount;
 
+/**
+ @abstract Sets enabling or disabling collection of SDK telemetry statistics. Default is `YES`.
+@property (nonatomic) NSURL *configurationEndpoint;
+@property (nonatomic) NSURL *certificatesEndpoint;
+ */
+@property (nonatomic) BOOL telemetryEnabled;
+
+// Overrides passed in for development builds
+@property (nonatomic) NSURL *configurationEndpoint;
+@property (nonatomic) NSURL *certificatesEndpoint;
+@property (nonatomic) NSURL *authenticationEndpoint;
+@property (nonatomic) NSURL *synchronizationEndpoint;
+
 @end

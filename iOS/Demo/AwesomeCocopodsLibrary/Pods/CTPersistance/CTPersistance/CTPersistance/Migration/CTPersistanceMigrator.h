@@ -10,8 +10,11 @@
 #import "CTPersistanceDataBase.h"
 #import "CTPersistanceQueryCommand.h"
 #import "CTPersistanceQueryCommand+DataManipulations.h"
-#import "CTPersistanceQueryCommand+ReadMethods.h"
 #import "CTPersistanceQueryCommand+SchemaManipulations.h"
+
+extern NSString * const kCTPersistanceInitVersion;
+
+@class CTPersistanceMigrator;
 
 /**
  *  this protocol is used for Migration
@@ -94,17 +97,5 @@
  *
  */
 - (void)databasePerformMigrate:(CTPersistanceDataBase *)database;
-
-/**
- *  create version table with database if version table not exists
- *
- *  You should never call this method.
- *
- *  @param database CTPersistanceDataBase instance
- *
- *  @warning you should never call this method
- *
- */
-- (void)createVersionTableWithDatabase:(CTPersistanceDataBase *)database;
 
 @end

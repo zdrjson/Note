@@ -11,7 +11,7 @@ CREATE TABLE "conversation_participants" (
   created_at DATETIME NOT NULL,
   deleted_at DATETIME,
   seq INTEGER,
-  event_database_identifier INTEGER UNIQUE,
+  event_database_identifier INTEGER UNIQUE, marked_as_read_position INTEGER, marked_as_read_seq INTEGER,
   UNIQUE(conversation_database_identifier, member_id),
   FOREIGN KEY(conversation_database_identifier) REFERENCES conversations(database_identifier) ON DELETE CASCADE,
   FOREIGN KEY(event_database_identifier) REFERENCES events(database_identifier) ON DELETE CASCADE
@@ -25,7 +25,7 @@ CREATE TABLE "conversations" (
   deleted_at DATETIME,
   object_identifier TEXT UNIQUE NOT NULL,
   version INT NOT NULL
-, has_unread_messages INTEGER NOT NULL DEFAULT 0, is_distinct INTEGER NOT NULL DEFAULT 0, type INTEGER NOT NULL DEFAULT 1, deletion_mode INTEGER DEFAULT 0, total_message_count INTEGER NOT NULL DEFAULT 0, unread_message_count INTEGER NOT NULL DEFAULT 0, participants_hash TEXT);
+, has_unread_messages INTEGER NOT NULL DEFAULT 0, is_distinct INTEGER NOT NULL DEFAULT 0, type INTEGER NOT NULL DEFAULT 1, deletion_mode INTEGER DEFAULT 0, total_message_count INTEGER NOT NULL DEFAULT 0, unread_message_count INTEGER NOT NULL DEFAULT 0, participants_hash TEXT, read_receipts_enabled BOOLEAN DEFAULT 1);
 
 CREATE TABLE "deleted_message_parts" (
   database_identifier INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -62,7 +62,7 @@ CREATE TABLE "events" (
   member_id TEXT,
   target_seq INTEGER,
   stream_database_identifier INTEGER NOT NULL,
-  client_id BLOB, creator_name TEXT, deletion_mode INTEGER DEFAULT 0,
+  client_id BLOB, creator_name TEXT, deletion_mode INTEGER DEFAULT 0, target_position INTEGER,
   UNIQUE(stream_database_identifier, seq),
   FOREIGN KEY(stream_database_identifier) REFERENCES streams(database_identifier) ON DELETE CASCADE
 );
@@ -87,7 +87,7 @@ CREATE TABLE "identities" (
   followed BOOLEAN NOT NULL DEFAULT 0,
   should_follow INTEGER NOT NULL DEFAULT 0,
   version INTEGER NOT NULL,
-  deleted_at DATETIME,
+  deleted_at DATETIME, presence_status INTEGER NON NULL, last_seen_at DATETIME,
   UNIQUE(database_identifier)
 );
 
@@ -200,7 +200,7 @@ CREATE TABLE "streams" (
   deleted_at DATETIME, 
   min_synced_seq INTEGER, 
   max_synced_seq INTEGER, metadata_timestamp INTEGER, is_distinct INTEGER NOT NULL DEFAULT 0
-, type INTEGER NOT NULL DEFAULT 1, total_message_event_count INTEGER NOT NULL DEFAULT 0, unread_message_event_count INTEGER NOT NULL DEFAULT 0, least_recent_unread_message_event_seq INTEGER, last_message_event_received_at DATETIME, last_message_event_seq INTEGER, deletion_mode INTEGER DEFAULT 0, starting_seq INTEGER, mutation_seq INTEGER, created_at DATETIME, members_hash TEXT);
+, type INTEGER NOT NULL DEFAULT 1, total_message_event_count INTEGER NOT NULL DEFAULT 0, unread_message_event_count INTEGER NOT NULL DEFAULT 0, least_recent_unread_message_event_seq INTEGER, last_message_event_received_at DATETIME, last_message_event_seq INTEGER, deletion_mode INTEGER DEFAULT 0, starting_seq INTEGER, mutation_seq INTEGER, created_at DATETIME, members_hash TEXT, name TEXT);
 
 CREATE TABLE syncable_changes (
   change_identifier INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -446,6 +446,16 @@ BEGIN
   INSERT INTO syncable_changes(table_name, row_identifier, change_type) VALUES ('messages', NEW.database_identifier, 0);
 END;
 
+CREATE TRIGGER track_moving_last_read_message_position_of_conversation_participants AFTER UPDATE OF marked_as_read_position ON conversation_participants
+WHEN NEW.marked_as_read_position IS NOT NULL AND
+  (NEW.marked_as_read_position > OLD.marked_as_read_position OR
+    (NEW.marked_as_read_position IS NOT NULL and OLD.marked_as_read_position IS NULL)) AND
+  (NEW.marked_as_read_seq = OLD.marked_as_read_seq OR
+    (NEW.marked_as_read_seq IS NULL AND OLD.marked_as_read_seq IS NULL))
+BEGIN
+  INSERT INTO syncable_changes(table_name, row_identifier, change_type) VALUES ('conversation_participants_last_read_position', NEW.database_identifier, 1);
+END;
+
 CREATE TRIGGER track_re_inserts_of_conversation_participants AFTER UPDATE OF deleted_at ON conversation_participants
 WHEN NEW.seq IS NOT NULL AND NEW.seq = OLD.seq AND (NEW.deleted_at IS NULL AND OLD.deleted_at NOT NULL)
 BEGIN
@@ -658,3 +668,11 @@ INSERT INTO schema_migrations (version) VALUES (20160708161832582);
 INSERT INTO schema_migrations (version) VALUES (20160805151851018);
 
 INSERT INTO schema_migrations (version) VALUES (20160809124256556);
+
+INSERT INTO schema_migrations (version) VALUES (20170126134838315);
+
+INSERT INTO schema_migrations (version) VALUES (20170127110027836);
+
+INSERT INTO schema_migrations (version) VALUES (20170327121113144);
+
+INSERT INTO schema_migrations (version) VALUES (20170531164227993);

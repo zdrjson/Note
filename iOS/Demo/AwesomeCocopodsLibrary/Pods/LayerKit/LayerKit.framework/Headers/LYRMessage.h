@@ -52,8 +52,7 @@ extern NSString * _Nonnull const LYRMessageOptionsPushNotificationConfigurationK
 @interface LYRMessageOptions : NSObject <NSCoding, NSCopying>
 
 /**
- @abstract Push notification configuration sent to the Layer services along with the newly initialized `LYRMessage` instance.
- @discussion @see `LYRPushNotificationConfiguration` for per recipient customization options.
+ @abstract Push notification configuration sent to the Layer services along with the newly initialized `LYRMessage` instance. @see `LYRPushNotificationConfiguration` for per recipient customization options.
  */
 @property (nonatomic, copy, nullable) LYRPushNotificationConfiguration *pushNotificationConfiguration;
 
@@ -144,7 +143,7 @@ extern NSString * _Nonnull const LYRMessageOptionsPushNotificationConfigurationK
 
 /**
  @abstract Deletes a message in the specified mode.
- @param mode The deletion mode, specifying how the message is to be deleted (i.e. for only the currently authenticated user's devices or synchronized across participants).
+ @param deletionMode The deletion mode, specifying how the message is to be deleted (i.e. for only the currently authenticated user's devices or synchronized across participants).
  @param error A pointer to an error that upon failure is set to an error object describing why the deletion failed.
  @return A Boolean value indicating if the request to delete the message was submitted for synchronization.
  @raises NSInvalidArgumentException Raised if `message` is `nil`.
@@ -157,7 +156,8 @@ extern NSString * _Nonnull const LYRMessageOptionsPushNotificationConfigurationK
 
 /**
  @abstract Returns a dictionary keyed the user ID of all participants in the Conversation that the receiver belongs to and whose
- values are an `NSNumber` representation of the receipient status (`LYRRecipientStatus` value) for their corresponding key.
+ values are an `NSNumber` representation of the receipient status (`LYRRecipientStatus` value) for their corresponding key;
+ or returns `nil` in case the message belongs to a conversation with more than 25 participants.
  */
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *, NSNumber *> *recipientStatusByUserID;
 
@@ -165,7 +165,8 @@ extern NSString * _Nonnull const LYRMessageOptionsPushNotificationConfigurationK
  @abstract Retrieves the message state for a given participant in the conversation.
  
  @param userID The user ID to retrieve the message status for.
- @return An `LYRRecipientStatus` value specifying the message status for the given participant or `LYRRecipientStatusInvalid` if the specified user is not a participant in the conversation.
+ @return An `LYRRecipientStatus` value specifying the message status for the given participant or `LYRRecipientStatusInvalid` if the specified user is not a participant in the conversation;
+ In case the message belongs to a conversation with more than 25 participants, the method will always return `LYRRecipientStatusRead`.
  */
 - (LYRRecipientStatus)recipientStatusForUserID:(nonnull NSString *)userID;
 

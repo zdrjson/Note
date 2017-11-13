@@ -10,6 +10,11 @@
 #import "objc/runtime.h"
 #import "CTPersistanceQueryCommand.h"
 #import "CTPersistanceQueryCommand+SchemaManipulations.h"
+#import "CTPersistanceConfiguration.h"
+
+NSString * const kCTPersistanceTableIndexName = @"kCTPersistanceTableIndexName";
+NSString * const kCTPersistanceTableIndexedColumnList = @"kCTPersistanceTableIndexedColumnList";
+NSString * const kCTPersistanceTableIndexIsUniq = @"kCTPersistanceTableIndexIsUniq";
 
 @interface CTPersistanceTable ()
 
@@ -27,15 +32,11 @@
 {
     self = [super init];
     if (self && [self conformsToProtocol:@protocol(CTPersistanceTableProtocol)]) {
-        self.child = (CTPersistanceTable <CTPersistanceTableProtocol> *)self;
-
+        
         _isFromMigration = NO;
-        NSError *error = nil;
-        CTPersistanceQueryCommand *queryCommand = [[CTPersistanceQueryCommand alloc] initWithDatabaseName:self.child.databaseName];
-        [[queryCommand createTable:self.child.tableName columnInfo:self.child.columnInfo] executeWithError:&error];
-        if (error) {
-            NSLog(@"Error at [%s]:[%d]:%@", __FILE__, __LINE__, error);
-        }
+        self.child = (CTPersistanceTable <CTPersistanceTableProtocol> *)self;
+        [self configTable:self.queryCommand];
+        
     } else {
         NSException *exception = [NSException exceptionWithName:@"CTPersistanceTable init error" reason:@"the child class must conforms to protocol: <CTPersistanceTableProtocol>" userInfo:nil];
         @throw exception;
@@ -48,15 +49,14 @@
 {
     self = [super init];
     if (self && [self conformsToProtocol:@protocol(CTPersistanceTableProtocol) ]) {
-        self.child = (CTPersistanceTable <CTPersistanceTableProtocol> *)self;
-
+        
         _isFromMigration = YES;
+        
+        self.child = (CTPersistanceTable <CTPersistanceTableProtocol> *)self;
         self.queryCommand = queryCommand;
-        NSError *error = nil;
-        [[queryCommand createTable:self.child.tableName columnInfo:self.child.columnInfo] executeWithError:&error];
-        if (error) {
-            NSLog(@"Error at [%s]:[%d]:%@", __FILE__, __LINE__, error);
-        }
+
+        [self configTable:queryCommand];
+        
     } else {
         NSException *exception = [NSException exceptionWithName:@"CTPersistanceTable init error" reason:@"the child class must conforms to protocol: <CTPersistanceTableProtocol>" userInfo:nil];
         @throw exception;
@@ -65,26 +65,45 @@
     return self;
 }
 
+- (void)configTable:(CTPersistanceQueryCommand *)queryCommand
+{
+    NSError *error = nil;
+    
+    // create table if not exists
+    [[queryCommand createTable:self.child.tableName columnInfo:self.child.columnInfo] executeWithError:&error];
+    
+    // create index if not exists
+    if (error == nil) {
+        [self.child.indexList enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [queryCommand createIndex:obj[kCTPersistanceTableIndexName]
+                            tableName:self.child.tableName
+                    indexedColumnList:obj[kCTPersistanceTableIndexedColumnList]
+                             isUnique:[obj[kCTPersistanceTableIndexIsUniq] boolValue]];
+        }];
+    }
+    
+    if (error) {
+        NSLog(@"Error at [%s]:[%d]:%@", __FILE__, __LINE__, error);
+    }
+}
+
 #pragma mark - public methods
 - (BOOL)executeSQL:(NSString *)sqlString error:(NSError *__autoreleasing *)error
 {
-    if (self.isFromMigration == NO) {
-        self.queryCommand = [[CTPersistanceQueryCommand alloc] initWithDatabaseName:[self.child databaseName]];
-    }
-    [self.queryCommand.sqlString appendString:sqlString];
-    return [self.queryCommand executeWithError:error];
+    return [[self.queryCommand compileSqlString:sqlString bindValueList:nil error:error] executeWithError:error];
 }
 
-- (NSArray *)fetchWithSQL:(NSString *)sqlString error:(NSError *__autoreleasing *)error
+- (NSArray <NSDictionary *> *)fetchWithSQL:(NSString *)sqlString error:(NSError *__autoreleasing *)error
 {
-    if (self.isFromMigration == NO) {
-        self.queryCommand = [[CTPersistanceQueryCommand alloc] initWithDatabaseName:[self.child databaseName]];
-    }
-    [self.queryCommand.sqlString appendString:sqlString];
-    return [self.queryCommand fetchWithError:error];
+    return [[self.queryCommand compileSqlString:sqlString bindValueList:nil error:error] fetchWithError:error];
 }
 
 #pragma mark - method to override
+- (NSArray <NSDictionary *> *)indexList
+{
+    return nil;
+}
+
 - (BOOL)isCorrectToInsertRecord:(NSObject <CTPersistanceRecordProtocol> *)record;
 {
     return YES;
@@ -93,6 +112,15 @@
 - (BOOL)isCorrectToUpdateRecord:(NSObject <CTPersistanceRecordProtocol> *)record;
 {
     return YES;
+}
+
+#pragma mark - getters and setters
+- (CTPersistanceQueryCommand *)queryCommand
+{
+    if (_queryCommand == nil && self.isFromMigration == NO) {
+        _queryCommand = [[CTPersistanceQueryCommand alloc] initWithDatabaseName:[self.child databaseName]];
+    }
+    return _queryCommand;
 }
 
 @end

@@ -9,14 +9,16 @@
 #import "CTPersistanceMigrator.h"
 
 #import "CTPersistanceQueryCommand.h"
-#import "CTPersistanceQueryCommand+ReadMethods.h"
 
 #import "CTPersistanceVersionRecord.h"
 #import "CTPersistanceVersionTable.h"
 #import "CTPersistanceConfiguration.h"
 
 #import "NSArray+CTPersistanceRecordTransform.h"
-#import <UIKit/UIKit.h>
+#import "NSMutableArray+CTPersistanceBindValue.h"
+#import "NSDictionary+KeyValueBind.h"
+
+NSString * const kCTPersistanceInitVersion = @"kCTPersistanceInitVersion";
 
 @interface CTPersistanceMigrator ()
 
@@ -42,26 +44,12 @@
 }
 
 #pragma mark - public methods
-- (void)createVersionTableWithDatabase:(CTPersistanceDataBase *)database
-{
-    self.database = database;
-    
-    CTPersistanceQueryCommand *queryCommand = [[CTPersistanceQueryCommand alloc] initWithDatabase:database];
-    [[queryCommand createTable:[CTPersistanceVersionTable tableName] columnInfo:[CTPersistanceVersionTable columnInfo]] executeWithError:NULL];
-    [queryCommand resetQueryCommand];
-    NSArray *result = [[[queryCommand countAll] from:[CTPersistanceVersionTable tableName]] fetchWithError:NULL];
-    if ([[result firstObject][@"COUNT(*)"] integerValue] == 0) {
-        [queryCommand resetQueryCommand];
-        [[queryCommand insertTable:[CTPersistanceVersionTable tableName] withDataList:@[@{@"databaseVersion":[[self.child migrationVersionList] lastObject]}]] executeWithError:NULL];
-    }
-}
-
 - (BOOL)databaseShouldMigrate:(CTPersistanceDataBase *)database
 {
     self.database = database;
     CTPersistanceQueryCommand *queryCommand = [[CTPersistanceQueryCommand alloc] initWithDatabase:database];
-    NSDictionary *latestRecord = [[[[[[queryCommand select:nil isDistinct:NO] from:[CTPersistanceVersionTable tableName]] orderBy:[CTPersistanceVersionTable primaryKeyName] isDESC:YES] limit:1] fetchWithError:NULL] firstObject];
-    
+    NSString *sqlString = [NSString stringWithFormat:@"SELECT * FROM %@ ORDER BY %@ DESC LIMIT 1;", [CTPersistanceVersionTable tableName], [CTPersistanceVersionTable primaryKeyName]];
+    NSDictionary *latestRecord = [[[queryCommand compileSqlString:sqlString bindValueList:nil error:NULL] fetchWithError:NULL] firstObject];
     NSString *currentVersion = latestRecord[@"databaseVersion"];
     NSUInteger index = [[self.child migrationVersionList] indexOfObject:currentVersion];
     if (index == [[self.child migrationVersionList] count] - 1) {
@@ -76,11 +64,13 @@
     NSError *error = nil;
     
     CTPersistanceQueryCommand *queryCommand = [[CTPersistanceQueryCommand alloc] initWithDatabase:database];
-    NSMutableDictionary *latestRecord = [[[[[[[queryCommand select:nil isDistinct:NO] from:[CTPersistanceVersionTable tableName]] orderBy:[CTPersistanceVersionTable primaryKeyName] isDESC:YES] limit:1] fetchWithError:NULL] firstObject] mutableCopy];
+    NSString *sqlString = [NSString stringWithFormat:@"SELECT * FROM %@ ORDER BY %@ DESC LIMIT 1;", [CTPersistanceVersionTable tableName], [CTPersistanceVersionTable primaryKeyName]];
+    NSMutableDictionary *latestRecord = [[[[queryCommand compileSqlString:sqlString bindValueList:nil error:NULL] fetchWithError:NULL] firstObject] mutableCopy];
     if (error) {
+        NSLog(@"[%s:%s(%d)]:\n\terror is %@", __FILE__, __FUNCTION__, __LINE__, error);
         return;
     }
-    
+
     BOOL shouldPerformMigration = NO;
     NSArray *versionList = [self.child migrationVersionList];
     NSDictionary *migrationObjectContainer = [self.child migrationStepDictionary];
@@ -88,27 +78,28 @@
         if (shouldPerformMigration) {
             id<CTPersistanceMigrationStep> step = [[migrationObjectContainer[version] alloc] init];
             error = nil;
-            [queryCommand resetQueryCommand];
             [step goUpWithQueryCommand:queryCommand error:&error];
             if (error) {
                 error = nil;
-                [queryCommand resetQueryCommand];
                 [step goDownWithQueryCommand:queryCommand error:&error];
                 break;
             } else {
                 latestRecord[@"databaseVersion"] = version;
                 error = nil;
-                [queryCommand resetQueryCommand];
+
+                NSMutableArray *bindValueList = [[NSMutableArray alloc] init];
+                NSString *valueString = [latestRecord bindToValueList:bindValueList];
+
                 NSNumber *primaryKeyValue = latestRecord[@"identifier"];
-                 NSDictionary *whereConditionParams = NSDictionaryOfVariableBindings(primaryKeyValue);
-                [[queryCommand updateTable:[CTPersistanceVersionTable tableName] withData:latestRecord condition:[NSString stringWithFormat:@"%@ = :primaryKeyValue", [CTPersistanceVersionTable primaryKeyName]] conditionParams:whereConditionParams] executeWithError:&error];
-                
-                NSLog(@"error at CTPersistanceMigrator:%d:%@", __LINE__, error);
-                
+                NSString *valueKey = [NSString stringWithFormat:@":CTPersistanceWhere_%@", [CTPersistanceVersionTable primaryKeyName]];
+                NSString *whereString = [NSString stringWithFormat:@"%@ = %@", [CTPersistanceVersionTable primaryKeyName], valueKey];
+                [bindValueList addBindKey:valueKey bindValue:primaryKeyValue columnDescription:nil];
+
+                [[queryCommand updateTable:[CTPersistanceVersionTable tableName] valueString:valueString whereString:whereString bindValueList:bindValueList error:&error] executeWithError:&error];
+
                 if (error) {
-                    NSLog(@"error at CTPersistanceMigrator:%d:%@", __LINE__, error);
+                    NSLog(@"[%s:%s(%d)]:\n\terror is %@", __FILE__, __FUNCTION__, __LINE__, error);
                 }
-                
             }
         }
         

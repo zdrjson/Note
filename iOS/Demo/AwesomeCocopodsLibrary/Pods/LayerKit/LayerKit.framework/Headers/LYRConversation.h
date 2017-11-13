@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LYRQuery.h"
 #import "LYRConstants.h"
+#import "LYRTypingIndicator.h"
 
 @class LYRMessage;
 @class LYRIdentity;
@@ -75,37 +76,6 @@ extern NSString * _Nonnull const LYRConversationDidReceiveTypingIndicatorNotific
  an `LYRTypingIndicator` instance containing the typing indicator action and the participant's identity that caused the action.
  */
 extern NSString * _Nonnull const LYRTypingIndicatorObjectUserInfoKey;
-
-///-----------------------
-/// @name Typing Indicator
-///-----------------------
-
-/**
- @abstract The `LYRTypingIndicatorAction` enumeration describes the states of a typing status of a participant in a conversation.
- */
-typedef NS_ENUM(NSUInteger, LYRTypingIndicatorAction) {
-    LYRTypingIndicatorActionBegin   = 0,
-    LYRTypingIndicatorActionPause   = 1,
-    LYRTypingIndicatorActionFinish  = 2
-};
-
-/**
- @abstract The `LYRTypingIndicator` object encapsulated the typing indicator action value and the participant
- identity which is bundled in the `LYRConversationDidReceiveTypingIndicatorNotification`'s userInfo.
- */
-@interface LYRTypingIndicator : NSObject
-
-/**
- @abstract The action value that represents the last typing indicator state that the participant caused.
- */
-@property (nonatomic, readonly) LYRTypingIndicatorAction action;
-
-/**
- @abstract Participant that caused the last typing indicator action.
- */
-@property (nonatomic, readonly, nonnull) LYRIdentity *sender;
-
-@end
 
 ///-------------------------------------------------
 /// @name Conversation Synchronization Notifications
@@ -196,6 +166,15 @@ extern NSString * _Nonnull const LYRConversationSynchronizationProgressUserInfoK
  */
 @property (nonatomic, readonly) BOOL deliveryReceiptsEnabled;
 
+/**
+ @abstract Returns a Boolean value that indicates if read receipts are enabled. When `YES`,
+ messages can be marked as read and a delineation will be made between `LYRRecipientStatusDelivered`
+ and `LYRRecipientStatusRead`. When `NO`, messages will be in the `LYRRecipientStatusRead` state implicitly.
+ @discussion Conversations with read receipts disabled can have up to 250 participants.
+ It also improves performance for conversations that do not benefit from them.
+ */
+@property (nonatomic, readonly) BOOL readReceiptsEnabled;
+
 ///-----------------------
 /// @name Sending Messages
 ///-----------------------
@@ -271,7 +250,7 @@ extern NSString * _Nonnull const LYRConversationSynchronizationProgressUserInfoK
 
 /**
  @abstract Sends a typing indicator to the conversation.
- @param typingIndicator An `LYRTypingIndicatorAction` value indicating the change in typing state to be sent.
+ @param typingIndicatorAction An `LYRTypingIndicatorAction` value indicating the change in typing state to be sent.
  */
 - (void)sendTypingIndicator:(LYRTypingIndicatorAction)typingIndicatorAction;
 
@@ -282,7 +261,7 @@ extern NSString * _Nonnull const LYRConversationSynchronizationProgressUserInfoK
 /**
  @abstract Deletes a conversation in the specified mode.
  @discussion This method deletes a conversation and all associated messages for all current participants.
- @param mode The deletion mode, specifying how the message is to be deleted (i.e. for only the currently authenticated user' devices or synchronized across participants).
+ @param deletionMode The deletion mode, specifying how the message is to be deleted (i.e. for only the currently authenticated user' devices or synchronized across participants).
  @param error A pointer to an error that upon failure is set to an error object describing why the deletion failed.
  @return A Boolean value indicating if the request to delete the conversation was submitted for synchronization.
  */
@@ -298,6 +277,7 @@ extern NSString * _Nonnull const LYRConversationSynchronizationProgressUserInfoK
  @param error A pointer to an error that upon failure is set to an error object describing why the deletion failed.
  @return A Boolean value indicating if the request to leave the conversation was submitted for synchronization.
  @discussion A user can only leave a conversation if they are a current participant and the conversation has not been deleted.
+ @warning This feature is not supported for conversations that have more than 25 participants (conversations with `deliveryReceiptsEnabled` set to `NO`).
  */
 - (BOOL)leave:(NSError * _Nullable * _Nullable)error __attribute__((swift_error(none)));
 

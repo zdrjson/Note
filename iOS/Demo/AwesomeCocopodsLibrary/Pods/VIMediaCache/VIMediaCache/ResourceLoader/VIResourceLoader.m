@@ -15,11 +15,10 @@ NSString * const MCResourceLoaderErrorDomain = @"LSFilePlayerResourceLoaderError
 
 @interface VIResourceLoader () <VIResourceLoadingRequestWorkerDelegate>
 
+@property (nonatomic, strong, readwrite) NSURL *url;
 @property (nonatomic, strong) VIMediaDownloader *mediaDownloader;
 @property (nonatomic, strong) NSMutableDictionary *pendingRequestWorkers;
-@property (nonatomic, strong) NSMutableArray<AVAssetResourceLoadingRequest *> *pendingRequests;
 
-@property (nonatomic, strong) VIContentInfo *info;
 @property (nonatomic, getter=isCancelled) BOOL cancelled;
 
 @end
@@ -28,17 +27,15 @@ NSString * const MCResourceLoaderErrorDomain = @"LSFilePlayerResourceLoaderError
 
 
 - (void)dealloc {
-    [_mediaDownloader cancelAllTasks];
+    [_mediaDownloader invalidateAndCancel];
 }
 
 - (instancetype)initWithURL:(NSURL *)url {
     self = [super init];
     if (self) {
+        _url = url;
         _mediaDownloader = [[VIMediaDownloader alloc] initWithURL:url];
         _pendingRequestWorkers = [NSMutableDictionary dictionary];
-        _pendingRequests = [NSMutableArray array];
-        
-        [self prepareForLoading];
     }
     return self;
 }
@@ -48,53 +45,14 @@ NSString * const MCResourceLoaderErrorDomain = @"LSFilePlayerResourceLoaderError
     return nil;
 }
 
-- (void)prepareForLoading {
-    __weak typeof(self)weakSelf = self;
-    NSURLSessionDataTask *task = [self.mediaDownloader fetchFileInfoTaskWithCompletion:^(VIContentInfo *info, NSError *error) {
-        if (!error) {
-            weakSelf.info = info;
-            [weakSelf.pendingRequests enumerateObjectsUsingBlock:^(AVAssetResourceLoadingRequest * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                [weakSelf addRequest:obj];
-            }];
-        } else {
-            weakSelf.cancelled = YES;
-            [weakSelf.pendingRequests enumerateObjectsUsingBlock:^(AVAssetResourceLoadingRequest * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                [obj finishLoadingWithError:error];
-            }];
-        }
-    }];
-    [task resume];
-}
-
 - (void)addRequest:(AVAssetResourceLoadingRequest *)request {
-    if (!self.isCancelled) {
-        if (!self.info) {
-            [self.pendingRequests addObject:request];
-            return;
-        }
-        
-        [self.pendingRequestWorkers enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, VIResourceLoadingRequestWorker * _Nonnull obj, BOOL * _Nonnull stop) {
-            [obj cancel];
-        }];
-        
-        // Fullfill content information
-        AVAssetResourceLoadingContentInformationRequest *contentInformationRequest = request.contentInformationRequest;
-        contentInformationRequest.byteRangeAccessSupported = self.info.byteRangeAccessSupported;
-        contentInformationRequest.contentType = self.info.contentType;
-        contentInformationRequest.contentLength = self.info.contentLength;
-        
-        NSString *key = [self keyForRequest:request];
-        VIResourceLoadingRequestWorker *pendingRequestWorker = self.pendingRequestWorkers[key];
-        if (pendingRequestWorker) {
-            [self removeRequest:pendingRequestWorker.request];
-        }
-        
-        [self startWorkerWithRequest:request];
-    } else {
-        if (!request.isFinished) {
-            [request finishLoadingWithError:[self loaderCancelledError]];
-        }
-    }
+    [self.pendingRequestWorkers enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, VIResourceLoadingRequestWorker * _Nonnull obj, BOOL * _Nonnull stop) {
+        [obj cancel];
+        [obj finish];
+    }];
+    [self.pendingRequestWorkers removeAllObjects];
+    
+    [self startWorkerWithRequest:request];
 }
 
 - (void)removeRequest:(AVAssetResourceLoadingRequest *)request {
@@ -106,21 +64,15 @@ NSString * const MCResourceLoaderErrorDomain = @"LSFilePlayerResourceLoaderError
 }
 
 - (void)cancel {
-    self.cancelled = YES;
-    [self.mediaDownloader cancelAllTasks];
+    [self.mediaDownloader cancel];
 }
 
 #pragma mark - VIResourceLoadingRequestWorkerDelegate
 
-- (void)resourceLoadingRequestWorkerDidComplete:(VIResourceLoadingRequestWorker *)requestWorker {
+- (void)resourceLoadingRequestWorker:(VIResourceLoadingRequestWorker *)requestWorker didCompleteWithError:(NSError *)error {
     [self removeRequest:requestWorker.request];
-    
-    // Start previous canceled request
-    NSDictionary *pendingRequestWorkers = [self.pendingRequestWorkers copy];
-    if (pendingRequestWorkers.count > 0) {
-        NSString *key = [[pendingRequestWorkers allKeys] lastObject];
-        VIResourceLoadingRequestWorker *previousRequestWorker = (VIResourceLoadingRequestWorker *)pendingRequestWorkers[key];
-        [self startWorkerWithRequest:previousRequestWorker.request];
+    if (error && [self.delegate respondsToSelector:@selector(resourceLoader:didFailWithError:)]) {
+        [self.delegate resourceLoader:self didFailWithError:error];
     }
 }
 
@@ -129,7 +81,7 @@ NSString * const MCResourceLoaderErrorDomain = @"LSFilePlayerResourceLoaderError
 - (void)startWorkerWithRequest:(AVAssetResourceLoadingRequest *)request {
     NSString *key = [self keyForRequest:request];
     VIResourceLoadingRequestWorker *requestWorker = [[VIResourceLoadingRequestWorker alloc] initWithMediaDownloader:self.mediaDownloader
-                                                                                                 resourceLoadingRequest:request];
+                                                                                             resourceLoadingRequest:request];
     requestWorker.delegate = self;
     self.pendingRequestWorkers[key] = requestWorker;
     [requestWorker startWork];

@@ -11,7 +11,7 @@
 
 static NSString *kCacheScheme = @"VIMediaCache";
 
-@interface VIResourceLoaderManager ()
+@interface VIResourceLoaderManager () <VIResourceLoaderDelegate>
 
 @property (nonatomic, strong) NSMutableDictionary<id<NSCoding>, VIResourceLoader *> *loaders;
 
@@ -25,6 +25,17 @@ static NSString *kCacheScheme = @"VIMediaCache";
         _loaders = [NSMutableDictionary dictionary];
     }
     return self;
+}
+
+- (void)cleanCache {
+    [self.loaders removeAllObjects];
+}
+
+- (void)cancelLoaders {
+    [self.loaders enumerateKeysAndObjectsUsingBlock:^(id<NSCoding>  _Nonnull key, VIResourceLoader * _Nonnull obj, BOOL * _Nonnull stop) {
+        [obj cancel];
+    }];
+    [self.loaders removeAllObjects];
 }
 
 #pragma mark - AVAssetResourceLoaderDelegate
@@ -44,6 +55,7 @@ static NSString *kCacheScheme = @"VIMediaCache";
                 originURL = [NSURL URLWithString:url];
             }
             loader = [[VIResourceLoader alloc] initWithURL:originURL];
+            loader.delegate = self;
             NSString *key = [self keyForResourceLoaderWithURL:resourceURL];
             self.loaders[key] = loader;
         }
@@ -56,7 +68,17 @@ static NSString *kCacheScheme = @"VIMediaCache";
 
 - (void)resourceLoader:(AVAssetResourceLoader *)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest *)loadingRequest {
     VIResourceLoader *loader = [self loaderForRequest:loadingRequest];
+    [loader cancel];
     [loader removeRequest:loadingRequest];
+}
+
+#pragma mark - VIResourceLoaderDelegate
+
+- (void)resourceLoader:(VIResourceLoader *)resourceLoader didFailWithError:(NSError *)error {
+    [resourceLoader cancel];
+    if ([self.delegate respondsToSelector:@selector(resourceLoaderManagerLoadURL:didFailWithError:)]) {
+        [self.delegate resourceLoaderManagerLoadURL:resourceLoader.url didFailWithError:error];
+    }
 }
 
 #pragma mark - Helper
@@ -80,6 +102,10 @@ static NSString *kCacheScheme = @"VIMediaCache";
 @implementation VIResourceLoaderManager (Convenient)
 
 + (NSURL *)assetURLWithURL:(NSURL *)url {
+    if (!url) {
+        return nil;
+    }
+    
     NSURLComponents *componnents = [[NSURLComponents alloc] initWithURL:url resolvingAgainstBaseURL:NO];
     componnents.scheme = kCacheScheme;
     

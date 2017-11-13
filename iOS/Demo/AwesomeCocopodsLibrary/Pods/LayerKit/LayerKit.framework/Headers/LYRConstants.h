@@ -121,6 +121,7 @@ typedef NS_ENUM(NSUInteger, LYRLogComponent) {
     LYRLogComponentMessagingPublicAPI,
     LYRLogComponentRichContent,
     LYRLogComponentApplicationState,
+    LYRLogComponentFileSystem,
     LYRLogComponentCount
 };
 

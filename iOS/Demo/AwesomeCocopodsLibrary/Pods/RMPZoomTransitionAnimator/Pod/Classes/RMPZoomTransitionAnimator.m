@@ -21,12 +21,50 @@
 #import "RMPZoomTransitionAnimator.h"
 
 @implementation RMPZoomTransitionAnimator
+{
+    NSTimeInterval kForwardAnimationDuration;
+    NSTimeInterval kForwardCompleteAnimationDuration;
+    NSTimeInterval kBackwardAnimationDuration;
+    NSTimeInterval kBackwardCompleteAnimationDuration;
+}
 
-// constants for transition animation
-static const NSTimeInterval kForwardAnimationDuration         = 0.3;
-static const NSTimeInterval kForwardCompleteAnimationDuration = 0.2;
-static const NSTimeInterval kBackwardAnimationDuration         = 0.25;
-static const NSTimeInterval kBackwardCompleteAnimationDuration = 0.18;
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setDefaultAnimationDuration];
+    }
+    return self;
+}
+
+/**
+ Init component with custom animation durations.
+ */
+- (RMPZoomTransitionAnimator * _Nonnull)initWithAnimationDurationForward:(NSTimeInterval)forward
+                                                         forwardComplete:(NSTimeInterval)forwardComplete
+                                                                backward:(NSTimeInterval)backward
+                                                        backwardComplete:(NSTimeInterval)backwardComplete
+{
+    self = [super init];
+    if (self) {
+        kForwardAnimationDuration = forward;
+        kForwardCompleteAnimationDuration = forwardComplete;
+        kBackwardAnimationDuration = backward;
+        kBackwardCompleteAnimationDuration = backwardComplete;
+    }
+    return self;
+}
+
+/**
+ Sets default animation duration. Written as separate method so it would be overrideable by a subclass
+ instead of repeatability having to use the convenience init method.
+ */
+- (void)setDefaultAnimationDuration {
+    kForwardAnimationDuration = 0.3;
+    kForwardCompleteAnimationDuration = 0.2;
+    kBackwardAnimationDuration = 0.25;
+    kBackwardCompleteAnimationDuration = 0.18;
+}
 
 #pragma mark - <UIViewControllerAnimatedTransitioning>
 
@@ -66,6 +104,9 @@ static const NSTimeInterval kBackwardCompleteAnimationDuration = 0.18;
     [containerView addSubview:sourceImageView];
     
     if (self.goingForward) {
+        
+        [fromVC beginAppearanceTransition:NO animated:YES];
+        
         [UIView animateWithDuration:kForwardAnimationDuration
                               delay:0
                             options:UIViewAnimationOptionCurveEaseOut
@@ -95,6 +136,8 @@ static const NSTimeInterval kBackwardCompleteAnimationDuration = 0.18;
                                                   // Remove the views from superviews to release the references
                                                   [alphaView removeFromSuperview];
                                                   [sourceImageView removeFromSuperview];
+                                                  
+                                                  [fromVC endAppearanceTransition];
                                               }];
                          }];
         
@@ -121,7 +164,9 @@ static const NSTimeInterval kBackwardCompleteAnimationDuration = 0.18;
                                                                                 animatingSourceImageView:sourceImageView];
                                                   }
                                                   [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
-                                                  
+                                                  if(![[UIApplication sharedApplication].keyWindow.subviews containsObject:toVC.view]) {
+                                                      [[UIApplication sharedApplication].keyWindow addSubview:toVC.view];
+                                                  }
                                                   // Remove the views from superviews to release the references
                                                   [alphaView removeFromSuperview];
                                                   [sourceImageView removeFromSuperview];

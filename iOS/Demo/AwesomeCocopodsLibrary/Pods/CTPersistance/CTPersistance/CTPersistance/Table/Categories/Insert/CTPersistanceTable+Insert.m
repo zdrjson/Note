@@ -12,64 +12,26 @@
 
 #import "CTPersistanceQueryCommand.h"
 #import "CTPersistanceQueryCommand+SchemaManipulations.h"
-#import "CTPersistanceQueryCommand+ReadMethods.h"
 #import "CTPersistanceQueryCommand+DataManipulations.h"
 #import "CTPersistanceQueryCommand+Status.h"
 
 #import "objc/runtime.h"
 #import <sqlite3.h>
-#import <UIKit/UIKit.h>
+
+static NSString * const kCTPersistanceErrorUserinfoKeyErrorRecord = @"kCTPersistanceErrorUserinfoKeyErrorRecord";
 
 @implementation CTPersistanceTable (Insert)
 
 - (BOOL)insertRecordList:(NSArray<NSObject <CTPersistanceRecordProtocol> *> *)recordList error:(NSError *__autoreleasing *)error
 {
-    __block BOOL isSuccess = YES;
-    
-    if (recordList == nil) {
-        return isSuccess;
-    }
-    
-    NSMutableArray *insertList = [[NSMutableArray alloc] init];
-    __block NSUInteger errorRecordIndex = 0;
-    [recordList enumerateObjectsUsingBlock:^(NSObject <CTPersistanceRecordProtocol> * _Nonnull record, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([self.child isCorrectToInsertRecord:record]) {
-            [insertList addObject:[record dictionaryRepresentationWithTable:self.child]];
-        } else {
-            isSuccess = NO;
-            errorRecordIndex = idx;
+    __block BOOL result = YES;
+    [recordList enumerateObjectsUsingBlock:^(NSObject<CTPersistanceRecordProtocol> * _Nonnull record, NSUInteger idx, BOOL * _Nonnull stop) {
+        result = [self insertRecord:record error:error];
+        if (result == NO) {
             *stop = YES;
         }
     }];
-    
-    if (isSuccess) {
-        CTPersistanceQueryCommand *queryCommand = self.queryCommand;
-        if (self.isFromMigration == NO) {
-            queryCommand = [[CTPersistanceQueryCommand alloc] initWithDatabaseName:[self.child databaseName]];
-        }
-        if ([[queryCommand insertTable:[self.child tableName] withDataList:insertList] executeWithError:error]) {
-            NSInteger changedRowsCount = [[queryCommand rowsChanged] integerValue];
-            if (changedRowsCount != [insertList count]) {
-                isSuccess = NO;
-                if (error) {
-                    *error = [NSError errorWithDomain:kCTPersistanceErrorDomain
-                                                 code:CTPersistanceErrorCodeRecordNotAvailableToInsert
-                                             userInfo:@{
-                                                        NSLocalizedDescriptionKey:[NSString stringWithFormat:@"there is %lu records to save, but only %ld saved, you should check error", (unsigned long)[insertList count], (long)changedRowsCount],
-                                                        kCTPersistanceErrorUserinfoKeyErrorRecord:insertList
-                                                        }];
-                }
-            }
-        } else {
-            isSuccess = NO;
-        }
-    } else {
-        if (error) {
-            *error = [self errorWithRecord:recordList[errorRecordIndex]];
-        }
-    }
-    
-    return isSuccess;
+    return result;
 }
 
 - (BOOL)insertRecord:(NSObject <CTPersistanceRecordProtocol> *)record error:(NSError *__autoreleasing *)error
@@ -78,22 +40,9 @@
     
     if (record) {
         if ([self.child isCorrectToInsertRecord:record]) {
-            CTPersistanceQueryCommand *queryCommand = self.queryCommand;
-            if (self.isFromMigration == NO) {
-                queryCommand = [[CTPersistanceQueryCommand alloc] initWithDatabaseName:[self.child databaseName]];
-            }
-            if ([[queryCommand insertTable:[self.child tableName] withDataList:@[[record dictionaryRepresentationWithTable:self.child]]] executeWithError:error]) {
-                if ([[queryCommand rowsChanged] integerValue] > 0) {
-                    if (![record setPersistanceValue:[queryCommand lastInsertRowId] forKey:[self.child primaryKeyName]]) {
-                        isSuccessed = NO;
-                        if (error) {
-                            *error = [NSError errorWithDomain:kCTPersistanceErrorDomain
-                                                         code:CTPersistanceErrorCodeFailedToSetKeyForValue
-                                                     userInfo:@{
-                                                                NSLocalizedDescriptionKey:[NSString stringWithFormat:@"failed to set value[%@] with key[%@] in record[%@]", [self.child primaryKeyName], [queryCommand lastInsertRowId], record]
-                                                                }];
-                        }
-                    }
+            if ([[self.queryCommand insertTable:self.child.tableName columnInfo:self.child.columnInfo dataList:@[[record dictionaryRepresentationWithTable:self.child]] error:error] executeWithError:error]) {
+                if ([[self.queryCommand rowsChanged] integerValue] > 0) {
+                    [record setValue:[self.queryCommand lastInsertRowId] forKey:[self.child primaryKeyName]];
                 } else {
                     isSuccessed = NO;
                     if (error) {
@@ -112,6 +61,24 @@
     }
     
     return isSuccessed;
+}
+
+- (NSNumber *)insertValue:(id)value forKey:(NSString *)key error:(NSError *__autoreleasing *)error
+{
+    if (value == nil) {
+        value = [NSNull null];
+    }
+
+    if (key == nil) {
+        return nil;
+    }
+    
+    BOOL result = [[self.queryCommand insertTable:self.child.tableName columnInfo:self.child.columnInfo dataList:@[@{key:value}] error:error] executeWithError:error];
+    if (result) {
+        return [self.queryCommand lastInsertRowId];
+    } else {
+        return nil;
+    }
 }
 
 - (NSError *)errorWithRecord:(NSObject <CTPersistanceRecordProtocol> *)record

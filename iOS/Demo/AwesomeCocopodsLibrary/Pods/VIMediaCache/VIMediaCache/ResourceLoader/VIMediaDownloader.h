@@ -8,26 +8,42 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MediaDownloaderDelegate;
+@protocol VIMediaDownloaderDelegate;
 @class VIContentInfo;
+
+@interface VIMediaDownloaderStatus : NSObject
+
++ (instancetype)shared;
+
+/**
+ return YES if downloading the url source
+ */
+- (BOOL)containsURL:(NSURL *)url;
+- (NSSet *)urls;
+
+@end
 
 @interface VIMediaDownloader : NSObject
 
 - (instancetype)initWithURL:(NSURL *)url;
 @property (nonatomic, strong, readonly) NSURL *url;
+@property (nonatomic, weak) id<VIMediaDownloaderDelegate> delegate;
+@property (nonatomic, strong) VIContentInfo *info;
 
-- (NSURLSessionDataTask *)fetchFileInfoTaskWithCompletion:(void(^)(VIContentInfo *info, NSError *error))completion;
+- (void)downloadTaskFromOffset:(unsigned long long)fromOffset
+                        length:(NSUInteger)length
+                         toEnd:(BOOL)toEnd;
+- (void)downloadFromStartToEnd;
 
-- (NSURLSessionDataTask *)downloadTaskWithDelegate:(id<MediaDownloaderDelegate>)delegate
-                                        fromOffset:(unsigned long long)fromOffset
-                                            length:(NSInteger)length;
-- (void)cancelTask:(NSURLSessionTask *)task;
-- (void)cancelAllTasks;
+- (void)cancel;
+- (void)invalidateAndCancel;
 
 @end
 
-@protocol MediaDownloaderDelegate <NSObject>
+@protocol VIMediaDownloaderDelegate <NSObject>
 
+@optional
+- (void)mediaDownloader:(VIMediaDownloader *)downloader didReceiveResponse:(NSURLResponse *)response;
 - (void)mediaDownloader:(VIMediaDownloader *)downloader didReceiveData:(NSData *)data;
 - (void)mediaDownloader:(VIMediaDownloader *)downloader didFinishedWithError:(NSError *)error;
 
