@@ -17,6 +17,10 @@ typedef struct data {
     struct data *nextPoint;
 }CustomData;
 
+typedef struct data1 {
+    int data;
+    struct data *nextPoint;
+}CustomData1;
 
 CustomData* createLink(int a[10], int n) {
     
@@ -57,6 +61,26 @@ CustomData * reverseLink(CustomData *link) {
             printf("%d\n",tempHead ->data);
         }
         
+    }
+    return pre;
+}
+
+
+CustomData * reverseLink1(CustomData *link) {
+    CustomData *tempHead = link;
+    CustomData *next = NULL;
+    CustomData *pre = NULL;
+    while (tempHead) {
+        if (tempHead == link) {
+            next = tempHead->nextPoint;
+            tempHead->nextPoint = NULL;
+            pre = tempHead;
+        } else {
+            next = tempHead->nextPoint;
+            tempHead->nextPoint = pre;
+            pre = tempHead;
+        }
+        tempHead = next;
     }
     return pre;
 }
