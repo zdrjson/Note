@@ -599,7 +599,10 @@ homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装�
 * [如何将 iOS 项目的编译速度提高5倍](https://zhuanlan.zhihu.com/p/27584726)
 * [深入剖析 iOS 性能优化](https://ming1016.github.io/2017/06/20/deeply-ios-performance-optimization/#more)
 * [移动 H5 首屏秒开优化方案探讨](http://blog.cnbang.net/tech/3477/)
-
+* [Facebook如何优化它的iOS应用启动时间](https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=401856887&idx=1&sn=8d8517fc7f85b1aa4fc4d552fb5f499f#rd)
+* [深入理解iOS App的启动过程](http://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1)
+* [如何精确度量 iOS App 的启动时间](https://mp.weixin.qq.com/s/9FDXkmBQ50vOSmtgDHBjCQ)
+* [Optimizing Facebook for iOS start time](https://code.facebook.com/posts/1675399786008080/optimizing-facebook-for-ios-start-time/)
 
 ## Device
 * [getUUID](http://www.henishuo.com/uuid-udid/)
@@ -916,6 +919,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [Vue documents](https://github.com/zhaohaodang/vue-WeChat/wiki)
 * ### [Vue实例](https://cn.vuejs.org/v2/guide/instance.html#生命周期图示)
 * [Vue源码学习](http://hcysun.me/2017/03/03/Vue%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0/)
+* [Vue 脱坑记 - 查漏补缺(汇总下群里高频询问的xxx及给出不靠谱的解决方案)](https://juejin.im/post/59fa9257f265da43062a1b0e)
 
 
 
@@ -951,6 +955,8 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [前端必读：浏览器内部工作原理](http://kb.cnblogs.com/page/129756/)
 * [我的职业是前端工程师](http://ued.party/#单页面应用的核心知识)
 
+###后端
+* [Docker 核心技术与实现原理](https://draveness.me/docker)
 
 ### IDE
 * [brackets](https://github.com/adobe/brackets)
