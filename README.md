@@ -954,6 +954,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [服务器端渲染和客户端渲染有什么区别?](https://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=2659599236&idx=1&sn=e8ed7de4c63f24cbd02dc6fd42ef8789&key=3fa25093d92ebc15fdc2dbf821311ba4005747edbc6b6203a91e8e685be3052b7034ce29c8a288f56159ca7f506112a1be182bf24b76a8588637c534f259bbfb6b9e4589455c364297af04644b39dc88&ascene=0&uin=MjkxMjg4Nzk4Mg%3D%3D&devicetype=iMac+MacBookPro13%2C3+OSX+OSX+10.12.4+build(16E195)&version=12020610&nettype=WIFI&fontScale=100&pass_ticket=ZOkHWsVN15NpM5f47IdypX3P9y265kbkaMOX7QSowcBdkFBmjxS4kxz%2B%2FAEfxCaa)
 * [前端必读：浏览器内部工作原理](http://kb.cnblogs.com/page/129756/)
 * [我的职业是前端工程师](http://ued.party/#单页面应用的核心知识)
+* [回应『Angular有哪些地方比Vue更优秀？』](https://zhuanlan.zhihu.com/p/28284087)
 
 ###后端
 * [Docker 核心技术与实现原理](https://draveness.me/docker)
@@ -992,6 +993,9 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [VPNOn](https://github.com/lexrus/VPNOn)
 * [FireUpYourVPN](https://github.com/johnlui/FireUpYourVPN)
 * [Potatso使用说明](https://manual.potatso.com)
+
+# Code Manager
+* [git - 简易指南]http://www.bootcss.com/p/git-guide/()
 
 # GitHubStars
 * [TinyPNG4Mac 图片压缩MacApp](https://github.com/kyleduo/TinyPNG4Mac)
