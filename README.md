@@ -250,10 +250,12 @@ What it provides
 * [YYStock](https://github.com/yate1996/YYStock)
 * [高仿支付宝解锁](https://github.com/CharlinFeng/CoreLock)
 * [VTMagic is a page container library for iOS](https://github.com/tianzhuo112/VTMagic)
+* [Launch Screen of Apple developer document](https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/launch-screen/)
 
 ### 占位视图
 * [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
 * [CYLTableViewPlaceHolder](https://github.com/ChenYilong/CYLTableViewPlaceHolder)
+* [iOS App中添加半透明新手指引](http://www.jianshu.com/p/00d4fe5a3c1a)
 
 ### MessageKit
 * [Atlas-iOS](https://github.com/layerhq/Atlas-iOS)
@@ -343,6 +345,7 @@ CAShapeLayer有着几点很重要:
 * [一种基于ResponderChain的对象交互方式](https://casatwy.com/responder_chain_communication.html)
 * [京东iOS客户端组件管理实践](https://mp.weixin.qq.com/s/AzbK8oynTVnsawlg5iT0bg)
 * [单向数据流动的函数式 View Controller](https://onevcat.com/2017/07/state-based-viewcontroller/)
+* [京东通天塔架构](http://ppt.geekbang.org/slide/show/1159)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -365,6 +368,7 @@ CAShapeLayer有着几点很重要:
 * [Objective-C 消息发送与转发机制原理](http://yulingtianxia.com/blog/2016/06/15/Objective-C-Message-Sending-and-Forwarding/)
 * [Calling Conventions](http://slides.com/sunnyxx/calling-conventions-in-cocoa#/)
 * [如何动态调用 C 函数](http://mp.weixin.qq.com/s?__biz=MzIzNTQ2MDg2Ng==&mid=2247483687&idx=1&sn=94d3ce224e5e25f2e1ae8a6046efb472#rd)
+* [iOS runtime交换类方法的问题](http://www.jianshu.com/p/aae1411b9cdc)
 
 ## SQ
 * [GYDataCenter](https://github.com/Zepo/GYDataCenter)
@@ -447,7 +451,9 @@ CAShapeLayer有着几点很重要:
 * [如何解决GitHub commit次数过多.git文件过大的问题?](https://www.zhihu.com/question/29769130)
 * [if you change your password or username on GitHub](https://help.github.com/articles/updating-credentials-from-the-osx-keychain/)
 * [git 原理](http://gold.xitu.io/entry/575e223a165abd005559294f)
-
+* [Git 常用命令大全](http://blog.csdn.net/dengsilinming/article/details/8000622)
+* [git cherry-pick用法](http://www.jianshu.com/p/d577dcc36a08)
+* [git配置文件config用户名和邮箱的设置和查看](http://blog.csdn.net/life_is_crazy/article/details/70576863)
 ```
 git Alias
 autoPush() {
@@ -456,6 +462,15 @@ autoPush() {
     git push
 }
 alias g=autoPush
+
+
+git 查看某个 commit 的改动
+git show COMMIT
+git show COMMIT^
+
+git 查看远程地址
+git remote -v
+
 ```
 
 ### Gitpages
