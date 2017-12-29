@@ -40,7 +40,7 @@
 * [ViewControllersTransition](https://github.com/YouXianMing/ViewControllersTransition)
 * [iOS-ViewController-Transition-Demo](https://github.com/seedante/iOS-ViewController-Transition-Demo.git)
 * [ZFDragableModalTransition(淘宝进入购买详情转场动画)](https://github.com/zoonooz/ZFDragableModalTransition)
-
+* [简书、淘宝弹出效果动画demo](https://github.com/linsyorozuya/JianShuPopViewDemo)
 
 ### CollectionAnimation
 * [popping](https://github.com/schneiderandre/popping)
@@ -454,6 +454,7 @@ CAShapeLayer有着几点很重要:
 * [Git 常用命令大全](http://blog.csdn.net/dengsilinming/article/details/8000622)
 * [git cherry-pick用法](http://www.jianshu.com/p/d577dcc36a08)
 * [git配置文件config用户名和邮箱的设置和查看](http://blog.csdn.net/life_is_crazy/article/details/70576863)
+* [git修改分支名称](http://www.jianshu.com/p/cc740394faf5)
 ```
 git Alias
 autoPush() {
@@ -523,6 +524,7 @@ NSTimer 在哪个线程创建就要在哪个线程停止，否则会导致资源
 * [hosts](https://github.com/racaljk/hosts)
 * [hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
 * [Toolinbox](https://toolinbox.net)
+* [Curl 工具简介](http://eleveneat.com/2015/10/19/CURL/)
 
 
 ```
@@ -537,6 +539,16 @@ brew 是从下载源码解压然后 ./configure && make install ，同时会包�
 而 brew cask 是 已经编译好了的应用包 （.dmg/.pkg），仅仅是下载解压，放在统一的目录中（/opt/
 homebrew-cask/Caskroom），省掉了自己去下载、解压、拖拽（安装）等蛋疼步骤，同样，卸载相当容易与
 干净。这个对一般用户来说会比较方便，包含很多在 AppStore 里没有的常用软件。
+```
+
+```
+clipsToBounds
+
+是指视图上的子视图,如果超出父视图的部分就截取掉,
+
+masksToBounds
+
+却是指视图的图层上的子图层,如果超出父图层的部分就截取掉
 ```
 
 
@@ -767,6 +779,16 @@ isMemberOfClass只能确定一个对象是否是当前类的成员
 ```
 
 ```
+setNeedsDisplay 自动调用drawRect方法
+setNeedsLayout 会默认调用 layoutSubViews
+```
+
+```
+NSUInteger
+When building 32-bit applications, NSUInteger is a 32-bit unsigned integer. A 64-bit application treats NSUInteger as a 64-bit unsigned integer
+```
+
+```
 删除Xcode多余描述文件
 ~/Library/MobileDevice/Provisioning Profiles
 ```
@@ -973,6 +995,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 
 ###后端
 * [Docker 核心技术与实现原理](https://draveness.me/docker)
+* [Linux系统运维架构](http://www.ywlinux.com/archives/77)
 
 ### IDE
 * [brackets](https://github.com/adobe/brackets)
@@ -1077,6 +1100,8 @@ npm install hexo-cli -g
 * [ionic](https://ionicframework.com/)
 * [React](https://github.com/facebook/react)
 * [weex](http://alibaba.github.io/weex/cn/doc/get-started.html)
+* [the document of React Native](https://facebook.github.io/react-native/)
+* [Weex 是如何在 iOS 客户端上跑起来的](https://halfrost.com/weex_ios/)
 
 # Job
 * [How could you work for facebook especially for Chinese](http://cenalulu.github.io/mysql/how-i-become-a-facebook-dba/)
