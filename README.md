@@ -27,6 +27,16 @@
 * [Swift 算法实战之路：链表](http://www.jianshu.com/p/cf962aeff643)
 * [Swift 算法实战之路：数组，字符串，集合，与字典](http://www.jianshu.com/p/977736b08bd7)
 
+```
+O(1) Constant Complexity: Constant.
+O(log n) Logarithmic Complexity: Not as good as constant, but still pretty good.
+O(n log n): Complexity greater than liner.
+O(n^2): N square Complexity:
+O(n^3): N square Complexity:
+O(2^n): Exponential Growth!
+O(n!): Factorial
+```
+
 ## **System design**
 [System-design-interview-for-IT-companies](https://github.com/checkcheckzz/system-design-interview)
 
