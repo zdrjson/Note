@@ -26,6 +26,7 @@
 * [Swift 算法实战之路：二分搜索](http://www.jianshu.com/p/b4036e6d3f13)
 * [Swift 算法实战之路：链表](http://www.jianshu.com/p/cf962aeff643)
 * [Swift 算法实战之路：数组，字符串，集合，与字典](http://www.jianshu.com/p/977736b08bd7)
+* [吕哥](http://www.olddonkey.com/page/2/#open)
 
 ```
 O(1) Constant Complexity: Constant.
@@ -482,6 +483,8 @@ git show COMMIT^
 git 查看远程地址
 git remote -v
 
+使用git log --author=<pattern> 可以查找某一个作者所有的提交
+
 ```
 
 ### Gitpages
@@ -640,6 +643,10 @@ masksToBounds
 * [深入理解iOS App的启动过程](http://blog.csdn.net/Hello_Hwc/article/details/78317863?locationNum=9&fps=1)
 * [如何精确度量 iOS App 的启动时间](https://mp.weixin.qq.com/s/9FDXkmBQ50vOSmtgDHBjCQ)
 * [Optimizing Facebook for iOS start time](https://code.facebook.com/posts/1675399786008080/optimizing-facebook-for-ios-start-time/)
+* [移动 APP 网络优化概述](http://blog.cnbang.net/tech/3531/)
+* [PPDNSMapping- A DNS Mapping engine for iOS client](https://github.com/music4kid/PPDNSMapping)
+* [iOS网络请求优化之DNS映射](https://mp.weixin.qq.com/s/y6drhFLJexcHvfG24CT0ng)
+* [深度优化iOS网络模块](https://mp.weixin.qq.com/s/IW-ZCF2_pNasJornC1iDbg)
 
 ## Device
 * [getUUID](http://www.henishuo.com/uuid-udid/)
