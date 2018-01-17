@@ -485,6 +485,11 @@ git remote -v
 
 使用git log --author=<pattern> 可以查找某一个作者所有的提交
 
+执行 git commit --amend，修改commit信息
+
+git remote set-url origin 'url' 设置远程 git url
+git remote get-url origin 查看远程git url
+
 ```
 
 ### Gitpages
@@ -814,6 +819,10 @@ When building 32-bit applications, NSUInteger is a 32-bit unsigned integer. A 64
 ~/Library/MobileDevice/Provisioning Profiles
 ```
 
+```
+CGRect简写
+(CGRect){{x,y},{width,height}};
+```
 ```
 快速入门写接口 Node.js
 rnr,flask,express
