@@ -315,6 +315,7 @@ CAShapeLayer有着几点很重要:
 * [UILabel replacement with fine-grain appear/disappear animation](https://github.com/overboming/ZCAnimatedLabel)
 * [TYAttrubutedLabel](https://github.com/12207480/TYAttributedLabel)
 * [YYText 是如何绘制的](https://github.com/lzwjava/OpenSourceNotes)
+* [Calculating Text Height](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/TextLayout/Tasks/StringHeight.html)
 
 
 
@@ -357,6 +358,9 @@ CAShapeLayer有着几点很重要:
 * [京东iOS客户端组件管理实践](https://mp.weixin.qq.com/s/AzbK8oynTVnsawlg5iT0bg)
 * [单向数据流动的函数式 View Controller](https://onevcat.com/2017/07/state-based-viewcontroller/)
 * [京东通天塔架构](http://ppt.geekbang.org/slide/show/1159)
+* [左耳朵耗子：聊聊分布式系统架构](https://mp.weixin.qq.com/s/12s9JUxVDqAnLAeqc_de8w)
+* [微信红包系统的高并发解决方案](http://www.infoq.com/cn/articles/2017hongbao-weixin)
+* [微信红包系统设计 & 优化](http://djt.qq.com/article/view/1349)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -1002,7 +1006,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [Javascript的this用法](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
 * [JavaScript中的this关键字](http://blogread.cn/it/article/7315?f=wb)
 
-## js与Native交互
+## JS与Native交互
 * [CTJSBridge](https://github.com/casatwy/CTJSBridge)
 * [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge)
 * [JSPatch](https://github.com/bang590/JSPatch)
@@ -1024,7 +1028,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [我的职业是前端工程师](http://ued.party/#单页面应用的核心知识)
 * [回应『Angular有哪些地方比Vue更优秀？』](https://zhuanlan.zhihu.com/p/28284087)
 
-###后端
+### 后端
 * [Docker 核心技术与实现原理](https://draveness.me/docker)
 * [Linux系统运维架构](http://www.ywlinux.com/archives/77)
 
