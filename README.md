@@ -27,6 +27,7 @@
 * [Swift 算法实战之路：链表](http://www.jianshu.com/p/cf962aeff643)
 * [Swift 算法实战之路：数组，字符串，集合，与字典](http://www.jianshu.com/p/977736b08bd7)
 * [吕哥](http://www.olddonkey.com/page/2/#open)
+* [iOS程序员对算法的要求](https://mp.weixin.qq.com/s/dVFSOAIy8Zg8QwuAVXGA3w)
 
 ```
 O(1) Constant Complexity: Constant.
@@ -493,6 +494,10 @@ git remote -v
 
 git remote set-url origin 'url' 设置远程 git url
 git remote get-url origin 查看远程git url
+
+git merge --squash features/xxx 分支合并至dev(记得然后push到远程服务器)
+git merge origin/dev dev合并至分支
+git log -U1 --word-diff 或者 git log -p 打印出提交代码
 
 ```
 
@@ -979,6 +984,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [揭开this & that之谜](http://www.jianshu.com/p/562e9cae6a9d)
 * [JavaScriptCore全面解析 （上篇）](https://www.qcloud.com/community/article/873202)
 * [JavaScriptCore全面解析 （下篇）](https://www.qcloud.com/community/article/516026?fromSource=gwzcw.93398.93398.93398)
+* [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
 ## Vue.js
 * [vue.js 60分钟快速入门](http://www.cnblogs.com/keepfool/p/5625583.html)

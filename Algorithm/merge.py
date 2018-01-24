@@ -15,3 +15,75 @@ class Solution(object):
 		if n > 0:
 			nums1[:n] = nums2[:n]
 			
+			
+			
+#First Missing Positive
+#Give an unsorted integer array, find the first missing positive integer.
+#Your algorithm should run in O(n) time and uses constant space.
+
+
+class Solution(object):
+	def firstMissingPositive(self, nums):
+		if not nums: return 1
+		max_num = len(nums) + 1
+		num_set = set(nums)
+		for i in range(1, max_num):
+			if i not in num_set:
+				return i
+#	    return max_num
+	
+	def twoSum(self, nums, target):
+		numIndexDict = {}
+		for i, x in enumerate(nums):
+			y = target - x
+			if y in numIndexDict:
+				return (numIndexDict[y], i)
+			numIndexDict[x] = i;
+			
+	def isValid(self, s):
+		stack = []
+		for char in s:
+			if char == "[" or char == "(" or char == "{":
+				stack.append(char)
+			else: 
+				if not self.check_adjust_stack(stack, char):
+					return False
+		return not stack
+		
+	def check_adjust_stack(self, stack, char):
+		if not stack:
+			return False
+		if (char == "]" and stack[-1] == "[") or (char == ")" and stack[-1] == "(") or (char == "}" and stack[-1] == "{"):
+			return True
+		return False
+
+    def isValidd(self, s):
+	    braces_dict = {'[':']','(':')','{':'}'}
+	    stack = []
+        for char in s:
+	        if char in braces_dict.keys():
+		       stack.append(braces_dict[char])
+		     else:
+			    if stack and stack[-1] == char:
+				   stack.pop()
+				else:
+					return False
+		return not stack
+		
+		def sortColor(self, nums):
+			if not nums: return
+			count = [0] * 3
+			for i, x in enumerate(nums):
+				has_key = x
+				count[has_key] += 1
+			index = 0
+			for i, x in enumerate(count):
+				for _ in range(x):
+					nums[index] = i
+		            index += 1 
+		     print(nums)
+	    
+
+	
+
+		
