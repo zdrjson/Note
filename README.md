@@ -28,6 +28,7 @@
 * [Swift 算法实战之路：数组，字符串，集合，与字典](http://www.jianshu.com/p/977736b08bd7)
 * [吕哥](http://www.olddonkey.com/page/2/#open)
 * [iOS程序员对算法的要求](https://mp.weixin.qq.com/s/dVFSOAIy8Zg8QwuAVXGA3w)
+* [二叉查找树图示](https://www.jianshu.com/p/8f8876c9459d)
 
 ```
 O(1) Constant Complexity: Constant.
