@@ -662,6 +662,7 @@ masksToBounds
 * [PPDNSMapping- A DNS Mapping engine for iOS client](https://github.com/music4kid/PPDNSMapping)
 * [iOS网络请求优化之DNS映射](https://mp.weixin.qq.com/s/y6drhFLJexcHvfG24CT0ng)
 * [深度优化iOS网络模块](https://mp.weixin.qq.com/s/IW-ZCF2_pNasJornC1iDbg)
+* [iOS微信内存监控](https://mp.weixin.qq.com/s/r0Q7um7P1p2gIb0aHldyNw)
 
 ## Device
 * [getUUID](http://www.henishuo.com/uuid-udid/)
