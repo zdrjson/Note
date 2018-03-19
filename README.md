@@ -809,9 +809,8 @@ HTTP 502       – 网关错误
 
 ![TerminalCommands](terminalCommands.png)
 
-```
 [convertRect:toView: 和 convertRect:fromView:`方法浅析](https://www.jianshu.com/p/dcefe7150bfe)
-```
+
 
 ```
 isKindOfClass来确定一个对象是否是一个类的成员，或者是派生自该类的成员
