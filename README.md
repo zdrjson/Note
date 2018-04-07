@@ -29,6 +29,7 @@
 * [吕哥](http://www.olddonkey.com/page/2/#open)
 * [iOS程序员对算法的要求](https://mp.weixin.qq.com/s/dVFSOAIy8Zg8QwuAVXGA3w)
 * [二叉查找树图示](https://www.jianshu.com/p/8f8876c9459d)
+* [由 FlexBox 算法强力驱动的 Weex 布局引擎](https://github.com/halfrost/Halfrost-Field/blob/master/contents/iOS/Weex/Weex_layout_engine_powered_by_Flexbox's_algorithm.md)
 
 ```
 O(1) Constant Complexity: Constant.
@@ -363,6 +364,8 @@ CAShapeLayer有着几点很重要:
 * [左耳朵耗子：聊聊分布式系统架构](https://mp.weixin.qq.com/s/12s9JUxVDqAnLAeqc_de8w)
 * [微信红包系统的高并发解决方案](http://www.infoq.com/cn/articles/2017hongbao-weixin)
 * [微信红包系统设计 & 优化](http://djt.qq.com/article/view/1349)
+* [腾讯云架构设计之道](https://cloud.tencent.com/developer/article/1005014)
+* [成为架构师的路上](https://mp.weixin.qq.com/s/CPUaB60pue0Zf3fUL9xqvw)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -594,6 +597,7 @@ masksToBounds
 ## 设计模式
 * [youxianming](http://www.cnblogs.com/YouXianMing/tag/软件设计原则/)
 * [leichunfeng](https://github.com/leichunfeng/DesignPatterns-Objective-C)
+
 ```
 常用23种设计模式
 1.策略模式（Strategy）,它定义了算法家族，分别封装起来，让他们之间可以互相替换，此模式让算法的变化，不会影响到使用算法的客户。
@@ -619,7 +623,6 @@ masksToBounds
 21.享元模式 (Flyweight),运用共享技术有效地支持大量细粒度的对象。
 22.解释器模式（Interpreter）,给定一个语言，定义它的文法一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。
 23.访问者模式（Visitor）,表示一个作用于某对象结构中的各元素的操作。它使你可以在不改变各元素 的类的前提下定义作用于这些元素的新操作。
-
 ```
 
 
@@ -664,6 +667,7 @@ masksToBounds
 * [深度优化iOS网络模块](https://mp.weixin.qq.com/s/IW-ZCF2_pNasJornC1iDbg)
 * [iOS微信内存监控](https://mp.weixin.qq.com/s/r0Q7um7P1p2gIb0aHldyNw)
 * [iOS 代码使用 C++ 的 zero-cost abstraction 特性](https://mp.weixin.qq.com/s/lxhT4Cvx2iBZjxglxrGTDw)
+* [阿里无线11.11：手机淘宝 521 性能优化项目揭秘](http://www.infoq.com/cn/articles/mobile-taobao-521-performance-optimization-project)
 
 ## Device
 * [getUUID](http://www.henishuo.com/uuid-udid/)
@@ -807,6 +811,9 @@ HTTP 502       – 网关错误
 
 # Small Knowledge
 
+[云虚拟主机使用手册](https://help.aliyun.com/knowledge_detail/36183.html?spm=5176.200122.n2.5.qSwvnz)
+[万网域名解析设置方法](https://help.aliyun.com/knowledge_detail/39783.html?spm=5176.200122.n2.4.qSwvnz)
+[虚拟内存（VirtualAlloc),堆（HeapAlloc/malloc/new)和Memory Mapped File](https://blog.csdn.net/zj510/article/details/39400087)
 ![TerminalCommands](terminalCommands.png)
 
 [convertRect:toView: 和 convertRect:fromView:`方法浅析](https://www.jianshu.com/p/dcefe7150bfe)
@@ -913,6 +920,8 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 * [React Native 从入门到原理](http://www.jianshu.com/p/978c4bd3a759)
 * [写给Web开发人员看的Nginx介绍](https://fraserxu.me/2013/06/22/Nginx-for-developers/)
 * [编译原理](https://github.com/bestswifter/blog/blob/master/articles/compile-and-language.md)
+* [OCS——史上最疯狂的iOS动态化方案](http://blog.sina.com.cn/s/blog_1328b55460102xayq.html)
+* [IM App 如何确保消息可靠抵达](https://mp.weixin.qq.com/s/_FQleMXMtRFy68XubErpgA)
 
 
 架构书籍：大型网站技术架构
@@ -973,8 +982,6 @@ Virtual DOM算法，简单总结下包括几个步骤：
 21. 享元模式（Flyweight），运用共享技术有效地支持大量细粒度的对象。
 22. 解释器模式（Interpreter），给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。
 23. 访问者模式（Visitor），表示一个作用于某对象结构中的各元素的操作。它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作。
-
-
 ```
 
 
