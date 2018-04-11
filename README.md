@@ -669,6 +669,11 @@ masksToBounds
 * [iOS 代码使用 C++ 的 zero-cost abstraction 特性](https://mp.weixin.qq.com/s/lxhT4Cvx2iBZjxglxrGTDw)
 * [阿里无线11.11：手机淘宝 521 性能优化项目揭秘](http://www.infoq.com/cn/articles/mobile-taobao-521-performance-optimization-project)
 
+
+## 编译知识
+* [深入剖析 iOS 编译 Clang / LLVM 直播的 Slides](https://ming1016.github.io/2017/04/01/slides-of-deeply-analyse-llvm/) 
+* [编译原理](https://github.com/bestswifter/blog/blob/master/articles/compile-and-language.md)
+
 ## Device
 * [getUUID](http://www.henishuo.com/uuid-udid/)
 
@@ -811,6 +816,7 @@ HTTP 502       – 网关错误
 
 # Small Knowledge
 
+[iOS App 连续闪退时如何上报 crash 日志](https://mp.weixin.qq.com/s/ADj-BT7itSfHVIvyAoseRA)
 [云虚拟主机使用手册](https://help.aliyun.com/knowledge_detail/36183.html?spm=5176.200122.n2.5.qSwvnz)
 [万网域名解析设置方法](https://help.aliyun.com/knowledge_detail/39783.html?spm=5176.200122.n2.4.qSwvnz)
 [虚拟内存（VirtualAlloc),堆（HeapAlloc/malloc/new)和Memory Mapped File](https://blog.csdn.net/zj510/article/details/39400087)
@@ -919,7 +925,6 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 * [编译型与解释型、动态语言与静态语言、强类型语言与弱类型语言的区别](http://www.cnblogs.com/dzhanjie/archive/2011/07/07/2100340.html)
 * [React Native 从入门到原理](http://www.jianshu.com/p/978c4bd3a759)
 * [写给Web开发人员看的Nginx介绍](https://fraserxu.me/2013/06/22/Nginx-for-developers/)
-* [编译原理](https://github.com/bestswifter/blog/blob/master/articles/compile-and-language.md)
 * [OCS——史上最疯狂的iOS动态化方案](http://blog.sina.com.cn/s/blog_1328b55460102xayq.html)
 * [IM App 如何确保消息可靠抵达](https://mp.weixin.qq.com/s/_FQleMXMtRFy68XubErpgA)
 
