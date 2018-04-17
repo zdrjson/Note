@@ -475,6 +475,10 @@ CAShapeLayer有着几点很重要:
 * [git cherry-pick用法](http://www.jianshu.com/p/d577dcc36a08)
 * [git配置文件config用户名和邮箱的设置和查看](http://blog.csdn.net/life_is_crazy/article/details/70576863)
 * [git修改分支名称](http://www.jianshu.com/p/cc740394faf5)
+* [从撤销 rebase 谈谈 git 原理](https://mp.weixin.qq.com/s?__biz=MzI0NzI1NzU5NA==&mid=2247483776&idx=1&sn=0ee464c7e6771284d3c00f9534beca31)
+* [Merge、Rebase 的选择](https://github.com/geeeeeeeeek/git-recipes/wiki/5.1-代码合并：Merge、Rebase-的选择)
+
+
 ```
 git Alias
 autoPush() {
@@ -1073,6 +1077,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 ### 后端
 * [Docker 核心技术与实现原理](https://draveness.me/docker)
 * [Linux系统运维架构](http://www.ywlinux.com/archives/77)
+* [微服务在微信的架构实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650997325&idx=1&sn=04bf17ba4ee4d506483b0ccda4a8d123&chksm=bdbefa1e8ac97308a9ccb7b93ac4d479fc2b5e81518a95390374b7be42b9af9a082985f0cc5c&scene=21#wechat_redirect)
 
 ### IDE
 * [brackets](https://github.com/adobe/brackets)
