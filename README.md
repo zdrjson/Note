@@ -402,6 +402,7 @@ CAShapeLayer有着几点很重要:
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
 * [CocoaAsyncSocket-Asynchronous socket networking library for Mac and iOS](https://github.com/robbiehanson/CocoaAsyncSocket)
+* [谈谈Websocket](https://github.com/halfrost/Halfrost-Field/blob/master/contents/iOS/WebSocket/iOS_WebSocket.md)
 
 ## Cocoapods
 * [ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
@@ -1073,6 +1074,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [我的职业是前端工程师](http://ued.party/#单页面应用的核心知识)
 * [回应『Angular有哪些地方比Vue更优秀？』](https://zhuanlan.zhihu.com/p/28284087)
 * [ES6编程风格](http://es6.ruanyifeng.com/#docs/style)
+* [ReactNative 知识小集(2)-渲染原理](https://zhuanlan.zhihu.com/p/32749940)
 
 ### 后端
 * [Docker 核心技术与实现原理](https://draveness.me/docker)
@@ -1223,4 +1225,7 @@ npm install hexo-cli -g
 * [深入研究Block用weakSelf、strongSelf、@weakify、@strongify解决循环引用](http://ios.jobbole.com/88708/)
 
   ## [the interview of front-end](https://github.com/yangshun/tech-interview-handbook.git)
+
+# Pay
+* [支付宝等大型支付系统后台系统是如何对账和风控的](https://blog.csdn.net/XingKong22star/article/details/52102332)
 
