@@ -366,6 +366,7 @@ CAShapeLayer有着几点很重要:
 * [微信红包系统设计 & 优化](http://djt.qq.com/article/view/1349)
 * [腾讯云架构设计之道](https://cloud.tencent.com/developer/article/1005014)
 * [成为架构师的路上](https://mp.weixin.qq.com/s/CPUaB60pue0Zf3fUL9xqvw)
+* [阿里云构建千万级别架构演变之路](https://yq.aliyun.com/articles/55692)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -650,6 +651,8 @@ masksToBounds
 3. 对于业务层而言，由Controller根据View和APIManager之间的关系，选择合适的reformer将View可以直接使用的数据（甚至reformer可以用来直接生成view）转化好之后交付给View。对于网络层而言，只需要保持住原始数据即可，不需要主动转化成数据原型。然后数据采用NSDictionary加Const字符串key来表征，避免了使用对象来表征带来的迁移困难，同时不失去可读性。
 
 * [iOS中的 NSURLProtocol](http://www.jianshu.com/p/0244e431fb3c)
+* [微信终端跨平台组件 Mars 系列 - 我们如约而至](https://blog.csdn.net/tencent_bugly/article/details/53992882)
+* [微信终端跨平台组件 mars 系列（一） - 高性能日志模块xlog](https://mp.weixin.qq.com/s/kDPTt9Rtd-PERXXW-UyUlQ)
 
 
 
@@ -1223,9 +1226,13 @@ npm install hexo-cli -g
 * [何时使用block, 何时使用delegate](https://casatwy.com/iosying-yong-jia-gou-tan-wang-luo-ceng-she-ji-fang-an.html)
 * [nsurlsession 与 nsurlconnection 区别](https://objccn.io/issue-5-4/)
 * [深入研究Block用weakSelf、strongSelf、@weakify、@strongify解决循环引用](http://ios.jobbole.com/88708/)
+* [晋升评审的套路](http://blog.cnbang.net/tech/3434/)
 
   ## [the interview of front-end](https://github.com/yangshun/tech-interview-handbook.git)
 
 # Pay
 * [支付宝等大型支付系统后台系统是如何对账和风控的](https://blog.csdn.net/XingKong22star/article/details/52102332)
+* [云服务器配置详细分析](https://yq.aliyun.com/product/1147)
+
+
 
