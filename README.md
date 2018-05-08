@@ -824,10 +824,10 @@ HTTP 502       – 网关错误
 
 # Small Knowledge
 
-[iOS App 连续闪退时如何上报 crash 日志](https://mp.weixin.qq.com/s/ADj-BT7itSfHVIvyAoseRA)
-[云虚拟主机使用手册](https://help.aliyun.com/knowledge_detail/36183.html?spm=5176.200122.n2.5.qSwvnz)
-[万网域名解析设置方法](https://help.aliyun.com/knowledge_detail/39783.html?spm=5176.200122.n2.4.qSwvnz)
-[虚拟内存（VirtualAlloc),堆（HeapAlloc/malloc/new)和Memory Mapped File](https://blog.csdn.net/zj510/article/details/39400087)
+* [iOS App 连续闪退时如何上报 crash 日志](https://mp.weixin.qq.com/s/ADj-BT7itSfHVIvyAoseRA)
+* [云虚拟主机使用手册](https://help.aliyun.com/knowledge_detail/36183.html?spm=5176.200122.n2.5.qSwvnz)
+* [万网域名解析设置方法](https://help.aliyun.com/knowledge_detail/39783.html?spm=5176.200122.n2.4.qSwvnz)
+* [虚拟内存（VirtualAlloc),堆（HeapAlloc/malloc/new)和Memory Mapped File](https://blog.csdn.net/zj510/article/details/39400087)
 ![TerminalCommands](terminalCommands.png)
 
 [convertRect:toView: 和 convertRect:fromView:`方法浅析](https://www.jianshu.com/p/dcefe7150bfe)
