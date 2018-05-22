@@ -367,6 +367,7 @@ CAShapeLayer有着几点很重要:
 * [腾讯云架构设计之道](https://cloud.tencent.com/developer/article/1005014)
 * [成为架构师的路上](https://mp.weixin.qq.com/s/CPUaB60pue0Zf3fUL9xqvw)
 * [阿里云构建千万级别架构演变之路](https://yq.aliyun.com/articles/55692)
+* [微信存储系统如何应对每分钟百亿级的挑战？](https://mp.weixin.qq.com/s/Yxy6H4_kuiJMya0bijKr1w)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -823,12 +824,17 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：
+<起始地址><结束地址><函数>[<文件名：行号>]
+
 
 * [iOS App 连续闪退时如何上报 crash 日志](https://mp.weixin.qq.com/s/ADj-BT7itSfHVIvyAoseRA)
 * [云虚拟主机使用手册](https://help.aliyun.com/knowledge_detail/36183.html?spm=5176.200122.n2.5.qSwvnz)
 * [万网域名解析设置方法](https://help.aliyun.com/knowledge_detail/39783.html?spm=5176.200122.n2.4.qSwvnz)
 * [虚拟内存（VirtualAlloc),堆（HeapAlloc/malloc/new)和Memory Mapped File](https://blog.csdn.net/zj510/article/details/39400087)
+
 ![TerminalCommands](terminalCommands.png)
+![TerminalCommands](程序工作流程.jpg)
 
 [convertRect:toView: 和 convertRect:fromView:`方法浅析](https://www.jianshu.com/p/dcefe7150bfe)
 
@@ -1238,4 +1244,6 @@ npm install hexo-cli -g
 * [TCP/IP 系列之初印象](http://mrpeak.cn/blog/tcp-preface/)
 * [TCP/IP 系列之包与流](http://mrpeak.cn/blog/tcp-packet-stream/)
 * [微信终端跨平台组件 mars 系列(二) - 信令传输超时设计](https://mp.weixin.qq.com/s/9DJxipJaaBC8yC-buHgnTQ)
+* [如何设计一个通讯协议](http://mrpeak.cn/blog/tcp-rpc-protocol/)
+* [TCP/IP 系列之重新认识 IP 地址](http://mrpeak.cn/blog/tcp-ip/)
 
