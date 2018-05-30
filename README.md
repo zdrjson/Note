@@ -368,6 +368,10 @@ CAShapeLayer有着几点很重要:
 * [成为架构师的路上](https://mp.weixin.qq.com/s/CPUaB60pue0Zf3fUL9xqvw)
 * [阿里云构建千万级别架构演变之路](https://yq.aliyun.com/articles/55692)
 * [微信存储系统如何应对每分钟百亿级的挑战？](https://mp.weixin.qq.com/s/Yxy6H4_kuiJMya0bijKr1w)
+* [微信开源软件列表](http://www.infoq.com/cn/news/2017/01/wechat-open-source)
+* [PaxosStore：微信跨数据中心强一致存储系统](http://www.infoq.com/cn/presentations/paxosstore-a-strong-consistent-storage-system-for-wechat-cross-data-center)
+* [微信Mars——移动互联网下的高质量网络连接探索](http://www.infoq.com/cn/presentations/wechat-mars-high-quality-network-connection)
+* [PhxQueue——微信开源高可用强一致分布式队列的设计与实现](http://www.infoq.com/cn/presentations/design-and-implementation-of-distributed-queue-for-wechat?utm_campaign=rightbar_v2&utm_source=infoq&utm_medium=presentations_link&utm_content=link_text)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -827,11 +831,20 @@ HTTP 502       – 网关错误
 符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：
 <起始地址><结束地址><函数>[<文件名：行号>]
 
+Status-Code含义
+1xx:Informational-Request received, continuing process。
+2xx:Success - The action was successfully received, understood, and accepted。
+3xx:Redirection - Further action must be taken in order to complete the request。
+4xx:Client Error - The request contains bad syntax or cannot be fulfilled。
+5xx:Server Error - The server failed to fulfill an apparently valid request。
 
+* [我是如何拿到微信 offer 的？](https://mp.weixin.qq.com/s?__biz=MzU4MjAzNTAwMA==&mid=2247484246&idx=1&sn=ff032a788d7de4ec9a60a79fdd7f5dee&from=1085193010&wm=3333_2001&weiboauthoruid=6207903800)
+* [Learning OpenGL(ES) ](https://niyaoyao.github.io/2018/05/23/learning_opengl(es)_opengl_model_pipeline_and_practices/)
 * [iOS App 连续闪退时如何上报 crash 日志](https://mp.weixin.qq.com/s/ADj-BT7itSfHVIvyAoseRA)
 * [云虚拟主机使用手册](https://help.aliyun.com/knowledge_detail/36183.html?spm=5176.200122.n2.5.qSwvnz)
 * [万网域名解析设置方法](https://help.aliyun.com/knowledge_detail/39783.html?spm=5176.200122.n2.4.qSwvnz)
 * [虚拟内存（VirtualAlloc),堆（HeapAlloc/malloc/new)和Memory Mapped File](https://blog.csdn.net/zj510/article/details/39400087)
+* [汇编语言入门教程](http://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html)
 
 ![TerminalCommands](terminalCommands.png)
 ![TerminalCommands](程序工作流程.jpg)
