@@ -846,8 +846,10 @@ Status-Code含义
 * [虚拟内存（VirtualAlloc),堆（HeapAlloc/malloc/new)和Memory Mapped File](https://blog.csdn.net/zj510/article/details/39400087)
 * [汇编语言入门教程](http://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html)
 
+
 ![TerminalCommands](terminalCommands.png)
-![TerminalCommands](程序工作流程.jpg)
+![(程序工作流程](程序工作流程.jpg)
+![垂直水平拆分数据库表](垂直水平拆分数据库表.png)
 
 [convertRect:toView: 和 convertRect:fromView:`方法浅析](https://www.jianshu.com/p/dcefe7150bfe)
 
