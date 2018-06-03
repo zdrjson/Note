@@ -372,6 +372,7 @@ CAShapeLayer有着几点很重要:
 * [PaxosStore：微信跨数据中心强一致存储系统](http://www.infoq.com/cn/presentations/paxosstore-a-strong-consistent-storage-system-for-wechat-cross-data-center)
 * [微信Mars——移动互联网下的高质量网络连接探索](http://www.infoq.com/cn/presentations/wechat-mars-high-quality-network-connection)
 * [PhxQueue——微信开源高可用强一致分布式队列的设计与实现](http://www.infoq.com/cn/presentations/design-and-implementation-of-distributed-queue-for-wechat?utm_campaign=rightbar_v2&utm_source=infoq&utm_medium=presentations_link&utm_content=link_text)
+* [微信开源：生产级paxos类库PhxPaxos实现原理介绍](http://www.infoq.com/cn/articles/weinxin-open-source-paxos-phxpaxos)
 
 ### FRP
 * [RAC](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
