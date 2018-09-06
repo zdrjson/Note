@@ -829,6 +829,10 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+
+* [iOS App 后台任务的坑](https://mp.weixin.qq.com/s/MW02G1qiyce9v2cRYHCzLQ)
+* [iOS App 后台 Crash 调查](https://mp.weixin.qq.com/s/8yOhyTDzFjFlqj_3tol-GQ)
+
 符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：
 <起始地址><结束地址><函数>[<文件名：行号>]
 
@@ -846,6 +850,7 @@ Status-Code含义
 * [万网域名解析设置方法](https://help.aliyun.com/knowledge_detail/39783.html?spm=5176.200122.n2.4.qSwvnz)
 * [虚拟内存（VirtualAlloc),堆（HeapAlloc/malloc/new)和Memory Mapped File](https://blog.csdn.net/zj510/article/details/39400087)
 * [汇编语言入门教程](http://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html)
+* [iOS App 使用 GCD 导致的卡顿问题](https://mp.weixin.qq.com/s/cKytfzfmSYUMNK9WC8ZcZA)
 
 
 ![TerminalCommands](terminalCommands.png)
