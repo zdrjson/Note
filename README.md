@@ -829,7 +829,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
-
+* [《ios爆内存问题解决方案-OOMDetector组件》](https://cloud.tencent.com/developer/article/1071808)
 * [iOS App 后台任务的坑](https://mp.weixin.qq.com/s/MW02G1qiyce9v2cRYHCzLQ)
 * [iOS App 后台 Crash 调查](https://mp.weixin.qq.com/s/8yOhyTDzFjFlqj_3tol-GQ)
 
