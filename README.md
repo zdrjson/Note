@@ -473,6 +473,7 @@ CAShapeLayer有着几点很重要:
 * [大漠](https://www.w3cplus.com)
 * [LeoMobileDeveloper](https://github.com/LeoMobileDeveloper/Blogs)
 * [Halfrost-Field](https://github.com/halfrost/Halfrost-Field)
+* [laruence](http://www.laruence.com)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
