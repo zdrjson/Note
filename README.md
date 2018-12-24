@@ -474,6 +474,7 @@ CAShapeLayer有着几点很重要:
 * [LeoMobileDeveloper](https://github.com/LeoMobileDeveloper/Blogs)
 * [Halfrost-Field](https://github.com/halfrost/Halfrost-Field)
 * [laruence](http://www.laruence.com)
+* [OKR 工作法简介](https://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=2709545980&idx=1&sn=ce2bdde3526d0ee231a0d44f810333e9)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
