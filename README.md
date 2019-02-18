@@ -831,6 +831,8 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+*[世界领先！一文详解OceanBase的高可用及容灾方案](https://tech.antfin.com/articles/89)
+*[Linux基础知识](https://github.com/Snailclimb/JavaGuide/blob/master/操作系统/后端程序员必备的Linux基础知识.md#一-从认识操作系统开始)
 * [前端程序员如何快速转型全栈工程师（基础版）](https://www.taohui.pub/2018/09/03/前端程序员如何快速转型全栈工程师（基础版）/)
 * [《ios爆内存问题解决方案-OOMDetector组件》](https://cloud.tencent.com/developer/article/1071808)
 * [iOS App 后台任务的坑](https://mp.weixin.qq.com/s/MW02G1qiyce9v2cRYHCzLQ)
