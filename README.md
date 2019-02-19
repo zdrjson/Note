@@ -5,6 +5,8 @@
 
 # * [the career of a programmer](http://coolshell.cn/articles/17583.html#comments)
 
+# *[给程序员的一条职场建议 from peak老师 of facebook](http://mrpeak.cn/blog/ios-career-advice/)
+
 > **我花费了大量的时间阅读和学习各种开源的代码、研究其中的实现原理、尝试自己实现相关技术、尝试在工作中使用，这使得我在 iOS 开发技术上进步很快。 —— YY**
 
 > **每天都有很多事情要做，但是事情永远做不完，所以必须有明确优先级，明确一个目标，给定一段时间，坚持看看效果如何。**
