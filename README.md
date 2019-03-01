@@ -833,6 +833,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+*[云舒：给小白的租户隔离科普文](https://www.v2ex.com/t/343762#reply20)
 *[NSHashtable 和 NSMaptable](https://zhangbuhuai.com/post/nshashtable-and-nsmaptable.html)
 *[独家！支付宝小程序技术架构全解析](https://www.infoq.cn/article/ullETz7q_Ue4dUptKgKC)
 *[世界领先！一文详解OceanBase的高可用及容灾方案](https://tech.antfin.com/articles/89)
