@@ -833,6 +833,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [mac 下使用 iTerm 终端工具无法使用 alt+b 和 alt+f 快捷键的解决方法](https://blog.csdn.net/FungLeo/article/details/78055768)
 *[云舒：给小白的租户隔离科普文](https://www.v2ex.com/t/343762#reply20)
 *[NSHashtable 和 NSMaptable](https://zhangbuhuai.com/post/nshashtable-and-nsmaptable.html)
 *[独家！支付宝小程序技术架构全解析](https://www.infoq.cn/article/ullETz7q_Ue4dUptKgKC)
@@ -843,6 +844,7 @@ HTTP 502       – 网关错误
 * [iOS App 后台任务的坑](https://mp.weixin.qq.com/s/MW02G1qiyce9v2cRYHCzLQ)
 * [iOS App 后台 Crash 调查](https://mp.weixin.qq.com/s/8yOhyTDzFjFlqj_3tol-GQ)
 
+微服务架构=业务垂直拆分+功能水平拆分
 符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：
 <起始地址><结束地址><函数>[<文件名：行号>]
 
