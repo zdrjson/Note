@@ -844,6 +844,23 @@ HTTP 502       – 网关错误
 * [《ios爆内存问题解决方案-OOMDetector组件》](https://cloud.tencent.com/developer/article/1071808)
 * [iOS App 后台任务的坑](https://mp.weixin.qq.com/s/MW02G1qiyce9v2cRYHCzLQ)
 * [iOS App 后台 Crash 调查](https://mp.weixin.qq.com/s/8yOhyTDzFjFlqj_3tol-GQ)
+laas:将基础设施作为服务，将硬件设备等基础资源封装成服务供用户使用。
+Amazon EC2 弹性云计算服务
+Amazon S3 简单存储服务
+Amazon Web Services
+(如上，都是底层的硬件环境，提供的只是基本硬件环境，云计算或者存储所需要的高性能 CPU计算和大容量硬盘。)
+Pass:将平台作为服务，提供用户应用程序的运行环境。
+.Google App Engine
+.Microsoft Windows Azure (仿Google MapReduce)
+.Amazon SimpleDB (仿Google BigTable)
+.(如上，都是基本的操作系统平台，引擎、数据库系统，类似与一个空白的IDE)
+Sass:将软件作为服务，只提供某些专门用途的服务供应用调用。
+.Salesforce online CRM 在线客户关系管理服务
+.Amazon FPS电子商务服务
+.Amazon DevPay
+.Amazon Alexa Web 网站访问统计服务
+.(如上，提供的都是专门的针对某一服务的特点制作的应用解决方案，类似与App)
+
 
 微服务架构=业务垂直拆分+功能水平拆分
 符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：
@@ -855,7 +872,7 @@ Status-Code含义
 3xx:Redirection - Further action must be taken in order to complete the request。
 4xx:Client Error - The request contains bad syntax or cannot be fulfilled。
 5xx:Server Error - The server failed to fulfill an apparently valid request。
-
+*[我是如何拿到蚂蚁金服 offer ?](https://mp.weixin.qq.com/s/I1PXRYidHdYgcuB-pg0DJA)
 * [我是如何拿到微信 offer 的？](https://mp.weixin.qq.com/s?__biz=MzU4MjAzNTAwMA==&mid=2247484246&idx=1&sn=ff032a788d7de4ec9a60a79fdd7f5dee&from=1085193010&wm=3333_2001&weiboauthoruid=6207903800)
 * [Learning OpenGL(ES) ](https://niyaoyao.github.io/2018/05/23/learning_opengl(es)_opengl_model_pipeline_and_practices/)
 * [iOS App 连续闪退时如何上报 crash 日志](https://mp.weixin.qq.com/s/ADj-BT7itSfHVIvyAoseRA)
