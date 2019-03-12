@@ -833,6 +833,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [100%自主知识产权！蚂蚁金服自研数据库OceanBase的设计与实践哲学](https://mp.weixin.qq.com/s/JBl8orNpPwx24L0LZ_xVxQ)
 * [mac 下使用 iTerm 终端工具无法使用 alt+b 和 alt+f 快捷键的解决方法](https://blog.csdn.net/FungLeo/article/details/78055768)
 *[云舒：给小白的租户隔离科普文](https://www.v2ex.com/t/343762#reply20)
 *[NSHashtable 和 NSMaptable](https://zhangbuhuai.com/post/nshashtable-and-nsmaptable.html)
