@@ -1304,7 +1304,7 @@ npm install hexo-cli -g
 # 阿里巴巴开源的26款超神项目（附介绍和链接）
 
 
-1. 分布式应用服务开发的一站式解决方案 Spring Cloud Alibaba
+1.分布式应用服务开发的一站式解决方案 Spring Cloud Alibaba
 
 Spring Cloud Alibaba 致力于提供分布式应用服务开发的一站式解决方案。此项目包含开发分布式应用服务的必需组件，方便开发者通过 Spring Cloud 编程模型轻松使用这些组件来开发分布式应用服务。
 
@@ -1312,7 +1312,7 @@ Spring Cloud Alibaba 致力于提供分布式应用服务开发的一站式解�
 
 地址：https://github.com/spring-cloud-incubator/spring-cloud-alibaba
 
-2. JDBC 连接池、监控组件 Druid
+2.JDBC 连接池、监控组件 Druid
 
 Druid是一个 JDBC 组件。
 
@@ -1326,7 +1326,7 @@ Druid是一个 JDBC 组件。
 
 地址：https://github.com/alibaba/druid
 
-3. Java 的 JSON 处理器 fastjson
+3.Java 的 JSON 处理器 fastjson
 
 fastjson 是一个性能很好的 Java 语言实现的 JSON 解析器和生成器，来自阿里巴巴的工程师开发。
 
@@ -1334,49 +1334,49 @@ fastjson 是一个性能很好的 Java 语言实现的 JSON 解析器和生成�
 
 地址：https://github.com/alibaba/fastjson
 
-4. 服务框架 Dubbo
+4.服务框架 Dubbo
 
 Apache Dubbo (incubating) |是阿里巴巴的一款高性能、轻量级的开源Java RPC框架，它提供了三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册和发现。
 
 地址：https://github.com/alibaba/dubbo
 
-5. 企业级流式计算引擎 JStorm
+5.企业级流式计算引擎 JStorm
 
 JStorm 是参考 Apache Storm 实现的实时流式计算框架，在网络IO、线程模型、资源调度、可用性及稳定性上做了持续改进，已被越来越多企业使用。JStorm 可以看作是 storm 的 java 增强版本，除了内核用纯java实现外，还包括了thrift、python、facet ui。从架构上看，其本质是一个基于 zk 的分布式调度系统。
 
 地址：https://github.com/alibaba/jstorm
 
-6. apns4j
+6.apns4j
 
 apns4j 是 Apple Push Notification Service 的 Java 实现！
 
 地址：https://github.com/teaey/apns4j
 
-7. 分布式数据层 TDDL
+7.分布式数据层 TDDL
 
 TDDL 是一个基于集中式配置的 jdbc datasource实现，具有主备，读写分离，动态数据库配置等功能。
 
 地址：https://github.com/alibaba/tb_tddl
 
-8. 轻量级分布式数据访问层 CobarClient
+8.轻量级分布式数据访问层 CobarClient
 
 Cobar Client是一个轻量级分布式数据访问层（DAL）基于iBatis(已更名为MyBatis)和Spring框架实现。
 
 地址：https://github.com/alibaba/cobarclient
 
-9. 淘宝定制 JVM：TaobaoJVM
+9.淘宝定制 JVM：TaobaoJVM
 
 TaobaoJVM 基于 OpenJDK HotSpot VM，是国内第一个优化、定制且开源的服务器版Java虚拟机。目前已经在淘宝、天猫上线，全部替换了Oracle官方JVM版本，在性能，功能上都初步体现了它的价值。
 
 地址：http://jvm.taobao.org
 
-10. Java 图片处理类库 SimpleImage
+10.Java 图片处理类库 SimpleImage
 
 SimpleImage是阿里巴巴的一个Java图片处理的类库，可以实现图片缩略、水印等处理。
 
 地址：https://github.com/alibaba/simpleimage
 
-11. redis 的 java 客户端 Tedis
+11.redis 的 java 客户端 Tedis
 
 Tedis 是另一个 redis 的 java 客户端。Tedis 的目标是打造一个可在生产环境直接使用的高可用 Redis 解决方案。
 
