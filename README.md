@@ -477,6 +477,7 @@ CAShapeLayer有着几点很重要:
 * [Halfrost-Field](https://github.com/halfrost/Halfrost-Field)
 * [laruence](http://www.laruence.com)
 * [OKR 工作法简介](https://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=2709545980&idx=1&sn=ce2bdde3526d0ee231a0d44f810333e9)
+* [Amzaon CTO All Things Distributed](https://www.allthingsdistributed.com)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -833,6 +834,8 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [保障IDC安全：分布式HIDS集群架构设计](https://tech.meituan.com/2019/01/17/distributed-hids-cluster-architecture-design.html)
+* [5.1 代码合并：Merge、Rebase 的选择](https://github.com/geeeeeeeeek/git-recipes/wiki/5.1-代码合并：Merge、Rebase-的选择)
 * [100%自主知识产权！蚂蚁金服自研数据库OceanBase的设计与实践哲学](https://mp.weixin.qq.com/s/JBl8orNpPwx24L0LZ_xVxQ)
 * [mac 下使用 iTerm 终端工具无法使用 alt+b 和 alt+f 快捷键的解决方法](https://blog.csdn.net/FungLeo/article/details/78055768)
 *[云舒：给小白的租户隔离科普文](https://www.v2ex.com/t/343762#reply20)
