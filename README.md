@@ -407,7 +407,7 @@ CAShapeLayer有着几点很重要:
 * [当磁盘空间爆满后，MySQL会发生什么事呢？又应该怎么应对？](http://imysql.com/2015/09/23/mysql-faq-what-will-happen-when-disk-full.shtml?f=http://blogread.cn/)
 * [误删 300G，GitLab 官方对删库事故的事后分析](http://blog.jobbole.com/110171/)
 * [『浅入浅出』MySQL 和 InnoDB](http://draveness.me/mysql-innodb.html)
- ![在「不可靠」硬件上，分布式数据库如何保证数据可靠性和服务可用性？](OceanBase(在「不可靠」硬件上，分布式数据库如何保证数据可靠性和服务可用性？).JPG)
+* [在「不可靠」硬件上，分布式数据库如何保证数据可靠性和服务可用性？](https://mp.weixin.qq.com/s/ILCv2-bgplJz3D_FX4ll0w)
 
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
