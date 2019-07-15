@@ -835,6 +835,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [Leaf——美团点评分布式ID生成系统](https://tech.meituan.com/2017/04/21/mt-leaf.html)
 * [服务调用的演进历史](https://www.codedump.info/post/20190629-service-history/)
 * [从Oracle、MySQL到OceanBase的入门介绍，看这篇就够了！](https://mp.weixin.qq.com/s/Htx0cm6ke715NUMETMzyUw)
 * [保障IDC安全：分布式HIDS集群架构设计](https://tech.meituan.com/2019/01/17/distributed-hids-cluster-architecture-design.html)
