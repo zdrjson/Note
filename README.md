@@ -852,7 +852,8 @@ HTTP 502       – 网关错误
 * [《ios爆内存问题解决方案-OOMDetector组件》](https://cloud.tencent.com/developer/article/1071808)
 * [iOS App 后台任务的坑](https://mp.weixin.qq.com/s/MW02G1qiyce9v2cRYHCzLQ)
 * [iOS App 后台 Crash 调查](https://mp.weixin.qq.com/s/8yOhyTDzFjFlqj_3tol-GQ)
-laas:将基础设施作为服务，将硬件设备等基础资源封装成服务供用户使用。
+
+Iaas:将基础设施作为服务，将硬件设备等基础资源封装成服务供用户使用。
 Amazon EC2 弹性云计算服务
 Amazon S3 简单存储服务
 Amazon Web Services
@@ -882,7 +883,8 @@ Status-Code含义
 5xx:Server Error - The server failed to fulfill an apparently valid request。
 
 
-*[我是如何拿到蚂蚁金服 offer ?](https://mp.weixin.qq.com/s/I1PXRYidHdYgcuB-pg0DJA)
+
+* [我是如何拿到蚂蚁金服 offer ?](https://mp.weixin.qq.com/s/I1PXRYidHdYgcuB-pg0DJA)
 * [我是如何拿到微信 offer 的？](https://mp.weixin.qq.com/s?__biz=MzU4MjAzNTAwMA==&mid=2247484246&idx=1&sn=ff032a788d7de4ec9a60a79fdd7f5dee&from=1085193010&wm=3333_2001&weiboauthoruid=6207903800)
 * [Learning OpenGL(ES) ](https://niyaoyao.github.io/2018/05/23/learning_opengl(es)_opengl_model_pipeline_and_practices/)
 * [iOS App 连续闪退时如何上报 crash 日志](https://mp.weixin.qq.com/s/ADj-BT7itSfHVIvyAoseRA)
