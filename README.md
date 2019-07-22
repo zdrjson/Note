@@ -11,7 +11,8 @@
 
 > **每天都有很多事情要做，但是事情永远做不完，所以必须有明确优先级，明确一个目标，给定一段时间，坚持看看效果如何。**
 
-
+# 硅谷华人科学家 profile
+ *[贾杨清](http://daggerfs.com)
 
 
 ## **Algorithm**
@@ -399,7 +400,7 @@ CAShapeLayer有着几点很重要:
 * [如何动态调用 C 函数](http://mp.weixin.qq.com/s?__biz=MzIzNTQ2MDg2Ng==&mid=2247483687&idx=1&sn=94d3ce224e5e25f2e1ae8a6046efb472#rd)
 * [iOS runtime交换类方法的问题](http://www.jianshu.com/p/aae1411b9cdc)
 
-## SQ
+## SQL
 * [GYDataCenter](https://github.com/Zepo/GYDataCenter)
 * [CTPersistance](https://github.com/casatwy/CTPersistance)
 * [FMDB](https://github.com/ccgus/fmdb)
@@ -408,6 +409,7 @@ CAShapeLayer有着几点很重要:
 * [误删 300G，GitLab 官方对删库事故的事后分析](http://blog.jobbole.com/110171/)
 * [『浅入浅出』MySQL 和 InnoDB](http://draveness.me/mysql-innodb.html)
 * [在「不可靠」硬件上，分布式数据库如何保证数据可靠性和服务可用性？](https://mp.weixin.qq.com/s/ILCv2-bgplJz3D_FX4ll0w)
+* [TiDB is a distributed HTAP database compatible with the MySQL protocol](https://github.com/pingcap/tidb)
 
 ## Socket
 * [微信、陌陌等著名IM软件设计架构详解](http://blog.csdn.net/justinjing0612/article/details/38322353)
