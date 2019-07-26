@@ -837,6 +837,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [Why I moved and How I find a Software Engineer job in Silicon Valley while working full-time in Canada](https://medium.com/@leannezhang/front-end-interview-preparation-cf186ac7ae55)
 * [OceanBase 1.0 分布式技术架构](https://mp.weixin.qq.com/s/CXDrXxYV07O2JF8fIulqow)
 * [如何得到 Google 的工作机会？](https://www.zhihu.com/question/24099873/answer/414054297)
 * [Leaf——美团点评分布式ID生成系统](https://tech.meituan.com/2017/04/21/mt-leaf.html)
