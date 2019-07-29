@@ -13,6 +13,7 @@
 
 # 硅谷华人科学家 profile
  * [贾扬清](http://daggerfs.com)
+ * [独家专访 AI 大神贾扬清](https://weibo.com/ttarticle/p/show?id=2309404399339001741482#_loginLayer_1564372860846)
 
 
 ## **Algorithm**
@@ -837,6 +838,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [腾讯全球最大金融级分布式 MySQL 集群实践](https://www.infoq.cn/article/aU3ddGwJ*6dtVa3LMX41?utm_source=weibo&utm_medium=infoq&utm_campaign=newinfoq&utm_content=0727tengxun)
 * [Why I moved and How I find a Software Engineer job in Silicon Valley while working full-time in Canada](https://medium.com/@leannezhang/front-end-interview-preparation-cf186ac7ae55)
 * [OceanBase 1.0 分布式技术架构](https://mp.weixin.qq.com/s/CXDrXxYV07O2JF8fIulqow)
 * [如何得到 Google 的工作机会？](https://www.zhihu.com/question/24099873/answer/414054297)
