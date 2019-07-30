@@ -838,6 +838,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [分布式数据库中间件 Apache ShardingSphere 京东落地实战](https://www.infoq.cn/article/1QvyzW9W*YuF685kYBkq)
 * [腾讯全球最大金融级分布式 MySQL 集群实践](https://www.infoq.cn/article/aU3ddGwJ*6dtVa3LMX41?utm_source=weibo&utm_medium=infoq&utm_campaign=newinfoq&utm_content=0727tengxun)
 * [Why I moved and How I find a Software Engineer job in Silicon Valley while working full-time in Canada](https://medium.com/@leannezhang/front-end-interview-preparation-cf186ac7ae55)
 * [OceanBase 1.0 分布式技术架构](https://mp.weixin.qq.com/s/CXDrXxYV07O2JF8fIulqow)
