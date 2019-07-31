@@ -1511,4 +1511,7 @@ VirtualLayout是一个针对RecyclerView的LayoutManager扩展, 主要提供一�
 
 
 
+# 配置中心
+* [携程Apollo配置中心设计] (https://github.com/ctripcorp/apollo/wiki/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%AE%BE%E8%AE%A1)
+
 
