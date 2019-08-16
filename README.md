@@ -838,6 +838,8 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [在Google的这四年](https://www.byvoid.com/zhs/blog/4-years-at-google-1)
+* [实录 | 黄东旭：开源与基础软件创业在中国](https://segmentfault.com/a/1190000011916169)
 * [分布式数据库中间件 Apache ShardingSphere 京东落地实战](https://www.infoq.cn/article/1QvyzW9W*YuF685kYBkq)
 * [腾讯全球最大金融级分布式 MySQL 集群实践](https://www.infoq.cn/article/aU3ddGwJ*6dtVa3LMX41?utm_source=weibo&utm_medium=infoq&utm_campaign=newinfoq&utm_content=0727tengxun)
 * [Why I moved and How I find a Software Engineer job in Silicon Valley while working full-time in Canada](https://medium.com/@leannezhang/front-end-interview-preparation-cf186ac7ae55)
@@ -1294,6 +1296,7 @@ npm install hexo-cli -g
 * [SEO 网站优化的步骤和技巧有哪些?](https://www.zhihu.com/question/19808905)
 
 # Interview
+* [我是如何拿到Facebook Offer的](http://cenalulu.github.io/mysql/how-i-become-a-facebook-dba/)
 * [iOS](https://github.com/ChenYilong/iOSInterviewQuestions/blob/master/01%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88/%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E4%B8%8A%EF%BC%89.md#%E4%BC%98%E5%8C%96%E9%83%A8%E5%88%86)
 * [快速找出一个数组中的两个数字，让这两个数字之和等于一个给定的值](http://blog.csdn.net/mimi9919/article/details/51335337)
 * [爬虫访问中，如何解决网站限制IP的问题？](https://www.zhihu.com/question/20392627)
