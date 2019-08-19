@@ -838,6 +838,11 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [首发！OceanBase存储引擎的设计哲学和应用实践](https://mp.weixin.qq.com/s/mVuQdOaw0JImMkRB7yoH2w)
+* [基于Raft分布式一致性协议实现的局限及其对数据库的风险](https://mp.weixin.qq.com/s?__biz=MzI5OTUxMDk1Mw==&mid=2247483809&idx=1&sn=ff5a99b4073f88b34ec32fa37ad9f4fc&chksm=ec943c67dbe3b57139dcc71e0b5a9b4ebbe7406ad187465e2172a12b787cf7007f5397cf68f0&scene=21#wechat_redirect)
+* [Google Cloud Spanner简析](https://mp.weixin.qq.com/s?__biz=MzI5OTUxMDk1Mw==&mid=2247483673&idx=1&sn=a0b315c1f555679180b3e8cd78c9d081&chksm=ec943cdfdbe3b5c911a6fc1574da93b0488bf5bfc17464dcc759962202ea05a753c5b51ed1af&scene=21#wechat_redirect)
+* [TiDB 在华泰证券的探索与实践](https://mp.weixin.qq.com/s/P4Iu_zHvqGg3Gg9oEYcN0Q)
+* [淘宝应用柔性架构的探索](https://mp.weixin.qq.com/s/uW8gNGCI-oj4NitU9dHZjQ)
 * [在Google的这四年](https://www.byvoid.com/zhs/blog/4-years-at-google-1)
 * [实录 | 黄东旭：开源与基础软件创业在中国](https://segmentfault.com/a/1190000011916169)
 * [分布式数据库中间件 Apache ShardingSphere 京东落地实战](https://www.infoq.cn/article/1QvyzW9W*YuF685kYBkq)
