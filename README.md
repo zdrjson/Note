@@ -838,6 +838,10 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [5G时代，如何彻底搞定海量数据库的设计与实践](https://mp.weixin.qq.com/s/ZxKfU9xg08GSDGabjGSPXg)
+* [滴滴顺风车服务端同事的博客，涉及到架构设计思考点/存储设计思考点/服务治理/虚拟技术/linux系统/几乎所有工程中间件。](https://segmentfault.com/u/xhy_ss)
+* [微服务架构~携程Apollo配置中心架构剖析](https://mp.weixin.qq.com/s/-hUaQPzfsl9Lm3IqQW3VDQ)
+* [TiDB 新特性漫谈：悲观事务](https://mp.weixin.qq.com/s/mwoznCy2qQtLrnnk2eUa7g)
 * [首发！OceanBase存储引擎的设计哲学和应用实践](https://mp.weixin.qq.com/s/mVuQdOaw0JImMkRB7yoH2w)
 * [基于Raft分布式一致性协议实现的局限及其对数据库的风险](https://mp.weixin.qq.com/s?__biz=MzI5OTUxMDk1Mw==&mid=2247483809&idx=1&sn=ff5a99b4073f88b34ec32fa37ad9f4fc&chksm=ec943c67dbe3b57139dcc71e0b5a9b4ebbe7406ad187465e2172a12b787cf7007f5397cf68f0&scene=21#wechat_redirect)
 * [Google Cloud Spanner简析](https://mp.weixin.qq.com/s?__biz=MzI5OTUxMDk1Mw==&mid=2247483673&idx=1&sn=a0b315c1f555679180b3e8cd78c9d081&chksm=ec943cdfdbe3b5c911a6fc1574da93b0488bf5bfc17464dcc759962202ea05a753c5b51ed1af&scene=21#wechat_redirect)
