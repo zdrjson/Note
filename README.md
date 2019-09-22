@@ -34,6 +34,7 @@
 * [iOS程序员对算法的要求](https://mp.weixin.qq.com/s/dVFSOAIy8Zg8QwuAVXGA3w)
 * [二叉查找树图示](https://www.jianshu.com/p/8f8876c9459d)
 * [由 FlexBox 算法强力驱动的 Weex 布局引擎](https://github.com/halfrost/Halfrost-Field/blob/master/contents/iOS/Weex/Weex_layout_engine_powered_by_Flexbox's_algorithm.md)
+* [水中的鱼](http://fisherlei.blogspot.com/search/label/Algorithm)
 
 ```
 O(1) Constant Complexity: Constant.
@@ -482,6 +483,7 @@ CAShapeLayer有着几点很重要:
 * [laruence](http://www.laruence.com)
 * [OKR 工作法简介](https://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=2709545980&idx=1&sn=ce2bdde3526d0ee231a0d44f810333e9)
 * [Amzaon CTO All Things Distributed](https://www.allthingsdistributed.com)
+* [敖小剑的博客](https://skyao.io)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -1316,6 +1318,8 @@ npm install hexo-cli -g
 * [nsurlsession 与 nsurlconnection 区别](https://objccn.io/issue-5-4/)
 * [深入研究Block用weakSelf、strongSelf、@weakify、@strongify解决循环引用](http://ios.jobbole.com/88708/)
 * [晋升评审的套路](http://blog.cnbang.net/tech/3434/)
+* [My Google interview experience](https://medium.com/@jinzhe/my-google-interview-experience-51f716c7e578)
+* [From a Googler: the Google interview process](https://www.reddit.com/r/cscareerquestions/comments/1z97rx/from_a_googler_the_google_interview_process/)
 
   ## [the interview of front-end](https://github.com/yangshun/tech-interview-handbook.git)
 
