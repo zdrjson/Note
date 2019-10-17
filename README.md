@@ -486,6 +486,7 @@ CAShapeLayer有着几点很重要:
 * [OKR 工作法简介](https://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=2709545980&idx=1&sn=ce2bdde3526d0ee231a0d44f810333e9)
 * [Amzaon CTO All Things Distributed](https://www.allthingsdistributed.com)
 * [敖小剑的博客](https://skyao.io)
+* [余峰 阿里巴巴资深技术专家 花名褚霸](http://blog.yufeng.info/archives/category/linux_kb)
 
 ## Git
 * [Git Flow](http://www.jianshu.com/p/fa83b6858d52)
@@ -842,6 +843,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [详述 hosts 文件的作用及修改 hosts 文件的方法](https://blog.csdn.net/qq_35246620/article/details/66970211)
 * [5G时代，如何彻底搞定海量数据库的设计与实践](https://mp.weixin.qq.com/s/ZxKfU9xg08GSDGabjGSPXg)
 * [滴滴顺风车服务端同事的博客，涉及到架构设计思考点/存储设计思考点/服务治理/虚拟技术/linux系统/几乎所有工程中间件。](https://segmentfault.com/u/xhy_ss)
 * [微服务架构~携程Apollo配置中心架构剖析](https://mp.weixin.qq.com/s/-hUaQPzfsl9Lm3IqQW3VDQ)
