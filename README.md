@@ -843,6 +843,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [如何阅读一份源代码？](https://www.codedump.info/post/20190324-how-to-read-code/)
 * [详述 hosts 文件的作用及修改 hosts 文件的方法](https://blog.csdn.net/qq_35246620/article/details/66970211)
 * [5G时代，如何彻底搞定海量数据库的设计与实践](https://mp.weixin.qq.com/s/ZxKfU9xg08GSDGabjGSPXg)
 * [滴滴顺风车服务端同事的博客，涉及到架构设计思考点/存储设计思考点/服务治理/虚拟技术/linux系统/几乎所有工程中间件。](https://segmentfault.com/u/xhy_ss)
