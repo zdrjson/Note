@@ -843,6 +843,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [redis高可用原理](https://www.codedump.info/post/20190409-redis-sentinel/#旧版本全量复制功能的实现)
 * [如何阅读一份源代码？](https://www.codedump.info/post/20190324-how-to-read-code/)
 * [详述 hosts 文件的作用及修改 hosts 文件的方法](https://blog.csdn.net/qq_35246620/article/details/66970211)
 * [5G时代，如何彻底搞定海量数据库的设计与实践](https://mp.weixin.qq.com/s/ZxKfU9xg08GSDGabjGSPXg)
