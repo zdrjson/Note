@@ -843,6 +843,10 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [超大规模商用 K8s 场景下，阿里巴巴如何动态解决容器资源的按需分配问题？](https://developer.aliyun.com/article/720556?utm_content=g_1000083606)
+* [Raft算法原理](https://www.codedump.info/post/20180921-raft/#算法的基本流程)
+* [https://laijianfeng.org/2018/12/Java反射机制详解/](https://laijianfeng.org/2018/12/Java反射机制详解/)
+* [电商总结（六）系统容量预估](https://yq.aliyun.com/articles/319607)
 * [redis高可用原理](https://www.codedump.info/post/20190409-redis-sentinel/#旧版本全量复制功能的实现)
 * [如何阅读一份源代码？](https://www.codedump.info/post/20190324-how-to-read-code/)
 * [详述 hosts 文件的作用及修改 hosts 文件的方法](https://blog.csdn.net/qq_35246620/article/details/66970211)
