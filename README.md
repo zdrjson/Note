@@ -843,6 +843,8 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [阿里巴巴 Kubernetes 应用管理实践中的经验与教训](https://weibo.com/ttarticle/p/show?id=2309404433429088305297)
+* [职场感言在Google从3年升L4到1.5年升L5](https://www.1point3acres.com/bbs/thread-566900-1-1.html)
 * [超大规模商用 K8s 场景下，阿里巴巴如何动态解决容器资源的按需分配问题？](https://developer.aliyun.com/article/720556?utm_content=g_1000083606)
 * [Raft算法原理](https://www.codedump.info/post/20180921-raft/#算法的基本流程)
 * [https://laijianfeng.org/2018/12/Java反射机制详解/](https://laijianfeng.org/2018/12/Java反射机制详解/)
