@@ -843,6 +843,9 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [2019年初 官方完整视频！张小龙在微信公开课的4小时](https://mp.weixin.qq.com/s/CZZ7JSz-r1UexVY2xpJvZA)
+* [长连接场景下安全token的设计](https://mp.weixin.qq.com/s?__biz=MzUyMDAxMjQ3Ng==&mid=2247489252&amp;idx=1&amp;sn=149b68fbe5fb91aa9c8e5c12a404ac17&source=41#wechat_redirect)
+* [玉泊 我的前端成长之路](https://www.yuque.com/yubo/morning/grow-up-at-alibaba)
 * [阿里巴巴 Kubernetes 应用管理实践中的经验与教训](https://weibo.com/ttarticle/p/show?id=2309404433429088305297)
 * [职场感言在Google从3年升L4到1.5年升L5](https://www.1point3acres.com/bbs/thread-566900-1-1.html)
 * [超大规模商用 K8s 场景下，阿里巴巴如何动态解决容器资源的按需分配问题？](https://developer.aliyun.com/article/720556?utm_content=g_1000083606)
