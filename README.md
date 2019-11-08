@@ -843,6 +843,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [Amazon | SDE1 | Seattle | Oct 2019 Offer](https://leetcode.com/discuss/interview-experience/418395/amazon-sde1-seattle-oct-2019-offer)
 * [2019年初 官方完整视频！张小龙在微信公开课的4小时](https://mp.weixin.qq.com/s/CZZ7JSz-r1UexVY2xpJvZA)
 * [长连接场景下安全token的设计](https://mp.weixin.qq.com/s?__biz=MzUyMDAxMjQ3Ng==&mid=2247489252&amp;idx=1&amp;sn=149b68fbe5fb91aa9c8e5c12a404ac17&source=41#wechat_redirect)
 * [玉泊 我的前端成长之路](https://www.yuque.com/yubo/morning/grow-up-at-alibaba)
