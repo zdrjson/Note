@@ -7,7 +7,7 @@
  * Space complexity: O(n)
  *
  * Note: in order to cover the range of -2^31 ~ 2^31-1, we need to use long or nullable integer.
- * 
+ *
  * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;

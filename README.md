@@ -843,6 +843,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [java Queue中 add/offer，element/peek，remove/poll区别](https://blog.csdn.net/u012050154/article/details/60572567)
 * [Interview Experience at Google](https://leetcode.com/discuss/interview-experience?currentPage=1&orderBy=most_relevant&query=Google)
 * [Google | L3 | Oct 2019 Offer](https://leetcode.com/discuss/interview-experience/418626/Google-or-L3-or-Oct-2019-Offer)
 * [Amazon | SDE1 | Seattle | Oct 2019 Offer](https://leetcode.com/discuss/interview-experience/418395/amazon-sde1-seattle-oct-2019-offer)
