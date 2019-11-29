@@ -1,3 +1,63 @@
+//Solution 1: Fenwick Tree
+/*
+* Time complexity:
+
+  init O(nlogn)
+
+  query: O(logn)
+
+  update: O(logn)
+*/
+
+class FenwickTree {
+    int sums_[];
+    public FenwickTree(int n) {
+        sums_ = new int[n + 1];
+    }
+    
+    public void update(int i, int delta) {
+        while (i < sums_.length) {
+            sums_[i] += delta;
+            i += i & -i;
+        }
+    }
+    
+    public int query(int i) {
+        int sum = 0;
+        while (i > 0) {
+            sum += sums_[i];
+            i -= i & -i;
+        }
+        return sum;
+    }
+}
+
+class NumArray {
+    FenwickTree tree_;
+    int[] nums_;
+    
+    public NumArray(int[] nums) {
+       nums_ = nums;
+       tree_ = new FenwickTree(nums.length);
+       for (int i = 0; i < nums.length; ++i)  {
+           tree_.update(i + 1, nums[i]);
+       }
+    }
+    
+    public void update(int i, int val) {
+        tree_.update(i + 1, val - nums_[i]);
+        nums_[i] = val;
+    }
+
+    public int sumRange(int i, int j) {
+       return tree_.query(j + 1) - tree_.query(i);
+    }
+    
+    
+}
+
+
+//Solution 2: Segment Tree
 class SegmentTreeNode {
 		int start;
 		int end;
