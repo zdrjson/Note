@@ -1,3 +1,8 @@
+/*
+Two pointers
+Time complexity:O(n)
+Space complexity:O(1)
+*/
 class Solution {
     public int maxArea(int[] height) {
         int l = 0;
