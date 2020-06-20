@@ -1,13 +1,10 @@
-/**
- * Treat the 2D array as a 1D array. matrix[index / cols][index % cols]
- * Time complexity: O(log(m * n))
- * Space complexity: O(1)
- */
+// Solution: Binary Search
+// Treat the 2D array as a 1D array. matrix[index / cos][index % cols]
+// Time complexity: O(log(m*n))
+// Space complexity: O(1)
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
-        if (matrix.length == 0) {
-            return false;
-        }
+        if (matrix.length == 0) return false;
         int l = 0;
         int r = matrix.length * matrix[0].length;
         int cols = matrix[0].length;
