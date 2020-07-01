@@ -1230,7 +1230,7 @@ W3C对于ID和CLASS的设定是ID具有唯一性，class具有普遍性。所以
 * [Potatso使用说明](https://manual.potatso.com)
 
 # Code Manager
-* [git - 简易指南]http://www.bootcss.com/p/git-guide/()
+* [git - 简易指南](http://www.bootcss.com/p/git-guide/)
 
 # GitHubStars
 * [TinyPNG4Mac 图片压缩MacApp](https://github.com/kyleduo/TinyPNG4Mac)
@@ -1549,6 +1549,6 @@ VirtualLayout是一个针对RecyclerView的LayoutManager扩展, 主要提供一�
 
 
 # 配置中心
-* [携程Apollo配置中心设计] (https://github.com/ctripcorp/apollo/wiki/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%AE%BE%E8%AE%A1)
+* [携程Apollo配置中心设计](https://github.com/ctripcorp/apollo/wiki/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%AE%BE%E8%AE%A1)
 
 
