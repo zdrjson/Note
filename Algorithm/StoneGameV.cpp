@@ -6,7 +6,7 @@ public:
         for (int i = 0; i < n; ++i)
             sums[i + 1] = sums[i] + stoneValue[i];
         vector<vector<int>> cache(n, vector<int>(n, -1));
-        // maxx value alice can ge from range [l, r]
+        // max value alice can get from range [l, r]
         function<int(int, int)> dp = [&](int l, int r) {
             if (l == r) return 0;
             int& ans = cache[l][r];
