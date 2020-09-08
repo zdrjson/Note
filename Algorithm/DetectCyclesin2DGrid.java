@@ -5,7 +5,7 @@
 // null -> (0, 0) -> (0, 1) -> (1, 1) -> (1, 0) -> (0, 0)
 // The second time we visit (0, 0) which has already been visited before and it's not the parent of the current node (1, 0) ((1, 0)’s parent is (1, 1)) which means we found a cycle.
 // Time complexity: O(m*n)
-// Space compexity: (m*n)
+// Space complexity: (m*n)
 class Solution {
     private int m;
     private int n;
