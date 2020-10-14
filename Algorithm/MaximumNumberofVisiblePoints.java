@@ -11,7 +11,7 @@ class Solution {
             if (p.get(0) == o.get(0) && p.get(1) == o.get(1))
                 ++at_origin;
             else
-                ps.add(Math.atan2(p.get(1) - o.get(1), p.get(0) - o.get(0)));
+                ps.add(Math.atan2(p.get(1) - o.get(1), p.get(0) - o.get(0))); // Math.atan2范围为(-pi, pi]。
         // ps.sort((a, b) -> a - b > 0.0 ? 1 : -1); // 排序也可以这样写，下面写的排序方法方便点。
         Collections.sort(ps);
         int n = ps.size();
@@ -19,7 +19,7 @@ class Solution {
             ps.add(ps.get(i) + 2.0 * Math.PI); // duplicate the array +2PI
         int l = 0;
         int ans = 0;
-        double fov = angle * Math.PI / 180.0;
+        double fov = angle * Math.PI / 180.0; // 角度换成弧度。
         for (int r = 0; r < ps.size(); ++r) {
             while (ps.get(r) - ps.get(l) > fov) ++l;
             ans = Math.max(ans, r - l + 1);
