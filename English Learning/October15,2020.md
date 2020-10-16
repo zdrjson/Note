@@ -1,18 +1,24 @@
-So you're a software engineer and you want to get promoted? Here's how:
+Feelings and Emotions
+How to describe your emotional states
 
-1) Be very familiar with the promotion criteria for the level or role that you're eyeing. You don't want to be doing work that's completely tangential to promotion.
+Introduction
+The lesson will discuss words that describe feelings and emotions. In addition, we will also examine how the changing forms of the words will affect the usage of a word.
 
-2) Consistently perform at the next level. You can be the best L4 engineer out there, but if you're not performing at L5 level, you won't be promoted to L5--you'll just a fantastic L4.
+Situation
 
-3) Actively seek out opportunities for career progression. Waiting for these opportunities to fall on your lap isn't enough.
+Eric is absolutely satisfied with his lift, He volunteers in the local hospital because helping others gratifies him. Whenever he thinks about how wonderful his job is and how lovely his family is, he just can't help but feel content. He is easily pleased and always looks on the bright side. The way he presents himself gives others the impression that he is constantly in a good mood.
 
-4) When next-level work opportunities *do* fall on your lap, seize them. Failing to do so is the easiest way to *not* get promoted.
+Situation
+Angle believes that her life is just a big disappointment. She is disappointed in her children because not only do they often fail to meet her expectations, they also couldn't care less about it. She constantly feels depressed because she can barely make ends meet with her pathetic monthly income. What's worse, no one seems to be able or willing to support her and that makes her feel hopeless. Angle feels suffocated to the point that she wishes she had never been brought into this world.
 
-5) Make sure that your manager and peers have visibility into your work. As annoying or political as it might feel, ensuring that others around you are aware of the work that you're doing and recognize its worth is critical.
+Situation
+The saying "life is full of surprises" totally describes Serena's life. Serena is so easily impressed that every ting change in her surrounding gets her undivided attention. One day, she was pleasantly surprised by a newspaper about and obedient dog delivering the newspaper to its master. She was also amazed when she saw a spider weaving a web under the eaves. Serena has such an interesting life because of her easily impressed personality.
 
-6) Triple-down on your strengths, all the while keeping your weaknesses in check. This is how you stand out.
+Situation
+Ever since John started working for Aerospace, he has been extremely irritable. His superior puts a lot pressure on him; so much that he constantly feels frustrated about not being able to reach his target before the deadline. He is under so much tension that even poor weather conditions can trigger his rage. He is now on the verge of a nervous breakdown.
 
-7) Needless to say, work hard for it. Getting promoted isn't easy, and it certainly won't just magically happen.
+Situation
+Mary is a scaredy cat. She is always living in fear due to the fact that she has developed a phobia for human civilization. She is afraid of going out because is still traumatized by the car accident that hospitalized her over a month. Stray dogs couldn't petrify her more because she was once attacked by a pack of them. She is so horrified by the news that she believes stepping out of the house means that she's putting her life in jeopardy.
 
 
 
