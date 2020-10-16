@@ -2,6 +2,9 @@
 
 ![What is your main focus for toady](mainFocus.png)
 
+* [关于赚钱的思考，你要做的一些事](http://www.guxiaobei.com/thinking-make-money.html)
+
+* [关于创业的思考，你要做的一些事](http://www.guxiaobei.com/entrepreneurial-thinking.html)
 
 * [the career of a programmer](http://coolshell.cn/articles/17583.html#comments)
 
