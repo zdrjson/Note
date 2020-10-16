@@ -19,8 +19,8 @@ class Solution {
         return ans;
     }
     private boolean check(int[] nets) {
-        for (int i = 0; i < nets.length; ++i)
-            if (nets[i] != 0) return false;
+        for (int e : nets) // 当nets数组为空时，不会进入循环，所以不用担心nets数组为空的情况。
+            if(e != 0) return false;
         return true;
     }
 }
