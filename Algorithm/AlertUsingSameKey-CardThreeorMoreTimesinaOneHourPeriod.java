@@ -3,7 +3,7 @@
 // Space complexity: O(n)
 class Solution {
     public List<String> alertNames(String[] keyName, String[] keyTime) {
-        Map<String, List<Integer>> t = new HashMap<>();
+        Map<String, List<Integer>> t = new HashMap<>(); // {name, time}
         for (int i = 0; i < keyTime.length; ++i) {
             // 注释的方法只是String->int方法不同。
             // final int h = Integer.parseInt(keyTime[i].substring(0, 2));
