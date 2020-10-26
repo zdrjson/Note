@@ -19,7 +19,7 @@ class Solution {
                     dp[i] = Math.max(dp[i], dp[j]);
             dp[i] += players[i][1];
         }
-        int ans = 0;
+        int ans = Integer.MIN_VALUE;
         for (int e : dp)
             ans = Math.max(ans, e);
         return ans;
