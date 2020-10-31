@@ -27,7 +27,7 @@ class Solution {
         k %= l;
         if (k == 0) return head;
         
-        LitNode prev = head;
+        ListNode prev = head;
         for (int i = 0; i < l - k - 1; ++i) {
             prev = prev.next;
         }
