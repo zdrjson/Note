@@ -1,3 +1,4 @@
+// Solution1: Construct the string
 // class Solution {
 // public:
 //     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
@@ -8,6 +9,7 @@
 //     }
 // };
 
+// Solution2: Pointers
 class Solution {
 public:
     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
