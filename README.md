@@ -16,7 +16,7 @@
 
 # 硅谷华人科学家 profile
  * [贾扬清](http://daggerfs.com)
- * [独家专访 AI 大神贾扬清](https://weibo.com/ttarticle/p/show?id=2309404399339001741482#_loginLayer_1564372860846)
+ * [独家专访AI贾扬清](https://weibo.com/ttarticle/p/show?id=2309404399339001741482#_loginLayer_1564372860846)
 
 
 ## **Algorithm**
@@ -347,6 +347,7 @@ CAShapeLayer有着几点很重要:
 * [CADisplayLink](http://www.jianshu.com/p/c35a81c3b9eb)
 
 ## Architecture
+* [阿里亿级长连网关的云原生演进之路](https://mp.weixin.qq.com/s/hTUaswESTBMbeqyIZQlBSw)
 * [OUT OF OOP-inheritance](http://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-yi-ji-cheng.html)
 * [IOP](http://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-er-duo-tai.html)
 * [OUT OF OOP-package](http://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-san-feng-zhuang.html)
