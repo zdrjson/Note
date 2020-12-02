@@ -5,6 +5,7 @@
 * [关于赚钱的思考，你要做的一些事](http://www.guxiaobei.com/thinking-make-money.html)
 
 * [关于创业的思考，你要做的一些事](http://www.guxiaobei.com/entrepreneurial-thinking.html)
+* [业余时间从算法0基础刷题，到面试拿offer的一些经验](https://www.1point3acres.com/bbs/thread-546765-1-1.html)
 
 * [the career of a programmer](http://coolshell.cn/articles/17583.html#comments)
 
