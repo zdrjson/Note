@@ -1,11 +1,21 @@
-Gardens And Gardening
-The Asian way of gardening is very different from the European way. This difference is also reflected in art. Asian gardeners always wanted to approach nature as organically as possible until the ultimate unification with the natural world could be achieved. While Europeans admire nature's beauty, the goal is to reshape the natural world. The European idea of gardening has changed fundamentally across the centuries, paving the way for landscape gardens. The passion for gardening can build bridges between different people and different cultures.
+Discussion Questions
 
-Do you have a favorite garden style? If yes, what are its features?
+Have you ever done gardening? If yes, was it a pleasant experience? Can you describe what you liked to do most in your garden?
+What do you imagine your perfect garden to look like?
+Do you know other gardening tools than those mentioned in today's lesson?
 
-A garden is a place where you can relax after a day at work. With just a little imagination, any space around the house can be transformed into the perfect garden. You just have to prepare the suitable soil for the seeds you intend to plant and to get several indispensable tools: a trowel, a watering hose, a wheelbarrow, a roundhead shovel, a rake, shears, and a pitchfork. It's better to start with plants that grow easily. Most importantly: relax! You'll have achievements and failures, but the fun of gardening is to grow along with plants.
+Grammar: Verbs of perception + object + infinitive/-ing
+We use an -ing clause with an object after these verbs:
+see, hear, watch, notice, observe, smell, listen, find, feel, look at, to talk about something that happened over a period of time in the past.
 
-Do you have a garden? If not, would you like to have one? Please try to describe your garden, or the garden that you desire.
+Example:
+She lay in bed, listening to the rain falling.
+The children looked at the monkeys playing in the zoo.
 
-
+Grammar: Verbs of perception + object + infinitive/-ing
+2) We use the infinitive without "to" but with an object and these verbs of perception: see, hear, watch, notice, observe, smell, listen to, feel to describe actions that have been completed.
+Example:
+I saw him park the car, open the door, get out and cross the road. (I saw the start and finish of each activity.)
+The audience listened to the group play their latest hits. (They heard the whole show.)
+She watched them steal the car, and then she phoned the police. (She saw everything.)
 
