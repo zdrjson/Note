@@ -9,9 +9,9 @@
 class Solution {
     public int minimumMountainRemovals(int[] nums) {
         final int n = nums.length;
-        int[] LIS = new int[n]; // LIS[i] := Longest increasing subsequence ends with nums[i].
+        int[] LIS = new int[n]; // LIS[i] := Longest increasing subsequence ends with nums[i.
         Arrays.fill(LIS, 1);
-        int[] LDS = new int[n]; // DIS[i] := Longest decreasing subsequence starts with nums[i].
+        int[] LDS = new int[n]; // DIS[i] := Longest decreasing subsequence starts with nums[i]
         Arrays.fill(LDS, 1);
         for (int i = 0; i < n; ++i)
             for (int j = 0; j < i; ++j)
