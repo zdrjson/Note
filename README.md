@@ -9,7 +9,7 @@
 
 * [the career of a programmer](http://coolshell.cn/articles/17583.html#comments)
 
- * [给程序员的一条职场建议 from peak老师 of facebook](http://mrpeak.cn/blog/ios-career-advice/) 
+* [给程序员的一条职场建议 from peak老师 of facebook](http://mrpeak.cn/blog/ios-career-advice/)
 
 > **我花费了大量的时间阅读和学习各种开源的代码、研究其中的实现原理、尝试自己实现相关技术、尝试在工作中使用，这使得我在 iOS 开发技术上进步很快。 —— YY**
 
@@ -41,6 +41,7 @@
 * [二叉查找树图示](https://www.jianshu.com/p/8f8876c9459d)
 * [由 FlexBox 算法强力驱动的 Weex 布局引擎](https://github.com/halfrost/Halfrost-Field/blob/master/contents/iOS/Weex/Weex_layout_engine_powered_by_Flexbox's_algorithm.md)
 * [水中的鱼](http://fisherlei.blogspot.com/search/label/Algorithm)
+* [极客邦CEO对PingCAP创始人黄东旭采访](https://mp.weixin.qq.com/s/cqX3JK_AbNA8ZJvoigqO2Q)
 
 ```
 O(1) Constant Complexity: Constant.
