@@ -1,0 +1,2 @@
+I've been an ESL teacher for nearly 4.5 years now with previous teaching experience before this. I teach children and adults starting at age 5. I conduct 1 on 1 sessions, group session, and lecture sessions at times with hundreds attending. I look forward to expanding and continuing this career path indefinitely and I am always looking for more opportunities to grow and increase my income.                                            Darlene Nunez.
+
