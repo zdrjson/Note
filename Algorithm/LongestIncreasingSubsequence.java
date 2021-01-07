@@ -25,22 +25,23 @@
 // Space complexity: O(n)
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        List<Integer> dp = new ArrayList<>();
+        List<Integer> dp = new ArrayList<Integer>();
         for (int x : nums) {
-            int it = lower_bound(dp, x, 0, dp.size());
-            if (it == dp.size())
+            int it = lower_bound(dp, x, 0, dp.size()); // 注意：这里binary search的对象是dp数组，而不是nums数组。
+            if (it == dp.size()) 
                 dp.add(x);
             else
                 dp.set(it, x);
         }
         return dp.size();
     }
+    // lower_bound方法参考花花写的代码地址：https://zxi.mytechroad.com/blog/algorithms/binary-search/sp5-binary-search/
     private int lower_bound(List<Integer> A, int val, int l, int r) {
         while (l < r) {
             int m = l + (r - l) / 2;
             if (A.get(m) >= val)
                 r = m;
-            else
+            else 
                 l = m + 1;
         }
         return l;
