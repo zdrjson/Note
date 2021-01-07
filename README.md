@@ -849,6 +849,7 @@ HTTP 502       – 网关错误
 * [HTTP状态码汇总](https://github.com/ChenYilong/iOSBlog/issues/3)
 
 # Small Knowledge
+* [C++服务编译耗时优化原理及实践](https://mp.weixin.qq.com/s/yITNjo_UQi8-OKQNOfGrPw)
 * [Time/Space Complexity of Recursion Functions](http://zxi.mytechroad.com/blog/sp/time-space-complexity-of-recursion-functions-sp4/)
 * [java Queue中 add/offer，element/peek，remove/poll区别](https://blog.csdn.net/u012050154/article/details/60572567)
 * [Interview Experience at Google](https://leetcode.com/discuss/interview-experience?currentPage=1&orderBy=most_relevant&query=Google)
