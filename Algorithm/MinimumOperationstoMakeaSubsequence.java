@@ -10,13 +10,13 @@
 // Space complexity: O(n)
 class Solution {
     public int minOperations(int[] target, int[] arr) {
-        Map<Integer, Integer> m = new HashMap<>();
+        Map<Integer, Integer> m = new HashMap<Integer, Integer>();
         for (int i = 0; i < target.length; ++i)
             m.put(target[i], i);
-        List<Integer> s = new ArrayList<>();
+        List<Integer> s = new ArrayList<Integer>();
         for (int a : arr) {
             Integer mit = m.get(a);
-            if (mit == null) continue;
+            if (mit == null) continue; // 注意对象才能判断是否为null。
             final int idx = mit;
             int it = lower_bound(s, idx, 0, s.size());
             if (it == s.size())
