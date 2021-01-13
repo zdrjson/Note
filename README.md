@@ -2,6 +2,7 @@
 
 ![What is your main focus for toady](mainFocus.png)
 
+* [写在33岁的生日，这些感悟和你分享](https://mp.weixin.qq.com/s/ow7hSpCwPmHPWs689KcsBw)
 * [关于赚钱的思考，你要做的一些事](http://www.guxiaobei.com/thinking-make-money.html)
 
 * [关于创业的思考，你要做的一些事](http://www.guxiaobei.com/entrepreneurial-thinking.html)
