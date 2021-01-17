@@ -1,4 +1,21 @@
-// Solution: LIS
+// // Solution 1: LCS (TLE)
+// // LCS is a clasic DP problem that can be solved in the following time/space.
+// // Time complexity: O(mn)
+// // Space complexity: O(mn) -> O(min(n, m))
+// class Solution {
+//     public int minOperations(int[] target, int[] arr) {
+//         int m = target.length, n = arr.length;
+//         int[][] dp = new int[m + 1][n + 1];
+//         for (int i = 1; i < m + 1; ++i)
+//             for (int j = 1; j < n + 1; ++j)
+//                 dp[i][j] = Math.max(dp[i - 1][j],
+//                            Math.max(dp[i][j - 1],      // 注意三目运算符外面加括号，不然会运行错误，导致答案不对。
+//                                     dp[i - 1][j - 1] + (target[i - 1] == arr[j - 1] ? 1 : 0)));
+//         return m - dp[m][n];
+//     }
+// }
+
+// Solution 2: Reduce to LIS
 // The original problem is a LCS (Longest common subsequence) problem that can be solved in O(n*m) time.
 // Since the elements in the target array is unique, we can convert the numbers into indices that helps to reduce the problems to LIS (Longest increasing subsequence) that can be solved in O(mlogn) time.
 // e.g.
