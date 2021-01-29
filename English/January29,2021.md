@@ -1,11 +1,11 @@
-Gardens And Gardening
-The Asian way of gardening is very different from the European way. This difference is also reflected in art. Asian gardeners always wanted to approach nature as organically as possible until the ultimate unification with the natural world could be achieved. While Europeans admire nature's beauty, the goal is to reshape the natural world. The European idea of gardening has changed fundamentally across the centuries, paving the way for landscape gardens. The passion for gardening can build bridges between different people and different cultures.
+Yee-haw!
+Welcome to the American Fair!
 
-Do you have a favorite garden style? If yes, what are its features?
+Step Right Up!
+For American!, a fair conjures up a variety of images. They include Ferris wheels, ginormous stuffed animals, demolitions derbies, tractor pulls, bucking bulls, country stars and just about any kind of deep-fried food you can imagine!
+Today, we'll take a look at some of the highlights of one of Americans' favorite summer events - The American Fair!
+So step right up! Hold on to your cowboy hats! We're in for a wild ride! Yeeee- Haw!
 
-A garden is a place where you can relax after a day at work. With just a little imagination, any space around the house can be transformed into the perfect garden. You just have to prepare the suitable soil for the seeds you intend to plant and to get several indispensable tools: a trowel, a watering hose, a wheelbarrow, a roundhead shovel, a rake, shears, and a pitchfork. It's better to start with plants that grow easily. Most importantly: relax! You'll have achievements and failures, but the fun of gardening is to grow along with plants.
-
-Do you have a garden? If not, would you like to have one? Please try to describe your garden, or the garden that you desire.
-
-
+History and Background
+A fair consists of a gathering of people to show off or trade products and goods, to display livestock and often to take part in various forms of entertainment and fun! Fairs usually last for a short period of time each year. Some are as short as one afternoon, while others may last ten weeks. Activities at fairs vary according to the area of the country it takes place in. Fairs date back to ancient times. Many communities have a specific spot where fairs are held called the fairgrounds. Other fairs are held in a multitude of public places, including streets, town squares, or even in large private gardens.
 
