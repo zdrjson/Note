@@ -17,7 +17,7 @@ class Solution {
         
         int[] ans = new int[n];
         for (Map.Entry<Integer, List<Integer>> kv : g.entrySet()) {
-            int u = kv.getKey();
+            Integer u = kv.getKey();
             List<Integer> vs = kv.getValue();
             if (vs.size() == 1) {
                 ans[0] = u;
