@@ -1029,6 +1029,10 @@ for...in不仅会遍历数组所有的数字键，还会遍历非数字键。
 
 **shell来批量删除：svn status | grep ! | awk '{print $2}' | xargs svn delete**
 
+```
+正向代理与反向代理区别：
+正向代理用户知道的，反向代理用户不知道的。
+```
 
 * [批量svn delete](http://hushicai.com/2014/02/28/pi-liang-svn-delete.html)
 * [纯IPv6环境App适配的坑](http://mrpeak.cn/blog/ipv6/)
