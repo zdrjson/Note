@@ -4,6 +4,7 @@
 
 * [写在33岁的生日，这些感悟和你分享](https://mp.weixin.qq.com/s/ow7hSpCwPmHPWs689KcsBw)
 * [关于赚钱的思考，你要做的一些事](http://www.guxiaobei.com/thinking-make-money.html)
+* [如何用知乎获取精准客户 ？我是这样做的](http://www.guxiaobei.com/how-to-obtain-accurate-customers-with-zhihu.html)
 
 * [关于创业的思考，你要做的一些事](http://www.guxiaobei.com/entrepreneurial-thinking.html)
 * [业余时间从算法0基础刷题，到面试拿offer的一些经验](https://www.1point3acres.com/bbs/thread-546765-1-1.html)
