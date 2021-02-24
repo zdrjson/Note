@@ -2,6 +2,9 @@
 
 ![What is your main focus for toady](mainFocus.png)
 
+* [1、缺乏行动力，怎么办？](https://mp.weixin.qq.com/s/Bi_JUhyEmKYy7C7SbCXeHw)
+* [2、别多想，去行动](https://mp.weixin.qq.com/s/Qm9TCQojmu5MmcSPnQXttA)
+* [3、停止内耗，做有用的事](https://mp.weixin.qq.com/s/ywfFwDbWBJ1uOE4kibEB8w)
 * [写在33岁的生日，这些感悟和你分享](https://mp.weixin.qq.com/s/ow7hSpCwPmHPWs689KcsBw)
 * [关于赚钱的思考，你要做的一些事](http://www.guxiaobei.com/thinking-make-money.html)
 * [如何用知乎获取精准客户 ？我是这样做的](http://www.guxiaobei.com/how-to-obtain-accurate-customers-with-zhihu.html)
