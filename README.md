@@ -2,6 +2,8 @@
 
 ![What is your main focus for toady](mainFocus.png)
 
+* [这个网站，我是如何一年中赚到200w？](https://mp.weixin.qq.com/s?__biz=MzA4ODY4ODUzNQ==&mid=2663459579&idx=1&sn=2ed16d792651b270fb77b1e68483aa1e&chksm=8b13d803bc645115660cfd582dc1a40d37d85439662d1a3a68a499095c34c147fae17880fcc2&token=1146235506&lang=zh_CN#rd)
+* [一文看懂，赚钱的本质](https://mp.weixin.qq.com/s?__biz=MzA4ODY4ODUzNQ==&mid=2663458520&idx=1&sn=4169253123507cd87aa2719c86651bff&chksm=8b13d420bc645d36594e3212bdbff7480b67abe43999a6e98a000fb9592c7de0095e14b401bb&token=1146235506&lang=zh_CN#rd)
 * [1、缺乏行动力，怎么办？](https://mp.weixin.qq.com/s/Bi_JUhyEmKYy7C7SbCXeHw)
 * [2、别多想，去行动](https://mp.weixin.qq.com/s/Qm9TCQojmu5MmcSPnQXttA)
 * [3、停止内耗，做有用的事](https://mp.weixin.qq.com/s/ywfFwDbWBJ1uOE4kibEB8w)
