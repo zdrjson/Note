@@ -1569,4 +1569,54 @@ VirtualLayout是一个针对RecyclerView的LayoutManager扩展, 主要提供一�
 # 配置中心
 * [携程Apollo配置中心设计](https://github.com/ctripcorp/apollo/wiki/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%AE%BE%E8%AE%A1)
 
+# 跨境电商
+
+## 亚马逊从选品分析，CPC全阶运营，SOP计划表，物流，整理
+
+### 亚马逊选品
+
+[亚马逊选品SOP](https://kdocs.cn/l/chfsnMSxSEWT)
+
+[亚马逊选品分析26个维度](https://kdocs.cn/l/cuqlHg15qHIv)
+
+[老品 and 滞销品 要怎么样增加流量](https://kdocs.cn/l/clBaWaD1IRVv)
+
+### CPC广告
+
+[亚马逊CPC全阶运营](https://kdocs.cn/l/cqLcyu2ciOQS)
+
+[亚马逊CPC运作篇](https://kdocs.cn/l/chpy5X9fuVSN)
+
+[亚马逊CPC总结](https://kdocs.cn/l/soRlZ1BGgnq7)
+
+[亚马逊广告结构及分析优化](https://kdocs.cn/l/ckYaoaujNUWb)
+
+[亚马逊广告表现指标](https://kdocs.cn/l/cvCCQAyQhqof)
+
+### 亚马逊运营整体框架
+
+[亚马逊思维框架](https://kdocs.cn/l/cbKE7NUaxSzK)
+
+[亚马逊运营SOP计划表.xls](https://kdocs.cn/l/cdAXiD6nK7Z1)
+
+[亚马逊Listing销量诊断流程SOP](https://kdocs.cn/l/cbfMSjsyzLk7)
+
+[亚马逊如何进行市场调研？](https://kdocs.cn/l/cuyaCshu8w7T)
+
+[Review获取头脑风暴](https://kdocs.cn/l/co8lBozARgLL)
+
+### 亚马逊物流
+
+[亚马逊日本站 头程物流海外仓资源](https://kdocs.cn/l/ckoL0KbIhWKs)
+
+[美国欧洲日本海外仓资源](https://kdocs.cn/l/ckmG8JqhOaZN)
+
+
+
+
+
+
+
+
+  
 
