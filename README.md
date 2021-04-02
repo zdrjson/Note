@@ -1379,6 +1379,8 @@ npm install hexo-cli -g
 * [微信终端跨平台组件 mars 系列(二) - 信令传输超时设计](https://mp.weixin.qq.com/s/9DJxipJaaBC8yC-buHgnTQ)
 * [如何设计一个通讯协议](http://mrpeak.cn/blog/tcp-rpc-protocol/)
 * [TCP/IP 系列之重新认识 IP 地址](http://mrpeak.cn/blog/tcp-ip/)
+# Kafka
+* [kafka入门：简介、使用场景、设计原理、主要配置及集群搭建（转）](https://www.cnblogs.com/likehua/p/3999538.html)
 
 
 # 阿里巴巴开源的26款超神项目（附介绍和链接）
