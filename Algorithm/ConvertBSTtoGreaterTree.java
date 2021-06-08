@@ -10,7 +10,7 @@
 // Solution: reversed inorder traaversal
 // in a BST, we can visit every node in the decreasing order. Using a member sum to track the sum of all visited nodes.
 class Solution {
-    int sum;
+    private int sum;
     public TreeNode convertBST(TreeNode root) {
         sum = 0;
         rinorder(root);
