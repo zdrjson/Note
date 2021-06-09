@@ -5,12 +5,12 @@ class Solution {
     public List<String> subdomainVisits(String[] cpdomains) {
         Map<String, Integer> counts = new HashMap<>();
         for (final String cpdomain : cpdomains) {
-            int index = cpdomain.indexOf(" ");
+            int index = cpdomain.indexOf(' '); // Java库中indexOf参数是传入字符串，这里试一下传入字符运行可以。
             int count = Integer.valueOf(cpdomain.substring(0, index));
             String domain = cpdomain.substring(index + 1);
             while (true) {
                 counts.put(domain, counts.getOrDefault(domain, 0) + count);
-                int i = domain.indexOf(".");
+                int i = domain.indexOf('.');
                 if (i == -1) break;
                 domain = domain.substring(i + 1);
             }
