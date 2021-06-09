@@ -17,7 +17,7 @@ class Solution {
         }
         List<String> ans = new ArrayList<>();
         for (final Map.Entry<String, Integer> kv : counts.entrySet())  // 不要忘了Map.Entry前面加上final。
-            ans.add(kv.getValue() + " " + kv.getKey());
+            ans.add(String.valueOf(kv.getValue()) + " " + kv.getKey());
         return ans; 
     }
 }
