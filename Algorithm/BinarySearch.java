@@ -1,6 +1,6 @@
-/*Time complexity: O(logn)
-  Space complexity : O(1)
-*/
+// Solution: Binary Search
+// Time complexity: O(logn)
+// Space complexity : O(1)
 class Solution {
     public int search(int[] nums, int target) {
         int l = 0;
