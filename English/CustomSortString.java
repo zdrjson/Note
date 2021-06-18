@@ -9,7 +9,7 @@ class Solution {
         Arrays.fill(order, Integer.MAX_VALUE);
         int i = 0;
         for (char c : S.toCharArray())
-            if (orders[c] == Integer.MAX_VALUE) order[c] = ++i;
+            if (order[c] == Integer.MAX_VALUE) order[c] = ++i;
         Character[] ans = new Character[T.length()];
         for (int j = 0; j < ans.length; ++j)
             ans[j] = new Character(T.charAt(j));
