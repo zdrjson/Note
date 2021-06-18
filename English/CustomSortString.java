@@ -18,7 +18,7 @@ class Solution {
         });
         char[] res = new char[ans.length];
         for (int k = 0; k < res.length; ++k)
-            res[k] = ans[k];
+            res[k] = ans[k]; // Character[]类型可以直接赋值给char[]类型。
         return new String(res); // 或者用 String.valueOf(res) 都可以，但是不能用String.valueOf(ans)。ans为Character[]类型，答案不对, 直接new String(ans)不能编译。
     }
 }
