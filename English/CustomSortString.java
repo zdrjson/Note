@@ -5,16 +5,16 @@
 // Space complexity: O(128)
 class Solution {
     public String customSortString(String S, String T) {
-        int[] orders = new int[128];
-        Arrays.fill(orders, Integer.MAX_VALUE);
+        int[] order = new int[128];
+        Arrays.fill(order, Integer.MAX_VALUE);
         int i = 0;
         for (char c : S.toCharArray())
-            if (orders[c] == Integer.MAX_VALUE) orders[c] = ++i;
+            if (orders[c] == Integer.MAX_VALUE) order[c] = ++i;
         Character[] ans = new Character[T.length()];
         for (int j = 0; j < ans.length; ++j)
             ans[j] = new Character(T.charAt(j));
         Arrays.sort(ans, (c1, c2) -> {
-           return orders[c1] - orders[c2]; 
+           return order[c1] - order[c2]; 
         });
         char[] res = new char[ans.length];
         for (int k = 0; k < res.length; ++k)
