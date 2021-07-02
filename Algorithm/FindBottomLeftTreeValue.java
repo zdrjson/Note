@@ -1,30 +1,36 @@
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
+ * public class TreeNode {
  *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
  */
+// Solution 1: Inorder traversal with depth info
+// The first node visited in the deepest row is the answer.
 class Solution {
-public:
-    int findBottomLeftValue(TreeNode* root) {
-        int max_row = -1;
-        int ans;
-        inorder(root, 0, max_row, ans);
+    private int max_row;
+    private int ans;
+    public int findBottomLeftValue(TreeNode root) {
+        max_row = -1;
+        ans = 0;
+        inorder(root, 0);
         return ans;
     }
-private:
-    void inorder(TreeNode* root, int row, int& max_row, int& ans) {
-        if (root == nullptr) return;
-        inorder(root->left, row + 1, max_row, ans);
+    private void inorder(TreeNode root, int row) {
+        if (root == null) return;
+        inorder(root.left, row + 1);
         if (row > max_row) {
-            ans = root->val;
+            ans = root.val;
             max_row = row;
         }
-        inorder(root->right, row + 1, max_row, ans);
+        inorder(root.right, row + 1);
     }
-};
+}
